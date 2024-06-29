@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "daenerys_daughterofjaehaerys_crown_mesh"
+	file = "daenerys_daughterofjaehaerys_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_daenerys_daughterofjaehaerys_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "daenerys_daughterofjaehaerys_crown_diffuse.dds"
+		texture_normal = "daenerys_daughterofjaehaerys_crown_normal.dds"
+		texture_specular = "daenerys_daughterofjaehaerys_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "daenerys_daughterofjaehaerys_crown_entity"
+	pdxmesh = "daenerys_daughterofjaehaerys_crown_mesh"
+}

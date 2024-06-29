@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "crown_of_yronwood_mesh"
+	file = "crown_of_yronwood.mesh"
+
+	meshsettings = {
+		name = "crown_of_yronwoodShape"
+		index = 0
+		texture_diffuse = "crown_of_yronwood_diffuse.dds"
+		texture_normal = "crown_of_yronwood_normal.dds"
+		texture_specular = "crown_of_yronwood_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "crown_of_yronwood_entity"
+	pdxmesh = "crown_of_yronwood_mesh"
+}

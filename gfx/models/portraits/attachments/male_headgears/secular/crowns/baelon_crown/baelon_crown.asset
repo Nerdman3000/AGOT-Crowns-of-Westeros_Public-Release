@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "baelon_crown_mesh"
+	file = "baelon_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_baelon_crown_01Shape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "baelon_crown_diffuse.dds"
+		texture_normal = "baelon_crown_normal.dds"
+		texture_specular = "baelon_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "baelon_crown_entity"
+	pdxmesh = "baelon_crown_mesh"
+}

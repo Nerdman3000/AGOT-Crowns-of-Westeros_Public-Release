@@ -1,0 +1,1310 @@
+﻿ntc_celtigar_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_celtigar_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Celtigar
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Celtigar
+			}
+		}
+		dynasty ?= dynasty:dynn_Celtigar
+	}
+}
+
+ntc_reyne_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_castamere_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Reyne
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Reyne
+			}
+		}
+		dynasty ?= dynasty:dynn_Reyne
+	}
+}
+
+ntc_mormont_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_bear_island_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Mormont
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Mormont
+			}
+		}
+		dynasty ?= dynasty:dynn_Mormont
+	}
+}
+
+ntc_yronwood_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_yronwood_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Yronwood
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Yronwood
+			}
+		}
+		dynasty ?= dynasty:dynn_Yronwood
+	}
+}
+
+ntc_estermont_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_estermont_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Estermont
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Estermont
+			}
+		}
+		dynasty ?= dynasty:dynn_Estermont
+	}
+}
+
+ntc_connington_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_connington_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Connington
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Connington
+			}
+		}
+		dynasty ?= dynasty:dynn_Connington
+	}
+}
+
+ntc_rowan_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_goldengrove_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Rowan
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Rowan
+			}
+		}
+		dynasty ?= dynasty:dynn_Rowan
+	}
+}
+
+ntc_dondarrion_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_dondarrion_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Dondarrion
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Dondarrion
+			}
+		}
+		dynasty ?= dynasty:dynn_Dondarrion
+	}
+}
+
+ntc_bar_emmon_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_sharp_point_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Bar_Emmon
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Bar_Emmon
+			}
+		}
+		dynasty ?= dynasty:dynn_Bar_Emmon
+	}
+}
+
+ntc_seawyrm_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_seawyrm_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Velaryon
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+		}
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Velaryon
+			}
+		}
+		AND = {
+			culture = { has_cultural_pillar = heritage_valyrian }
+			dynasty = dynasty:dynn_Velaryon
+		}
+	}
+}
+
+ntc_goldfyre_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_goldfyre_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Lannister
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+		}
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Lannister
+			}
+		}
+		AND = {
+			culture = { has_cultural_pillar = heritage_valyrian }
+			dynasty = dynasty:dynn_Lannister
+		}
+	}
+}
+
+ntc_greenpyre_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_greenpyre_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Hightower
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+		}
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+			}
+			mother ?= {
+				dynasty ?= dynasty:dynn_Hightower
+			}
+		}
+		AND = {
+			culture = { has_cultural_pillar = heritage_valyrian }
+			dynasty = dynasty:dynn_Hightower
+		}
+	}
+}
+
+ntc_stark_circlet_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = circlet_of_stark_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Stark
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Stark
+			}
+		}
+		dynasty ?= dynasty:dynn_Stark
+	}
+}
+
+ntc_sansa_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_sansa_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Stark
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Stark
+			}
+		}
+		dynasty ?= dynasty:dynn_Stark
+	}
+}
+
+ntc_gardener_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_gardener_war_bronze_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Gardener
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Gardener
+			}
+		}
+		dynasty ?= dynasty:dynn_Gardener
+	}
+}
+
+ntc_valyrian_crown2_targaryen_trigger = {
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+				NOT = {
+					house = house:house_Blackfyre
+				}
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Targaryen
+				NOT = {
+					house = house:house_Blackfyre
+				}
+			}
+		}
+		dynasty ?= dynasty:dynn_Targaryen
+	}
+	NOT = {
+		house = house:house_Blackfyre
+		any_artifact = {
+			has_variable = valyrian_crown2_targaryen_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_valyrian_crown2_blackfyre_trigger = {
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				house = house:house_Blackfyre
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				house = house:house_Blackfyre
+			}
+		}
+		house = house:house_Blackfyre
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = valyrian_crown2_blackfyre_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_westerosi_valyrian_crown2_blackfyre_trigger = {
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				house = house:house_Blackfyre
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				house = house:house_Blackfyre
+			}
+		}
+		house = house:house_Blackfyre
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = westerosi_valyrian_crown2_blackfyre_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_harrenhal_crown_trigger = {
+	has_title = title:c_harrenhal
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_harrenhall_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_red_keep_crown_trigger = {
+	is_ai = no
+	has_title = title:c_kings_landing
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_the_red_keep_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_iron_throne_crown_trigger = {
+	is_ai = no
+	has_title = title:c_kings_landing
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_the_iron_throne_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_the_vale_crown_trigger = {
+	OR = {
+		has_title = title:e_the_vale
+		has_title = title:k_the_vale
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_the_mountain_and_vale_artifact
+			artifact_owner = root
+		}
+	}
+	is_ai = no
+}
+
+ntc_oldtown_crown_trigger = {
+	is_ai = no
+	has_title = title:d_oldtown
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_oldtown_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_oldtown_tall_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_oldtown_tall_artifact
+			artifact_owner = root
+		}
+	}
+	is_ai = no
+	has_title = title:d_oldtown
+}
+
+ntc_weirwood_crown_trigger = {
+	is_ai = no
+	has_religion = religion:old_gods_religion
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_weirwood_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_seven_circlet_trigger = {
+	is_ai = no
+	has_religion = religion:faith_of_the_seven_religion
+	NOT = {
+		any_artifact = {
+			has_variable = circlet_of_the_seven_artifact
+			artifact_owner = root
+		}
+	}
+}
+
+ntc_orysbaratheon_crown_trigger = {
+	exists = character:Baratheon_14 #Orys Baratheon
+	this = character:Baratheon_14 #Orys Baratheon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_orysbaratheon_artifact
+		}
+	}
+}
+
+ntc_aegontheuncrowned_crown_trigger = {
+	exists = character:Targaryen_33 # Aegon the Uncrowned
+	this = character:Targaryen_33 # Aegon the Uncrowned
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aegontheuncrowned_artifact
+		}
+	}
+}
+
+ntc_aereatargaryen_crown_trigger = {
+	exists = character:Targaryen_41 # Aerea Targaryen
+	this = character:Targaryen_41 # Aerea Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aereatargaryen_artifact
+		}
+	}
+}
+
+ntc_aegonsonofjaehaerys_crown_trigger = {
+	exists = character:Targaryen_43 # Aegon Son of Jaehaerys
+	this = character:Targaryen_43 # Aegon Son of Jaehaerys
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aegonsonofjaehaerys_artifact
+		}
+	}
+}
+
+ntc_aemonsonofjaehaerys_crown_trigger = {
+	exists = character:Targaryen_45 # Aemon son of Jahaerys I
+	this = character:Targaryen_45 # Aemon son of Jahaerys I
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aemonsonofjaehaerys_artifact
+		}
+	}
+}
+
+ntc_baelon_crown_trigger = {
+	exists = character:Targaryen_46 # Baelon Targaryen (son of Jaehaerys I)
+	this = character:Targaryen_46 # Baelon Targaryen (son of Jaehaerys I)
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_baelon_artifact
+		}
+	}
+}
+
+ntc_vaegon_crown_trigger = {
+	exists = character:Targaryen_43 # Vaegon Targaryen
+	this = character:Targaryen_43 # Vaegon Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_vaegon_artifact
+		}
+	}
+}
+
+ntc_rhaenysvelaryon_crown_trigger = {
+	exists = character:Targaryen_59 # Rhaenys (The Queen Who Never Was)
+	this = character:Targaryen_59 # Rhaenys (The Queen Who Never Was)
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_rhaenysvelaryon_artifact
+		}
+	}
+}
+
+ntc_laenorvelaryon_crown_trigger = {
+	exists = character:Velaryon_35 # Laenor Velaryon
+	this = character:Velaryon_35 # Laenor Velaryon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_laenorvelaryon_artifact
+		}
+	}
+}
+
+ntc_aemond_crown_trigger = {
+	exists = character:Targaryen_67 # Aemond Targaryen
+	this = character:Targaryen_67 # Aemond Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aemond_artifact
+		}
+	}
+}
+
+ntc_baelorbreakspear_crown_trigger = {
+	exists = character:Targaryen_107 # Baelor Breakspear
+	this = character:Targaryen_107 # Baelor Breakspear
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_baelorbreakspear_artifact
+		}
+	}
+}
+
+ntc_bittersteel_crown_trigger = {
+	exists = character:Targaryen_95 # Aegor 'Bittersteel' Rivers
+	this = character:Targaryen_95 # Aegor 'Bittersteel' Rivers
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = bittersteel_crown_artifact
+		}
+	}
+}
+
+ntc_bloodraven_crown_trigger = {
+	exists = character:Targaryen_96 # Bloodraven
+	this = character:Targaryen_96 # Bloodraven
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_bloodraven_artifact
+		}
+	}
+}
+
+ntc_circlet_of_seastar_crown_trigger = {
+	exists = character:Targaryen_97 # Shiera Seastar
+	this = character:Targaryen_97 # Shiera Seastar
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = circlet_of_seastar_artifact
+		}
+	}
+}
+
+ntc_crown_shieraseastar_crown_trigger = {
+	exists = character:Targaryen_97 # Shiera Seastar
+	this = character:Targaryen_97 # Shiera Seastar
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_shieraseastar_artifact
+		}
+	}
+}
+
+ntc_valarr_crown_trigger = {
+	exists = character:Targaryen_111 # Valarr Targaryen
+	this = character:Targaryen_111 # Valarr Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_valarr_artifact
+		}
+	}
+}
+
+ntc_brightflame_crown_trigger = {
+	exists = character:Targaryen_119 # Aerion Brightflame
+	this = character:Targaryen_119 # Aerion Brightflame
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_brightflame_artifact
+		}
+	}
+}
+
+ntc_duncandragonfly_crown_trigger = {
+	exists = character:Targaryen_126 # Duncan the Small
+	this = character:Targaryen_126 # Duncan the Small
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_duncandragonfly_artifact
+		}
+	}
+}
+
+ntc_daemon_ii_blackfyre_crown_trigger = {
+	exists = character:Blackfyre_5 # Daemon II Blackfyre
+	this = character:Blackfyre_5 # Daemon II Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_daemon_ii_blackfyre_artifact
+		}
+	}
+}
+
+ntc_haegonblackfyre_crown_trigger = {
+	exists = character:Blackfyre_6 # Haegon Blackfyre
+	this = character:Blackfyre_6 # Haegon Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_haegonblackfyre_artifact
+		}
+	}
+}
+
+ntc_aenysblackfyre_crown_trigger = {
+	exists = character:Blackfyre_7 # Aenys Blackfyre
+	this = character:Blackfyre_7 # Aenys Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aenysblackfyre_artifact
+		}
+	}
+}
+
+ntc_maelysblackfyre_crown_trigger = {
+	exists = character:Blackfyre_14 # Maelys Blackfyre
+	this = character:Blackfyre_14 # Maelys Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_maelysblackfyre_artifact
+		}
+	}
+}
+
+ntc_maesteraemon_crown_trigger = {
+	exists = character:Targaryen_120 # Aemon Targaryen (Maester)
+	this = character:Targaryen_120 # Aemon Targaryen (Maester)
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_maesteraemon_artifact
+		}
+	}
+}
+
+ntc_rhaegar_crown_trigger = {
+	exists = character:Targaryen_3 # Rhaegar
+	this = character:Targaryen_3 # Rhaegar
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_rhaegar_artifact
+		}
+	}
+}
+
+ntc_viserys_son_of_aenys_trigger = {
+	exists = character:Targaryen_3 # Rhaegar
+	this = character:Targaryen_3 # Rhaegar
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_rhaegar_silver_artifact
+		}
+	}
+}
+
+ntc_viserysiii_crown_trigger = {
+	exists = character:Targaryen_8 # Viserys III
+	this = character:Targaryen_8 # Viserys III
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_viserysiii_artifact
+		}
+	}
+}
+
+ntc_aegonvi_crown_trigger = {
+	exists = character:Targaryen_9 # Aegon VI
+	AND = {
+		OR = {
+			dynasty ?= dynasty:dynn_Targaryen
+			dynasty ?= dynasty:dynn_Essos
+		}
+		this = character:Targaryen_9 # Aegon VI
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aegonvi_artifact
+		}
+	}
+}
+
+ntc_aegonblackfyre_crown_trigger = {
+	exists = character:Targaryen_9 # Aegon VI
+	AND = {
+		dynasty ?= dynasty:dynn_Blackfyre
+		this = character:Targaryen_9 # Aegon VI
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aegonblackfyre_artifact
+		}
+	}
+}
+
+ntc_jon_north_crown_trigger = {
+	is_ai = no
+	OR = {
+		this = character:Stark_5 # Jon Snow
+		has_character_flag = is_jon_snow
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_jon_north_artifact
+		}
+	}
+}
+
+ntc_jon_icefire_crown_trigger = {
+	is_ai = no
+	OR = {
+		this = character:Stark_5 # Jon Snow
+		has_character_flag = is_jon_snow
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_jon_icefire_artifact
+		}
+	}
+}
+
+ntc_jonsnow_crown_trigger = {
+	is_ai = no
+	OR = {
+		this = character:Stark_5 # Jon Snow
+		has_character_flag = is_jon_snow
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_jonsnow_artifact
+		}
+	}
+}
+
+ntc_jonsnowtargaryen_crown_trigger = {
+	is_ai = no
+	OR = {
+		this = character:Stark_5 # Jon Snow
+		has_character_flag = is_jon_snow
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_jonsnowtargaryen_artifact
+		}
+	}
+}
+
+ntc_showaegon_crown_01_trigger = {
+	exists = character:Targaryen_27 # Aegon I
+	is_ai = no
+	this = character:Targaryen_27 # Aegon I
+	NOT = {
+		any_artifact = {
+			has_variable = showaegon_crown_01_artifact
+		}
+	}
+}
+
+ntc_showaegon_crown_02_trigger = {
+	exists = character:Targaryen_27 # Aegon I
+	is_ai = no
+	this = character:Targaryen_27 # Aegon I
+	NOT = {
+		any_artifact = {
+			has_variable = showaegon_crown_02_artifact
+		}
+	}
+}
+
+ntc_showrhaenyra_crown_01_trigger = {
+	OR = {
+		exists = character:Targaryen_60 # Viserys I
+		exists = character:Targaryen_63 # Rhaenyra
+	}
+	is_ai = no
+	OR = {
+		this = character:Targaryen_60 # Viserys I
+		this = character:Targaryen_63 # Rhaenyra
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = showrhaenyra_crown_01_artifact
+		}
+	}
+}
+
+ntc_showrhaenyra_crown_02_trigger = {
+	exists = character:Targaryen_63 # Rhaenyra
+	is_ai = no
+	this = character:Targaryen_63 # Rhaenyra
+	NOT = {
+		any_artifact = {
+			has_variable = showrhaenyra_crown_02_artifact
+		}
+	}
+}
+
+ntc_showaerys_crown_trigger = {
+	exists = character:Targaryen_1 # Aerys I
+	is_ai = no
+	this = character:Targaryen_1 # Aerys I
+	NOT = {
+		any_artifact = {
+			has_variable = crown_showaerys_artifact
+		}
+	}
+}
+
+ntc_margaerytyrell_crown_trigger = {
+	exists = character:Tyrell_14 # Margaery Tyrell
+	this = character:Tyrell_14 # Margaery Tyrell
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_margaerytyrell_artifact
+		}
+	}
+}
+
+ntc_cersei_ruler_crown_trigger = {
+	exists = character:Lannister_6 # Cersei Lannister
+	this = character:Lannister_6 # Cersei Lannister
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_cersei_ruler_artifact
+		}
+	}
+}
+
+ntc_littlefinger_crown_trigger = {
+	exists = character:Baelish_2 # Petyr Baelish
+	this = character:Baelish_2 # Petyr Baelish
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = mockingbird_circlet_artifact
+		}
+	}
+}
+
+ntc_crown_of_robert_baratheon_trigger = {
+	exists = character:Baratheon_2 # Robert Baratheon
+	this = character:Baratheon_2 # Robert Baratheon
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_robert_baratheon_artifact
+		}
+	}
+}
+
+agot_can_make_any_crown_trigger = {
+	OR = {
+		agot_aegon_i_crown_trigger = yes
+		agot_aenys_crown_trigger = yes
+		agot_jaehaerys_crown_trigger = yes
+		agot_daemon_stepstones_crown_trigger = yes
+		agot_aegon_iii_crown_trigger = yes
+		agot_baelors_crown_trigger = yes
+		agot_aegon_iv_crown_trigger = yes
+		agot_maekars_crown_trigger = yes
+		agot_daenerys_crown_trigger = yes
+		agot_robertI_crown_trigger = yes
+		agot_stannis_crown_trigger = yes
+		agot_renly_crown_trigger = yes
+		agot_joffreyI_crown_trigger = yes
+		agot_jeyne_westerling_crown_trigger = yes
+		agot_lyanna_crown_trigger = yes
+		agot_rhaella_crown_trigger = yes
+		agot_visenya_crown_trigger = yes
+		agot_alysanne_crown_trigger = yes
+		agot_rhaenys_crown_trigger = yes
+		agot_daemon_stepstones_consort_crown_trigger = yes
+		agot_night_king_crown_trigger = yes
+		agot_ice_crown_trigger = yes
+		agot_blackfyre_crown_trigger = yes
+		agot_blackwood_crown_trigger = yes
+		agot_bolton_crown_trigger = yes
+		agot_cargyll_crown_trigger = yes
+		agot_stark_crown_trigger = yes
+		agot_dayne_crown_trigger = yes
+		agot_martell_crown_trigger = yes
+		agot_dustin_crown_trigger = yes
+		agot_florent_crown_trigger = yes
+		agot_frey_crown_trigger = yes
+		agot_greyjoy_crown_trigger = yes
+		agot_harlaw_crown_trigger = yes
+		agot_hightower_crown_trigger = yes
+		agot_manderly_crown_trigger = yes
+		agot_tyrell_crown_trigger = yes
+		agot_redwyne_crown_trigger = yes
+		agot_reed_crown_trigger = yes
+		agot_royce_crown_trigger = yes
+		agot_baratheon_crown_storm_trigger = yes
+		agot_durrandon_crown_storm_trigger = yes
+		agot_baratheon_crown_stag_trigger = yes
+		agot_durrandon_crown_stag_trigger = yes
+		agot_tarly_crown_trigger = yes
+		agot_tarth_crown_trigger = yes
+		agot_tully_crown_trigger = yes
+		agot_umber_crown_trigger = yes
+		agot_lannister_crown_2_trigger = yes
+		agot_lannister_crown_trigger = yes
+		agot_westerling_crown_trigger = yes
+		agot_velaryon_crown_trigger = yes
+		agot_gardener_crown_trigger = yes
+		agot_mudd_crown_trigger = yes
+		agot_westerosi_valyrian1_crown_trigger = yes
+		agot_westerosi_valyrian2_crown_trigger = yes
+		agot_beyond_the_wall_crown_trigger = yes
+		agot_riverlands_crown_trigger = yes
+		agot_iron_islands_crown_trigger = yes
+		agot_the_wall_crown_trigger = yes
+		ntc_celtigar_crown_trigger = yes
+		ntc_reyne_crown_trigger = yes
+		ntc_mormont_crown_trigger = yes
+		ntc_yronwood_crown_trigger = yes
+		ntc_estermont_crown_trigger = yes
+		ntc_connington_crown_trigger = yes
+		ntc_rowan_crown_trigger = yes
+		ntc_dondarrion_crown_trigger = yes
+		ntc_bar_emmon_crown_trigger = yes
+		ntc_seawyrm_crown_trigger = yes
+		ntc_goldfyre_crown_trigger = yes
+		ntc_greenpyre_crown_trigger = yes
+		ntc_stark_circlet_trigger = yes
+		ntc_sansa_crown_trigger = yes
+		ntc_gardener_crown_trigger = yes
+		ntc_orysbaratheon_crown_trigger = yes
+		ntc_aegontheuncrowned_crown_trigger = yes
+		ntc_aereatargaryen_crown_trigger = yes
+		ntc_aegonsonofjaehaerys_crown_trigger = yes
+		ntc_aemonsonofjaehaerys_crown_trigger = yes
+		ntc_baelon_crown_trigger = yes
+		ntc_vaegon_crown_trigger = yes
+		ntc_rhaenysvelaryon_crown_trigger = yes
+		ntc_laenorvelaryon_crown_trigger = yes
+		ntc_aemond_crown_trigger = yes
+		ntc_baelorbreakspear_crown_trigger = yes
+		ntc_bittersteel_crown_trigger = yes
+		ntc_bloodraven_crown_trigger = yes
+		ntc_circlet_of_seastar_crown_trigger = yes
+		ntc_crown_shieraseastar_crown_trigger = yes
+		ntc_valarr_crown_trigger = yes
+		ntc_brightflame_crown_trigger = yes
+		ntc_duncandragonfly_crown_trigger = yes
+		ntc_daemon_ii_blackfyre_crown_trigger = yes
+		ntc_haegonblackfyre_crown_trigger = yes
+		ntc_aenysblackfyre_crown_trigger = yes
+		ntc_maelysblackfyre_crown_trigger = yes
+		ntc_maesteraemon_crown_trigger = yes
+		ntc_rhaegar_crown_trigger = yes
+		ntc_viserys_son_of_aenys_trigger = yes
+		ntc_viserysiii_crown_trigger = yes
+		ntc_aegonvi_crown_trigger = yes
+		ntc_aegonblackfyre_crown_trigger = yes
+		ntc_jonsnowtargaryen_crown_trigger = yes
+		ntc_jonsnow_crown_trigger = yes
+		ntc_jon_north_crown_trigger = yes
+		ntc_jon_icefire_crown_trigger = yes
+		ntc_showaerys_crown_trigger = yes
+		ntc_margaerytyrell_crown_trigger = yes
+		ntc_cersei_ruler_crown_trigger = yes
+		ntc_littlefinger_crown_trigger = yes
+		ntc_crown_of_robert_baratheon_trigger = yes
+		ntc_valyrian_crown2_targaryen_trigger = yes
+		ntc_valyrian_crown2_blackfyre_trigger = yes
+		ntc_westerosi_valyrian_crown2_blackfyre_trigger = yes
+		trigger_if = {
+			limit = { is_ai = no }
+			OR = {
+				agot_drowned_god_crown_trigger = yes
+				agot_valyrian_crown_trigger = yes
+				agot_valyrian2_crown_trigger = yes
+				agot_rhllor_crown_trigger = yes
+				agot_rhllor2_crown_trigger = yes
+				agot_old_gods_crown_trigger = yes
+				ntc_weirwood_crown_trigger = yes
+				ntc_seven_circlet_trigger = yes
+				ntc_harrenhal_crown_trigger = yes
+				ntc_red_keep_crown_trigger = yes
+				ntc_iron_throne_crown_trigger = yes
+				ntc_the_vale_crown_trigger = yes
+				ntc_oldtown_crown_trigger = yes
+				ntc_oldtown_tall_crown_trigger = yes
+			}
+		}
+	}
+}

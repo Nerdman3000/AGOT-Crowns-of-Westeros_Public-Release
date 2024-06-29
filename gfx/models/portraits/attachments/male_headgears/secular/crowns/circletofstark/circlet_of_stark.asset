@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "circlet_of_stark_mesh"
+	file = "circlet_of_stark.mesh"
+
+	meshsettings = {
+		name = "circlet_of_starkShape"
+		index = 0
+		texture_diffuse = "circlet_of_stark_diffuse.dds"
+		texture_normal = "circlet_of_stark_normal.dds"
+		texture_specular = "circlet_of_stark_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "circlet_of_stark_entity"
+	pdxmesh = "circlet_of_stark_mesh"
+}

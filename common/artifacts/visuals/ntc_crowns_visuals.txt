@@ -1,0 +1,390 @@
+﻿# Crowns of Westeros Crown Artifact Visuals
+
+aegonvi_crown_visuals = {
+	icon = "aegonvi_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aegonblackfyre_crown_visuals = {
+	icon = "aegonblackfyre_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+rhaegar_crown_visuals = {
+	icon = "rhaegar_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+viserys_son_of_aenys_visuals = {
+	icon = "viserys_son_of_aenys.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+viserys_son_of_aenys_02_visuals = {
+	icon = "viserys_son_of_aenys_02.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+jonsnowtargaryen_crown_visuals = {
+	icon = "jonsnowtargaryen_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+viserysiii_crown_visuals = {
+	icon = "viserysiii_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+maesteraemon_crown_visuals = {
+	icon = "maesteraemon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aegontheuncrowned_crown_visuals = {
+	icon = "aegontheuncrowned_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+brightflame_crown_visuals = {
+	icon = "brightflame_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+baelon_crown_visuals = {
+	icon = "baelon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+myrcella_circlet_visuals = {
+	icon = "myrcella_circlet.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+cersei_tiara_visuals = {
+	icon = "cersei_tiara.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aemonsonofjaehaerys_crown_visuals = {
+	icon = "aemonsonofjaehaerys_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+baelorbreakspear_crown_visuals = {
+	icon = "baelorbreakspear_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+laenorvelaryon_crown_visuals = {
+	icon = "laenorvelaryon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+seawyrm_crown_visuals = {
+	icon = "seawyrm_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+greenpyre_crown_visuals = {
+	icon = "greenpyre_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+goldfyre_crown_visuals = {
+	icon = "goldfyre_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+celtigar_crown_visuals = {
+	icon = "celtigar_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+duncandragonfly_crown_visuals = {
+	icon = "duncandragonfly_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+jonsnow_crown_visuals = {
+	icon = "jonsnow_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aereatargaryen_crown_visuals = {
+	icon = "aereatargaryen_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+rhaenysvelaryon_crown_visuals = {
+	icon = "rhaenysvelaryon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+stepstone_crown_visuals = {
+	icon = "stepstone_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+alysanne_crown_visuals = {
+	icon = "alysanne_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+rhaella_daughterofrhaena_crown_visuals = {
+	icon = "alysanne_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+alyssavelaryon_crown_visuals = {
+	icon = "alyssavelaryon_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+alicenthightower_crown_visuals = {
+	icon = "alicenthightower_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+rhaenatargaryen_crown_visuals = {
+	icon = "rhaenatargaryen_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+daena_crown_visuals = {
+	icon = "daena_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+bethablackwood_circlet_visuals = {
+	icon = "bethablackwood_circlet.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aliandra_martell_crown_visuals = {
+	icon = "aliandra_martell_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+mors_martell_crown_visuals = {
+	icon = "mors_martell_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+mariah_martell_crown_visuals = {
+	icon = "mariah_martell_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+daemon_ii_blackfyre_crown_visuals = {
+	icon = "daemon_ii_blackfyre_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aenysblackfyre_crown_visuals = {
+	icon = "aenysblackfyre_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+haegonblackfyre_crown_visuals = {
+	icon = "haegonblackfyre_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+maelysblackfyre_crown_visuals = {
+	icon = "maelysblackfyre_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+orysbaratheon_crown_visuals = {
+	icon = "orysbaratheon_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+margaerytyrell_crown_visuals = {
+	icon = "margaerytyrell_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+robbstark_crown_visuals = {
+	icon = "robbstark_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+branstark_crown_visuals = {
+	icon = "branstark_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+geroldlannister_crown_visuals = {
+	icon = "geroldlannister_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+lancellannister_crown_visuals = {
+	icon = "lancellannister_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+valarr_crown_visuals = {
+	icon = "valarr_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aegonsonofjaehaerys_crown_visuals = {
+	icon = "aegonsonofjaehaerys_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+vaegon_crown_visuals = {
+	icon = "vaegon_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aemond_crown_visuals = {
+	icon = "aemond_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+daenerys_daughterofjaehaerys_crown_visuals = {
+	icon = "daenerys_daughterofjaehaerys_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+shieraseastar_crown_visuals = {
+	icon = "shieraseastar_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+bittersteel_crown_visuals = {
+	icon = "bittersteel_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+argella_crown_visuals = {
+	icon = "argella_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+tyboltthunderbolt_crown_visuals = {
+	icon = "tyboltthunderbolt_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+calla_blackfyre_circlet_visuals = {
+	icon = "calla_blackfyre_circlet.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+sharra_arryn_crown_visuals = {
+	icon = "sharra_arryn_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+roland_arryn_crown_visuals = {
+	icon = "roland_arryn_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+showaerys_crown_visuals = {
+	icon = "showaerys_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+showrhaenyra_crown_01_visuals = {
+	icon = "showrhaenyra_crown_01.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+showrhaenyra_crown_02_visuals = {
+	icon = "showrhaenyra_crown_02.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+showaegon_crown_01_visuals = {
+	icon = "showaegon_crown_01.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+showaegon_crown_02_visuals = {
+	icon = "showaegon_crown_02.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+hugor_of_the_hill_crown_visuals = {
+	icon = "hugor_of_the_hill_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+garlandgardener_crown_visuals = {
+	icon = "garlandgardener_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+garthgoldhand_crown_visuals = {
+	icon = "garthgoldhand_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+gardener_war_crown_visuals = {
+	icon = "gardener_war_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+gardener_peace_crown_visuals = {
+	icon = "gardener_peace_crown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_the_iron_throne_visuals = {
+	icon = "crown_of_the_iron_throne.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_the_red_keep_visuals = {
+	icon = "crown_of_the_red_keep.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_oldtown_tall_visuals = {
+	icon = "crown_of_oldtown_tall.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_oldtown_visuals = {
+	icon = "crown_of_oldtown.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_harrenhall_visuals = {
+	icon = "crown_of_harrenhall.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_the_mountain_and_vale_visuals = {
+	icon = "crown_of_the_mountain_and_vale.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_goldengrove_visuals = {
+	icon = "crown_of_goldengrove.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+circlet_of_stark_visuals = {
+	icon = "circlet_of_stark.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_bear_island_visuals = {
+	icon = "crown_of_bear_island.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_yronwood_visuals = {
+	icon = "crown_of_yronwood.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_dondarrion_visuals = {
+	icon = "crown_of_dondarrion.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_estermont_visuals = {
+	icon = "crown_of_estermont.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_connington_visuals = {
+	icon = "crown_of_connington.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_castamere_visuals = {
+	icon = "crown_of_castamere.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_sharp_point_visuals = {
+	icon = "crown_of_sharp_point.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_gardener_war_bronze_visuals = {
+	icon = "crown_of_gardener_war_bronze.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_the_grey_king_visuals = {
+	icon = "crown_of_the_grey_king.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_weirwood_visuals = {
+	icon = "crown_of_weirwood.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+circlet_of_the_seven_visuals = {
+	icon = "circlet_of_the_seven.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_jon_north_visuals = {
+	icon = "crown_of_jon_north.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_jon_icefire_visuals = {
+	icon = "crown_of_jon_icefire.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_bloodraven_visuals = {
+	icon = "crown_of_bloodraven.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+circlet_of_seastar_visuals = {
+	icon = "circlet_of_seastar.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+mockingbird_circlet_visuals = {
+	icon = "mockingbird_circlet.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_sansa_visuals = {
+	icon = "crown_of_sansa.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_cersei_ruler_visuals = {
+	icon = "crown_of_cersei_ruler.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_robert_baratheon_visuals = {
+	icon = "crown_of_robert_baratheon.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+valyrian_crown2_targaryen_visuals = {
+	icon = "valyrian_crown2_targaryen.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+valyrian_crown2_blackfyre_visuals = {
+	icon = "valyrian_crown2_blackfyre.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+westerosi_valyrian_crown2_blackfyre_visuals = {
+	icon = "westerosi_valyrian_crown2_blackfyre.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_myrcella_circlet_mesh"
+	file = "female_myrcella_circlet.mesh"
+
+	meshsettings = {
+		name = "female_myrcella_circletShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "myrcella_circlet_diffuse.dds"
+		texture_normal = "myrcella_circlet_normal.dds"
+		texture_specular = "myrcella_circlet_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_myrcella_circlet_entity"
+	pdxmesh = "female_myrcella_circlet_mesh"
+}

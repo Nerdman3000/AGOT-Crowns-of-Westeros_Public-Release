@@ -1,0 +1,49 @@
+﻿CrownsOfWesteros_01 = {
+	name = Wynafred
+	dynasty = dynn_Gardener
+	female = yes
+
+	religion = the_seven_main
+	culture = reachman
+
+	father = Gardener_47
+	
+	trait = beauty_good_3
+
+	7120.1.1 = { birth = yes }
+	7138.1.1 = { death = { death_reason = death_childbirth } }
+}
+CrownsOfWesteros_02 = {
+	name = Jon of Tumbleton
+
+	religion = the_seven_main
+	culture = reachman
+	
+	trait = seducer
+	trait = lustful
+
+	7115.1.1 = { birth = yes }
+	7132.1.1 = { trait = knight }
+	7138.6.1 = {
+		death = {
+			death_reason = death_execution # Hanged for taking maidenhood of Princess Wynafred
+				killer = Gardener_47 # Garse IV
+		}
+}
+CrownsOfWesteros_03 = {
+	name = Merlyn # The Bastard of Highgarden
+	dynasty = dynn_Gardener
+
+	religion = the_seven_main
+	culture = reachman
+	
+	father = CrownsOfWesteros_02
+	mother = CrownsOfWesteros_01
+	
+	trait = bastard
+	give_nickname = nick_flowers
+
+	7137.12.31 = { birth = yes }
+	7155.1.1 = { trait = knight }
+	7201.6.1 = { death = yes }
+}

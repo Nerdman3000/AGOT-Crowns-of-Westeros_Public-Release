@@ -1,0 +1,6 @@
+﻿show_dynamic_crowns = {
+	default  = show_dynamic_crowns_enabled
+	show_dynamic_crowns_enabled = {}
+	hide_dynamic_crowns_enabled = {}
+}
+

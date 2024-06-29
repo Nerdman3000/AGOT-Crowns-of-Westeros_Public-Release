@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "female_valyrian_crown2_targaryen_mesh"
+	file = "female_valyrian_crown2.mesh"
+
+	meshsettings = {
+		name = "female_valyrian_crown2Shape"
+		index = 0
+		texture_diffuse = "valyrian_crown2_targaryen_diffuse.dds"
+		texture_normal = "valyrian_crown2_targaryen_normal.dds"
+		texture_specular = "valyrian_crown2_targaryen_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_valyrian_crown2_targaryen_entity"
+	pdxmesh = "female_valyrian_crown2_targaryen_mesh"
+
+}

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_crown_of_the_mountain_and_vale_mesh"
+	file = "female_crown_of_the_mountain_and_vale.mesh"
+
+	meshsettings = {
+		name = "female_crown_of_the_mountain_and_valeShape"
+		index = 0
+		texture_diffuse = "crown_of_the_mountain_and_vale_diffuse.dds"
+		texture_normal = "crown_of_the_mountain_and_vale_normal.dds"
+		texture_specular = "crown_of_the_mountain_and_vale_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_crown_of_the_mountain_and_vale_entity"
+	pdxmesh = "female_crown_of_the_mountain_and_vale_mesh"
+}

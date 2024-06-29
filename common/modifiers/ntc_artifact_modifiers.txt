@@ -1,0 +1,822 @@
+﻿# Crowns of Westeros Crown Artifact Modifiers
+
+aegonvi_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	diplomacy = 3
+}
+rhaegar_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	stewardship = 2
+	learning = 1
+}
+viserys_son_of_aenys_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	prowess = 2
+	martial = 1
+}
+viserys_son_of_aenys_02_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	stewardship = 2
+	learning = 1
+}
+aegonblackfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.02
+	martial = 2
+	vassal_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+jonsnowtargaryen_crown_modifier = {
+	icon = grandeur_positive
+	learning = 1
+	martial = 5
+	monthly_prestige = 0.02
+	vassal_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+viserysiii_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	monthly_dynasty_prestige_mult = 0.02
+	intrigue = 2
+}
+maesteraemon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	learning = 5
+	life_expectancy = 15
+	monthly_dynasty_prestige_mult = 0.01
+}
+aegontheuncrowned_crown_modifier = {
+	icon = grandeur_positive
+	short_reign_duration_mult = -0.05
+	stress_loss_mult = 1
+	diplomacy_per_piety_level = 1
+}
+brightflame_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dread = 0.01
+	martial = 2
+	negative_random_genetic_chance = 0.01
+}
+daenerys_daughterofjaehaerys_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	attraction_opinion = 5
+	diplomacy = 2
+	dynasty_house_opinion = 10
+	monthly_dynasty_prestige_mult = 0.01
+}
+shieraseastar_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	learning = 3
+	intrigue = 3
+	diplomacy = 2
+	attraction_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+baelon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 3
+	prowess = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+valarr_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	advantage = 2
+	prowess = 1
+	knight_effectiveness_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.01
+}
+aemond_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = -0.05
+	monthly_dread = 0.05
+	monthly_tyranny = 0.05
+	martial = 3
+	prowess = 7
+	stewardship = 2
+	vassal_opinion = -5
+	inbreeding_chance = 5
+	monthly_dynasty_prestige_mult = -0.01
+}
+aemonsonofjaehaerys_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	diplomacy = 2
+	stewardship = 3
+	domain_limit = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+aegonsonofjaehaerys_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	faith_of_the_seven_religion_opinion = -5
+	different_faith_liege_opinion = 5
+	short_reign_duration_mult = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+vaegon_crown_modifier = {
+	icon = grandeur_positive
+	learning = 5
+	general_opinion = -10
+	dynasty_house_opinion = -10
+	life_expectancy = 15
+	prowess = -5
+	learning_per_prestige_level = 1
+}
+baelorbreakspear_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	prowess = 3
+	sand_dornish_opinion = 5
+	salt_dornish_opinion = 5
+	stone_dornish_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+mors_martell_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	prowess = 3
+	sand_dornish_opinion = 5
+	salt_dornish_opinion = 5
+	stone_dornish_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+	attraction_opinion = 3
+	martial = 0.2
+}
+aliandra_martell_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 3
+	sand_dornish_opinion = 5
+	salt_dornish_opinion = 5
+	stone_dornish_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+	attraction_opinion = 3
+	fertility = 0.2
+}
+mariah_martell_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	attraction_opinion = 5
+	sand_dornish_opinion = 5
+	salt_dornish_opinion = 5
+	stone_dornish_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+laenorvelaryon_crown_modifier = {
+	icon = grandeur_positive
+	dynasty_opinion = 3
+	martial = 2
+	prowess = 1
+	no_water_crossing_penalty = yes
+	movement_speed = 0.05
+	monthly_dynasty_prestige_mult = 0.05
+}
+seawyrm_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 1
+	prowess = 2
+	no_water_crossing_penalty = yes
+	movement_speed = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+greenpyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	courtier_and_guest_opinion = 3
+	faith_of_the_seven_religion_opinion = 5
+	learning = 1
+	monthly_dynasty_prestige_mult = 0.01
+}
+goldfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	tax_mult = 4
+	monthly_income_mult = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+celtigar_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	health = 0.05
+	no_water_crossing_penalty = yes
+	monthly_dynasty_prestige_mult = 0.01
+}
+duncandragonfly_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	diplomacy = 3
+	attraction_opinion = 3
+	general_opinion = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+jonsnow_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	prowess = 3
+	advantage = 5
+	old_gods_religion_opinion = 5
+}
+aereatargaryen_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	opinion_of_female_rulers = 3
+	twin_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+rhaenysvelaryon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+stepstone_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = -0.5
+	martial = 4
+	vassal_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+hugor_of_the_hill_crown_modifier = {
+	icon = grandeur_positive
+	prowess = 5
+	martial = 5
+	monthly_piety = 5
+	monthly_piety_gain_mult = 0.2
+	faith_of_the_seven_religion_opinion = 10
+}
+alysanne_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	stewardship = 2
+	fertility = 0.8
+}
+alyssavelaryon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	attraction_opinion = 3
+	fertility = 0.2
+}
+alicenthightower_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	faith_of_the_seven_religion_opinion = 5
+	fertility = 0.3
+}
+daena_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.02
+	monthly_prestige = 0.2
+	stewardship = 2
+	martial = 2
+}
+bethablackwood_circlet_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	monthly_dynasty_prestige_mult = 0.02
+	fertility = 0.2
+	diplomacy = 3
+}
+rhaenatargaryen_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_prestige = 0.5
+	stewardship = 2
+	learning = 1
+}
+calla_blackfyre_circlet_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 3
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+daemon_ii_blackfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	hostile_scheme_power_add = 1
+	prowess = -2
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+haegonblackfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	prowess = 3
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+aenysblackfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	diplomacy = 2
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	monthly_dynasty_prestige_mult = 0.01
+}
+maelysblackfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = -0.05
+	monthly_dread = 0.05
+	monthly_tyranny = 0.05
+	martial = 5
+	prowess = 5
+	vassal_opinion = -5
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	monthly_dynasty_prestige_mult = -0.01
+}
+orysbaratheon_crown_modifier = { 
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	martial = 3
+	martial_per_prestige_level = 1
+	stormlander_opinion = 5
+	prowess = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+argella_crown_modifier = { 
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	attraction_opinion = 5
+	martial_per_prestige_level = 1
+	stormlander_opinion = 5
+	prowess = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+margaerytyrell_crown_modifier = {
+	icon = grandeur_positive
+	attraction_opinion = 10
+	diplomacy = 1
+	intrigue = 2
+	reachman_opinion = 5
+	stormlander_opinion = 5
+}
+bittersteel_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 3
+	intrigue = 1
+	prowess = 2
+	owned_scheme_secrecy_add = 3
+	hostile_scheme_power_add = 3
+	hostile_scheme_resistance_add = 3
+	owned_hostile_scheme_success_chance_add = 3
+}
+robbstark_crown_modifier = {
+	icon = grandeur_positive
+	prowess = 1
+	martial = 3
+	intrigue = -2
+	northman_opinion = 3
+	riverlander_opinion = 2
+	barrowman_opinion = 2
+	crannogman_opinion = 2
+	hill_clansman_opinion = 2
+	krakenman_opinion = 2
+	wolfswood_clansman_opinion = 2
+	harborman_opinion = 2
+	advantage = 5
+}
+branstark_crown_modifier = {
+	icon = grandeur_positive
+	stewardship = 2
+	diplomacy = 3
+	northman_opinion = 2
+	barrowman_opinion = 2
+	crannogman_opinion = 2
+	hill_clansman_opinion = 2
+	krakenman_opinion = 2
+	wolfswood_clansman_opinion = 2
+	harborman_opinion = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+tyboltthunderbolt_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	martial = 2
+	stewardship = 2
+	monthly_income = 5
+	westerman_opinion = 5
+	old_gods_religion_opinion = 5
+	faith_of_the_seven_religion_opinion = -5
+	monthly_dynasty_prestige_mult = 0.05
+}
+geroldlannister_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	martial = 3
+	stewardship = 2
+	monthly_income = 5
+	westerman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.05
+}
+lancellannister_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	martial = 3
+	prowess = 1
+	advantage = 5
+	monthly_income = 5
+	westerman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+roland_arryn_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 2
+	mountains_construction_gold_cost = -0.05
+	build_speed = 0.05
+	build_gold_cost = -0.05
+	valeman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+sharra_arryn_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 2
+	attraction_opinion = 5
+	knight_effectiveness_mult = 0.1
+	valeman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+myrcella_circlet_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 1
+	learning = 2
+	attraction_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+cersei_tiara_modifier = {
+	icon = grandeur_positive
+	owned_scheme_secrecy_add = 3
+	owned_hostile_scheme_success_chance_add = 3
+	intrigue = 1
+	westerman_opinion = 5
+	attraction_opinion = 5
+}
+showaerys_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	monthly_dread = 0.05
+	monthly_tyranny = 0.05
+	character_travel_speed = 1
+	learning = -2
+	vassal_opinion = -5
+	character_travel_speed_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+showrhaenyra_crown_01_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	character_travel_speed = 1
+	learning = -2
+	diplomacy = 2
+	character_travel_speed_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+showrhaenyra_crown_02_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	character_travel_speed = 1
+	learning = -2
+	stewardship = 2
+	character_travel_speed_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+showaegon_crown_01_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	character_travel_speed = 1
+	learning = -2
+	martial = 1
+	prowess = 2
+	character_travel_speed_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+showaegon_crown_02_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	character_travel_speed = 1
+	learning = -2
+	martial = 2
+	prowess = 1
+	character_travel_speed_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+garlandgardener_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 3
+	fertility = 0.2
+	reachman_opinion = 5
+	attraction_opinion = 3
+	monthly_dynasty_prestige_mult = 0.01
+}
+garthgoldhand_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige = 0.5
+	stewardship = 3
+	fertility = 0.5
+	reachman_opinion = 5
+	attraction_opinion = 3
+	monthly_dynasty_prestige_mult = 0.01
+}
+gardener_war_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 3
+	fertility = 0.2
+	reachman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+gardener_peace_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	intrigue = 3
+	fertility = 0.2
+	reachman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_the_iron_throne_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 1
+	diplomacy = 1
+	stewardship = 1
+	dread_baseline_add = 15
+	powerful_vassal_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_the_red_keep_modifier = {
+	icon = grandeur_positive
+	intrigue = 2
+	powerful_vassal_opinion = 5
+	court_grandeur_baseline_add = 5
+	diplomacy_per_prestige_level = 1
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_oldtown_tall_modifier = {
+	icon = grandeur_positive
+	learning = 2
+	faith_of_the_seven_religion_opinion = 5
+	court_grandeur_baseline_add = 5
+	diplomacy_per_piety_level = 1
+	stewardship_per_piety_level = 1
+	character_capital_county_monthly_development_growth_add = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_oldtown_modifier = {
+	icon = grandeur_positive
+	learning = 2
+	faith_of_the_seven_religion_opinion = 5
+	court_grandeur_baseline_add = 5
+	diplomacy_per_piety_level = 1
+	stewardship_per_piety_level = 1
+	character_capital_county_monthly_development_growth_add = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_harrenhall_modifier = {
+	icon = grandeur_positive
+	dread_baseline_add = 15
+	vassal_opinion = -5
+	knight_limit = 1
+	levy_size = 0.04
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_the_mountain_and_vale_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 2
+	defender_advantage = 2
+	knight_effectiveness_mult = 0.1
+	valeman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_goldengrove_modifier = {
+	icon = grandeur_positive
+	stewardship = 2
+	levy_size = 0.04
+	happy_powerful_vassal_levy_contribution_mult = 0.03
+	character_capital_county_monthly_development_growth_add = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+circlet_of_stark_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 3
+	levy_size = 0.04
+	happy_powerful_vassal_levy_contribution_mult = 0.03
+	northman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_bear_island_modifier = {
+	icon = grandeur_positive
+	martial = 2
+	knight_effectiveness_mult = 0.1
+	knight_limit = 1
+	coastal_advantage = 2
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_yronwood_modifier = {
+	icon = grandeur_positive
+	dread_baseline_add = 10
+	vassal_opinion = -5
+	tyranny_gain_mult = -0.2
+	sand_dornish_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_dondarrion_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 3
+	marcher_opinion = 5
+	knight_limit = 1
+	knight_effectiveness_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_estermont_modifier = {
+	icon = grandeur_positive
+	stewardship = 2
+	coastal_advantage = 2
+	knight_limit = 1
+	knight_effectiveness_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_connington_modifier = {
+	icon = grandeur_positive
+	martial = 2
+	stormlander_opinion = 3
+	knight_limit = 1
+	knight_effectiveness_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_castamere_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	stewardship = 2
+	intrigue = 1
+	vassal_tax_contribution_mult = 0.05
+	character_capital_county_monthly_development_growth_add = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_sharp_point_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	stewardship = 2
+	coastal_advantage = 2
+	crownlander_opinion = 10
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_gardener_war_bronze_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.015
+	monthly_prestige = 0.15
+	diplomacy = 2
+}
+crown_of_the_grey_king_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 1.0
+	martial = 2
+	coastal_advantage = 5
+	no_disembark_penalty = yes
+	embarkation_cost_mult = -0.05
+	same_faith_opinion = 5
+	ironborn_opinion = 5
+	levy_reinforcement_rate_same_faith = 0.5
+}
+crown_of_weirwood_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	old_gods_religion_opinion = 10
+	martial_per_piety_level = 2
+}
+circlet_of_the_seven_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.05
+	faith_of_the_seven_religion_opinion = 10
+	stewardship_per_piety_level = 2
+}
+crown_of_jon_north_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	northman_opinion = 5
+	harborman_opinion = 5
+	martial = 2
+	diplomacy = 1
+	winter_movement_speed = 0.5
+	winter_advantage = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_jon_icefire_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	northman_opinion = 5
+	high_valyrian_opinion = 5
+	martial = 2
+	diplomacy = 1
+	defender_advantage = 3
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_bloodraven_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 1
+	intrigue = 2
+	learning = 1
+	owned_scheme_secrecy_add = 3
+	hostile_scheme_power_add = 3
+	hostile_scheme_resistance_add = 3
+	owned_hostile_scheme_success_chance_add = 3
+}
+circlet_of_seastar_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	intrigue = 1
+	diplomacy = 1
+	learning = 2
+	attraction_opinion = 5
+	hostile_scheme_resistance_add = 3
+	owned_hostile_scheme_success_chance_add = 3
+}
+mockingbird_circlet_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 2
+	intrigue = 2
+	owned_scheme_secrecy_add = 2
+	hostile_scheme_power_add = 2
+	hostile_scheme_resistance_add = 2
+	owned_hostile_scheme_success_chance_add = 2
+}
+crown_of_sansa_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	attraction_opinion = 5
+	intrigue = 2
+	diplomacy = 2
+	northman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_cersei_ruler_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	intrigue = 1
+	diplomacy = -1
+	attraction_opinion = 5
+	vassal_tax_contribution_mult = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+crown_of_robert_baratheon_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.01
+	monthly_prestige = 0.1
+	martial = 3
+	prowess = 2
+	stewardship = -1
+}
+valyrian_crown2_targaryen_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.01
+	monthly_prestige = 0.1
+	high_valyrian_opinion = 5
+}
+valyrian_crown2_blackfyre_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.01
+	monthly_prestige = 0.1
+	high_valyrian_opinion = 5
+}
+westerosi_valyrian_crown2_blackfyre_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.01
+	monthly_prestige = 0.1
+	martial = 1
+	high_valyrian_opinion = 5
+}

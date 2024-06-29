@@ -1,0 +1,374 @@
+﻿l_english:
+##########################################
+################ Headgear ################
+##########################################
+
+#Custom Westeros Crowns by Nerdman3000
+ PORTRAIT_MODIFIER_custom_headgear_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar I's Dark Steel Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Red Rubies"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Multi-Colored Gems"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegonvi_crown:0 "@Crowns_of_Westeros_icon! Aegon VI's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_viserysiii_crown:0 "@Crowns_of_Westeros_icon! Viserys III's Beggar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jonsnowtargaryen_crown:0 "@Crowns_of_Westeros_icon! Jon Snow's Targaryen Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jonsnow_crown:0 "@Crowns_of_Westeros_icon! Jon Snow's Northern Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_maesteraemon_crown:0 "@Crowns_of_Westeros_icon! King-Maester Aemon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_daemon_ii_blackfyre_crown:0 "@Crowns_of_Westeros_icon! Daemon II Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegonblackfyre_crown:0 "@Crowns_of_Westeros_icon! Aegon Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegontheuncrowned_crown:0 "@Crowns_of_Westeros_icon! Aegon the Uncrowned's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_stepstone_crown:0 "@Crowns_of_Westeros_icon! Driftwood Stepstone Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar I's Dark Steel Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Red Rubies"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Multi-Colored Gems"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aegonvi_crown:0 "@Crowns_of_Westeros_icon! Aegon VI's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_viserysiii_crown:0 "@Crowns_of_Westeros_icon! Viserys III's Beggar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_jonsnowtargaryen_crown:0 "@Crowns_of_Westeros_icon! Jon Snow's Targaryen Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_jonsnow_crown:0 "@Crowns_of_Westeros_icon! Jon Snow's Northern Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_maesteraemon_crown:0 "@Crowns_of_Westeros_icon! King-Maester Aemon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_daemon_ii_blackfyre_crown:0 "@Crowns_of_Westeros_icon! Daemon II Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aegonblackfyre_crown:0 "@Crowns_of_Westeros_icon! Aegon Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aegontheuncrowned_crown:0 "@Crowns_of_Westeros_icon! Aegon the Uncrowned's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_stepstone_crown:0 "@Crowns_of_Westeros_icon! Driftwood Stepstone Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_rhaenysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Crown of Rhaenys 'The Queen Who Never Was'"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_male_rhaenysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Crown of Rhaenys 'The Queen Who Never Was'"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_rhaenatargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaena Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_rhaenatargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaena Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aereatargaryen_crown:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_male_aereatargaryen_crown:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_brightflame_crown:0 "@Crowns_of_Westeros_icon! Aerion Brightflame's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aenysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Aenys Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_maelysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Maelys Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aemonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aemon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aemonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aemon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aegon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aegonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aegon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aemond_crown:0 "@Crowns_of_Westeros_icon! Aemond Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aemond_crown:0 "@Crowns_of_Westeros_icon! Aemond Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_daenerys_daughterofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Daenerys, Daughter of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_daenerys_daughterofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Daenerys, Daughter of Jaehaerys I's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_vaegon_crown:0 "@Crowns_of_Westeros_icon! Vaegon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_vaegon_crown:0 "@Crowns_of_Westeros_icon! Vaegon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_myrcella_circlet:0 "@Crowns_of_Westeros_icon! Myrcella Baratheon's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_myrcella_circlet:0 "@Crowns_of_Westeros_icon! Myrcella Baratheon's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_cersei_tiara:0 "@Crowns_of_Westeros_icon! Cersei Lannister's Tiara"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_cersei_tiara:0 "@Crowns_of_Westeros_icon! Cersei Lannister's Tiara"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_duncandragonfly_crown:0 "@Crowns_of_Westeros_icon! Duncan Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_baelon_crown:0 "@Crowns_of_Westeros_icon! Baelon, Son of Jaehaerys I's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_laenorvelaryon_crown:0 "@Crowns_of_Westeros_icon! Laenor Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_laenorvelaryon_crown:0 "@Crowns_of_Westeros_icon! Laenor Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_brightflame_crown:0 "@Crowns_of_Westeros_icon! Aerion Brightflame's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aenysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Aenys Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_maelysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Maelys Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_duncandragonfly_crown:0 "@Crowns_of_Westeros_icon! Duncan Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_baelon_crown:0 "@Crowns_of_Westeros_icon! Baelon, Son of Jaehaerys I's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_garlandgardener_crown:0 "@Crowns_of_Westeros_icon! Garland II Gardener's War Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_garlandgardener_crown:0 "@Crowns_of_Westeros_icon! Garland II Gardener's War Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_garthgoldhand_crown:0 "@Crowns_of_Westeros_icon! Garth VII 'Goldenhand' Gardener's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_garthgoldhand_crown:0 "@Crowns_of_Westeros_icon! Garth VII 'Goldenhand' Gardener's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_gardener_war_crown:0 "@Crowns_of_Westeros_icon! Mern IX Gardener's War Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_gardener_war_crown:0 "@Crowns_of_Westeros_icon! Mern IX Gardener's War Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_gardener_peace_crown:0 "@Crowns_of_Westeros_icon! Mern IX Gardener's Peace Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_gardener_peace_crown:0 "@Crowns_of_Westeros_icon! Mern IX Gardener's Peace Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_celtigar_crown:0 "@Crowns_of_Westeros_icon! Celtigar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_celtigar_crown:0 "@Crowns_of_Westeros_icon! Celtigar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_robbstark_crown:0 "@Crowns_of_Westeros_icon! Robb Stark's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_robbstark_crown:0 "@Crowns_of_Westeros_icon! Robb Stark's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_valarr_crown:0 "@Crowns_of_Westeros_icon! Valarr Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_valarr_crown:0 "@Crowns_of_Westeros_icon! Valarr Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_branstark_crown:0 "@Crowns_of_Westeros_icon! Brandon Stark's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_branstark_crown:0 "@Crowns_of_Westeros_icon! Brandon Stark's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_geroldlannister_crown:0 "@Crowns_of_Westeros_icon! Gerold 'the Great' Lannister's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_geroldlannister_crown:0 "@Crowns_of_Westeros_icon! Gerold 'the Great' Lannister's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_lancellannister_crown:0 "@Crowns_of_Westeros_icon! Lancel 'the Lion' Lannister's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_lancellannister_crown:0 "@Crowns_of_Westeros_icon! Lancel 'the Lion' Lannister's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_margaerytyrell_crown:0 "@Crowns_of_Westeros_icon! Margaery Tyrell/Baratheon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_margaerytyrell_crown:0 "@Crowns_of_Westeros_icon! Margaery Tyrell/Baratheon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_hugor_of_the_hill_crown:0 "@Crowns_of_Westeros_icon! Hugor of the Hill's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_hugor_of_the_hill_crown:0 "@Crowns_of_Westeros_icon! Hugor of the Hill's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_haegonblackfyre_crown:0 "@Crowns_of_Westeros_icon! Haegon Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_haegonblackfyre_crown:0 "@Crowns_of_Westeros_icon! Haegon Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_alyssavelaryon_crown:0 "@Crowns_of_Westeros_icon! Queen Alyssa Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_alyssavelaryon_crown:0 "@Crowns_of_Westeros_icon! Queen Alyssa Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_daena_crown:0 "@Crowns_of_Westeros_icon! Queen Daena the Defiants's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_daena_crown:0 "@Crowns_of_Westeros_icon! Queen Daena the Defiants's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_alicenthightower_crown:0 "@Crowns_of_Westeros_icon! Queen Alicent's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_alicenthightower_crown:0 "@Crowns_of_Westeros_icon! Queen Alicent's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_bethablackwood_circlet:0 "@Crowns_of_Westeros_icon! Queen Betha Blackwood's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_bethablackwood_circlet:0 "@Crowns_of_Westeros_icon! Queen Betha Blackwood's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_mariah_martell_crown:0 "@Crowns_of_Westeros_icon! Queen Mariah Martell's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_mariah_martell_crown:0 "@Crowns_of_Westeros_icon! Queen Mariah Martell's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_mors_martell_crown:0 "@Crowns_of_Westeros_icon! Prince Mors II Martell's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_mors_martell_crown:0 "@Crowns_of_Westeros_icon! Prince Mors II Martell's Circlet"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aliandra_martell_crown:0 "@Crowns_of_Westeros_icon! Princess Aliandra Martell's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aliandra_martell_crown:0 "@Crowns_of_Westeros_icon! Princess Aliandra Martell's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_shieraseastar_crown:0 "@Crowns_of_Westeros_icon! Shiera Seastar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_shieraseastar_crown:0 "@Crowns_of_Westeros_icon! Shiera Seastar Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_shieraseastar_necklace:0 "@Crowns_of_Westeros_icon! Shiera Seastar Necklace"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_argella_crown:0 "@Crowns_of_Westeros_icon! Argella Durrandon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_argella_crown:0 "@Crowns_of_Westeros_icon! Argella Durrandon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_bittersteel_crown:0 "@Crowns_of_Westeros_icon! Bittersteel's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_bittersteel_crown:0 "@Crowns_of_Westeros_icon! Bittersteel's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_calla_blackfyre_circlet:0 "@Crowns_of_Westeros_icon! Calla Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_calla_blackfyre_circlet:0 "@Crowns_of_Westeros_icon! Calla Blackfyre's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_sharra_arryn_crown:0 "@Crowns_of_Westeros_icon! Sharra Arryn's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_sharra_arryn_crown:0 "@Crowns_of_Westeros_icon! Sharra Arryn's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_roland_arryn_crown:0 "@Crowns_of_Westeros_icon! Roland Arryn Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_roland_arryn_crown:0 "@Crowns_of_Westeros_icon! Roland Arryn Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_tyboltthunderbolt_crown:0 "@Crowns_of_Westeros_icon! First Men Lannister Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_tyboltthunderbolt_crown:0 "@Crowns_of_Westeros_icon! First Men Lannister Crown"
+ 
+
+#Custom Westeros Crowns by White Wolf of the Whills
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_the_iron_throne:0 "@Crowns_of_Westeros_icon! Crown of the Iron Throne"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_the_iron_throne:0 "@Crowns_of_Westeros_icon! Crown of the Iron Throne"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_the_red_keep:0 "@Crowns_of_Westeros_icon! Crown of the Red Keep"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_the_red_keep:0 "@Crowns_of_Westeros_icon! Crown of the Red Keep"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_oldtown_tall:0 "@Crowns_of_Westeros_icon! Greater Crown of Oldtown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_oldtown_tall:0 "@Crowns_of_Westeros_icon! Greater Crown of Oldtown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_oldtown:0 "@Crowns_of_Westeros_icon! Crown of Oldtown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_oldtown:0 "@Crowns_of_Westeros_icon! Crown of Oldtown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_harrenhall:0 "@Crowns_of_Westeros_icon! Crown of Harrenhal"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_harrenhall:0 "@Crowns_of_Westeros_icon! Crown of Harrenhal"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_the_mountain_and_vale:0 "@Crowns_of_Westeros_icon! Crown of the Mountains of the Moon"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_the_mountain_and_vale:0 "@Crowns_of_Westeros_icon! Crown of the Mountains of the Moon"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_goldengrove:0 "@Crowns_of_Westeros_icon! Rowan Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_goldengrove:0 "@Crowns_of_Westeros_icon! owan Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_circlet_of_stark:0 "@Crowns_of_Westeros_icon! Stark Queen's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_circlet_of_stark:0 "@Crowns_of_Westeros_icon! Stark Queen's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_bear_island:0 "@Crowns_of_Westeros_icon! Mormont Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_bear_island:0 "@Crowns_of_Westeros_icon! Mormont Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_yronwood:0 "@Crowns_of_Westeros_icon! Yronwood Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_yronwood:0 "@Crowns_of_Westeros_icon! Yronwood Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_dondarrion:0 "@Crowns_of_Westeros_icon! Dondarrion Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_dondarrion:0 "@Crowns_of_Westeros_icon! Dondarrion Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_estermont:0 "@Crowns_of_Westeros_icon! Estermont Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_estermont:0 "@Crowns_of_Westeros_icon! Estermont Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_connington:0 "@Crowns_of_Westeros_icon! Connington Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_connington:0 "@Crowns_of_Westeros_icon! Connington Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_castamere:0 "@Crowns_of_Westeros_icon! Reyne Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_castamere:0 "@Crowns_of_Westeros_icon! Reyne Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_sharp_point:0 "@Crowns_of_Westeros_icon! Bar-Emmon Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_sharp_point:0 "@Crowns_of_Westeros_icon! Bar-Emmon Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_gardener_war_bronze:0 "@Crowns_of_Westeros_icon! Gardener Bronze War Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_gardener_war_bronze:0 "@Crowns_of_Westeros_icon! Gardener Bronze War Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_gardener_war_iron:0 "@agot_icon! Gardener Iron War Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_gardener_war_iron:0 "@agot_icon! Gardener Iron War Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_the_grey_king:0 "@Crowns_of_Westeros_icon! Crown of the Grey King"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_the_grey_king:0 "@Crowns_of_Westeros_icon! Crown of the Grey King"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_the_grey_king_rusted:0 "@agot_icon! "Rusted Crown of the Grey King"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_the_grey_king_rusted:0 "@agot_icon! "Rusted Crown of the Grey King"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_weirwood:0 "@Crowns_of_Westeros_icon! Crown of Weirwood"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_weirwood:0 "@Crowns_of_Westeros_icon! Crown of the Weirwood"
+
+ PORTRAIT_MODIFIER_custom_headgear_circlet_of_the_seven:0 "@Crowns_of_Westeros_icon! Circlet of the Seven"
+ PORTRAIT_MODIFIER_custom_headgear_female_circlet_of_the_seven:0 "@Crowns_of_Westeros_icon! Circlet of the Seven"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_jon_north:0 "@Crowns_of_Westeros_icon! Jon Snow's King in the North Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_jon_north:0 "@Crowns_of_Westeros_icon! Jon Snow's King in the North Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_jon_icefire:0 "@Crowns_of_Westeros_icon! Jon Snow's Son of Ice & Fire Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_jon_icefire:0 "@Crowns_of_Westeros_icon! Jon Snow's Son of Ice & Fire Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_bloodraven:0 "@Crowns_of_Westeros_icon! Bloodraven's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_bloodraven:0 "@Crowns_of_Westeros_icon! Bloodraven's Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_circlet_of_seastar:0 "@Crowns_of_Westeros_icon! Shiera Seastar's Circlet"
+ PORTRAIT_MODIFIER_custom_headgear_female_circlet_of_seastar:0 "@Crowns_of_Westeros_icon! Shiera Seastar's Circlet"
+
+ PORTRAIT_MODIFIER_custom_headgear_mockingbird_circlet:0 "@Crowns_of_Westeros_icon! Mockingbird Circlet"
+ PORTRAIT_MODIFIER_custom_headgear_female_mockingbird_circlet:0 "@Crowns_of_Westeros_icon! Mockingbird Circlet"
+
+ PORTRAIT_MODIFIER_custom_headgear_valyrian_crown2_targaryen:0 "@Crowns_of_Westeros_icon! Valyrian Crown of Fire & Blood"
+ PORTRAIT_MODIFIER_custom_headgear_female_valyrian_crown2_targaryen:0 "@Crowns_of_Westeros_icon! Valyrian Crown of Fire & Blood"
+
+ PORTRAIT_MODIFIER_custom_headgear_valyrian_crown2_blackfyre:0 "@Crowns_of_Westeros_icon! Crimson Valyrian Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_valyrian_crown2_blackfyre:0 "@Crowns_of_Westeros_icon! Crimson Valyrian Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_westerosi_valyrian_crown2_blackfyre:0 "@Crowns_of_Westeros_icon! Crimson Westerosi Valyrian Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_westerosi_valyrian_crown2_blackfyre:0 "@Crowns_of_Westeros_icon! Crimson Westerosi Valyrian Crown"
+ 
+ #Show Crowns
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_sansa:0 "@Crowns_of_Westeros_icon! Wolven Circlet"
+
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_sansa:0 "@Crowns_of_Westeros_icon! Wolven Circlet"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_cersei_ruler:0 "@Crowns_of_Westeros_icon! Cersei's Ruling Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_cersei_ruler:0 "@Crowns_of_Westeros_icon! Cersei's Ruling Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_crown_of_robert_baratheon:0 "@Crowns_of_Westeros_icon! Robert I's Tourney Crown"
+
+ PORTRAIT_MODIFIER_custom_headgear_female_crown_of_robert_baratheon:0 "@Crowns_of_Westeros_icon! Robert I's Tourney Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_showaerys_crown:0 "@Crowns_of_Westeros_icon! Alchemist's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_showaerys_crown:0 "@Crowns_of_Westeros_icon! Alchemist's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_showrhaenyra_crown_01:0 "@Crowns_of_Westeros_icon! Viserys I's Tournament Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_showrhaenyra_crown_01:0 "@Crowns_of_Westeros_icon! Viserys I's Tournament Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_showrhaenyra_crown_02:0 "@Crowns_of_Westeros_icon! Realm's Delight Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_showrhaenyra_crown_02:0 "@Crowns_of_Westeros_icon! Realm's Delight Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_showaegon_crown_01:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_showaegon_crown_01:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_showaegon_crown_02:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Ruby Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_showaegon_crown_02:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Ruby Crown"

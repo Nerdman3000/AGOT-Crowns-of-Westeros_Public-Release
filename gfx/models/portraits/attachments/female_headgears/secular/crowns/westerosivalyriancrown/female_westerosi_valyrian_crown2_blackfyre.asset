@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "female_westerosi_valyrian_crown2_blackfyre_mesh"
+	file = "female_westerosi_valyrian_crown2.mesh"
+
+	meshsettings = {
+		name = "female_westerosi_valyrian_crown2Shape"
+		index = 0
+		texture_diffuse = "westerosi_valyrian_crown2_blackfyre_diffuse.dds"
+		texture_normal = "westerosi_valyrian_crown2_normal.dds"
+		texture_specular = "westerosi_valyrian_crown2_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_westerosi_valyrian_crown2_blackfyre_entity"
+	pdxmesh = "female_westerosi_valyrian_crown2_blackfyre_mesh"
+
+}

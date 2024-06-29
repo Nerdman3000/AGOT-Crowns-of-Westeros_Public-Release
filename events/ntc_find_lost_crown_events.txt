@@ -1,0 +1,756 @@
+﻿namespace = ntc_find_lost_crown_event
+
+# Lost Crown of Roland Arryn - Events 1-11 #
+
+ntc_find_lost_crown_event.1 = { # Arryn Encounters Mountain Clansman who has Ronald Arryn Crown
+	type = character_event
+	title = ntc_find_lost_crown_event.1.t
+	desc = ntc_find_lost_crown_event.1.desc
+	theme = travel_danger
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	right_portrait = {
+		character = scope:clansman_bandit
+		animation = aggressive_axe
+	}
+	
+	trigger = {
+		is_available_travelling_adult = yes
+		culture = culture:valeman
+		is_location_valid_for_travel_event_on_land = yes
+		capital_province = { geographical_region = world_westeros_the_vale }
+		location = {
+			travel_danger_type = {
+				travel_plan = root.current_travel_plan
+				terrain = mountains
+			}
+		}
+		NOR = {
+            is_target_in_global_variable_list = {
+                name = unavailable_artifacts
+                target = flag:roland_crown
+			}
+			has_character_flag = had_ntc_find_lost_crown_event_1_event_recently
+        }
+	}
+
+	cooldown = { months = 12 }
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		current_travel_plan = {
+			ordered_entourage_character = {
+				order_by = stewardship
+				save_scope_as = travel_leader
+			}
+			current_location = { save_scope_as = current_location }
+		}
+		if = { #As a backup create the character
+			limit = {
+				NOT = { exists = scope:clansman_bandit }
+			}
+			create_character = {
+				template = ntc_mooon_clansman_character
+				location = root.location
+				save_scope_as = clansman_bandit
+			}
+			scope:clansman_bandit = {
+				move_to_pool = yes
+				add_character_flag = {
+					flag = roland_crown_bandit
+					years = 5
+				}
+			}
+		}
+		traveler_danger_xp_effect = {
+			MIN = 3
+			MAX = 6
+		}
+		add_character_flag = {
+			flag = roland_crown
+			years = 9999
+		}
+		
+		add_character_flag = {
+			flag = had_ntc_find_lost_crown_event_1_event_recently
+			years = 5
+		}
+		
+		set_global_variable = roland_crown
+	}
+
+	option = { # persuade him to let you pass, but not hand over the crown of Roland Arryn - diplomacy
+		name = ntc_find_lost_crown_event.1.a
+
+		duel = {
+			skill = diplomacy
+			value = medium_skill_rating
+			25 = {
+				desc = ntc_find_lost_crown_event.1.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.6
+				}
+			}
+			75 = {
+				desc = ntc_find_lost_crown_event.1.a.failure
+				trigger_event = {
+					id = ntc_find_lost_crown_event.5
+				}
+			}
+		}
+	}
+	
+	option = { # persuade him to let you pass, but hand over the crown of Roland Arryn - diplomacy
+		name = ntc_find_lost_crown_event.1.b
+
+		duel = {
+			skill = diplomacy
+			value = medium_skill_rating
+			10 = {
+				desc = ntc_find_lost_crown_event.1.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.7
+				}
+				scope:clansman_bandit = {
+					remove_character_flag = roland_crown_bandit
+				}
+			}
+			90 = {
+				desc = ntc_find_lost_crown_event.1.b.failure
+				trigger_event = {
+					id = ntc_find_lost_crown_event.5
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ntc_find_lost_crown_event.1.c
+
+		trigger_event = {
+			id = ntc_find_lost_crown_event.2
+		}
+		add_prestige = 100
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.2 = { # Arryn Openly Seeks Battle against the Mountain Clan for Roland Arryn Crown
+	type = character_event
+	window = duel_event
+	title = ntc_find_lost_crown_event.2.t
+	desc = ntc_find_lost_crown_event.2.desc
+	theme = battle
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = aggressive_sword
+	}
+
+	right_portrait = {
+		character = scope:clansman_bandit
+		animation = aggressive_axe
+	}
+	
+	artifact = {
+		target = scope:myself.var:signature_weapon_scope
+		position = lower_left_portrait
+		trigger = { exists = scope:myself.var:signature_weapon_scope }
+	}
+
+	artifact = {
+		target = scope:my_foe.var:signature_weapon_scope
+		position = lower_right_portrait
+		trigger = { exists = scope:my_foe.var:signature_weapon_scope }
+	}
+	
+	option = { # battle them - prowess
+		name = ntc_find_lost_crown_event.2.a
+
+		duel = {
+			skill = prowess
+			target = scope:clansman_bandit
+			30 = {
+				desc = ntc_find_lost_crown_event.2.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3
+				}
+				scope:clansman_bandit = {
+					death = {
+						killer = root
+						death_reason = death_fight
+					}
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.2.a.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.2.a.wounded
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+				add_trait = wounded_1
+			}
+			10 = {
+				desc = ntc_find_lost_crown_event.2.a.death
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_trait = wounded_3
+				trigger_event = {
+					id = ntc_find_lost_crown_event.8
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.2.a.woundedsuccess
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3	
+				}
+				add_trait = wounded_1
+				scope:clansman_bandit = {
+					death = {
+						killer = root
+						death_reason = death_fight
+					}
+				}
+			}
+		}
+		
+		stress_impact = {
+			craven = massive_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_vengefulness = 0.5
+				ai_energy = 0.5
+			}
+			modifier = {	# don't let the ai do something that causes a stress break
+				factor = 0
+				has_trait = craven
+			}
+		}
+	}
+	
+	option = { # special guard option
+		name = ntc_find_lost_crown_event.2.b
+		trigger = {
+			current_travel_plan = {
+				OR = {
+					has_travel_option = hire_experienced_mercenaries_option
+					has_travel_option = military_recruits_option
+				}
+			}
+		}
+
+		duel = {
+			skill = prowess
+			target = scope:clansman_bandit
+			70 = { # succeed
+				desc = ntc_find_lost_crown_event.2.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3
+				}
+				scope:clansman_bandit = {
+					remove_character_flag = roland_crown_bandit
+					death = {
+						death_reason = death_fight
+					}
+				}
+			}
+			30 = { # fail
+				desc = ntc_find_lost_crown_event.2.b.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+ntc_find_lost_crown_event.3 = {  # Won Crown of Roland Arryn
+	type = character_event
+	title = ntc_find_lost_crown_event.3.t
+	desc = ntc_find_lost_crown_event.3.desc
+	theme = family
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = celebrate_sword
+	}
+
+	option = { # gained crown of Roland Arryn
+		name = ntc_find_lost_crown_event.3.a
+
+		add_prestige = 500
+		create_artifact_roland_arryn_crown_effect = { OWNER = this }
+		
+		trigger_event = {
+			id = ntc_find_lost_crown_event.11
+		}
+		custom_tooltip = ntc_find_lost_crown_event.7.a.gained_crown
+	}
+	
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.4 = {  # Failed to get Crown of Roland Arryn
+	type = character_event
+	title = ntc_find_lost_crown_event.4.t
+	desc = ntc_find_lost_crown_event.4.desc
+	theme = dread
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+
+	option = { # did not gain the crown of Roland Arryn
+		name = ntc_find_lost_crown_event.4.a
+
+		add_prestige = -100
+		add_stress = 10
+		remove_character_flag = roland_crown
+		remove_global_variable = roland_crown
+	}
+	
+	option = { # gave up on the crown of Roland Arryn
+		name = ntc_find_lost_crown_event.4.b
+		custom_tooltip = ntc_find_lost_crown_event.4.b.gave_up
+
+		add_prestige = -500
+		add_stress = 20
+	}
+	
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.5 = { # Arryn Battles the Mountain Clan for Roland Arryn Crown
+	type = character_event
+	window = duel_event
+	title = ntc_find_lost_crown_event.5.t
+	desc = ntc_find_lost_crown_event.5.desc
+	theme = battle
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = aggressive_sword
+	}
+
+	right_portrait = {
+		character = scope:clansman_bandit
+		animation = aggressive_axe
+	}
+	
+	artifact = {
+		target = scope:myself.var:signature_weapon_scope
+		position = lower_left_portrait
+		trigger = { exists = scope:myself.var:signature_weapon_scope }
+	}
+
+	artifact = {
+		target = scope:my_foe.var:signature_weapon_scope
+		position = lower_right_portrait
+		trigger = { exists = scope:my_foe.var:signature_weapon_scope }
+	}
+	
+	option = { # battle them - prowess
+		name = ntc_find_lost_crown_event.5.a
+
+		duel = {
+			skill = prowess
+			target = scope:clansman_bandit
+			30 = {
+				desc = ntc_find_lost_crown_event.5.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.5.a.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.5.a.wounded
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+				add_trait = wounded_1
+			}
+			10 = {
+				desc = ntc_find_lost_crown_event.5.a.death
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_trait = wounded_3
+				trigger_event = {
+					id = ntc_find_lost_crown_event.8
+				}
+			}
+			20 = {
+				desc = ntc_find_lost_crown_event.5.a.woundedsuccess
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3
+				}
+				add_trait = wounded_1
+				scope:clansman_bandit = {
+					death = {
+						killer = root
+						death_reason = death_fight
+					}
+				}
+			}
+		}
+		
+		stress_impact = {
+			craven = massive_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_vengefulness = 0.5
+				ai_energy = 0.5
+			}
+			modifier = {	# don't let the ai do something that causes a stress break
+				factor = 0
+				has_trait = craven
+			}
+		}
+	}
+	
+	option = { # special guard option
+		name = ntc_find_lost_crown_event.5.b
+		trigger = {
+			current_travel_plan = {
+				OR = {
+					has_travel_option = hire_experienced_mercenaries_option
+					has_travel_option = military_recruits_option
+				}
+			}
+		}
+
+		duel = {
+			skill = prowess
+			target = scope:clansman_bandit
+			70 = { # succeed
+				desc = ntc_find_lost_crown_event.5.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.3
+				}
+			}
+			30 = { # fail
+				desc = ntc_find_lost_crown_event.5.b.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				trigger_event = {
+					id = ntc_find_lost_crown_event.4
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+ntc_find_lost_crown_event.6 = {  # Chose not to get Crown of Roland Arryn
+	type = character_event
+	title = ntc_find_lost_crown_event.6.t
+	desc = ntc_find_lost_crown_event.6.desc
+	theme = dread
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = shame
+	}
+	
+	option = { # gave up on the crown of Roland Arryn
+		name = ntc_find_lost_crown_event.6.a
+		custom_tooltip = ntc_find_lost_crown_event.6.a.gave_up_crown
+		
+		add_prestige = -500
+		add_stress = 20
+		
+		trigger_event = {
+			id = ntc_find_lost_crown_event.9
+		}
+	}
+	
+	option = { # did not gain the crown of Roland Arryn
+		name = ntc_find_lost_crown_event.6.b
+
+		add_prestige = -150
+		add_stress = 10
+		
+		remove_character_flag = roland_crown
+		remove_global_variable = roland_crown
+		
+		trigger_event = {
+			id = ntc_find_lost_crown_event.10
+		}
+		custom_tooltip = ntc_find_lost_crown_event.6.b.ignored_crown
+	}
+	
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.7 = {  # Negotiated for the crown
+	type = character_event
+	title = ntc_find_lost_crown_event.7.t
+	desc = ntc_find_lost_crown_event.7.desc
+	theme = dread
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	
+	right_portrait = {
+		character = scope:clansman_bandit
+		animation = shame
+	}
+	
+	option = { # negotiated for the lost crown of Roland Arryn
+		name = ntc_find_lost_crown_event.7.a
+
+		add_prestige = 500
+		create_artifact_roland_arryn_crown_effect = { OWNER = this }
+		
+		trigger_event = {
+			id = ntc_find_lost_crown_event.11
+		}
+		custom_tooltip = ntc_find_lost_crown_event.7.a.gained_crown
+	}
+	
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.8 = {  # Death in battle
+	type = character_event
+	title = ntc_find_lost_crown_event.8.t
+	desc = ntc_find_lost_crown_event.8.desc
+	theme = death
+	override_background = {
+		reference = wilderness_mountains
+	}
+
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	
+	right_portrait = {
+		character = scope:clansman_bandit
+		animation = celebrate_axe
+	}
+	
+	option = { # death in battle
+		name = ntc_find_lost_crown_event.8.a
+
+		remove_character_flag = roland_crown
+		remove_global_variable = roland_crown
+		death = {
+			killer = scope:clansman_bandit
+			death_reason = death_fight
+		}
+		custom_tooltip = ntc_find_lost_crown_event.8.death
+	}
+	
+	after = {
+		mp_resume_travel_plan = yes
+	}
+}
+
+ntc_find_lost_crown_event.9 = {  # Gain Opinion Modifier for Gaining Roland Crown
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			every_living_character = {
+				if = {
+					limit = {
+						is_available_ai_adult = yes
+						has_culture = culture:valeman
+					}
+					add_opinion = {
+						target = root
+						modifier = ntc_chose_to_give_up_roland_crown_opinion
+					}
+				}
+			}
+		}
+	}
+}
+
+ntc_find_lost_crown_event.10 = {  # Gain Opinion Modifier for Gaining Roland Crown
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			every_living_character = {
+				if = {
+					limit = {
+						is_available_ai_adult = yes
+						has_culture = culture:valeman
+					}
+					add_opinion = {
+						target = root
+						modifier = ntc_chose_to_ignore_roland_crown_opinion
+					}
+				}
+			}
+		}
+	}
+}
+
+ntc_find_lost_crown_event.11 = {  # Gain Opinion Modifier for Gaining Roland Crown
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			every_living_character = {
+				if = {
+					limit = {
+						is_available_ai_adult = yes
+						has_culture = culture:valeman
+					}
+					add_opinion = {
+						target = root
+						modifier = ntc_regained_roland_crown_opinion
+					}
+				}
+			}
+		}
+	}
+}

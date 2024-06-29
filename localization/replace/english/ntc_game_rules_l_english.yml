@@ -1,0 +1,9 @@
+﻿l_english:
+
+rule_show_dynamic_crowns:0 "#P Crowns of Westeros:#! Dynamic Non-canon Crowns"
+setting_show_dynamic_crowns_enabled:0 "Show Dynamic Non-canon Crowns"
+setting_show_dynamic_crowns_enabled_desc:0 "Characters who have unique, noncanon crowns will dynamically wear them upon becoming independent monarchs. (ex: If Maester Aemon somehow became king, he would wear his noncanon crown.)"
+setting_hide_dynamic_crowns_enabled:0 "Hide Dynamic Non-canon Crowns"
+setting_hide_dynamic_crowns_enabled_desc:0 "Characters who have unique, noncanon crowns will NOT dynamically wear them upon becoming independent monarchs. Crowns will, however, remain as options in barbershop and for artifact crafting."
+
+

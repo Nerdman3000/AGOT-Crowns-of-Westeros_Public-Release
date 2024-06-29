@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "aegonblackfyre_crown_mesh"
+	file = "aegonblackfyre_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_aegonblackfyre_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "aegonblackfyre_crown_diffuse.dds"
+		texture_normal = "aegonblackfyre_crown_normal.dds"
+		texture_specular = "aegonblackfyre_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "aegonblackfyre_crown_entity"
+	pdxmesh = "aegonblackfyre_crown_mesh"
+}

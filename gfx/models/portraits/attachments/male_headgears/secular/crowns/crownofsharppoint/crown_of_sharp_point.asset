@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "crown_of_sharp_point_mesh"
+	file = "crown_of_sharp_point.mesh"
+
+	meshsettings = {
+		name = "crown_of_sharp_pointShape"
+		index = 0
+		texture_diffuse = "crown_of_sharp_point_diffuse.dds"
+		texture_normal = "crown_of_sharp_point_normal.dds"
+		texture_specular = "crown_of_sharp_point_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "crown_of_sharp_point_entity"
+	pdxmesh = "crown_of_sharp_point_mesh"
+}

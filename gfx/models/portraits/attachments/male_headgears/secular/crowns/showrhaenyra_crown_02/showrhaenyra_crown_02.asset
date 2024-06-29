@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "showrhaenyra_crown_02_mesh"
+	file = "showrhaenyra_crown_02.mesh"
+
+	meshsettings = {
+		name = "male_headgear_showrhaenyra_crown_02" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "showrhaenyra_crown_02_diffuse.dds"
+		texture_normal = "showrhaenyra_crown_02_normal.dds"
+		texture_specular = "showrhaenyra_crown_02_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "showrhaenyra_crown_02_entity"
+	pdxmesh = "showrhaenyra_crown_02_mesh"
+}

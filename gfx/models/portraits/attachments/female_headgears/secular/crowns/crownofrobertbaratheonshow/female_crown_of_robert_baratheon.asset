@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_crown_of_robert_baratheon_mesh"
+	file = "female_crown_of_robert_baratheon.mesh"
+
+	meshsettings = {
+		name = "female_crown_of_robert_baratheonShape"
+		index = 0
+		texture_diffuse = "crown_of_robert_baratheon_diffuse.dds"
+		texture_normal = "crown_of_robert_baratheon_normal.dds"
+		texture_specular = "crown_of_robert_baratheon_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_crown_of_robert_baratheon_entity"
+	pdxmesh = "female_crown_of_robert_baratheon_mesh"
+}

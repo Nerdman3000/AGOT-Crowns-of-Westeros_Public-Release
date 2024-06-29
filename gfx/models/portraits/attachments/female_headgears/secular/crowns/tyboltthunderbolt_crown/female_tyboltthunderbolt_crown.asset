@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_tyboltthunderbolt_crown_mesh"
+	file = "female_tyboltthunderbolt_crown.mesh"
+
+	meshsettings = {
+		name = "female_tyboltthunderbolt_crown" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "tyboltthunderbolt_crown_diffuse.dds"
+		texture_normal = "tyboltthunderbolt_crown_normal.dds"
+		texture_specular = "tyboltthunderbolt_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_tyboltthunderbolt_crown_entity"
+	pdxmesh = "female_tyboltthunderbolt_crown_mesh"
+}

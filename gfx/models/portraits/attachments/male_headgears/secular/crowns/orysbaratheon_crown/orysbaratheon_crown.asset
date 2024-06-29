@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "orysbaratheon_crown_mesh"
+	file = "orysbaratheon_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_orysbaratheon_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "orysbaratheon_crown_diffuse.dds"
+		texture_normal = "orysbaratheon_crown_normal.dds"
+		texture_specular = "orysbaratheon_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "orysbaratheon_crown_entity"
+	pdxmesh = "orysbaratheon_crown_mesh"
+}

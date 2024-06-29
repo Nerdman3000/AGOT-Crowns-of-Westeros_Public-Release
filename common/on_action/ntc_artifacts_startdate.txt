@@ -1,0 +1,197 @@
+﻿on_game_start = {
+	on_actions = {
+		ntc_start
+		ntc_artifact_npk_spawn
+		ntc_artifact_rr_spawn
+		ntc_artifact_cs_spawn
+		ntc_artifact_shattered_npk_spawn
+		ntc_artifact_shattered_rr_spawn
+		ntc_artifact_shattered_cs_spawn
+	}
+}
+
+ntc_artifact_npk_spawn = {
+	effect = {
+		if = { # manage 8258.12.21 NPK scenario
+			limit = { 
+				AND = {
+					game_start_date = 8258.12.21 # NPK
+					NOT = {
+						OR = {
+							has_game_rule = agot_shatter_duchies
+							has_game_rule = agot_shatter_duchies_even
+							has_game_rule = agot_shatter_kingdoms
+							has_game_rule = agot_shatter_empires
+						}
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.1_npk = yes
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_spawn.1 = yes
+			ntc_baratheon_crown_spawn.1 = yes
+			ntc_arryn_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+ntc_artifact_rr_spawn = {
+	effect = {
+		if = { # manage 8282.9.15 Robert's Rebellion scenario
+			limit = { 
+				AND = {
+					game_start_date = 8282.9.15
+					NOT = {
+						OR = {
+							has_game_rule = agot_shatter_duchies
+							has_game_rule = agot_shatter_duchies_even
+							has_game_rule = agot_shatter_kingdoms
+							has_game_rule = agot_shatter_empires
+						}
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.1_rr = yes
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_spawn.1 = yes
+			ntc_baratheon_crown_spawn.1 = yes
+			ntc_arryn_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+ntc_artifact_cs_spawn = {
+	effect = {
+		if = { # manage 8284.6.2 Crowned Stag scenario
+			limit = { 
+				AND = {
+					game_start_date = 8284.6.2
+					NOT = {
+						OR = {
+							has_game_rule = agot_shatter_duchies
+							has_game_rule = agot_shatter_duchies_even
+							has_game_rule = agot_shatter_kingdoms
+							has_game_rule = agot_shatter_empires
+						}
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_spawn.1 = yes
+			ntc_baratheon_crown_spawn.1 = yes
+			ntc_arryn_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+			ntc_lannister_crown_spawn.2_cs = yes
+		}
+	}
+}
+
+ntc_artifact_shattered_npk_spawn = {
+	effect = {
+		if = { # manage Robert's Rebellion and Crowned Stag Shattered Realm
+			limit = { 
+				AND = {
+					game_start_date = 8258.12.21 # NPK
+					OR = {
+						has_game_rule = agot_shatter_duchies
+						has_game_rule = agot_shatter_duchies_even
+						has_game_rule = agot_shatter_kingdoms
+						has_game_rule = agot_shatter_empires
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.1_npk = yes
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_shattered_spawn.1 = yes
+			ntc_baratheon_crown_shattered_spawn.1 = yes
+			ntc_arryn_crown_shattered_spawn.1 = yes
+			ntc_tyrell_crown_shattered_spawn.1 = yes
+			ntc_tully_crown_shattered_spawn.1 = yes
+			ntc_stark_crown_shattered_spawn.1 = yes
+			ntc_greyjoy_crown_shattered_spawn.1 = yes
+			ntc_blackfyre_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+ntc_artifact_shattered_rr_spawn = {
+	effect = {
+		if = { # manage Robert's Rebellion and Crowned Stag Shattered Realm
+			limit = { 
+				AND = {
+					game_start_date = 8282.9.15
+					OR = {
+						has_game_rule = agot_shatter_duchies
+						has_game_rule = agot_shatter_duchies_even
+						has_game_rule = agot_shatter_kingdoms
+						has_game_rule = agot_shatter_empires
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.1_rr = yes
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_shattered_spawn.1 = yes
+			ntc_baratheon_crown_shattered_spawn.1 = yes
+			ntc_arryn_crown_shattered_spawn.1 = yes
+			ntc_tyrell_crown_shattered_spawn.1 = yes
+			ntc_tully_crown_shattered_spawn.1 = yes
+			ntc_stark_crown_shattered_spawn.1 = yes
+			ntc_greyjoy_crown_shattered_spawn.1 = yes
+			ntc_blackfyre_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+ntc_artifact_shattered_cs_spawn = {
+	effect = {
+		if = { # manage Robert's Rebellion and Crowned Stag Shattered Realm
+			limit = { 
+				AND = {
+					game_start_date = 8284.6.2
+					OR = {
+						has_game_rule = agot_shatter_duchies
+						has_game_rule = agot_shatter_duchies_even
+						has_game_rule = agot_shatter_kingdoms
+						has_game_rule = agot_shatter_empires
+					}
+				}
+			}
+			ntc_targaryen_crown_spawn.2 = yes
+			ntc_greyking_crown_spawn.1 = yes
+			ntc_lannister_crown_shattered_spawn.1 = yes
+			ntc_lannister_crown_spawn.2_cs = yes
+			ntc_baratheon_crown_shattered_spawn.1 = yes
+			ntc_arryn_crown_shattered_spawn.1 = yes
+			ntc_tyrell_crown_shattered_spawn.1 = yes
+			ntc_tully_crown_shattered_spawn.1 = yes
+			ntc_stark_crown_shattered_spawn.1 = yes
+			ntc_greyjoy_crown_shattered_spawn.1 = yes
+			ntc_blackfyre_crown_spawn.1 = yes
+			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+## Lets AGOT Submod Core know that it is loaded.
+ntc_start = {
+	effect = {
+       set_global_variable = {
+			name = Crowns_westeros_enabled
+			value = yes
+		}
+       if = {
+           limit = {
+               exists = global_var:Crowns_westeros_enabled
+			}
+		}
+	}
+}

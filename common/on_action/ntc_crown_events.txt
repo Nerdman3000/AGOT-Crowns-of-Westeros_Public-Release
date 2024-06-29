@@ -1,0 +1,17 @@
+﻿ntc_crown_travel_on_action = {
+	random_events = {
+		chance_of_no_event = {
+			value = {
+				add = 100
+				subtract = root.current_travel_plan.current_danger_value
+				add = root.current_travel_plan.travel_safety
+			}
+			max = {
+				value = 100
+				subtract = define:NTravel|TRAVEL_DANGER_MINIMUM
+			}
+		}
+		75 = 0
+		25 = ntc_find_lost_crown_event.1 # Encounter Mountain Clansman who has Ronald Arryn Crown
+	}
+}

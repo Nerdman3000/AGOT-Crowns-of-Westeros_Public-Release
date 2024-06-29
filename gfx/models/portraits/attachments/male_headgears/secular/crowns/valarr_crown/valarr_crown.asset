@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "valarr_crown_mesh"
+	file = "valarr_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_valarr_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "valarr_crown_diffuse.dds"
+		texture_normal = "valarr_crown_normal.dds"
+		texture_specular = "valarr_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "valarr_crown_entity"
+	pdxmesh = "valarr_crown_mesh"
+}

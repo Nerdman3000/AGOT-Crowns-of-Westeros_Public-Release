@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_aegonsonofjaehaerys_crown_mesh"
+	file = "female_aegonsonofjaehaerys_crown.mesh"
+
+	meshsettings = {
+		name = "female_headgear_aegonsonofjaehaerys_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "aegonsonofjaehaerys_crown_diffuse.dds"
+		texture_normal = "aegonsonofjaehaerys_crown_normal.dds"
+		texture_specular = "aegonsonofjaehaerys_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_aegonsonofjaehaerys_crown_entity"
+	pdxmesh = "female_aegonsonofjaehaerys_crown_mesh"
+}

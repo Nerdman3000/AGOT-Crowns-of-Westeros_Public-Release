@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "garlandgardener_crown_mesh"
+	file = "garlandgardener_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_garlandgardener_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "garlandgardener_crown_diffuse.dds"
+		texture_normal = "garlandgardener_crown_normal.dds"
+		texture_specular = "garlandgardener_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "garlandgardener_crown_entity"
+	pdxmesh = "garlandgardener_crown_mesh"
+}

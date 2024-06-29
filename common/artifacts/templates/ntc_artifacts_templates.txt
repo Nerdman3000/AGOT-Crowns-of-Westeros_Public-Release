@@ -1,0 +1,3225 @@
+﻿# Crowns of Westeros Crown Artifact Templates
+
+aegonvi_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aegonblackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+brightflame_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+baelon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aegonsonofjaehaerys_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+vaegon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aemond_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+daenerys_daughterofjaehaerys_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+valarr_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+rhaegar_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+viserys_son_of_aenys_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+viserys_son_of_aenys_02_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+jonsnowtargaryen_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+viserysiii_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+maesteraemon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+daemonblackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+argella_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:marcher
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+daemon_ii_blackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aegontheuncrowned_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+bittersteel_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+baelorbreakspear_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_rhoynish
+							has_cultural_pillar = heritage_valyrian
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+seawyrm_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+greenpyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+goldfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+celtigar_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aemonsonofjaehaerys_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+jonsnow_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+}
+duncandragonfly_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+laenorvelaryon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aereatargaryen_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+aliandra_martell_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_rhoynish
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+mors_martell_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_rhoynish
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+mariah_martell_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_rhoynish
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+shieraseastar_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+showaerys_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+showrhaenyra_crown_01_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+showrhaenyra_crown_02_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+showaegon_crown_01_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+showaegon_crown_02_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+rhaenysvelaryon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+stepstone_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						culture = {
+							has_cultural_pillar = heritage_valyrian
+						}
+						###has_landed_title = title:k_stepstones
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+calla_blackfyre_circlet_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+alysanne_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+alyssavelaryon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+alicenthightower_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+rhaenatargaryen_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+daena_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+bethablackwood_circlet_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+}
+aenysblackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+haegonblackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+maelysblackfyre_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+orysbaratheon_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_valyrian
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+margaerytyrell_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+robbstark_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+branstark_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+geroldlannister_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+tyboltthunderbolt_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		has_religion = religion:old_gods_religion
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+		general_opinion = -5
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+					religion = religion:old_gods_religion
+				}
+			}
+			add = -10000
+		}
+	}
+}
+lancellannister_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+cersei_tiara_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+myrcella_circlet_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_character_flag = is_myrcella_baratheon
+				}
+			}
+			add = -10000
+		}
+	}
+}
+roland_arryn_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:valeman
+							this = culture:fingerman
+							this = culture:moonman
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+sharra_arryn_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:valeman
+							this = culture:fingerman
+							this = culture:moonman
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+garlandgardener_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+garthgoldhand_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+gardener_war_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+gardener_peace_crown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+hugor_of_the_hill_crown_template = {
+	can_equip = {
+		has_religion = religion:faith_of_the_seven_religion
+		piety >= 1000
+		OR = {
+			agot_is_independent_ruler = yes
+			primary_spouse ?= {
+				agot_is_independent_ruler = yes
+			}
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:andalosi
+							this = culture:axeman
+						}
+					}
+					piety >= 5000
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_the_iron_throne_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:crownlander
+							has_cultural_pillar = heritage_valyrian
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_the_red_keep_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:crownlander
+							has_cultural_pillar = heritage_valyrian
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_oldtown_tall_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_oldtown_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_harrenhall_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:riverlander
+							has_cultural_pillar = heritage_ironborn
+							this = culture:crownlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_the_mountain_and_vale_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:valeman
+							this = culture:fingerman
+							this = culture:moonman
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_goldengrove_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+circlet_of_stark_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_bear_island_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_yronwood_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:stone_dornish
+							has_cultural_pillar = heritage_rhoynish
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_dondarrion_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:marcher
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_estermont_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:marcher
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_connington_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:marcher
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_castamere_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_sharp_point_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:crownlander
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_gardener_war_bronze_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:vineman
+							this = culture:harborman
+							this = culture:honeywiner
+							this = culture:marcher
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_the_grey_king_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		has_religion = religion:drowned_god_religion
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+		martial = 2
+		embarkation_cost_mult = -0.02
+		general_opinion = -10
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:drowned_god_religion
+					culture = {
+						has_cultural_pillar = heritage_ironborn
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_weirwood_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		has_religion = religion:old_gods_religion
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+		martial = 2
+		general_opinion = -10
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:old_gods_religion
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+circlet_of_the_seven_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		has_religion = religion:faith_of_the_seven_religion
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+		stewardship= 2
+		general_opinion = -10
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:faith_of_the_seven_religion
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_jon_north_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_jon_icefire_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_bloodraven_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+circlet_of_seastar_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+mockingbird_circlet_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:fingerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_sansa_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_first_man
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_cersei_ruler_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerman
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_robert_baratheon_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:crownlander
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+valyrian_crown2_targaryen_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		#always = yes
+	}
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:valyrian_religion
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+valyrian_crown2_blackfyre_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		#always = yes
+	}
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:valyrian_religion
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+westerosi_valyrian_crown2_blackfyre_template = {
+	can_equip = {
+		custom_tooltip = {
+			text = agot_is_independent_crown_tooltip_desc
+			agot_can_wear_crown_trigger = yes
+		}
+	}
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		always = yes
+	}
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		#always = yes
+	}
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					religion = religion:valyrian_religion
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}

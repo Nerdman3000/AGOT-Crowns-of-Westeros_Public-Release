@@ -1,0 +1,17 @@
+﻿# To differentiate between different types of texticons, please use some # to make a clear separation.
+
+######################################################################################
+
+### Barbershop Icon ###
+
+texticon = {
+	icon = Crowns_of_Westeros_icon
+	iconsize = {
+		texture = "gfx/interface/icons/Crowns_of_Westeros_icon.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+########################################################################################

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "hugor_of_the_hill_crown_mesh"
+	file = "hugor_of_the_hill_crown.mesh"
+
+	meshsettings = {
+		name = "male_headgear_hugor_of_the_hill_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "hugor_of_the_hill_crown_diffuse.dds"
+		texture_normal = "hugor_of_the_hill_crown_normal.dds"
+		texture_specular = "hugor_of_the_hill_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "hugor_of_the_hill_crown_entity"
+	pdxmesh = "hugor_of_the_hill_crown_mesh"
+}

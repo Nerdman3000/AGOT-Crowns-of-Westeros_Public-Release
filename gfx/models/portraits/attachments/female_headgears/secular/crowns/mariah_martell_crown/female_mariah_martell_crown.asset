@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_mariah_martell_crown_mesh"
+	file = "female_mariah_martell_crown.mesh"
+
+	meshsettings = {
+		name = "female_mariah_martell_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "mariah_martell_crown_diffuse.dds"
+		texture_normal = "mariah_martell_crown_normal.dds"
+		texture_specular = "mariah_martell_crown_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_mariah_martell_crown_entity"
+	pdxmesh = "female_mariah_martell_crown_mesh"
+}

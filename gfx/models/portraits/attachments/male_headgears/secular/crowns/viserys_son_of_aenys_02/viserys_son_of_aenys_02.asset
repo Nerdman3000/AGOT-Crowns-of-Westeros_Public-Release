@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "viserys_son_of_aenys_02_mesh"
+	file = "viserys_son_of_aenys_02.mesh"
+
+	meshsettings = {
+		name = "viserys_son_of_aenys_02Shape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "viserys_son_of_aenys_02_diffuse.dds"
+		texture_normal = "viserys_son_of_aenys_02_normal.dds"
+		texture_specular = "viserys_son_of_aenys_02_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "viserys_son_of_aenys_02_entity"
+	pdxmesh = "viserys_son_of_aenys_02_mesh"
+}

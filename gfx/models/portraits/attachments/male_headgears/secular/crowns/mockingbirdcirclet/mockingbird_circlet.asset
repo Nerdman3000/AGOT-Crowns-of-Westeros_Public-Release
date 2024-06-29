@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "mockingbird_circlet_mesh"
+	file = "mockingbird_circlet.mesh"
+
+	meshsettings = {
+		name = "mockingbird_circletShape"
+		index = 0
+		texture_diffuse = "mockingbird_circlet_diffuse.dds"
+		texture_normal = "mockingbird_circlet_normal.dds"
+		texture_specular = "mockingbird_circlet_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "mockingbird_circlet_entity"
+	pdxmesh = "mockingbird_circlet_mesh"
+}

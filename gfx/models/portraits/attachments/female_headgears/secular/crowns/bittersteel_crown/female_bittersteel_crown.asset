@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_bittersteel_crown_mesh"
+	file = "female_bittersteel_crown.mesh"
+
+	meshsettings = {
+		name = "female_headgear_bittersteel_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "bittersteel_crown_diffuse.dds"
+		texture_normal = "bittersteel_crown_normal.dds"
+		texture_specular = "bittersteel_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_bittersteel_crown_entity"
+	pdxmesh = "female_bittersteel_crown_mesh"
+}
