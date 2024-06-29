@@ -26,15 +26,17 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 
 *Semi-Canon Crowns*
 
-- Queen Rhaenys's Crown
-- Queen Alyssa's Crown
-- Queen Rhaena's Crown
-- Queen Alysanne's Crown
-- Queen Alicent's Crown
-- Queen Daena's Crown
-- Queen Betha's Crown
 - Robb Stark Crown
 - Margaery Tyrell/Baratheon Crown (Show Crown)
+
+*New Historical Queen Crowns*
+
+- Queen Alyssa's Crown
+- Queen Rhaena's Crown
+- Queen Alicent Hightowers's Crown (Book Version)
+- Queen Daena Targaryen's Crown
+- Queen Betha Blackwood's Crown
+- Queen Mariah Martell's Crown
 
 *New Targaryen Crowns*
 
