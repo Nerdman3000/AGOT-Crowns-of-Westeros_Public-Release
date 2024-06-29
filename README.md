@@ -229,13 +229,10 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 
 ## Crowns that can be found during the startdates:
 
-- Queen Rhaenys Crown (Found at Hellholt)
 - Queen Rhaena Crown (Found at Harrenhal)
-- Queen Alyssa Velaryon, Queen Alicent Hightower, Queen Daena Targaryen Crown, Queen Mariah Martell, and Queen Betha Blackwood Crowns (Owned by Queen Rhaella)
 - Hugor of the Hill Crown (Owned by High Septon)
 - Daemon II Blackfyre Crown (Found at Milkstone)
 - Grey King Crown (Found at Lonely Light)
-
 - Crown of Winter, Westerlands Crown, Falcon Crown, Mern IX Gardener Peace Crown and Storm King Crown (Can be obtained via decision by holder of King's Landing)
 
 ## Crowns that can be found via event:
