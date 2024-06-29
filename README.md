@@ -39,7 +39,8 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 *New Targaryen Crowns*
 
 - Rhaegar Targaryen's Crown
-- Viserys (Son of Aenys) Crown
+- Viserys (Son of Aenys) Crown - Red Rubies
+- Viserys (Son of Aenys) Crown - Multi-Colored Gems
 - Aegon VI's Crown
 - Viserys III's Begger Crown
 - Jon Snow/Aemon Targaryen's Crown
