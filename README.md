@@ -31,8 +31,8 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 
 *New Historical Queen Crowns*
 
-- Queen Alyssa's Crown
-- Queen Rhaena's Crown
+- Queen Alyssa Velaryon's Crown
+- Queen Rhaena Targaryen's Crown
 - Queen Alicent Hightowers's Crown (Book Version)
 - Queen Daena Targaryen's Crown
 - Queen Betha Blackwood's Crown
