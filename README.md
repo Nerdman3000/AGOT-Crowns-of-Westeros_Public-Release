@@ -217,14 +217,14 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 - Crown of Gold Road
 - Crown of Crakehall
 - Crown of Tumbleton
-- Crown of The Orchards
+- Crown of the Orchards
 - Crown of Bitterbridge
-- Crown of The Northmarch
-- Crown of The Kingswood
+- Crown of the Northmarch
+- Crown of the Kingswood
 - Crown of Stone and Sky
-- Crown of The Red Mountains
-- Crown of The Brimstone
-- Crown of The Tor
+- Crown of the Red Mountains
+- Crown of the Brimstone
+- Crown of the Tor
 - Crown of Godsgrace 
 
 ## Crowns that can be found during the startdates:
