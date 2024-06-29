@@ -16,13 +16,9 @@
 
 A few older crowns have been integrated into the main AGOT mod, and have thus been removed from this submod. 
 
-This mod also integrates AGOT - More Backgrounds submod. If you wish to use it standalone, you can get it here: https://steamcommunity.com/sharedfiles/filedetails/?id=3104698013
-
-A game rule has been added to choose whether unique noncanon crowns show up dynamically on their respective characters. The crowns will remain in the barbershop and will still be craftable regardless.
-
 ## List of Crowns:
 
-**Crowns added by Nerdman3000:**
+### Crowns added by Nerdman3000:
 
 *Semi-Canon Crowns*
 
@@ -114,9 +110,7 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 - King Viserys I Tournament Crown (Show Jaehaerys Crown)
 - Realm’s Delight Crown (Show Jaehaerys Crown + book mix)
 
-—-
-
-**Crowns added by White Wolf of the Whills**
+### Crowns added by White Wolf of the Whills
 
 *Place/Religion Crowns*
 
@@ -160,7 +154,7 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 - Wolven Circlet (Show Sansa Crown)
 - Cersei's Ruling Crown (Show Cersei Crown)
 
-**Planned Crowns for the Future:**
+### Planned Crowns for the Future:
 
 *Targaryen*
 
@@ -209,13 +203,35 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 
 - Crown of the Wolfswood
 - Crown of Duskendale
+- Crown of the Greystones
+- Crown of Cape Kraken
+- Crown of Skagos
+- Crown of Lakeleaf
+- Crown of the Red Fork
+- Crown of Atranta
+- Crown of Maidenpool
+- Crown of Gulltown
+- Crown of the Fingers
+- Crown of Ironman's Bay
+- Crown of Great Wyk
+- Crown of Gold Road
+- Crown of Crakehall
+- Crown of Tumbleton
+- Crown of The Orchards
+- Crown of Bitterbridge
+- Crown of The Northmarch
+- Crown of The Kingswood
+- Crown of Stone and Sky
+- Crown of The Red Mountains
+- Crown of The Brimstone
+- Crown of The Tor
+- Crown of Godsgrace 
 
 ## Crowns that can be found during the startdates:
 
 - Queen Rhaenys Crown (Found at Hellholt)
 - Queen Rhaena Crown (Found at Harrenhal)
-- Queen Alysanne Crown (Owned by House Lothson)
-- Queen Alyssa Velaryon, Queen Alicent Hightower, Queen Daena Targaryen Crown, and Queen Betha Blackwood Crowns (Owned by Queen Rhaella)
+- Queen Alyssa Velaryon, Queen Alicent Hightower, Queen Daena Targaryen Crown, Queen Mariah Martell, and Queen Betha Blackwood Crowns (Owned by Queen Rhaella)
 - Hugor of the Hill Crown (Owned by High Septon)
 - Daemon II Blackfyre Crown (Found at Milkstone)
 - Grey King Crown (Found at Lonely Light)
@@ -228,6 +244,8 @@ A game rule has been added to choose whether unique noncanon crowns show up dyna
 ## Other Features
 
 - New options for the Commission a New Crown Decision decision from the main mod, allowing you to commision a submod crown.
+- A game rule to choose whether unique non-canon crowns show up dynamically on their respective characters. The crowns will remain in the barbershop and will still be craftable regardless.
+- Integration of the AGOT - More Backgrounds submod. If you wish to use it standalone, you can get it here: https://steamcommunity.com/sharedfiles/filedetails/?id=3104698013
 
 ## Other Future Mod Plans:
 
