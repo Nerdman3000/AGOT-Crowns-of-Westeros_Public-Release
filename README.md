@@ -1,20 +1,19 @@
 # AGOT Crowns of Westeros - Public Release
  The public non-Steam Branch version of Crowns of Westeros.
 
-## IMPORTANT NOTE: YOU MUST HAVE THE AGOT SUBMOD CORE INSTALLED FROM NOW ON IN ORDER FOR THE MOD TO WORK, AND FOR CROWNS TO SHOW UP IN THE BARBERSHOP AND ON CHARACTER PORTRAITS. IT MUST BE PLACED ABOVE THIS MOD IN THE LOAD ORDER.
-
-
-**You can find it here:**
-
-*Steam* - https://steamcommunity.com/workshop/filedetails/?id=3034473189
-
-*Github* - https://github.com/JediNick/AGOT_Submod_Core
-
 ## Description
 
 **AGOT - Crowns of Westeros** is a submod of Crusader Kings 3 that adds dozens of new original crowns to A Game of Thrones CK3 Mod. Note that the mod is not save game compatible to saves made prior to installing the mod. You will need a fresh save for the mod to fully work. All added crowns have artifacts and exist for both genders. Certain crowns will exist during the startdate while others can be created via a decision or found via event.
 
 A few older crowns have been integrated into the main AGOT mod, and have thus been removed from this submod. 
+
+### IMPORTANT NOTE: YOU MUST HAVE THE AGOT SUBMOD CORE INSTALLED FROM NOW ON IN ORDER FOR THE MOD TO WORK, AND FOR CROWNS TO SHOW UP IN THE BARBERSHOP AND ON CHARACTER PORTRAITS. IT MUST BE PLACED ABOVE THIS MOD IN THE LOAD ORDER.
+
+**You can find AGOT Submod Core here:**
+
+*Steam* - https://steamcommunity.com/workshop/filedetails/?id=3034473189
+
+*Github* - https://github.com/JediNick/AGOT_Submod_Core
 
 ## List of Crowns:
 
