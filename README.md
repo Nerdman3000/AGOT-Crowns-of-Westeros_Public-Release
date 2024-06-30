@@ -1,6 +1,8 @@
 # AGOT Crowns of Westeros - Public Release
  The public non-Steam Branch version of Crowns of Westeros.
 
+ For the Steam version of the mod: https://steamcommunity.com/workshop/filedetails/?id=2995674648
+
 ## Description
 
 **AGOT - Crowns of Westeros** is a submod of Crusader Kings 3 that adds dozens of new original crowns to A Game of Thrones CK3 Mod. Note that the mod is not save game compatible to saves made prior to installing the mod. You will need a fresh save for the mod to fully work. All added crowns have artifacts and exist for both genders. Certain crowns will exist during the startdate while others can be created via a decision or found via event.
@@ -14,6 +16,21 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 *Steam* - https://steamcommunity.com/workshop/filedetails/?id=3034473189
 
 *Github* - https://github.com/JediNick/AGOT_Submod_Core
+
+## Installation
+
+1. Download GitHub Desktop (https://desktop.github.com/)
+2. Click "File", then "Clone Repository..."
+3. Choose the URL option and paste the URL for the GIT: https://github.com/Nerdman3000/AGOT-Crowns-of-Westeros_Public-Release
+4. Put the filepath to the local folder you want to download the repository to. Note, it is highly recommend to place your clone directly to a drive, as Paradox has a limit on the number of characters in a filepath. For instance:  C:\GitHub\CrownsofWesteros.
+5. Wait for the repository to finish downloading. The first time it will may a while to download.
+6. Copy the crownsofwesteros.mod file the repository and paste it into your Documents\Paradox Interactive\Crusader Kings III\mod
+7. Update the path in your .mod to point to the AGOT folder inside the repository. Please note these *have* to be /, not \.
+8. Create or update your CK3 new playset with the submod, make sure it your active playset and that you also have CK3AGOT and AGOT Submod core present and actived in your playlist above the Crowns of Westeros submod.
+
+### Load Order
+
+The mod should be placed below CK3 A Game of Thrones and AGOT Submod Core.
 
 ## List of Crowns:
 
@@ -246,10 +263,6 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 ## Other Future Mod Plans:
 
 - Add events surrounding finding long lost crowns
-
-# Load Order
-
-The mod should be placed below CK3 A Game of Thrones and AGOT Submod Core.
 
 # IMPORTANT NOTE ON MOD COMPATIBILITY
 
