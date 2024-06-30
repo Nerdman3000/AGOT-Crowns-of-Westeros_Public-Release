@@ -17,8 +17,9 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 
 *Github* - https://github.com/JediNick/AGOT_Submod_Core
 
-## Installation
+## Git Help
 
+### Installion of Submod
 1. Download GitHub Desktop (https://desktop.github.com/)
 2. Click "File", then "Clone Repository..."
 3. Choose the URL option and paste the URL for the GIT: https://github.com/Nerdman3000/AGOT-Crowns-of-Westeros_Public-Release
@@ -28,9 +29,15 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 7. Update the path in your .mod to point to the AGOT folder inside the repository. Please note these *have* to be /, not \.
 8. Create or update your CK3 new playset with the submod, make sure it your active playset and that you also have CK3AGOT and AGOT Submod core present and actived in your playlist above the Crowns of Westeros submod.
 
+### Updating Submod
+1. Open the Repository page on GitHub Desktop and click Fetch Origin to see if there are any updates.
+2. Wait for GitHub Desktop to check for updates.
+3. If a new update is present, it will say Pull Origin. Click on pull and wait for it to pull the recent commits.
+4. Once it has finished pulling, the submod will be updated.
+
 ### Load Order
 
-The mod should be placed below CK3 A Game of Thrones and AGOT Submod Core.
+- The mod should be placed below *CK3 A Game of Thrones* and *AGOT Submod Core*. Ensure both are installed and up to date.
 
 ## List of Crowns:
 
