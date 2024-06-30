@@ -5,7 +5,7 @@
 
 ## Description
 
-**AGOT - Crowns of Westeros** is a submod of Crusader Kings 3 that adds dozens of new original crowns to A Game of Thrones CK3 Mod. Note that the mod is not save game compatible to saves made prior to installing the mod. You will need a fresh save for the mod to fully work. All added crowns have artifacts and exist for both genders. Certain crowns will exist during the startdate while others can be created via a decision or found via event.
+**AGOT - Crowns of Westeros** is a submod of Crusader Kings 3 by *Nerdman3000* and *White Wolf of the Whills* that adds dozens of new original crowns to A Game of Thrones CK3 Mod. Note that the mod is not save game compatible to saves made prior to installing the mod. You will need a fresh save for the mod to fully work. All added crowns have artifacts and exist for both genders. Certain crowns will exist during the startdate while others can be created via a decision or found via event.
 
 A few older crowns have been integrated into the main AGOT mod, and have thus been removed from this submod. 
 
