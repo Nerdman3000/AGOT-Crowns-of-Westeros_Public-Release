@@ -4551,19 +4551,19 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 		#Character Crowns 1
 		if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_orysbaratheon_artifact }
+				var:selected_artifact = { has_variable = crown_tyboltthunderbolt_artifact }
 			}
 			create_artifact_tyboltthunderbolt_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_orysbaratheon_artifact }
+				var:selected_artifact = { has_variable = sharra_arryn_crown_artifact }
 			}
 			create_artifact_sharra_arryn_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_orysbaratheon_artifact }
+				var:selected_artifact = { has_variable = argella_crown_artifact }
 			}
 			create_artifact_argella_crown_effect = { OWNER = this }
 		}

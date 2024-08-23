@@ -4,11 +4,11 @@
 ##########################################
 
 #Custom Westeros Crowns by Nerdman3000
- PORTRAIT_MODIFIER_custom_headgear_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar I's Dark Steel Crown"
+ PORTRAIT_MODIFIER_custom_headgear_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Red Rubies"
+ PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys, Son of Aenys I's Ruby Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Multi-Colored Gems"
+ PORTRAIT_MODIFIER_custom_headgear_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys, Son of Aenys I's Gemmed Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_aegonvi_crown:0 "@Crowns_of_Westeros_icon! Aegon VI's Crown"
  
@@ -28,11 +28,11 @@
  
  PORTRAIT_MODIFIER_custom_headgear_stepstone_crown:0 "@Crowns_of_Westeros_icon! Driftwood Stepstone Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_female_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar I's Dark Steel Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_rhaegar_crown:0 "@Crowns_of_Westeros_icon! Rhaegar Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Red Rubies"
+ PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys:0 "@Crowns_of_Westeros_icon! Viserys, Son of Aenys I's Ruby Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys (son of Aenys)'s Crown - Multi-Colored Gems"
+ PORTRAIT_MODIFIER_custom_headgear_female_viserys_son_of_aenys_02:0 "@Crowns_of_Westeros_icon! Viserys, Son of Aenys I's Gemmed Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_aegonvi_crown:0 "@Crowns_of_Westeros_icon! Aegon VI's Crown"
  
@@ -76,6 +76,22 @@
  
  PORTRAIT_MODIFIER_custom_headgear_maelysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Maelys Blackfyre's Crown"
  
+ PORTRAIT_MODIFIER_custom_headgear_wolfswood_crown:0 "@Crowns_of_Westeros_icon! Crown of the Wolfswood"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_wolfswood_crown:0 "@Crowns_of_Westeros_icon! Crown of the Wolfswood"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_bracken_crown:0 "@Crowns_of_Westeros_icon! Bracken Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_bracken_crown:0 "@Crowns_of_Westeros_icon! Bracken Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_massey_crown:0 "@Crowns_of_Westeros_icon! Massey Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_massey_crown:0 "@Crowns_of_Westeros_icon! Massey Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_duskendale_crown_01:0 "@Crowns_of_Westeros_icon! Darklyn Crown (Defiance of Duskendale)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_duskendale_crown_01:0 "@Crowns_of_Westeros_icon! Darklyn Crown (Defiance of Duskendale)"
+
  PORTRAIT_MODIFIER_custom_headgear_aemonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aemon, Son of Jaehaerys I's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_aemonsonofjaehaerys_crown:0 "@Crowns_of_Westeros_icon! Aemon, Son of Jaehaerys I's Crown"

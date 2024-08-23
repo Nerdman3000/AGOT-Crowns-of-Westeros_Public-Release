@@ -7,6 +7,7 @@
 		ntc_artifact_shattered_npk_spawn
 		ntc_artifact_shattered_rr_spawn
 		ntc_artifact_shattered_cs_spawn
+		ntc_artifact_shattered_petty_kingdoms
 	}
 }
 
@@ -22,6 +23,7 @@ ntc_artifact_npk_spawn = {
 							has_game_rule = agot_shatter_duchies_even
 							has_game_rule = agot_shatter_kingdoms
 							has_game_rule = agot_shatter_empires
+							has_game_rule = agot_shatter_petty_kingdoms
 						}
 					}
 				}
@@ -49,6 +51,7 @@ ntc_artifact_rr_spawn = {
 							has_game_rule = agot_shatter_duchies_even
 							has_game_rule = agot_shatter_kingdoms
 							has_game_rule = agot_shatter_empires
+							has_game_rule = agot_shatter_petty_kingdoms
 						}
 					}
 				}
@@ -76,6 +79,7 @@ ntc_artifact_cs_spawn = {
 							has_game_rule = agot_shatter_duchies_even
 							has_game_rule = agot_shatter_kingdoms
 							has_game_rule = agot_shatter_empires
+							has_game_rule = agot_shatter_petty_kingdoms
 						}
 					}
 				}
@@ -102,6 +106,7 @@ ntc_artifact_shattered_npk_spawn = {
 						has_game_rule = agot_shatter_duchies_even
 						has_game_rule = agot_shatter_kingdoms
 						has_game_rule = agot_shatter_empires
+						has_game_rule = agot_shatter_petty_kingdoms
 					}
 				}
 			}
@@ -132,6 +137,7 @@ ntc_artifact_shattered_rr_spawn = {
 						has_game_rule = agot_shatter_duchies_even
 						has_game_rule = agot_shatter_kingdoms
 						has_game_rule = agot_shatter_empires
+						has_game_rule = agot_shatter_petty_kingdoms
 					}
 				}
 			}
@@ -162,6 +168,7 @@ ntc_artifact_shattered_cs_spawn = {
 						has_game_rule = agot_shatter_duchies_even
 						has_game_rule = agot_shatter_kingdoms
 						has_game_rule = agot_shatter_empires
+						has_game_rule = agot_shatter_petty_kingdoms
 					}
 				}
 			}
@@ -177,6 +184,24 @@ ntc_artifact_shattered_cs_spawn = {
 			ntc_greyjoy_crown_shattered_spawn.1 = yes
 			ntc_blackfyre_crown_spawn.1 = yes
 			ntc_martell_crown_spawn.1 = yes
+		}
+	}
+}
+
+ntc_artifact_shattered_petty_kingdoms = {
+	effect = {
+		if = { 
+			limit = { 
+				has_game_rule = agot_shatter_petty_kingdoms
+			}
+			ntc_the_north_petty_kings_crown_spawn.1 = yes
+			ntc_the_reach_petty_kings_crown_spawn.1 = yes
+			ntc_crownlands_petty_kings_crown_spawn.1 = yes
+			ntc_westerland_petty_kings_crown_spawn.1 = yes
+			ntc_stormlands_petty_kings_crown_spawn.1 = yes
+			ntc_riverlands_petty_kings_crown_spawn.1 = yes
+			ntc_iron_isles_petty_kings_crown_spawn.1 = yes
+			ntc_dorne_petty_kings_crown_spawn.1 = yes
 		}
 	}
 }

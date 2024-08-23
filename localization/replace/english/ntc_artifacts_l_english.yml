@@ -9,7 +9,7 @@
  alysanne_crown_description:0 "A golden crown features a series of different colored gemstones at each point made for Rhaella, daughter of Rhaena Targaryen and twin of Aerea Targaryen."
  
  bittersteel_crown_name:0 "Crown of Aegor 'Bittersteel' Rivers"
- bittersteel_crown_description:0 "A crown made for Aegor Rivers, also known as Bittersteel, in case all the male Blackfyres were killed. A gold and copper circlet, it features golden skulls and copper and gold wings to reflect Aegor's Bracken heritage."
+ bittersteel_crown_description:0 "A crown made for Aegor Rivers, also known as Bittersteel, in case all the male Blackfyres were killed. A gold and copper circlet inspired by the ancient old Petty King Bracken crown, it features golden skulls and copper and gold wings to reflect Aegor's Bracken heritage."
  
  calla_blackfyre_circlet_name:0 "Crown of Rhaella, Daughter of Rhaena"
  calla_blackfyre_circlet_description:0 "A crown worn by Calla Blackfyre, which was made in the image of both the crowns of Queen Visenya and Queen Rhaenys. Made of a red copper, it features black obsidian stones as rubies. \n \nHISTORY - Gifted to Calla Blackfyre by her husband Bittersteel, this circlet became the unofficial Blackfyre Queen crown. During the War of the Ninepenny Kings, the crown was lost, believed to have been sold to a Essosi merchant by a female descendant of the Blackfyre's."
@@ -83,14 +83,26 @@
  cersei_tiara_name:0 "Tiara of Queen Cersei Lannister"
  cersei_tiara_description:0 "A tiara of gold made for Queen Cersei Lannister, it features four main jeweled emeralds and twelve smaller jeweled jade emeralds."
 
- rhaegar_crown_name:0 "Dark Steel Crown of Rhaegar Targaryen"
- rhaegar_crown_description:0 "A crown made for Rhaegar Targaryen if he had become king. Made of dark iron, part of its steel has been reshaped into the image of dragons. The crown is also encrusted with red rubies."
+ rhaegar_crown_name:0 "Crown of Rhaegar Targaryen"
+ rhaegar_crown_description:0 "A crown made for Rhaegar Targaryen if he had become king. Made of dark iron, part of its steel has been reshaped into the image of dragons, and it is encrusted with red rubies."
  
- viserys_son_of_aenys_name:0 "Crown of Viserys (son of Aenys) - Red Rubies"
- viserys_son_of_aenys_description:0 "A crown made for Viserys Targaryen, son of King Aenys I, if he had lived and become king. A circlet made of dark metal and obsidian with red rubies that exhoes the Conquerors crown, part of its metal has been reshaped into the image of dragons."
+ wolfswood_crown_name:0 "Crown of the Wolfswood"
+ wolfswood_crown_description:0 "A ironwood crown worn by the ancient petty kings who ruled the Wolfswood during the Age of Hundred Kingdoms, this crown featured carved trees, howling wolves, and First Men runes."
  
- viserys_son_of_aenys_02_name:0 "Crown of Viserys (son of Aenys) - Multi-Colored Gems"
- viserys_son_of_aenys_02_description:0 "A crown made for Viserys Targaryen, son of King Aenys I, if he had lived and become king. A circlet made of dark metal and obsidian with multi-colored gems that exhoes the Conquerors crown, part of its metal has been reshaped into the image of dragons."
+ bracken_crown_name:0 "Crown of the Red Fork"
+ bracken_crown_description:0 "A red-bronze, iron, and gold crown worn by the ancient petty kings of House Bracken during the Age of Hundred Kingdoms, this crown featured red-bronze mounted horse heads and was encrusted by red rubies."
+ 
+ massey_crown_name:0 "Crown of the Hook"
+ massey_crown_description:0 "A silver crown worn by the ancient petty kings of House Massey during the Age of Hundred Kingdoms, this crown featured silver points with the center dominated by swirling symbols of House Massey painted in red, blue, green, and white."
+ 
+ duskendale_crown_01_name:0 "Crown of Duskendale (Defiance of Duskendale)"
+ duskendale_crown_01_description:0 "A red-copper, silver, and gold crown commisioned by Denys Darklyn during the latter parts of the Defiance of Duskendale, this crown featured was based on the ancient lost Duskendale crown, with seven gates rather than four and seven shields to represent the seven Darklyns who served on the Kingsguard."
+ 
+ viserys_son_of_aenys_name:0 "Ruby Crown of Viserys, Son of Aenys I"
+ viserys_son_of_aenys_description:0 "A crown made for Viserys Targaryen, son of King Aenys I, if he had lived and become king. A circlet made of dark metal and obsidian with red rubies that cxhoes the Conquerors crown, part of its metal has been reshaped into the image of dragons."
+ 
+ viserys_son_of_aenys_02_name:0 "Gemmed Crown of Viserys, Son of Aenys I"
+ viserys_son_of_aenys_02_description:0 "A crown made for Viserys Targaryen, son of King Aenys I, if he had lived and become king. A circlet made of dark metal and obsidian with multi-colored gems that echoes the Conquerors crown, part of its metal has been reshaped into the image of dragons."
  
  aegonvi_crown_name:0 "Crown of Aegon VI Targaryen"
  aegonvi_crown_description:0 "A crown made for Aegon VI Targaryen, son of Rhaegar and Elia Martell, if he had become king. Made of black iron, it features two dragons coming together to the center of the crown, which is marked by a red ruby."

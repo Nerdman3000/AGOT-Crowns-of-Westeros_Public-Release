@@ -52,6 +52,22 @@ cersei_tiara_visuals = {
 	icon = "cersei_tiara.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
+wolfswood_crown_visuals = {
+	icon = "wolfswood_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+bracken_crown_visuals = {
+	icon = "bracken_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+massey_crown_visuals = {
+	icon = "massey_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+duskendale_crown_01_visuals = {
+	icon = "duskendale_crown_01.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
 aemonsonofjaehaerys_crown_visuals = {
 	icon = "aemonsonofjaehaerys_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity

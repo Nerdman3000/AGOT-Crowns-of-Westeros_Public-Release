@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "duskendale_crown_01_mesh"
+	file = "duskendale_crown_01.mesh"
+
+	meshsettings = {
+		name = "duskendale_crown_01Shape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "duskendale_crown_01_diffuse.dds"
+		texture_normal = "duskendale_crown_01_normal.dds"
+		texture_specular = "duskendale_crown_01_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "duskendale_crown_01_entity"
+	pdxmesh = "duskendale_crown_01_mesh"
+}

@@ -273,6 +273,46 @@ female_orysbaratheon_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		entity = female_orysbaratheon_crown_entity 	 }	
 }
 
+wolfswood_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = wolfswood_crown_entity 	 }	
+}
+
+female_wolfswood_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_wolfswood_crown_entity 	 }	
+}
+
+bracken_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = bracken_crown_entity 	 }	
+}
+
+female_bracken_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_bracken_crown_entity 	 }	
+}
+
+massey_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = massey_crown_entity 	 }	
+}
+
+female_massey_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_massey_crown_entity 	 }	
+}
+
+duskendale_crown_01 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = duskendale_crown_01_entity 	 }	
+}
+
+female_duskendale_crown_01 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_duskendale_crown_01_entity 	 }	
+}
+
 margaerytyrell_crown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		entity = margaerytyrell_crown_entity 	 }	

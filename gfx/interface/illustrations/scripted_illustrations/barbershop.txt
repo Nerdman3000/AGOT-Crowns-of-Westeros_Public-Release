@@ -52,7 +52,9 @@ barbershop_background = {
 		reference = "main_menu/frontend_mediterranean.dds"
 	}
 	environment = {
-		reference = "environment_cw_mediterranean_throneroom_main"
+		#AGOT Modified
+		#reference = "environment_cw_mediterranean_throneroom_main"
+		reference = "environment_southern_essos_high"
 	}
 
 	##########################################
@@ -79,7 +81,9 @@ barbershop_background = {
 		reference = "main_menu/frontend_west.dds"
 	}
 	environment = {
-		reference = "environment_frontend_west_main"
+		#AGOT Modified
+		#reference = "environment_frontend_west_main"
+		reference = "environment_cw_west"
 	}
 
 	##########################################
@@ -1179,7 +1183,7 @@ barbershop_background = {
 	environment = {
 		reference = "environment_event_fp3_courtyard_night"
 	}
-	
+
 	##########################################
 	
 		texture = {
@@ -1271,124 +1275,278 @@ barbershop_background = {
 
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 		texture = {
 		reference = "event_scenes/frozen_forest.dds"
 	}
-	##AGOT ADDED
-	environment = {
-		reference = "environment_hunt_snowy_forest"
-	}
-	
-	##########################################
-	
-	##AGOT ADDED
-	texture = {
-		reference = "event_scenes/the_wall.dds"
-	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_hunt_snowy_forest"
 	}
 	
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
-		reference = "event_scenes/beyond_the_wall.dds"
+		reference = "event_scenes/bg_dragon_forest_clearing.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
-		reference = "environment_hunt_snowy_forest"
+		reference = "environment_dragon_outside_sun"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/bg_dragonpit.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_dragonpit"
 	}
 	
 	##########################################
+	
+	# ##AGOT TODO DELETE
+	# texture = {
+	# 	reference = "event_scenes/the_wall.dds"
+	# }
+	# ##AGOT TODO DELETE
+	# environment = {
+	# 	reference = "environment_hunt_snowy_forest"
+	# }
+	
+	##########################################
 
-	##AGOT ADDED
+	# ##AGOT TODO DELETE
+	# texture = {
+	# 	reference = "event_scenes/beyond_the_wall.dds"
+	# }
+	# ##AGOT TODO DELETE
+	# environment = {
+	# 	reference = "environment_hunt_snowy_forest"
+	# }
+	
+	##########################################
+
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/tower_of_joy.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_event_desert"
 	}
 	
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_stone_hedge.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_hunt_snowy_forest"
 	}
 	
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_casterly_rock.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_cw_east_main"
 	}
 	
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/alley_day_kingslanding.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_event_alley"
 	}
 	
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_highgarden.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_event_farms"
 	}
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_the_eyrie.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_event_mountains"
 	}
 
 	##########################################
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_the_trident.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_event_battlefield"
 	}
 
 	##########################################
 
-	##AGOT ADDED
+	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_storms_end.dds"
 	}
-	##AGOT ADDED
+	##AGOT Added
 	environment = {
 		reference = "environment_hunt_forest_cave"
 	}
-	
+
 	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/ironthrone/throneroom_ironthrone.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_iron_throne"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/the_wall.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_the_wall"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/beyondwall/throneroom_beyond_wall_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_beyond_wall_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/north/throneroom_north_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_north_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/ironborn/throneroom_ironborn_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_ironborn_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/riverlands/throneroom_riverlands_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_riverlands_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/vale/throneroom_vale_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_vale_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/stormlands/throneroom_stormlands_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_stormlands_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/crownlands/throneroom_crownlands_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_crownlands_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/dorne/throneroom_dorne_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_dorne_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/reach/throneroom_reach_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_reach_high"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/west/throneroom_west_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_west_high"
+	}
+	
+		##########################################
 
 	##AGOT More Backgrounds ADDED
 	texture = {
@@ -1487,14 +1645,4 @@ barbershop_background = {
 		reference = "environment_frontend_west_main"
 	}
 	
-	##########################################
-
-	##AGOT ADDED
-	texture = {
-		reference = "event_scenes/throneroom_storms_end.dds"
-	}
-	##AGOT ADDED
-	environment = {
-		reference = "environment_throneroom_stormlands_high"
-	}
 }

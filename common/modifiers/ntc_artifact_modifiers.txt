@@ -471,7 +471,7 @@ myrcella_circlet_modifier = {
 	diplomacy = 1
 	learning = 2
 	attraction_opinion = 5
-	monthly_dynasty_prestige_mult = 0.01
+	general_opinion = 5
 }
 cersei_tiara_modifier = {
 	icon = grandeur_positive
@@ -783,6 +783,41 @@ crown_of_sansa_modifier = {
 	diplomacy = 2
 	northman_opinion = 5
 	monthly_dynasty_prestige_mult = 0.01
+}
+wolfswood_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	martial = 2
+	prowess = 2
+	northman_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+bracken_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	old_gods_religion_opinion = -10
+	movement_speed = 0.05
+	riverlander_opinion = 5
+	dread_gain_mult = 0.05
+}
+massey_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	diplomacy = 1
+	learning = 1
+	learning = 1
+	stewardship = 1
+	crownlander_opinion = 5
+	coastal_advantage = 2
+	courtier_and_guest_opinion = 5
+}
+duskendale_crown_01_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.5
+	prowess = 3
+	martial = 2
+	crownlander_opinion = 5
+	defender_holding_advantage = 5
 }
 crown_of_cersei_ruler_modifier = {
 	icon = grandeur_positive

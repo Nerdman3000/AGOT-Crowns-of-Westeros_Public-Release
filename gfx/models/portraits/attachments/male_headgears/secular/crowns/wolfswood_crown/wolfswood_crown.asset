@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "wolfswood_crown_mesh"
+	file = "wolfswood_crown.mesh"
+
+	meshsettings = {
+		name = "wolfswood_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "wolfswood_crown_diffuse.dds"
+		texture_normal = "wolfswood_crown_normal.dds"
+		texture_specular = "wolfswood_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "wolfswood_crown_entity"
+	pdxmesh = "wolfswood_crown_mesh"
+}

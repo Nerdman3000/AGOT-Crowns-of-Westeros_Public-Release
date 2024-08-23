@@ -4,11 +4,18 @@ character_view_bg = {
 	##########################################
 
 	# AGOT - Maester
-	texture = {
+	texture = { 
 		reference = "event_scenes/study_physician.dds"
 
+		trigger = { has_court_position = maester_court_position }
+	}
+
+	environment = {
+		reference = "environment_event_study_physician"
+
 		trigger = {
-			has_trait = maester
+			has_court_position = maester_court_position
+			is_character_window_main_character = yes
 		}
 	}
 	
@@ -35,13 +42,449 @@ character_view_bg = {
 		}
 	}
 
+	##########################################
+
+	# AGOT - Dragons
+	# TODO: ADD CORRESPOINDING ENVIRONMENTS TO ALL TEXTURES!
+
+	# In dragonpit
+	texture = {
+		reference = "event_scenes/agot_dragonpit.dds"
+
+		trigger = {
+			has_trait = dragon
+			has_character_flag = in_dragonpit
+		}
+	}
+
+	environment = {
+		reference = "environment_dragonpit"
+
+		trigger = {
+			has_trait = dragon
+			has_character_flag = in_dragonpit
+		}
+	}
+
+
+	texture = {
+		reference = "event_scenes/bp1_plains.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = plains
+				OR = {
+					terrain = plains
+					terrain = majorroad_plains
+					terrain = minorroad_plains
+				}
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_dragon_outside_sun"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = plains
+				OR = {
+					terrain = plains
+					terrain = majorroad_plains
+					terrain = minorroad_plains
+				}
+			}
+		}
+	}
+
+	# texture = { #Texture doesn't work well, wrong perspective
+	# 	reference = "terrain_types/hills.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = hills
+	# 			OR = {
+	# 				terrain = hills
+	# 				terrain = majorroad_hills
+	# 				terrain = minorroad_hills
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Texture doesn't work well, wrong perspective
+	# 	reference = "terrain_types/desert_mountains.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = desert_mountains
+	# 			OR = {
+	# 				terrain = mountains
+	# 				terrain = majorroad_mountains
+	# 				terrain = minorroad_mountains
+	# 			}
+	# 			geographical_region = world_westeros_dorne
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Texture doesn't work well, dragon standing in water
+	# 	reference = "terrain_types/oasis.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = oasis
+	# 			OR = {
+	# 				terrain = oasis
+	# 				terrain = majorroad_oasis
+	# 				terrain = minorroad_oasis
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Texture doesn't work well, too much foreground clutter, no clear floor
+	# 	reference = "terrain_types/jungle.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = jungle
+	# 			OR = {
+	# 				terrain = jungle
+	# 				terrain = majorroad_jungle
+	# 				terrain = minorroad_jungle
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	texture = { #TODO: Modify so horizon is in the center of the image
+		reference = "terrain_types/floodplains.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = floodplains
+				OR = {
+					terrain = floodplains
+					terrain = majorroad_floodplains
+					terrain = minorroad_floodplains
+				}
+			}
+		}
+	}
+
+		texture = { #TODO: Upscale and lower the horizon
+		reference = "terrain_types/drylands.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = drylands
+				OR = {
+					terrain = drylands
+					terrain = majorroad_drylands
+					terrain = minorroad_drylands
+				}
+			}
+		}
+	}
+
+	texture = { #TODO: Modify so horizon is in the center of the image
+		reference = "terrain_types/wetlands.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = wetlands
+				OR = {
+					terrain = wetlands
+					terrain = majorroad_wetlands
+					terrain = minorroad_wetlands
+				}
+			}
+		}
+	}
+
+	# texture = { #Perspective wrong
+	# 	reference = "event_scenes/farms.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = farmlands
+	# 			OR = {
+	# 				terrain = urban # Possibly split this out into other options?
+	# 				terrain = farmlands
+	# 				terrain = majorroad_farmlands
+	# 				terrain = minorroad_farmlands
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	texture = { #TODO: Mirror so the dune is on the opposite side
+		reference = "event_scenes/desert.dds" #Same as "event_scenes/bp1_desert.dds" 
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = desert
+				OR = {
+					terrain = desert
+					terrain = majorroad_desert
+					terrain = minorroad_desert
+					geographical_region = world_westeros_dorne
+				}
+			}
+		}
+	}
+
+	texture = {
+		reference = "event_scenes/steppe.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				#AGOT Modified
+				# terrain = steppe
+				OR = {
+					terrain = steppe
+					terrain = majorroad_steppe
+					terrain = minorroad_steppe
+				}
+			}
+		}
+	}
+
+	# texture = { #Too ocluded, no clear horizon or area for dragon to stand
+	# 	reference = "event_scenes/forest.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = forest
+	# 			OR = {
+	# 				terrain = forest
+	# 				terrain = majorroad_forest
+	# 				terrain = minorroad_forest
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Too ocluded, no clear horizon or area for dragon to stand
+	# 	reference = "event_scenes/forest_pine.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = taiga
+	# 			OR = {
+	# 				terrain = taiga
+	# 				terrain = majorroad_taiga
+	# 				terrain = minorroad_taiga
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Wrong Perspective
+	# 	reference = "terrain_types/mountains.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			#AGOT Modified
+	# 			# terrain = mountains
+	# 			OR = {
+	# 				terrain = mountains
+	# 				terrain = majorroad_mountains
+	# 				terrain = minorroad_mountains
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Low quality, too cluttered, wrong perspective
+	# 	reference = "terrain_types/the_bog.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = the_bog
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Horizon too low, doesn't match art style, too low res
+	# 	reference = "terrain_types/taiga_bog.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = taiga_bog
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Tree right in the middle, no horizon, too ocluded
+	# 	reference = "terrain_types/cloudforest.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = cloudforest
+	# 		}
+	# 	}
+	# }
+
+	texture = { #TODO: Upscale, improve sky
+		reference = "terrain_types/frozen_flats.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+			location = {
+				terrain = frozen_flats
+			}
+		}
+	}
+
+	# texture = { #Doesn't fit with the perspective and composition
+	# 	reference = "terrain_types/glacier.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = glacier
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Perspective wrong, style doesn't match.
+	# 	reference = "terrain_types/canyon.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = canyon
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Perspective too high, artstyle doesn't match.
+	# 	reference = "terrain_types/highlands.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			terrain = highlands
+	# 		}
+	# 	}
+	# }
+
+	# texture = { #Doesn't fit
+	# 	reference = "placeholders/no_boat_ocean_placeholder.dds"
+
+	# 	trigger = {
+	# 		has_trait = dragon
+	# 		exists = location
+	# 		location = {
+	# 			is_sea_province = yes
+	# 		}
+	# 	}
+	# }
+
+	# Dragon Dead
+	texture = {
+		reference = "event_scenes/agot_dragonpit.dds"
+		trigger = {
+			has_trait = dragon
+			is_alive = no
+		}
+	}
+
+	environment = {
+		reference = "environment_dragonpit"
+
+		trigger = {
+			has_trait = dragon
+			is_alive = no
+		}
+	}
+	
+	# Failback
+	texture = {
+		reference = "event_scenes/bp1_plains.dds"
+
+		trigger = {
+			has_trait = dragon
+			exists = location
+		}
+	}
+	
+
+	environment = {
+		reference = "environment_dragon_outside_sun"
+
+		trigger = {
+			has_trait = dragon
+		}
+	}
+
 	######################################
 
 	# Dead
 	texture = {
 		reference = "event_scenes/temple.dds"
 		trigger = {
-			is_alive = no
+			#AGOT Modified
+			#is_alive = no
+			OR = {
+				is_alive = no
+				agot_is_fake_dead = yes
+			}
 		}
 	}
 
@@ -49,7 +492,12 @@ character_view_bg = {
 		reference = "environment_event_temple"
 
 		trigger = {
-			is_alive = no
+			#AGOT Modified
+			#is_alive = no
+			OR = {
+				is_alive = no
+				agot_is_fake_dead = yes
+			}
 		}
 	}
 
@@ -1443,7 +1891,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1467,7 +1917,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1495,7 +1947,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1522,7 +1976,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1549,7 +2005,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1586,7 +2044,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1607,7 +2067,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1632,7 +2094,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1650,7 +2114,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1668,7 +2134,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1679,6 +2147,238 @@ character_view_bg = {
 						}
 						location ?= {
 							is_sea_province = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# beyond the wall, unsettled
+	####
+	texture = {
+		reference = "event_scenes/wilderness_forest_snow_2.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_graphical_wilderness_btw_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_hunt_snowy_forest"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_graphical_wilderness_btw_trigger = yes
+				NOT = { exists = province_owner }
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_hunt_snowy_forest"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							NOT = { exists = province_owner }
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							NOT = { exists = province_owner }
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							NOT = { exists = province_owner }
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+	
+	#AGOT Added
+	####
+	# beyond the wall, settled
+	####
+	texture = {
+		reference = "event_scenes/beyond_the_wall_small.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_graphical_wilderness_btw_trigger = yes
+				exists = province_owner
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_travel_hills_settlement"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_graphical_wilderness_btw_trigger = yes
+				exists = province_owner
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_travel_hills_settlement"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							exists = province_owner
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							exists = province_owner
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_graphical_wilderness_btw_trigger = yes
+							exists = province_owner
 						}
 					}
 				}
@@ -1696,7 +2396,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1709,22 +2411,31 @@ character_view_bg = {
 				OR = {
 					has_province_modifier = winter_normal_modifier
 					has_province_modifier = winter_harsh_modifier
+					#AGOT Added
+					geographical_region = world_westeros_beyond_the_wall
 				}
 				OR = {
 					graphical_wilderness_forest_trigger = yes
 					graphical_wilderness_forest_pine_trigger = yes
+					#AGOT Added
+					agot_graphical_wilderness_cloudforest_trigger = yes
+					agot_graphical_wilderness_taiga_bog_trigger = yes
 				}
 			}
 		}
 	}
 
 	environment = {
-		reference = "environment_event_mountains"
+		#AGOT Modified
+		#reference = "environment_event_mountains"
+		reference = "environment_hunt_snowy_forest"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1737,10 +2448,15 @@ character_view_bg = {
 				OR = {
 					has_province_modifier = winter_normal_modifier
 					has_province_modifier = winter_harsh_modifier
+					#AGOT Added
+					geographical_region = world_westeros_beyond_the_wall
 				}
 				OR = {
 					graphical_wilderness_forest_trigger = yes
 					graphical_wilderness_forest_pine_trigger = yes
+					#AGOT Added
+					agot_graphical_wilderness_cloudforest_trigger = yes
+					agot_graphical_wilderness_taiga_bog_trigger = yes
 				}
 			}
 			is_character_window_main_character = yes
@@ -1748,7 +2464,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_mountains"
+		#AGOT Modified
+		#reference = "environment_event_mountains"
+		reference = "environment_hunt_snowy_forest"
 
 		trigger = {
 			OR = {
@@ -1756,7 +2474,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1769,10 +2489,15 @@ character_view_bg = {
 							OR = {
 								has_province_modifier = winter_normal_modifier
 								has_province_modifier = winter_harsh_modifier
+								#AGOT Added
+								geographical_region = world_westeros_beyond_the_wall
 							}
 							OR = {
 								graphical_wilderness_forest_trigger = yes
 								graphical_wilderness_forest_pine_trigger = yes
+								#AGOT Added
+								agot_graphical_wilderness_cloudforest_trigger = yes
+								agot_graphical_wilderness_taiga_bog_trigger = yes
 							}
 						}
 					}
@@ -1781,7 +2506,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1794,10 +2521,15 @@ character_view_bg = {
 							OR = {
 								has_province_modifier = winter_normal_modifier
 								has_province_modifier = winter_harsh_modifier
+								#AGOT Added
+								geographical_region = world_westeros_beyond_the_wall
 							}
 							OR = {
 								graphical_wilderness_forest_trigger = yes
 								graphical_wilderness_forest_pine_trigger = yes
+								#AGOT Added
+								agot_graphical_wilderness_cloudforest_trigger = yes
+								agot_graphical_wilderness_taiga_bog_trigger = yes
 							}
 						}
 					}
@@ -1806,7 +2538,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1819,10 +2553,15 @@ character_view_bg = {
 							OR = {
 								has_province_modifier = winter_normal_modifier
 								has_province_modifier = winter_harsh_modifier
+								#AGOT Added
+								geographical_region = world_westeros_beyond_the_wall
 							}
 							OR = {
 								graphical_wilderness_forest_trigger = yes
 								graphical_wilderness_forest_pine_trigger = yes
+								#AGOT Added
+								agot_graphical_wilderness_cloudforest_trigger = yes
+								agot_graphical_wilderness_taiga_bog_trigger = yes
 							}
 						}
 					}
@@ -1831,7 +2570,7 @@ character_view_bg = {
 			is_character_window_main_character = no
 		}
 	}
-	
+
 	#####
 	#forest_pine
 	#####
@@ -1841,7 +2580,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1862,7 +2603,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1887,7 +2630,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1905,7 +2650,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1923,7 +2670,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -1951,7 +2700,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1972,7 +2723,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -1997,7 +2750,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2015,7 +2770,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2033,7 +2790,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2061,7 +2820,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2076,22 +2837,32 @@ character_view_bg = {
 				# geographical_region = world_europe
 				geographical_region = world_westeros_seven_kingdoms
 				OR = {
-					terrain = farmlands
-					terrain = plains
-					terrain = mountains
-					terrain = hills
+					#AGOT Modified
+					#terrain = farmlands
+					#terrain = plains
+					#terrain = mountains
+					#terrain = hills
+					agot_is_farmlands_terrain = yes
+					agot_is_plains_terrain = yes
+					agot_is_mountains_terrain = yes
+					agot_is_hills_terrain = yes
+					agot_is_highlands_terrain = yes
 				}
 			}
 		}
 	}
 
 	environment = {
-		reference = "environment_event_bp1_hills"
+		#AGOT Modified
+		#reference = "environment_event_bp1_hills"
+		reference = "environment_travel_bridge"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2102,11 +2873,19 @@ character_view_bg = {
 			}
 			location = {
 				is_riverside_province = yes
+				#AGOT Added
+				geographical_region = world_westeros_seven_kingdoms
 				OR = {
-					terrain = farmlands
-					terrain = plains
-					terrain = mountains
-					terrain = hills
+					#AGOT Modified
+					#terrain = farmlands
+					#terrain = plains
+					#terrain = mountains
+					#terrain = hills
+					agot_is_farmlands_terrain = yes
+					agot_is_plains_terrain = yes
+					agot_is_mountains_terrain = yes
+					agot_is_hills_terrain = yes
+					agot_is_highlands_terrain = yes
 				}
 			}
 			is_character_window_main_character = yes
@@ -2114,7 +2893,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_hills"
+		#AGOT Modified
+		#reference = "environment_event_bp1_hills"
+		reference = "environment_travel_bridge"
 
 		trigger = {
 			OR = {
@@ -2122,7 +2903,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2133,11 +2916,19 @@ character_view_bg = {
 						}
 						location = {
 							is_riverside_province = yes
+							#AGOT Added
+							geographical_region = world_westeros_seven_kingdoms
 							OR = {
-								terrain = farmlands
-								terrain = plains
-								terrain = mountains
-								terrain = hills
+								#AGOT Modified
+								#terrain = farmlands
+								#terrain = plains
+								#terrain = mountains
+								#terrain = hills
+								agot_is_farmlands_terrain = yes
+								agot_is_plains_terrain = yes
+								agot_is_mountains_terrain = yes
+								agot_is_hills_terrain = yes
+								agot_is_highlands_terrain = yes
 							}
 						}
 					}
@@ -2146,7 +2937,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2157,11 +2950,19 @@ character_view_bg = {
 						}
 						location = {
 							is_riverside_province = yes
+							#AGOT Added
+							geographical_region = world_westeros_seven_kingdoms
 							OR = {
-								terrain = farmlands
-								terrain = plains
-								terrain = mountains
-								terrain = hills
+								#AGOT Modified
+								#terrain = farmlands
+								#terrain = plains
+								#terrain = mountains
+								#terrain = hills
+								agot_is_farmlands_terrain = yes
+								agot_is_plains_terrain = yes
+								agot_is_mountains_terrain = yes
+								agot_is_hills_terrain = yes
+								agot_is_highlands_terrain = yes
 							}
 						}
 					}
@@ -2170,7 +2971,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2181,11 +2984,19 @@ character_view_bg = {
 						}
 						location = {
 							is_riverside_province = yes
+							#AGOT Added
+							geographical_region = world_westeros_seven_kingdoms
 							OR = {
-								terrain = farmlands
-								terrain = plains
-								terrain = mountains
-								terrain = hills
+								#AGOT Modified
+								#terrain = farmlands
+								#terrain = plains
+								#terrain = mountains
+								#terrain = hills
+								agot_is_farmlands_terrain = yes
+								agot_is_plains_terrain = yes
+								agot_is_mountains_terrain = yes
+								agot_is_hills_terrain = yes
+								agot_is_highlands_terrain = yes
 							}
 						}
 					}
@@ -2204,7 +3015,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2225,7 +3038,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2250,7 +3065,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2268,7 +3085,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2286,7 +3105,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2314,7 +3135,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2335,7 +3158,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2360,7 +3185,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2378,7 +3205,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2396,7 +3225,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2424,7 +3255,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2445,7 +3278,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2470,7 +3305,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2488,7 +3325,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2506,7 +3345,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2534,7 +3375,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2556,7 +3399,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2582,7 +3427,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2601,7 +3448,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2620,7 +3469,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2649,7 +3500,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2666,12 +3519,16 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_hills"
+		#AGOT Modified
+		#reference = "environment_event_bp1_hills"
+		reference = "environment_travel_hills_settlement"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2689,7 +3546,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_hills"
+		#AGOT Modified
+		#reference = "environment_event_bp1_hills"
+		reference = "environment_travel_hills_settlement"
 
 		trigger = {
 			OR = {
@@ -2697,7 +3556,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2716,7 +3577,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2735,7 +3598,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2764,7 +3629,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2786,7 +3653,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2812,7 +3681,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2831,7 +3702,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2850,7 +3723,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2879,7 +3754,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2896,12 +3773,16 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_plains"
+		#AGOT Modified
+		#reference = "environment_event_bp1_plains"
+		reference = "environment_travel_hills_settlement"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -2919,7 +3800,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_plains"
+		#AGOT Modified
+		#reference = "environment_event_bp1_plains"
+		reference = "environment_travel_hills_settlement"
 
 		trigger = {
 			OR = {
@@ -2927,7 +3810,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2946,7 +3831,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2965,7 +3852,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -2994,7 +3883,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3016,7 +3907,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3042,7 +3935,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3061,7 +3956,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3080,7 +3977,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3109,7 +4008,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3126,12 +4027,16 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_steppe"
+		#AGOT Modified
+		#reference = "environment_event_steppe"
+		reference = "environment_travel_steppe_settlement"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3149,7 +4054,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_steppe"
+		#AGOT Modified
+		#reference = "environment_event_steppe"
+		reference = "environment_travel_steppe_settlement"
 
 		trigger = {
 			OR = {
@@ -3157,7 +4064,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3176,7 +4085,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3195,7 +4106,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3224,7 +4137,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3246,7 +4161,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3272,7 +4189,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3291,7 +4210,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3310,7 +4231,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3339,7 +4262,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3356,12 +4281,16 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_mountains"
+		#AGOT Modified
+		#reference = "environment_event_mountains"
+		reference = "environment_travel_mountain_settlement"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3379,7 +4308,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_mountains"
+		#AGOT Modified
+		#reference = "environment_event_mountains"
+		reference = "environment_travel_mountain_settlement"
 
 		trigger = {
 			OR = {
@@ -3387,7 +4318,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3406,7 +4339,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3425,7 +4360,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3454,7 +4391,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3476,7 +4415,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3502,7 +4443,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3521,7 +4464,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3540,7 +4485,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3569,7 +4516,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3586,12 +4535,16 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_desert"
+		#AGOT Modified
+		#reference = "environment_event_bp1_desert"
+		reference = "environment_travel_desert"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3609,7 +4562,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_bp1_desert"
+		#AGOT Modified
+		#reference = "environment_event_bp1_desert"
+		reference = "environment_travel_desert"
 
 		trigger = {
 			OR = {
@@ -3617,7 +4572,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3636,7 +4593,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3655,7 +4614,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3684,7 +4645,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3694,7 +4657,9 @@ character_view_bg = {
 				NOT = { location = involved_activity.activity_location }
 			}
 			location = {
-				terrain = farmlands
+				#AGOT Modified
+				#terrain = farmlands
+				agot_is_farmlands_terrain = yes
 				NOT = { exists = province_owner }
 			}
 		}
@@ -3706,7 +4671,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3716,7 +4683,9 @@ character_view_bg = {
 				NOT = { location = involved_activity.activity_location }
 			}
 			location = {
-				terrain = farmlands
+				#AGOT Modified
+				#terrain = farmlands
+				agot_is_farmlands_terrain = yes
 				NOT = { exists = province_owner }
 			}
 			is_character_window_main_character = yes
@@ -3732,7 +4701,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3742,7 +4713,9 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							NOT = { exists = province_owner }
 						}
 					}
@@ -3751,7 +4724,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3761,7 +4736,9 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							NOT = { exists = province_owner }
 						}
 					}
@@ -3770,7 +4747,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3780,7 +4759,9 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							NOT = { exists = province_owner }
 						}
 					}
@@ -3799,7 +4780,9 @@ character_view_bg = {
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3809,19 +4792,25 @@ character_view_bg = {
 				NOT = { location = involved_activity.activity_location }
 			}
 			location = {
-				terrain = farmlands
+				#AGOT Modified
+				#terrain = farmlands
+				agot_is_farmlands_terrain = yes
 				exists = province_owner
 			}
 		}
 	}
 
 	environment = {
-		reference = "environment_event_farms"
+		#AGOT Modified
+		#reference = "environment_event_farms"
+		reference = "environment_travel_farmlands"
 
 		trigger = {
 			exists = location
 			OR = {
-				is_travelling = yes
+				#AGOT Modified
+				#is_travelling = yes
+				agot_is_graphical_travelling_trigger = yes
 				is_in_army = yes
 			}
 			trigger_if = {
@@ -3831,7 +4820,9 @@ character_view_bg = {
 				NOT = { location = involved_activity.activity_location }
 			}
 			location = {
-				terrain = farmlands
+				#AGOT Modified
+				#terrain = farmlands
+				agot_is_farmlands_terrain = yes
 				exists = province_owner
 			}
 			is_character_window_main_character = yes
@@ -3839,7 +4830,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_event_farms"
+		#AGOT Modified
+		#reference = "environment_event_farms"
+		reference = "environment_travel_farmlands"
 
 		trigger = {
 			OR = {
@@ -3847,7 +4840,9 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3857,7 +4852,9 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							exists = province_owner
 						}
 					}
@@ -3866,7 +4863,9 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3876,7 +4875,9 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							exists = province_owner
 						}
 					}
@@ -3885,7 +4886,9 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege ?= {
 						OR = {
-							is_travelling = yes
+							#AGOT Modified
+							#is_travelling = yes
+							agot_is_graphical_travelling_trigger = yes
 							is_in_army = yes
 						}
 						trigger_if = {
@@ -3895,8 +4898,898 @@ character_view_bg = {
 							NOT = { location = involved_activity.activity_location }
 						}
 						location = {
-							terrain = farmlands
+							#AGOT Modified
+							#terrain = farmlands
+							agot_is_farmlands_terrain = yes
 							exists = province_owner
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# frozen_flats
+	####
+	texture = {
+		reference = "event_scenes/frozen_flats.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_frozen_flats_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_frozen_flats_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_frozen_flats_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_frozen_flats_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_frozen_flats_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# glacier
+	####
+	texture = {
+		reference = "event_scenes/glacier.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_glacier_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_mountains"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_glacier_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_mountains"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_glacier_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_glacier_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_glacier_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# canyon
+	####
+	texture = {
+		reference = "event_scenes/canyon.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_canyon_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_canyon_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_canyon_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_canyon_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_canyon_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# cloudforest
+	####
+	texture = {
+		reference = "event_scenes/cloudforest.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_cloudforest_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_cloudforest_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_cloudforest_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_cloudforest_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_cloudforest_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# highlands
+	####
+	texture = {
+		reference = "event_scenes/highlands.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_highlands_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_highlands_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_highlands_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_highlands_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_highlands_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# taiga_bog
+	####
+	texture = {
+		reference = "event_scenes/taiga_bog.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_taiga_bog_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_taiga_bog_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_taiga_bog_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_taiga_bog_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_taiga_bog_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# the_bog
+	####
+	texture = {
+		reference = "event_scenes/the_bog.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_the_bog_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_the_bog_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_steppe"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_the_bog_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_the_bog_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_the_bog_terrain = yes
+						}
+					}
+				}
+			}
+			is_character_window_main_character = no
+		}
+	}
+
+	#AGOT Added
+	####
+	# urban
+	####
+	texture = {
+		reference = "event_scenes/alley_day.dds"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_urban_terrain = yes
+			}
+		}
+	}
+
+	environment = {
+		reference = "environment_event_alley_day"
+
+		trigger = {
+			exists = location
+			OR = {
+				agot_is_graphical_travelling_trigger = yes
+				is_in_army = yes
+			}
+			trigger_if = {
+				limit = {
+					exists = involved_activity
+				}
+				NOT = { location = involved_activity.activity_location }
+			}
+			location = {
+				agot_is_urban_terrain = yes
+			}
+			is_character_window_main_character = yes
+		}
+	}
+
+	environment = {
+		reference = "environment_event_alley_day"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_urban_terrain = yes
+						}
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_urban_terrain = yes
+						}
+					}
+				}
+				AND = {
+					liege.diarch ?= this
+					liege ?= {
+						OR = {
+							agot_is_graphical_travelling_trigger = yes
+							is_in_army = yes
+						}
+						trigger_if = {
+							limit = {
+								exists = involved_activity
+							}
+							NOT = { location = involved_activity.activity_location }
+						}
+						location = {
+							agot_is_urban_terrain = yes
 						}
 					}
 				}
@@ -5026,89 +6919,6 @@ character_view_bg = {
 	}
 
 	##############################
-	### Non-Throneroom Backgrounds ###
-	##############################
-
-	# Dragonstone Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_dragonstone.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_dragonstone
-					has_title = title:c_dragonstone
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_frontend_west_main"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_dragonstone
-					has_title = title:c_dragonstone
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-			}
-		}
-	}
-
-	##############################
 	### IRON THRONE THRONEROOM ###
 	##############################
 
@@ -5141,20 +6951,23 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_county
 						capital_county = title:c_kings_landing
 						has_title = title:c_kings_landing
 					}
 				}
-				# AND = {
-				# 	has_title = title:d_kingsguard 
-				# 	exists = liege
-				# 	liege = {
-				# 		has_title = title:c_kings_landing
-				# 	}
-				# }
+				AND = {
+					has_title = title:d_kingsguard
+					exists = liege
+					liege = {
+						has_title = title:c_kings_landing
+					}
+				}
 			}
 		}
 	}
@@ -5187,260 +7000,14 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_county
 						capital_county = title:c_kings_landing
 						has_title = title:c_kings_landing
-					}
-				}
-			}
-		}
-	}
-	
-	##############################
-	### Casterly Rock THRONEROOM ###
-	##############################
-
-	# The Rock Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_therock.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_casterly_rock
-					has_title = title:c_casterly_rock
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_cw_east_main"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_casterly_rock
-					has_title = title:c_casterly_rock
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-			}
-		}
-	}
-	
-	##############################
-	### Pyke THRONEROOM ###
-	##############################
-
-	# Pyke Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_pyke1.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_pyke
-					has_title = title:c_pyke
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_event_gallows"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_pyke
-					has_title = title:c_pyke
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-			}
-		}
-	}
-	
-	##############################
-	### STORMS END THRONEROOM ###
-	##############################
-
-	# Storms End Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_storms_end.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_storms_end
-					has_title = title:c_storms_end
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_throneroom_stormlands_high"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_storms_end
-					has_title = title:c_storms_end
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
 					}
 				}
 			}
@@ -5477,8 +7044,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_the_wall_trigger = yes
 					}
@@ -5512,8 +7082,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_the_wall_trigger = yes
 					}
@@ -5555,8 +7128,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -5594,8 +7170,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -5634,8 +7213,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -5673,8 +7255,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -5713,8 +7298,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -5752,8 +7340,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_beyond_wall_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -5796,8 +7387,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -5835,8 +7429,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -5875,8 +7472,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -5914,8 +7514,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -5954,8 +7557,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -5993,8 +7599,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_north_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6037,8 +7646,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6076,8 +7688,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6116,8 +7731,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6155,8 +7773,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6195,8 +7816,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6234,8 +7858,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_ironborn_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6278,8 +7905,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6317,8 +7947,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6357,8 +7990,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6396,8 +8032,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6436,8 +8075,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6475,8 +8117,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_riverlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6519,8 +8164,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6558,8 +8206,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6598,8 +8249,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6637,8 +8291,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6677,8 +8334,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6716,8 +8376,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_vale_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6760,8 +8423,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6799,8 +8465,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -6839,8 +8508,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6878,8 +8550,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -6918,8 +8593,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -6957,8 +8635,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_stormlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7002,8 +8683,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7041,8 +8725,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7081,8 +8768,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7120,8 +8810,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7160,8 +8853,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7199,8 +8895,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_crownlands_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7243,8 +8942,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7282,8 +8984,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7322,8 +9027,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7361,8 +9069,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7401,8 +9112,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7440,8 +9154,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_dorne_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7484,8 +9201,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7523,8 +9243,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7563,8 +9286,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7602,8 +9328,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7642,8 +9371,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7681,8 +9413,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_reach_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7725,8 +9460,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7764,8 +9502,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						highest_held_title_tier >= tier_kingdom
@@ -7804,8 +9545,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7843,8 +9587,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						highest_held_title_tier = tier_duchy
@@ -7883,8 +9630,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -7922,8 +9672,11 @@ character_view_bg = {
 					}
 				}
 				AND = {
-					exists = host
-					host = {
+					#AGOT Modified
+					#exists = host
+					#host = {
+					agot_get_graphical_host_trigger = yes
+					scope:graphical_host ?= {
 						exists = capital_province
 						has_graphical_west_region_trigger = yes
 						NOT = { highest_held_title_tier >= tier_duchy }
@@ -8490,7 +10243,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_cw_mediterranean_throneroom_main"
+		#AGOT Modified
+		#reference = "environment_cw_mediterranean_throneroom_main"
+		reference = "environment_southern_essos_high"
 
 		trigger = {
 			exists = primary_title
@@ -8501,7 +10256,9 @@ character_view_bg = {
 	}
 
 	environment = {
-		reference = "environment_cw_mediterranean_throneroom_spouse"
+		#AGOT Modified
+		#reference = "environment_cw_mediterranean_throneroom_main"
+		reference = "environment_southern_essos_spouse_high"
 
 		trigger = {
 			OR = {
@@ -8922,11 +10679,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = plains
-				OR = {
-					terrain = plains
-					terrain = majorroad_plains
-					terrain = minorroad_plains
-				}
+				agot_is_plains_terrain = yes
 			}
 		}
 	}
@@ -8942,11 +10695,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = hills
-				OR = {
-					terrain = hills
-					terrain = majorroad_hills
-					terrain = minorroad_hills
-				}
+				agot_is_hills_terrain = yes
 			}
 		}
 	}
@@ -8962,11 +10711,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = desert_mountains
-				OR = {
-					terrain = mountains
-					terrain = majorroad_mountains
-					terrain = minorroad_mountains
-				}
+				agot_is_desert_mountains_terrain = yes
 			}
 		}
 	}
@@ -8982,11 +10727,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = oasis
-				OR = {
-					terrain = oasis
-					terrain = majorroad_oasis
-					terrain = minorroad_oasis
-				}
+				agot_is_oasis_terrain = yes
 			}
 		}
 	}
@@ -9002,11 +10743,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = jungle
-				OR = {
-					terrain = jungle
-					terrain = majorroad_jungle
-					terrain = minorroad_jungle
-				}
+				agot_is_jungle_terrain = yes
 			}
 		}
 	}
@@ -9022,11 +10759,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = floodplains
-				OR = {
-					terrain = floodplains
-					terrain = majorroad_floodplains
-					terrain = minorroad_floodplains
-				}
+				agot_is_floodplains_terrain = yes
 			}
 		}
 	}
@@ -9042,11 +10775,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = drylands
-				OR = {
-					terrain = drylands
-					terrain = majorroad_drylands
-					terrain = minorroad_drylands
-				}
+				agot_is_drylands_terrain = yes
 			}
 		}
 	}
@@ -9062,11 +10791,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = wetlands
-				OR = {
-					terrain = wetlands
-					terrain = majorroad_wetlands
-					terrain = minorroad_wetlands
-				}
+				agot_is_wetlands_terrain = yes
 			}
 		}
 	}
@@ -9082,11 +10807,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = farmlands
-				OR = {
-					terrain = farmlands
-					terrain = majorroad_farmlands
-					terrain = minorroad_farmlands
-				}
+				agot_is_farmlands_terrain = yes
 			}
 		}
 	}
@@ -9102,11 +10823,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = desert
-				OR = {
-					terrain = desert
-					terrain = majorroad_desert
-					terrain = minorroad_desert
-				}
+				agot_is_desert_terrain = yes
 			}
 		}
 	}
@@ -9122,11 +10839,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = steppe
-				OR = {
-					terrain = steppe
-					terrain = majorroad_steppe
-					terrain = minorroad_steppe
-				}
+				agot_is_steppe_terrain = yes
 			}
 		}
 	}
@@ -9142,11 +10855,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = forest
-				OR = {
-					terrain = forest
-					terrain = majorroad_forest
-					terrain = minorroad_forest
-				}
+				agot_is_forest_terrain = yes
 			}
 		}
 	}
@@ -9162,11 +10871,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = taiga
-				OR = {
-					terrain = taiga
-					terrain = majorroad_taiga
-					terrain = minorroad_taiga
-				}
+				agot_is_taiga_terrain = yes
 			}
 		}
 	}
@@ -9182,11 +10887,7 @@ character_location_exterior = {
 			location = {
 				#AGOT Modified
 				# terrain = mountains
-				OR = {
-					terrain = mountains
-					terrain = majorroad_mountains
-					terrain = minorroad_mountains
-				}
+				agot_is_mountains_terrain = yes
 			}
 		}
 	}
@@ -9201,7 +10902,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = urban
+				agot_is_urban_terrain = yes
 			}
 		}
 	}
@@ -9215,7 +10916,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = the_bog
+				agot_is_the_bog_terrain = yes
 			}
 		}
 	}
@@ -9229,7 +10930,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = taiga_bog
+				agot_is_taiga_bog_terrain = yes
 			}
 		}
 	}
@@ -9243,7 +10944,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = cloudforest
+				agot_is_cloudforest_terrain = yes
 			}
 		}
 	}
@@ -9257,7 +10958,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = frozen_flats
+				agot_is_frozen_flats_terrain = yes
 			}
 		}
 	}
@@ -9271,7 +10972,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = glacier
+				agot_is_glacier_terrain = yes
 			}
 		}
 	}
@@ -9285,7 +10986,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = canyon
+				agot_is_canyon_terrain = yes
 			}
 		}
 	}
@@ -9299,7 +11000,7 @@ character_location_exterior = {
 			}
 			exists = location
 			location = {
-				terrain = highlands
+				agot_is_highlands_terrain = yes
 			}
 		}
 	}
@@ -9770,11 +11471,17 @@ title_holding = {
 			scope:province = {
 				has_holding_type = tribal_holding
 				OR = {
-					terrain = desert
-					terrain = desert_mountains
-					terrain = oasis
-					terrain = steppe
-					terrain = drylands
+					#AGOT Modified
+					#terrain = desert
+					#terrain = desert_mountains
+					#terrain = oasis
+					#terrain = steppe
+					#terrain = drylands
+					agot_is_desert_terrain = yes
+					agot_is_desert_mountains_terrain = yes
+					agot_is_oasis_terrain = yes
+					agot_is_steppe_terrain = yes
+					agot_is_drylands_terrain = yes
 					#AGOT Disabled
 					NOT = {
 						geographical_region = world_westeros_the_north
@@ -9954,7 +11661,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = desert
+				#AGOT Modified
+				#terrain = desert
+				agot_is_desert_terrain = yes
 			}
 		}
 		reference = "terrain_types/desert.dds"
@@ -9963,7 +11672,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = desert_mountains
+				#AGOT Modified
+				#terrain = desert_mountains
+				agot_is_desert_mountains_terrain = yes
 			}
 		}
 		reference = "terrain_types/desert_mountains.dds"
@@ -9972,7 +11683,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = drylands
+				#AGOT Modified
+				#terrain = drylands
+				agot_is_drylands_terrain = yes
 			}
 		}
 		reference = "terrain_types/drylands.dds"
@@ -9981,7 +11694,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = farmlands
+				#AGOT Modified
+				#terrain = farmlands
+				agot_is_farmlands_terrain = yes
 			}
 		}
 		reference = "terrain_types/farmlands.dds"
@@ -9990,7 +11705,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = floodplains
+				#AGOT Modified
+				#terrain = floodplains
+				agot_is_floodplains_terrain = yes
 			}
 		}
 		reference = "terrain_types/floodplains.dds"
@@ -9999,7 +11716,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = forest
+				#AGOT Modified
+				#terrain = forest
+				agot_is_forest_terrain = yes
 			}
 		}
 		reference = "terrain_types/forest.dds"
@@ -10008,7 +11727,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = hills
+				#AGOT Modified
+				#terrain = hills
+				agot_is_hills_terrain = yes
 			}
 		}
 		reference = "terrain_types/hills.dds"
@@ -10017,7 +11738,9 @@ title_holding = {
 	   trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = jungle
+				#AGOT Modified
+				#terrain = jungle
+				agot_is_jungle_terrain = yes
 			}
 		}
 		reference = "terrain_types/jungle.dds"
@@ -10026,7 +11749,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = mountains
+				#AGOT Modified
+				#terrain = mountains
+				agot_is_mountains_terrain = yes
 			}
 		}
 		reference = "terrain_types/mountains.dds"
@@ -10035,7 +11760,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = oasis
+				#AGOT Modified
+				#terrain = oasis
+				agot_is_oasis_terrain = yes
 			}
 		}
 		reference = "terrain_types/oasis.dds"
@@ -10044,7 +11771,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = plains
+				#AGOT Modified
+				#terrain = plains
+				agot_is_plains_terrain = yes
 			}
 		}
 		reference = "terrain_types/plains.dds"
@@ -10053,7 +11782,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = steppe
+				#AGOT Modified
+				#terrain = steppe
+				agot_is_steppe_terrain = yes
 			}
 		}
 		reference = "terrain_types/steppe.dds"
@@ -10062,7 +11793,9 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = taiga
+				#AGOT Modified
+				#terrain = taiga
+				agot_is_taiga_terrain = yes
 			}
 		}
 		reference = "terrain_types/taiga.dds"
@@ -10071,11 +11804,87 @@ title_holding = {
 		trigger = {
 			title_illustration_save_province_temporary = yes
 			scope:province = {
-				terrain = wetlands
+				#AGOT Modified
+				#terrain = wetlands
+				agot_is_wetlands_terrain = yes
 			}
 		}
 		reference = "terrain_types/wetlands.dds"
 	}
+	#AGOT Added Terrain Types
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_urban_terrain = yes
+			}
+		}
+		reference = "terrain_types/urban.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_the_bog_terrain = yes
+			}
+		}
+		reference = "terrain_types/the_bog.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_taiga_bog_terrain = yes
+			}
+		}
+		reference = "terrain_types/taiga_bog.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_cloudforest_terrain = yes
+			}
+		}
+		reference = "terrain_types/cloudforest.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_frozen_flats_terrain = yes
+			}
+		}
+		reference = "terrain_types/frozen_flats.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_glacier_terrain = yes
+			}
+		}
+		reference = "terrain_types/glacier.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_canyon_terrain = yes
+			}
+		}
+		reference = "terrain_types/canyon.dds"
+	}
+	texture = {
+		trigger = {
+			title_illustration_save_province_temporary = yes
+			scope:province = {
+				agot_is_highlands_terrain = yes
+			}
+		}
+		reference = "terrain_types/highlands.dds"
+	}
+	#AGOT End
 	# Ultimate fallback
 	texture = {
 		reference = "terrain_types/plains.dds"
@@ -10130,7 +11939,12 @@ character_private = {
 	texture = {
 		reference = "event_scenes/temple.dds"
 		trigger = {
-			is_alive = no
+			#AGOT Modified
+			#is_alive = no
+			OR = {
+				is_alive = no
+				agot_is_fake_dead = yes
+			}
 		}
 	}
 
@@ -10321,6 +12135,326 @@ character_private = {
 	}
 	environment = {
 		reference = "environment_event_temple"
+	}
+	
+	##################################
+	### More Backgrounds ###
+	##############################
+
+	# Dragonstone Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_dragonstone.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+			}
+		}
+	}
+	
+	environment = {
+		reference = "environment_frontend_west_main"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+					}
+				}
+			}
+		}
+	}
+
+	# The Rock Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_therock.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_casterly_rock
+					has_title = title:c_casterly_rock
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+			}
+		}
+	}
+	
+	environment = {
+		reference = "environment_cw_east_main"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_casterly_rock
+					has_title = title:c_casterly_rock
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+			}
+		}
+	}
+
+	# Pyke Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_pyke1.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_pyke
+					has_title = title:c_pyke
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+			}
+		}
+	}
+	
+	environment = {
+		reference = "environment_event_gallows"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_pyke
+					has_title = title:c_pyke
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+			}
+		}
+	}
+
+	# Storms End Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_storms_end.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_storms_end
+					has_title = title:c_storms_end
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+			}
+		}
+	}
+	
+	environment = {
+		reference = "environment_throneroom_stormlands_high"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_storms_end
+					has_title = title:c_storms_end
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+			}
+		}
 	}
 
 }

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_bracken_crown_mesh"
+	file = "female_bracken_crown.mesh"
+
+	meshsettings = {
+		name = "female_bracken_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "bracken_crown_diffuse.dds"
+		texture_normal = "bracken_crown_normal.dds"
+		texture_specular = "bracken_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_bracken_crown_entity"
+	pdxmesh = "female_bracken_crown_mesh"
+}
