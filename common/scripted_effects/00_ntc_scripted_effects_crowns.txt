@@ -2114,7 +2114,7 @@ create_artifact_aliandra_martell_crown_effect = {
 	}
 	hidden_effect = {
 		house:house_Martell = {
-			ordered_dynasty_member = {
+			ordered_house_member = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }
 			}
@@ -2158,7 +2158,7 @@ create_artifact_mors_martell_crown_effect = {
 	}
 	hidden_effect = {
 		house:house_Martell = {
-			ordered_dynasty_member = {
+			ordered_house_member = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }
 			}

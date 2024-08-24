@@ -71,6 +71,7 @@ ntc_lannister_crown_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_geroldlannister_crown_effect = { OWNER = this }
 		}
@@ -117,8 +118,19 @@ ntc_martell_crown_spawn.1 = {
 				has_dlc_feature = royal_court
 				has_game_rule = show_dynamic_crowns_enabled
 			}
-			create_artifact_aliandra_martell_crown_effect = { OWNER = this }
 			create_artifact_mors_martell_crown_effect = { OWNER = this }
+		}
+	}
+}
+
+ntc_martell_crown_spawn.2 = {
+	title:c_sunspear.holder = {
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
+			}
+			create_artifact_aliandra_martell_crown_effect = { OWNER = this }
 		}
 	}
 }
@@ -151,6 +163,7 @@ ntc_lannister_crown_shattered_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_geroldlannister_crown_effect = { OWNER = this }
 		}
@@ -159,8 +172,14 @@ ntc_lannister_crown_shattered_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_tyboltthunderbolt_crown_effect = { OWNER = this }
+		}
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
 			agot_create_artifact_westerlands_crown_effect = { OWNER = this }
 			agot_create_artifact_westerlands2_crown_effect = { OWNER = this }
 		}
@@ -172,8 +191,14 @@ ntc_arryn_crown_shattered_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_sharra_arryn_crown_effect = { OWNER = this }
+		}
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
 			agot_create_artifact_falcon_crown_effect = { OWNER = this }
 		}
 	}
@@ -184,8 +209,14 @@ ntc_baratheon_crown_shattered_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_argella_crown_effect = { OWNER = this }
+		}
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
 			agot_create_artifact_stormlands_crown_effect = { OWNER = this }
 		}
 	}
@@ -218,9 +249,15 @@ ntc_tyrell_crown_shattered_spawn.1 = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				has_game_rule = show_dynamic_crowns_enabled
 			}
 			create_artifact_gardener_peace_crown_effect = { OWNER = this }
 			create_artifact_gardener_war_crown_effect = { OWNER = this }
+		}
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
 			agot_create_artifact_reach_crown_effect = { OWNER = this }
 		}
 	}
@@ -238,7 +275,7 @@ ntc_tully_crown_shattered_spawn.1 = {
 }
 
 ntc_the_north_petty_kings_crown_spawn.1 = {
-	title:d_the_wolfswood.holder = {
+	title:c_deepwood.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -246,7 +283,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			create_artifact_wolfswood_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_the_dreadforrt.holder = {
+	title:c_the_dreadfort.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -254,7 +291,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_bolton_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_the_barrowlands.holder = {
+	title:c_barrowton.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -262,7 +299,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_dustin_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_last_lands.holder = {
+	title:c_last_hearth.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -270,7 +307,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_umber_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_the_neck.holder = {
+	title:c_greywater_watch.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -278,7 +315,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_reed_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_white_harbor.holder = {
+	title:c_white_harbor.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -286,7 +323,7 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_manderly_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_bear_island.holder = {
+	title:c_mormont.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -296,17 +333,20 @@ ntc_the_north_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_westerlands_petty_kings_crown_spawn.1 = {
-	title:d_castamere.holder = {
+	title:c_castamere.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
+				NOT = {
+					dynasty ?= dynasty:dynn_Lannister
+				}
 			}
 			create_artifact_crown_of_castamere_effect = { OWNER = this }
 		}
 	}
 }
 ntc_stormlands_petty_kings_crown_spawn.1 = {
-	title:d_tarth.holder = {
+	title:c_evenfall.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -314,7 +354,7 @@ ntc_stormlands_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_tarth_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_blackhaven.holder = {
+	title:c_blackhaven.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -322,7 +362,7 @@ ntc_stormlands_petty_kings_crown_spawn.1 = {
 			create_artifact_crown_of_dondarrion_effect = { OWNER = this }
 		}
 	}
-	title:d_nestridge.holder = {
+	title:c_griffins_roost.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -332,7 +372,7 @@ ntc_stormlands_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_the_reach_petty_kings_crown_spawn.1 = {
-	title:d_goldengrove.holder = {
+	title:c_goldengrove.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -340,7 +380,7 @@ ntc_the_reach_petty_kings_crown_spawn.1 = {
 			create_artifact_crown_of_goldengrove_effect = { OWNER = this }
 		}
 	}
-	title:d_the_arbor.holder = {
+	title:c_wynegarde.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -348,7 +388,7 @@ ntc_the_reach_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_redwyne_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_oldtown.holder = {
+	title:c_oldtown.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -356,7 +396,7 @@ ntc_the_reach_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_hightower_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_westmarch.holder = {
+	title:c_horn_hill.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -366,7 +406,7 @@ ntc_the_reach_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_the_vale_petty_kings_crown_spawn.1 = {
-	title:d_runestone.holder = {
+	title:c_runestone.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -376,7 +416,7 @@ ntc_the_vale_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_iron_isles_petty_kings_crown_spawn.1 = {
-	title:d_harlaw.holder = {
+	title:c_ten_towers.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -384,7 +424,7 @@ ntc_iron_isles_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_harlaw_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_pyke.holder = {
+	title:c_pyke.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -394,7 +434,7 @@ ntc_iron_isles_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_crownlands_petty_kings_crown_spawn.1 = {
-	title:d_driftmark.holder = {
+	title:c_driftmark.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -402,7 +442,7 @@ ntc_crownlands_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_crown_of_the_tides_effect = { OWNER = this }
 		}
 	}
-	title:d_masseys_hook.holder = {
+	title:c_stonedance.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -410,7 +450,7 @@ ntc_crownlands_petty_kings_crown_spawn.1 = {
 			create_artifact_massey_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_duskendale.holder = {
+	title:c_duskendale.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -420,7 +460,7 @@ ntc_crownlands_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_dorne_petty_kings_crown_spawn.1 = {
-	title:d_torrentine.holder = {
+	title:c_starfall.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -428,7 +468,7 @@ ntc_dorne_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_dayne_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_yronwood.holder = {
+	title:c_yronwood.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -438,7 +478,7 @@ ntc_dorne_petty_kings_crown_spawn.1 = {
 	}
 }
 ntc_riverlands_petty_kings_crown_spawn.1 = {
-	title:d_blackwood_vale.holder = {
+	title:c_raventree.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -446,7 +486,7 @@ ntc_riverlands_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_blackwood_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_the_crossing.holder = {
+	title:c_the_twins.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -454,7 +494,7 @@ ntc_riverlands_petty_kings_crown_spawn.1 = {
 			agot_create_artifact_frey_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_southstone.holder = {
+	title:c_stone_hedge.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -462,7 +502,7 @@ ntc_riverlands_petty_kings_crown_spawn.1 = {
 			create_artifact_bracken_crown_effect = { OWNER = this }
 		}
 	}
-	title:d_harrenhal.holder = {
+	title:c_harrenhal.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court

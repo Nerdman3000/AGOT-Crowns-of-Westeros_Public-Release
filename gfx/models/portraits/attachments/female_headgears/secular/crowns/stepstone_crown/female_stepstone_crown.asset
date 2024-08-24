@@ -3,7 +3,7 @@ pdxmesh = {
 	file = "female_stepstone_crown.mesh"
 
 	meshsettings = {
-		name = "female_headgear_stepstone_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		name = "female_stepstone_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
 		index = 0
 		texture_diffuse = "stepstone_crown_diffuse.dds"
 		texture_normal = "stepstone_crown_normal.dds"

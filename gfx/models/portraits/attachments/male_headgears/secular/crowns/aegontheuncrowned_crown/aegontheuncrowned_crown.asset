@@ -17,23 +17,3 @@ entity = {
 	name = "aegontheuncrowned_crown_entity"
 	pdxmesh = "aegontheuncrowned_crown_mesh"
 }
-
-pdxmesh = {
-	name = "male_headgear_aegontheuncrowned_crown_01_artifact_mesh"
-	file = "aegontheuncrowned_crown_artifact.mesh"
-
-	meshsettings = {
-		name = "aegontheuncrowned_crown"
-		index = 0
-		texture_diffuse = "aegontheuncrowned_crown_diffuse.dds"
-		texture_normal = "aegontheuncrowned_crown_normal.dds"
-		texture_specular = "aegontheuncrowned_crown_properties.dds"
-		shader = "court"
-		shader_file = "gfx/FX/court_scene.shader"
-	}
-}
-
-entity = {
-	name = "male_headgear_aegontheuncrowned_crown_01_artifact_entity"
-	pdxmesh = "male_headgear_aegontheuncrowned_crown_01_artifact_mesh"
-}

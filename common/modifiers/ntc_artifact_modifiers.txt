@@ -191,7 +191,7 @@ seawyrm_crown_modifier = {
 	martial = 1
 	prowess = 2
 	no_water_crossing_penalty = yes
-	movement_speed = 5
+	movement_speed = 0.05
 	monthly_dynasty_prestige_mult = 0.01
 }
 greenpyre_crown_modifier = {

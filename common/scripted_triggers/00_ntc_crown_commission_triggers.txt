@@ -989,7 +989,7 @@ ntc_aegonvi_crown_trigger = {
 ntc_aegonblackfyre_crown_trigger = {
 	exists = character:Targaryen_9 # Aegon VI
 	AND = {
-		dynasty ?= dynasty:dynn_Blackfyre
+		house = house:house_Blackfyre
 		this = character:Targaryen_9 # Aegon VI
 	}
 	NOT = {
