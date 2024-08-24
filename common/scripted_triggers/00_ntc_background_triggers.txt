@@ -1,0 +1,19 @@
+﻿more_bg_oakenseat_restored_trigger = {
+	has_title = title:b_highgarden
+	any_character_artifact = {
+		has_variable = restored_oakenseat
+	}
+	NOT = {
+		title:b_highgarden = { has_variable = ruined_oakenseat }
+	}
+}
+
+more_bg_oakenseat_ruined_trigger = {
+	has_title = title:b_highgarden
+	any_character_artifact = {
+		has_variable = ruined_oakenseat
+	}
+	NOT = {
+		title:b_highgarden = { has_variable = restored_oakenseat }
+	}
+}

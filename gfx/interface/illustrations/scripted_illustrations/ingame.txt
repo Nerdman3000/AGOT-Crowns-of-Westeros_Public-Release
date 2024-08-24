@@ -7013,6 +7013,609 @@ character_view_bg = {
 			}
 		}
 	}
+	
+	##################################
+	### More Backgrounds ###
+	##############################
+
+	# Dragonstone Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_dragonstone_throne.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+					is_at_war = no
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_frontend_west_main"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+					is_at_war = no
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = no
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	# Dragonstone Painted Table
+	texture = {
+		reference = "event_scenes/throneroom_dragonstone_table1.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+					is_at_war = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_frontend_west_main"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_dragonstone
+					has_title = title:c_dragonstone
+					is_at_war = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_dragonstone
+						has_title = title:c_dragonstone
+						is_at_war = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+
+	# The Rock Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_therock.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_casterly_rock
+					has_title = title:c_casterly_rock
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_cw_east_main"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_casterly_rock
+					has_title = title:c_casterly_rock
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_casterly_rock
+						has_title = title:c_casterly_rock
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+
+	# Pyke Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_pyke1.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_pyke
+					has_title = title:c_pyke
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_event_gallows"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_pyke
+					has_title = title:c_pyke
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_pyke
+						has_title = title:c_pyke
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+
+	# Storms End Throneroom
+	texture = {
+		reference = "event_scenes/throneroom_storms_end.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_storms_end
+					has_title = title:c_storms_end
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_throneroom_stormlands_high"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_storms_end
+					has_title = title:c_storms_end
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_storms_end
+						has_title = title:c_storms_end
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	# Highgarden Throneroom - Ruined Oakenseat
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_old_1.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_highgarden
+					has_title = title:c_highgarden
+					more_bg_oakenseat_ruined_trigger = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_throneroom_reach_high"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_highgarden
+					has_title = title:c_highgarden
+					more_bg_oakenseat_ruined_trigger = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_ruined_trigger = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	# Highgarden Throneroom - Restored Oakenseat
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_new_1.dds"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_highgarden
+					has_title = title:c_highgarden
+					more_bg_oakenseat_restored_trigger = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
+	
+	environment = {
+		reference = "environment_throneroom_reach_high"
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = capital_county
+					capital_county = title:c_highgarden
+					has_title = title:c_highgarden
+					more_bg_oakenseat_restored_trigger = yes
+				}
+				AND = {
+					exists = primary_spouse
+					primary_spouse = {
+						NOT = { is_ruler = yes }
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+				AND = {
+					exists = betrothed
+					betrothed = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+				AND = {
+					exists = host
+					host = {
+						exists = capital_county
+						capital_county = title:c_highgarden
+						has_title = title:c_highgarden
+						more_bg_oakenseat_restored_trigger = yes
+					}
+				}
+			}
+			NOT = { has_trait = dragon }
+		}
+	}
 
 	###############################
 	### BEYOND WALL THRONEROOMS ###
@@ -12135,326 +12738,6 @@ character_private = {
 	}
 	environment = {
 		reference = "environment_event_temple"
-	}
-	
-	##################################
-	### More Backgrounds ###
-	##############################
-
-	# Dragonstone Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_dragonstone.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_dragonstone
-					has_title = title:c_dragonstone
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_frontend_west_main"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_dragonstone
-					has_title = title:c_dragonstone
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_dragonstone
-						has_title = title:c_dragonstone
-					}
-				}
-			}
-		}
-	}
-
-	# The Rock Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_therock.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_casterly_rock
-					has_title = title:c_casterly_rock
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_cw_east_main"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_casterly_rock
-					has_title = title:c_casterly_rock
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_casterly_rock
-						has_title = title:c_casterly_rock
-					}
-				}
-			}
-		}
-	}
-
-	# Pyke Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_pyke1.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_pyke
-					has_title = title:c_pyke
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_event_gallows"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_pyke
-					has_title = title:c_pyke
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_pyke
-						has_title = title:c_pyke
-					}
-				}
-			}
-		}
-	}
-
-	# Storms End Throneroom
-	texture = {
-		reference = "event_scenes/throneroom_storms_end.dds"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_storms_end
-					has_title = title:c_storms_end
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-			}
-		}
-	}
-	
-	environment = {
-		reference = "environment_throneroom_stormlands_high"
-
-		trigger = {
-			OR = {
-				AND = {
-					exists = capital_county
-					capital_county = title:c_storms_end
-					has_title = title:c_storms_end
-				}
-				AND = {
-					exists = primary_spouse
-					primary_spouse = {
-						NOT = { is_ruler = yes }
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = betrothed
-					betrothed = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-				AND = {
-					exists = host
-					host = {
-						exists = capital_county
-						capital_county = title:c_storms_end
-						has_title = title:c_storms_end
-					}
-				}
-			}
-		}
 	}
 
 }

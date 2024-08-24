@@ -1546,17 +1546,6 @@ barbershop_background = {
 		reference = "environment_throneroom_west_high"
 	}
 	
-		##########################################
-
-	##AGOT More Backgrounds ADDED
-	texture = {
-		reference = "event_scenes/ironthrone/throneroom_ironthrone.dds"
-	}
-	##AGOT More Backgrounds ADDED
-	environment = {
-		reference = "environment_throneroom_iron_throne"
-	}
-	
 	##########################################
 
 	##AGOT More Backgrounds ADDED
@@ -1638,11 +1627,77 @@ barbershop_background = {
 
 	##AGOT More Backgrounds ADDED
 	texture = {
-		reference = "event_scenes/throneroom_dragonstone.dds"
+		reference = "event_scenes/throneroom_dragonstone_throne.dds"
 	}
 	##AGOT More Backgrounds ADDED
 	environment = {
 		reference = "environment_frontend_west_main"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_dragonstone_table1.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_frontend_west_main"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_dragonstone_table2.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_frontend_west_main"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_old_1.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_throneroom_reach_high"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_new_1.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_throneroom_reach_high"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_old_2.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_throneroom_reach_high"
+	}
+	
+	##########################################
+
+	##AGOT More Backgrounds ADDED
+	texture = {
+		reference = "event_scenes/throneroom_highgarden_new_2.dds"
+	}
+	##AGOT More Backgrounds ADDED
+	environment = {
+		reference = "environment_throneroom_reach_high"
 	}
 	
 }
