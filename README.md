@@ -79,6 +79,8 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 - Daenerys (Daughter of Jaehaerys) Crown
 - Aemond Targaryen Crown
 - Valarr Targaryen Crown
+- Matarys Targaryen Crown
+- Jacaerys Velaryon Crown
 - Rhaella (Daughter of Rhaena) Crown
 
 *New Blackfyre Crowns*
@@ -106,11 +108,15 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 - Princess Aliandra Martell Crown
 - Prince Mors II Martell Circlet
 
-*New Targaryen Cadet Crowns*
+*Other House Crowns*
 
 - Goldfyre (Targaryen + Lannister) Crown
 - Greenpyre (Targaryen + Hightower) Crown
 - Seawyrm (Targaryen + Velaryon) Crown
+- Bracken Crown
+- Massey Crown
+- Darklyn Crown
+- Wolfswood Crown
 
 *Other Crowns*
 
