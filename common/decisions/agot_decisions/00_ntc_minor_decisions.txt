@@ -92,6 +92,7 @@ ntc_crown_storage_decision = {
 	selection_tooltip = ntc_crown_storage_decision_tooltip
 
 	is_shown = {
+		game_start_date >= 8000.1.1
 		has_title = title:c_kings_landing
 		NOT = {
 			has_government = nights_watch_government
@@ -137,8 +138,45 @@ ntc_crown_storage_decision = {
 
 }
 
+ntc_crown_debug_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	ai_check_interval = 0
+	desc = ntc_crown_debug_decision_desc
+	selection_tooltip = ntc_crown_debug_decision_tooltip
 
+	is_shown = {
+		always = no
+		is_ai = no
+	}
 
+	is_valid = {
+		prestige >= 50
+		is_ai = no
+	}
 
+	is_valid_showing_failures_only = {
+		is_at_war = no
+	}
 
+	ai_potential = {
+		always = no
+	}
 
+	effect = {
+		create_artifact_daenerys_daughterofjaehaerys_crown_effect = { OWNER = this }
+		create_artifact_garlandgardener_crown_effect = { OWNER = this }
+		create_artifact_myrcella_circlet_effect = { OWNER = this }
+		create_artifact_garthgoldhand_crown_effect = { OWNER = this }
+		create_artifact_calla_blackfyre_circlet_effect = { OWNER = this }
+		create_artifact_robbstark_crown_effect = { OWNER = this }
+		create_artifact_viserys_son_of_aenys_02_effect = { OWNER = this }
+		create_artifact_branstark_crown_effect = { OWNER = this }
+		create_artifact_lancellannister_crown_effect = { OWNER = this }
+		create_artifact_crown_of_the_grey_king_effect = { OWNER = this }
+		create_artifact_alysanne_crown_effect = { OWNER = this }
+		create_artifact_viserys_son_of_aenys_effect = { OWNER = this }
+	}
+
+	cost = { prestige = 50 }
+
+}

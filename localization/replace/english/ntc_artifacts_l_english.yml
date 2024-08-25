@@ -5,8 +5,8 @@
  stepstone_crown_name:0 "Driftwood Stepstones Crown"
  stepstone_crown_description:0 "A replica of a makeshift crown made of Driftwood and decorated with shark teeth, burnt iron, chains, and rope, this crown is a mocking imitation of the illustrious Conqueror's Crown, no doubt originally created by an Ironborn pirate annoyed by Aegon's Conquest."
  
- alysanne_crown_name:0 "Crown of Rhaella, Daughter of Rhaena"
- alysanne_crown_description:0 "A golden crown features a series of different colored gemstones at each point made for Rhaella, daughter of Rhaena Targaryen and twin of Aerea Targaryen."
+ alysanne_crown_name:0 "Crown of Matarys Targaryen"
+ alysanne_crown_description:0 "A golden crown features a series of different colored gemstones at each point made for Matarys Targaryen."
  
  bittersteel_crown_name:0 "Crown of Aegor 'Bittersteel' Rivers"
  bittersteel_crown_description:0 "A crown made for Aegor Rivers, also known as Bittersteel, in case all the male Blackfyres were killed. A gold and copper circlet inspired by the ancient old Petty King Bracken crown, it features golden skulls and copper and gold wings to reflect Aegor's Bracken heritage."
@@ -122,6 +122,9 @@
  laenorvelaryon_crown_name:0 "Crown of Laenor Velaryon"
  laenorvelaryon_crown_description:0 "A crown made for Laenor Targaryen, son of Rhaenys 'the Queen Who Never Was' and Corlys Velaryon, if he won the Great Council of 101 AC and became king. A silver and blue crystal band, it features golden seahorses in reference to House Velaryon's rise in wealth under Corlys as well as three dragons in the center, one large one made of red-gold to honor the dragon Maelys (ridden by Rhaenys) and two grey-silver dragons to honor her children, Laenor and Laena Velaryon."
  
+ jacaerysvelaryon_crown_name:0 "Crown of Jacaerys Velaryon"
+ jacaerysvelaryon_crown_description:0 "A crown made for Jacaerys Targaryen, son of Rhaenyra Targaryen and 'Laenor Velaryon', if he had became king. Intended to be gifted by Corlys Velaryon to his 'grandson', this wondrous circlet is made of Valyrian steel, edged and embossed in silver so that it shines with seven aquamarines inlaid in it, each a different shade of blue or sea-green."
+  
  baelon_crown_name:0 "Crown of Baelon, Son of Jaehaerys I"
  baelon_crown_description:0 "A crown made for Baelon Targaryen, son of King Jaehaerys I Targaryen, if he had become king. It features a silver and black pointed design and is encursted with red rubies."
  
@@ -185,8 +188,14 @@
  lancellannister_crown_name:0 "Crown of Lancel I 'the Lion' Lannister"
  lancellannister_crown_description:0 "A replica of a crown historically worn by King Lancel I 'the Great' Lannister of the Westerlands, which was made of gold and red-gold marble and featured 28 highly detailed and accurate golden lions on the face of the crown. \n \nHISTORY - Forged during the reign of King Lancel I 'the Lion' Lannister, this heavily lion themed crown was gifted to King Lancel by Lord Rywin Reyne to congratulate the then young king on his great conquests of the Reach. \n \nUnfortunately the crown would be lost centuries later, along with the Lannister Valyrian Steel Sword Brightroar, when its final owner, King Tommen II Lannister, vanished on a expedition to Valyria."
  
- aereatargaryen_crown_name:0 "Crown of Aerea Targaryen"
- aereatargaryen_crown_description:0 "A crown made for Aerea Targaryen, daughter of Rhaena Targaryen, if she had become queen. A diadem of silver designed in the image of dragon wings, it is encrusted with red rubies."
+ aereatargaryen_crown_01_name:0 "Crown of Aerea Targaryen"
+ aereatargaryen_crown_01_description:0 "A crown made for Aerea Targaryen, daughter of Rhaena Targaryen, if she had become queen. A circlet of Valyrian Steel, iron, and regular steel, it is adorned with red dragon egg looking gems and two dragons breathing fire upon one center large ruby egg gem."
+ 
+ aereatargaryen_crown_02_name:0 "Crown of Rhaella Targaryen, Daughter of Rhaena"
+ aereatargaryen_crown_02_description:0 "A crown made for Rhaella Targaryen, daughter of Rhaena Targaryen, if she had become queen. A circlet of gold, silver, copper, and steel, it is adorned with multi-colored dragon egg looking gems and two dragons breathing fire upon one center large ruby egg gem."
+ 
+ vaellatargaryen_crown_name:0 "Crown of Vaella Targaryen"
+ vaellatargaryen_crown_description:0 "A crown made for Vaella Targaryen, daughter of Daeron 'the Drunken' Targaryen, if she had become queen. A diadem of silver designed in the image of dragon wings, it is encrusted with red rubies."
  
  brightflame_crown_name:0 "Crown of Aerion 'Brightflame' Targaryen"
  brightflame_crown_description:0 "A crown made for Aerion Targaryen, known as Aerion Brightflame, son of King Maekar I Targaryen, if he had become king. It features a band of gold and bronze encrusted with emerald jewels and above it gold and emerald flames."

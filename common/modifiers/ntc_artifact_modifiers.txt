@@ -185,6 +185,15 @@ laenorvelaryon_crown_modifier = {
 	movement_speed = 0.05
 	monthly_dynasty_prestige_mult = 0.05
 }
+jacaerysvelaryon_crown_modifier = {
+	icon = grandeur_positive
+	dynasty_opinion = 2
+	diplomacy = 4
+	strong_xp_gain_mult = 1
+	no_water_crossing_penalty = yes
+	movement_speed = 0.05
+	monthly_dynasty_prestige_mult = 0.05
+}
 seawyrm_crown_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.01
@@ -231,9 +240,16 @@ jonsnow_crown_modifier = {
 	advantage = 5
 	old_gods_religion_opinion = 5
 }
-aereatargaryen_crown_modifier = {
+aereatargaryen_crown_01_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.01
+	opinion_of_female_rulers = 3
+	twin_opinion = 5
+	monthly_dynasty_prestige_mult = 0.01
+}
+aereatargaryen_crown_02_modifier = {
+	icon = grandeur_positive
+	monthly_piety = 0.01
 	opinion_of_female_rulers = 3
 	twin_opinion = 5
 	monthly_dynasty_prestige_mult = 0.01

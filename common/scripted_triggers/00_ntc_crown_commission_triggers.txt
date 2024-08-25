@@ -586,7 +586,7 @@ ntc_aegontheuncrowned_crown_trigger = {
 	}
 }
 
-ntc_aereatargaryen_crown_trigger = {
+ntc_aereatargaryen_crown_01_trigger = {
 	exists = character:Targaryen_41 # Aerea Targaryen
 	this = character:Targaryen_41 # Aerea Targaryen
 	NOT = {
@@ -597,7 +597,39 @@ ntc_aereatargaryen_crown_trigger = {
 	}
 	NOT = {
 		any_artifact = {
-			has_variable = crown_aereatargaryen_artifact
+			has_variable = aereatargaryen_crown_01_artifact
+		}
+	}
+}
+
+ntc_aereatargaryen_crown_02_trigger = {
+	exists = character:Targaryen_42 # Rhaella Targaryen
+	this = character:Targaryen_42 # Rhaella Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = aereatargaryen_crown_02_artifact
+		}
+	}
+}
+
+ntc_vaellatargaryen_crown_trigger = {
+	exists = character:Targaryen_124 # Vaella Targaryen
+	this = character:Targaryen_124 # Vaella Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = vaellatargaryen_crown_artifact
 		}
 	}
 }
@@ -694,6 +726,22 @@ ntc_laenorvelaryon_crown_trigger = {
 	NOT = {
 		any_artifact = {
 			has_variable = crown_laenorvelaryon_artifact
+		}
+	}
+}
+
+ntc_jacaerysvelaryon_crown_trigger = {
+	exists = character:Targaryen_75 # Jacaerys Velaryon
+	this = character:Targaryen_75 # Jacaerys Velaryon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_jacaerysvelaryon_artifact
 		}
 	}
 }
@@ -949,7 +997,7 @@ ntc_viserys_son_of_aenys_trigger = {
 	}
 	NOT = {
 		any_artifact = {
-			has_variable = crown_rhaegar_silver_artifact
+			has_variable = crown_viserys_son_of_aenys_artifact
 		}
 	}
 }
@@ -1249,13 +1297,16 @@ agot_can_make_any_crown_trigger = {
 		ntc_gardener_crown_trigger = yes
 		ntc_orysbaratheon_crown_trigger = yes
 		ntc_aegontheuncrowned_crown_trigger = yes
-		ntc_aereatargaryen_crown_trigger = yes
+		ntc_aereatargaryen_crown_01_trigger = yes
+		ntc_aereatargaryen_crown_02_trigger = yes
+		ntc_vaellatargaryen_crown_trigger = yes
 		ntc_aegonsonofjaehaerys_crown_trigger = yes
 		ntc_aemonsonofjaehaerys_crown_trigger = yes
 		ntc_baelon_crown_trigger = yes
 		ntc_vaegon_crown_trigger = yes
 		ntc_rhaenysvelaryon_crown_trigger = yes
 		ntc_laenorvelaryon_crown_trigger = yes
+		ntc_jacaerysvelaryon_crown_trigger = yes
 		ntc_aemond_crown_trigger = yes
 		ntc_baelorbreakspear_crown_trigger = yes
 		ntc_bittersteel_crown_trigger = yes

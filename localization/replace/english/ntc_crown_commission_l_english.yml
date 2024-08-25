@@ -24,6 +24,11 @@
 
  ntc_crown_storage_decision:0 "Bring Crowns Out of Storage"
  ntc_crown_storage_decision_tooltip:0 "You will bring out the crowns of the conquered kings of the Seven Kingdoms."
- ntc_crown_storage_decision_desc:0 "When Aegon the Conqueror subjugated the once independent kingdoms of Westeros, most of the former kings were forced to surrender their crowns to the new King of the Andals, the Rhoynar, and the First Men. While some crowns, such as the ones worn by Harren the Black and Mern IX Gardener during battle, were lost, melted and burned at Harrenhal or the Field of Fire, the ones that remain are still to this day kept as trophies. \n \nThough, in an effort to avoid antagonizing the Great Houses, they'd been kept in storage ever since. Hidden away in the bowels of the Red Keep where none but the King's trusted could ever see them. \n \nThe time has come to openly bring them out and display the might of the Iron Throne and its conquests."
+ ntc_crown_storage_decision_desc:0 "When Aegon the Conqueror subjugated the once independent kingdoms of Westeros, most of the former kings were forced to surrender their crowns to the new King of the Andals, the Rhoynar, and the First Men. While some crowns, such as the ones worn by Harren the Black and Mern IX Gardener during battle, were lost, melted and burned at Harrenhal or the Field of Fire, the ones that remain are still to this day kept as trophies. \n \nIn an effort to avoid antagonizing the Great Houses, however, they've been kept in storage ever since. Hidden away in the bowels of the Red Keep where none but the King's trusted could ever see them. \n \nThe time has come to openly bring them out and display the might of the Iron Throne and its conquests."
  ntc_crown_storage_decision_effects_tooltip:0 "You will bring out the crowns of the conquered kings of the Seven Kingdoms."
  ntc_crown_storage_decision_confirm:0 "Summon the Antiquarian!"
+
+ ntc_crown_debug_decision:0 "Test Crowns Crowns of Westeros"
+ ntc_crown_debug_decision_tooltip:0 "You will bring out aaaaaall the crowns."
+ ntc_crown_debug_decision_desc:0 "AAAAAALL the crowns."
+ ntc_crown_debug_decision_confirm:0 "Summon the Antiquarian!"

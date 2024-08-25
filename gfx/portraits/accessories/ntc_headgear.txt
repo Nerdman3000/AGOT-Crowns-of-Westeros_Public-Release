@@ -63,9 +63,9 @@ rhaenysvelaryon_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		entity = rhaenysvelaryon_crown_entity 	 }	
 }
 
-male_rhaenysvelaryon_crown = {	
+female_rhaenysvelaryon_crown = {	
 	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		entity = male_rhaenysvelaryon_crown_entity 	 }	
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_rhaenysvelaryon_crown_entity 	 }	
 }
 
 female_rhaenatargaryen_crown = {	
@@ -78,14 +78,34 @@ rhaenatargaryen_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		entity = male_rhaenatargaryen_crown_entity 	 }	
 }
 
-aereatargaryen_crown = {	
+vaellatargaryen_crown = {	
 	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		entity = aereatargaryen_crown_entity 	 }	
+	entity = { required_tags = ""			shared_pose_entity = head		entity = vaellatargaryen_crown_entity 	 }	
 }
 
-male_aereatargaryen_crown = {	
+female_vaellatargaryen_crown = {	
 	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		entity = male_aereatargaryen_crown_entity 	 }	
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_vaellatargaryen_crown_entity 	 }	
+}
+
+aereatargaryen_crown_01 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = aereatargaryen_crown_01_entity 	 }	
+}
+
+female_aereatargaryen_crown_01 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_aereatargaryen_crown_01_entity 	 }	
+}
+
+aereatargaryen_crown_02 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = aereatargaryen_crown_02_entity 	 }	
+}
+
+female_aereatargaryen_crown_02 = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_aereatargaryen_crown_02_entity 	 }	
 }
 
 baelorbreakspear_crown = {	
@@ -251,6 +271,16 @@ laenorvelaryon_crown = {
 female_laenorvelaryon_crown = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		entity = female_laenorvelaryon_crown_entity 	 }	
+}
+
+jacaerysvelaryon_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = jacaerysvelaryon_crown_entity 	 }	
+}
+
+female_jacaerysvelaryon_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_jacaerysvelaryon_crown_entity 	 }	
 }
 
 haegonblackfyre_crown = {	

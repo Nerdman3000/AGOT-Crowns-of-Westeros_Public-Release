@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "jacaerysvelaryon_crown_mesh"
+	file = "jacaerysvelaryon_crown.mesh"
+
+	meshsettings = {
+		name = "jacaerysvelaryon_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "jacaerysvelaryon_crown_diffuse.dds"
+		texture_normal = "jacaerysvelaryon_crown_normal.dds"
+		texture_specular = "jacaerysvelaryon_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "jacaerysvelaryon_crown_entity"
+	pdxmesh = "jacaerysvelaryon_crown_mesh"
+}

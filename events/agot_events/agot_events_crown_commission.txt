@@ -503,10 +503,48 @@ agot_commission_crown.0001 = { # Chose to create a crown based on Dynasty
 				}
 				if = {
 					limit = {
-						root = { ntc_aereatargaryen_crown_trigger = yes }
+						root = { ntc_aereatargaryen_crown_01_trigger = yes }
 					}
 
-					create_artifact_aereatargaryen_crown_effect = { OWNER = this }
+					create_artifact_aereatargaryen_crown_01_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_aereatargaryen_crown_02_trigger = yes }
+					}
+
+					create_artifact_aereatargaryen_crown_02_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_vaellatargaryen_crown_trigger = yes }
+					}
+
+					create_artifact_vaellatargaryen_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -2650,9 +2688,21 @@ agot_commission_crown.0001 = { # Chose to create a crown based on Dynasty
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_aereatargaryen_artifact }
+				var:selected_artifact = { has_variable = aereatargaryen_crown_01_artifact }
 			}
-			create_artifact_aereatargaryen_crown_effect = { OWNER = this }
+			create_artifact_aereatargaryen_crown_01_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = aereatargaryen_crown_02_artifact }
+			}
+			create_artifact_aereatargaryen_crown_02_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vaellatargaryen_crown_artifact }
+			}
+			create_artifact_vaellatargaryen_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -2689,6 +2739,12 @@ agot_commission_crown.0001 = { # Chose to create a crown based on Dynasty
 				var:selected_artifact = { has_variable = crown_laenorvelaryon_artifact }
 			}
 			create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_jacaerysvelaryon_artifact }
+			}
+			create_artifact_jacaerysvelaryon_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -2782,7 +2838,7 @@ agot_commission_crown.0001 = { # Chose to create a crown based on Dynasty
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_rhaegar_silver_artifact }
+				var:selected_artifact = { has_variable = crown_viserys_son_of_aenys_artifact }
 			}
 			create_artifact_viserys_son_of_aenys_effect = { OWNER = this }
 		}
@@ -3624,7 +3680,7 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 						}
 					}
 				
-					create_artifact_aereatargaryen_crown_effect = { OWNER = this }
+					create_artifact_aereatargaryen_crown_01_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -3763,6 +3819,29 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 					}
 				
 					create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = crown_jacaerysvelaryon_artifact
+							}
+						}
+					}
+				
+					create_artifact_jacaerysvelaryon_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -4148,7 +4227,7 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 					limit = {
 						NOT = {
 							any_artifact = {
-								has_variable = crown_rhaegar_silver_artifact
+								has_variable = crown_viserys_son_of_aenys_artifact
 							}
 						}
 					}
@@ -4583,7 +4662,7 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 			limit = {
 				var:selected_artifact = { has_variable = crown_aereatargaryen_artifact }
 			}
-			create_artifact_aereatargaryen_crown_effect = { OWNER = this }
+			create_artifact_aereatargaryen_crown_01_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -4719,7 +4798,7 @@ agot_commission_crown.1111 = { # Chose to create a crown based on Dynasty
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_rhaegar_silver_artifact }
+				var:selected_artifact = { has_variable = crown_viserys_son_of_aenys_artifact }
 			}
 			create_artifact_viserys_son_of_aenys_effect = { OWNER = this }
 		}

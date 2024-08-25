@@ -54,15 +54,23 @@
  
  PORTRAIT_MODIFIER_custom_headgear_rhaenysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Crown of Rhaenys 'The Queen Who Never Was'"
  
- PORTRAIT_MODIFIER_custom_headgear_male_rhaenysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Crown of Rhaenys 'The Queen Who Never Was'"
+ PORTRAIT_MODIFIER_custom_headgear_female_rhaenysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Crown of Rhaenys 'The Queen Who Never Was'"
  
  PORTRAIT_MODIFIER_custom_headgear_rhaenatargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaena Targaryen's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_rhaenatargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaena Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_aereatargaryen_crown:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_aereatargaryen_crown_01:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_male_aereatargaryen_crown:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_aereatargaryen_crown_01:0 "@Crowns_of_Westeros_icon! Aerea Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aereatargaryen_crown_02:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aereatargaryen_crown_02:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_vaellatargaryen_crown:0 "@Crowns_of_Westeros_icon! Vaella Targaryen's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_vaellatargaryen_crown:0 "@Crowns_of_Westeros_icon! Vaella Targaryen's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
  
@@ -129,6 +137,10 @@
  PORTRAIT_MODIFIER_custom_headgear_laenorvelaryon_crown:0 "@Crowns_of_Westeros_icon! Laenor Velaryon's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_laenorvelaryon_crown:0 "@Crowns_of_Westeros_icon! Laenor Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jacaerysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Jacaerys Velaryon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_jacaerysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Jacaerys Velaryon's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
  
@@ -204,9 +216,9 @@
  
  PORTRAIT_MODIFIER_custom_headgear_female_haegonblackfyre_crown:0 "@Crowns_of_Westeros_icon! Haegon Blackfyre's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Matarys Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_female_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Rhaella, Daughter of Rhaena's Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_alysannetargaryen_crown:0 "@Crowns_of_Westeros_icon! Matarys Targaryen's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_alyssavelaryon_crown:0 "@Crowns_of_Westeros_icon! Queen Alyssa Velaryon's Crown"
  

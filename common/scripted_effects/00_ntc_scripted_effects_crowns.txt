@@ -1163,6 +1163,45 @@ create_artifact_laenorvelaryon_crown_effect = {
 	}
 }
 
+create_artifact_jacaerysvelaryon_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = jacaerysvelaryon_crown_name
+		description = jacaerysvelaryon_crown_description
+		type = helmet
+		visuals = jacaerysvelaryon_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = jacaerysvelaryon_crown_template
+		modifier = jacaerysvelaryon_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = crown_jacaerysvelaryon_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Velaryon = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
 create_artifact_jonsnow_crown_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -1202,7 +1241,7 @@ create_artifact_jonsnow_crown_effect = {
 	}
 }
 
-create_artifact_aereatargaryen_crown_effect = {
+create_artifact_aereatargaryen_crown_01_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 
@@ -1210,20 +1249,98 @@ create_artifact_aereatargaryen_crown_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = aereatargaryen_crown_name
-		description = aereatargaryen_crown_description
+		name = aereatargaryen_crown_01_name
+		description = aereatargaryen_crown_01_description
 		type = helmet
-		visuals = aereatargaryen_crown_visuals
+		visuals = aereatargaryen_crown_01_visuals
 		wealth = scope:wealth
 		quality = scope:quality
-		template = aereatargaryen_crown_template
-		modifier = aereatargaryen_crown_modifier
+		template = aereatargaryen_crown_01_template
+		modifier = aereatargaryen_crown_01_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
 
 	scope:newly_created_artifact = {
-		set_variable = { name = crown_aereatargaryen_artifact value = yes }
+		set_variable = { name = aereatargaryen_crown_01_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aereatargaryen_crown_02_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aereatargaryen_crown_02_name
+		description = aereatargaryen_crown_02_description
+		type = helmet
+		visuals = aereatargaryen_crown_02_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aereatargaryen_crown_02_template
+		modifier = aereatargaryen_crown_02_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aereatargaryen_crown_02_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_vaellatargaryen_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = vaellatargaryen_crown_name
+		description = vaellatargaryen_crown_description
+		type = helmet
+		visuals = vaellatargaryen_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vaellatargaryen_crown_template
+		modifier = vaellatargaryen_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = vaellatargaryen_crown_artifact value = yes }
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title

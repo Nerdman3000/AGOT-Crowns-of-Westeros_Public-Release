@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_aereatargaryen_crown_01_mesh"
+	file = "female_aereatargaryen_crown_01.mesh"
+
+	meshsettings = {
+		name = "female_aereatargaryen_crown_01Shape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "female_valyrian_necklace_01_diffuse.dds"
+		texture_normal = "female_valyrian_necklace_01_normal.dds"
+		texture_specular = "female_valyrian_necklace_01_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_aereatargaryen_crown_01_entity"
+	pdxmesh = "female_aereatargaryen_crown_01_mesh"
+}

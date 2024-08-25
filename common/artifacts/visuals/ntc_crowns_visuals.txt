@@ -80,6 +80,10 @@ laenorvelaryon_crown_visuals = {
 	icon = "laenorvelaryon_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
+jacaerysvelaryon_crown_visuals = {
+	icon = "jacaerysvelaryon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
 seawyrm_crown_visuals = {
 	icon = "seawyrm_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
@@ -104,8 +108,16 @@ jonsnow_crown_visuals = {
 	icon = "jonsnow_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
-aereatargaryen_crown_visuals = {
-	icon = "aereatargaryen_crown.dds"	
+aereatargaryen_crown_01_visuals = {
+	icon = "aereatargaryen_crown_01.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aereatargaryen_crown_02_visuals = {
+	icon = "aereatargaryen_crown_02.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+vaellatargaryen_crown_visuals = {
+	icon = "vaellatargaryen_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
 rhaenysvelaryon_crown_visuals = {

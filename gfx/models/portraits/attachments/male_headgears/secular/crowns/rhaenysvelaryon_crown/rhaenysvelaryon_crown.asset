@@ -3,7 +3,7 @@ pdxmesh = {
 	file = "rhaenysvelaryon_crown.mesh"
 
 	meshsettings = {
-		name = "female_headgear_rhaenysvelaryon_crown_01" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		name = "rhaenysvelaryon_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
 		index = 0
 		texture_diffuse = "rhaenysvelaryon_crown_diffuse.dds"
 		texture_normal = "rhaenysvelaryon_crown_normal.dds"
