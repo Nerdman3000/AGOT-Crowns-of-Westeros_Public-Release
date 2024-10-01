@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_crown_of_stone_hedge_mesh"
+	file = "female_crown_of_stone_hedge.mesh"
+
+	meshsettings = {
+		name = "female_crown_of_stone_hedgeShape"
+		index = 0
+		texture_diffuse = "crown_of_stone_hedge_diffuse.dds"
+		texture_normal = "crown_of_stone_hedge_normal.dds"
+		texture_specular = "crown_of_stone_hedge_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_crown_of_stone_hedge_entity"
+	pdxmesh = "female_crown_of_stone_hedge_mesh"
+}

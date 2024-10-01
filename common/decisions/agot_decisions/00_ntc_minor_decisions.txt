@@ -26,6 +26,25 @@
 	is_valid_showing_failures_only = {
 		# Only valid for characters with a court smith.
 		employs_court_position = court_smith_court_position
+		
+		custom_tooltip = {
+			text = agot_in_coronation
+			NOR = {
+				involved_activity ?= {
+					has_activity_type = activity_coronation
+				}
+				involved_activity ?= {
+					has_activity_type = activity_no_dlc_coronation
+				}
+			}
+		}
+		
+		#custom_tooltip = {
+		#	text = agot_commission_on_cooldown
+		#	NOT = {
+		#		has_variable = crown_commission_cooldown
+		#	}
+		#}
 	}
 
 	ai_potential = {
@@ -54,6 +73,23 @@
 		}
 
 		item = {
+			value = agot_commission_crown_spouse_choice
+			localization = {
+				desc = agot_commission_crown_spouse_choice_loc
+			}
+			icon = "gfx/interface/icons/character_interactions/icon_marriage.dds"
+			is_shown = {
+				is_married = yes
+			}
+			is_valid = {
+				is_ai = no
+				primary_spouse ?= {
+					agot_can_make_any_crown_trigger = yes
+				}
+			}
+		}
+
+		item = {
 			value = agot_commission_crown_westeros_choice
 			localization = {
 				desc = agot_commission_crown_westeros_choice_loc
@@ -74,9 +110,15 @@
 			}
 		}
 		else_if = {
+			limit = { scope:agot_commission_crown_spouse_choice = yes }
+			root = {
+				trigger_event = agot_commission_crown.1212
+			}
+		}
+		else_if = {
 			limit = { scope:agot_commission_crown_westeros_choice = yes }
 			root = {
-				trigger_event = agot_commission_crown.1111
+				trigger_event = agot_commission_crown.1313
 			}
 		}
 	}
@@ -154,15 +196,122 @@ ntc_crown_debug_decision = {
 		is_ai = no
 	}
 
-	is_valid_showing_failures_only = {
-		is_at_war = no
-	}
-
 	ai_potential = {
 		always = no
 	}
 
 	effect = {
+		# create_artifact_aegonvi_crown_effect = { OWNER = this }
+		# create_artifact_rhaegar_crown_effect = { OWNER = this }
+		# create_artifact_viserys_son_of_aenys_effect = { OWNER = this }
+		# create_artifact_viserys_son_of_aenys_02_effect = { OWNER = this }
+		# create_artifact_aegonblackfyre_crown_effect = { OWNER = this }
+		# create_artifact_viserysiii_crown_effect = { OWNER = this }
+		# create_artifact_jonsnowtargaryen_crown_effect = { OWNER = this }
+		# create_artifact_maesteraemon_crown_effect = { OWNER = this }
+		# create_artifact_aegontheuncrowned_crown_effect = { OWNER = this }
+		# create_artifact_baelon_crown_effect = { OWNER = this }
+		# create_artifact_valarr_crown_effect = { OWNER = this }
+		# create_artifact_aemonsonofjaehaerys_crown_effect = { OWNER = this }
+		# create_artifact_aegonsonofjaehaerys_crown_effect = { OWNER = this }
+		# create_artifact_vaegon_crown_effect = { OWNER = this }
+		# create_artifact_aemond_crown_effect = { OWNER = this }
+		# create_artifact_daenerys_daughterofjaehaerys_crown_effect = { OWNER = this }
+		# create_artifact_baelorbreakspear_crown_effect = { OWNER = this }
+		# create_artifact_shieraseastar_crown_effect = { OWNER = this }
+		# create_artifact_showaerys_crown_effect = { OWNER = this }
+		# create_artifact_showrhaenyra_crown_01_effect = { OWNER = this }
+		# create_artifact_showrhaenyra_crown_02_effect = { OWNER = this }
+		# create_artifact_showaegon_crown_01_effect = { OWNER = this }
+		# create_artifact_showaegon_crown_02_effect = { OWNER = this }
+		# create_artifact_seawyrm_crown_effect = { OWNER = this }
+		# create_artifact_greenpyre_crown_effect = { OWNER = this }
+		# create_artifact_goldfyre_crown_effect = { OWNER = this }
+		# create_artifact_celtigar_crown_effect = { OWNER = this }
+		# create_artifact_wolfswood_crown_effect = { OWNER = this }
+		# create_artifact_bracken_crown_effect = { OWNER = this }
+		# create_artifact_massey_crown_effect = { OWNER = this }
+		# create_artifact_duskendale_crown_01_effect = { OWNER = this }
+		# create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+		# create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
+		# create_artifact_jacaerysvelaryon_crown_effect = { OWNER = this }
+		# create_artifact_jonsnow_crown_effect = { OWNER = this }
+		# create_artifact_aereatargaryen_crown_01_effect = { OWNER = this }
+		# create_artifact_aereatargaryen_crown_02_effect = { OWNER = this }
+		# create_artifact_vaellatargaryen_crown_effect = { OWNER = this }
+		# create_artifact_brightflame_crown_effect = { OWNER = this }
+		# create_artifact_orysbaratheon_crown_effect = { OWNER = this }
+		# create_artifact_robbstark_crown_effect = { OWNER = this }
+		# create_artifact_branstark_crown_effect = { OWNER = this }
+		# create_artifact_tyboltthunderbolt_crown_effect = { OWNER = this }
+		# create_artifact_geroldlannister_crown_effect = { OWNER = this }
+		# create_artifact_lancellannister_crown_effect = { OWNER = this }
+		# create_artifact_margaerytyrell_crown_effect = { OWNER = this }
+		# create_artifact_myrcella_circlet_effect = { OWNER = this }
+		# create_artifact_cersei_tiara_effect = { OWNER = this }
+		# create_artifact_rhaenysvelaryon_crown_effect = { OWNER = this }
+		# create_artifact_stepstone_crown_effect = { OWNER = this }
+		# create_artifact_hugor_of_the_hill_crown_effect = { OWNER = this }
+		# create_artifact_alysanne_crown_effect = { OWNER = this }
+		# create_artifact_alicenthightower_crown_effect = { OWNER = this }
+		# create_artifact_alyssavelaryon_crown_effect = { OWNER = this }
+		# create_artifact_bethablackwood_circlet_effect = { OWNER = this }
+		# create_artifact_mariah_martell_crown_effect = { OWNER = this }
+		# create_artifact_aliandra_martell_crown_effect = { OWNER = this }
+		# create_artifact_mors_martell_crown_effect = { OWNER = this }
+		# create_artifact_rhaenatargaryen_crown_effect = { OWNER = this }
+		# create_artifact_daena_crown_effect = { OWNER = this }
+		# create_artifact_calla_blackfyre_circlet_effect = { OWNER = this }
+		# create_artifact_bittersteel_crown_effect = { OWNER = this }
+		# create_artifact_sharra_arryn_crown_effect = { OWNER = this }
+		# create_artifact_roland_arryn_crown_effect = { OWNER = this }
+		# create_artifact_argella_crown_effect = { OWNER = this }
+		# create_artifact_daemon_ii_blackfyre_crown_effect = { OWNER = this }
+		# create_artifact_haegonblackfyre_crown_effect = { OWNER = this }
+		# create_artifact_aenysblackfyre_crown_effect = { OWNER = this }
+		# create_artifact_maelysblackfyre_crown_effect = { OWNER = this }
+		# create_artifact_garlandgardener_crown_effect = { OWNER = this }
+		# create_artifact_garthgoldhand_crown_effect = { OWNER = this }
+		# create_artifact_gardener_war_crown_effect = { OWNER = this }
+		# create_artifact_gardener_peace_crown_effect = { OWNER = this }
+		# create_artifact_crown_of_the_iron_throne_effect = { OWNER = this }
+		# create_artifact_crown_of_the_red_keep_effect = { OWNER = this }
+		# create_artifact_crown_of_oldtown_tall_effect = { OWNER = this }
+		# create_artifact_crown_of_oldtown_effect = { OWNER = this }
+		# create_artifact_crown_of_harrenhall_effect = { OWNER = this }
+		# create_artifact_crown_of_the_mountain_and_vale_effect = { OWNER = this }
+		# create_artifact_crown_of_goldengrove_effect = { OWNER = this }
+		# create_artifact_circlet_of_stark_effect = { OWNER = this }
+		# create_artifact_crown_of_bear_island_effect = { OWNER = this }
+		# create_artifact_crown_of_yronwood_effect = { OWNER = this }
+		# create_artifact_crown_of_dondarrion_effect = { OWNER = this }
+		# create_artifact_crown_of_estermont_effect = { OWNER = this }
+		# create_artifact_crown_of_connington_effect = { OWNER = this }
+		# create_artifact_crown_of_castamere_effect = { OWNER = this }
+		# create_artifact_crown_of_sharp_point_effect = { OWNER = this }
+		# create_artifact_crown_of_gardener_war_bronze_effect = { OWNER = this }
+		# create_artifact_crown_of_the_grey_king_effect = { OWNER = this }
+		# create_artifact_crown_of_the_grey_king_rusted_historic_effect = { OWNER = this }
+		# create_artifact_crown_of_weirwood_effect = { OWNER = this }
+		# create_artifact_circlet_of_the_seven_effect = { OWNER = this }
+		# create_artifact_crown_of_jon_north_effect = { OWNER = this }
+		# create_artifact_crown_of_jon_north_2_effect = { OWNER = this }
+		# create_artifact_crown_of_jon_icefire_effect = { OWNER = this }
+		# create_artifact_crown_of_jon_icefire_2_effect = { OWNER = this }
+		# create_artifact_crown_of_bloodraven_effect = { OWNER = this }
+		# create_artifact_circlet_of_seastar_effect = { OWNER = this }
+		# create_artifact_mockingbird_circlet_effect = { OWNER = this }
+		# create_artifact_crown_of_sansa_effect = { OWNER = this }
+		# create_artifact_crown_of_cersei_ruler_effect = { OWNER = this }
+		# create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+		# create_artifact_valyrian_crown2_targaryen_effect = { OWNER = this }
+		# create_artifact_valyrian_crown2_blackfyre_effect = { OWNER = this }
+		# create_artifact_westerosi_valyrian_crown2_blackfyre_effect = { OWNER = this }
+		# agot_create_artifact_westerlands2_crown_historic_effect = { OWNER = this }
+		# agot_create_artifact_crown_of_winter_historic_effect = { OWNER = this }
+		# agot_create_artifact_falcon_crown_historic_effect = { OWNER = this }
+		# agot_create_artifact_stormlands_crown_historic_effect = { OWNER = this }
+
 		create_artifact_daenerys_daughterofjaehaerys_crown_effect = { OWNER = this }
 		create_artifact_garlandgardener_crown_effect = { OWNER = this }
 		create_artifact_myrcella_circlet_effect = { OWNER = this }

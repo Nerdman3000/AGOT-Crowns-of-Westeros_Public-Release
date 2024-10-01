@@ -1,9 +1,9 @@
 pdxmesh = {
 	name = "female_crown_of_the_grey_king_mesh"
-	file = "female_crown_of_the_grey_king.mesh"
+	file = "female_crown_of_the_grey_king_rusted.mesh"
 
 	meshsettings = {
-		name = "female_crown_of_the_grey_kingShape"
+		name = "female_crown_of_the_grey_king_rustedShape"
 		index = 0
 		texture_diffuse = "crown_of_the_grey_king_diffuse.dds"
 		texture_normal = "crown_of_the_grey_king_normal.dds"

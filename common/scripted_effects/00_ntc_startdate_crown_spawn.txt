@@ -344,6 +344,14 @@ ntc_westerlands_petty_kings_crown_spawn.1 = {
 			create_artifact_crown_of_castamere_effect = { OWNER = this }
 		}
 	}
+	title:c_deep_den.holder = {
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
+			create_artifact_crown_of_deep_den_effect = { OWNER = this }
+		}
+	}
 }
 ntc_stormlands_petty_kings_crown_spawn.1 = {
 	title:c_evenfall.holder = {
@@ -508,6 +516,14 @@ ntc_riverlands_petty_kings_crown_spawn.1 = {
 				has_dlc_feature = royal_court
 			}
 			create_artifact_crown_of_harrenhall_effect = { OWNER = this }
+		}
+	}
+	title:c_stone_hedge.holder = {
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+			}
+			create_artifact_crown_of_stone_hedge_effect = { OWNER = this }
 		}
 	}
 }

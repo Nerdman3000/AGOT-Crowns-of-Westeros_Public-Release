@@ -22,6 +22,78 @@
 	}
 }
 
+ntc_massey_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = massey_crown_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Massey
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Massey
+			}
+		}
+		dynasty ?= dynasty:dynn_Massey
+	}
+}
+
+ntc_red_fork_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = bracken_crown_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Bracken
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Bracken
+			}
+		}
+		dynasty ?= dynasty:dynn_Bracken
+	}
+}
+
+ntc_celtigar_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_celtigar_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Celtigar
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Celtigar
+			}
+		}
+		dynasty ?= dynasty:dynn_Celtigar
+	}
+}
+
 ntc_reyne_crown_trigger = {
 	NOT = {
 		any_artifact = {
@@ -166,6 +238,30 @@ ntc_rowan_crown_trigger = {
 	}
 }
 
+ntc_erdtree_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_the_golden_tree_artifact_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Erdtree
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Erdtree
+			}
+		}
+		dynasty ?= dynasty:dynn_Erdtree
+	}
+}
+
 ntc_dondarrion_crown_trigger = {
 	NOT = {
 		any_artifact = {
@@ -211,6 +307,54 @@ ntc_bar_emmon_crown_trigger = {
 			}
 		}
 		dynasty ?= dynasty:dynn_Bar_Emmon
+	}
+}
+
+ntc_bracken_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_stone_hedge_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Bracken
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Bracken
+			}
+		}
+		dynasty ?= dynasty:dynn_Bracken
+	}
+}
+
+ntc_lydden_crown_trigger = {
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_deep_den_artifact
+			artifact_owner = root
+		}
+	}
+	OR = {
+		AND = {
+			is_ai = no
+			father ?= {
+				dynasty ?= dynasty:dynn_Lydden
+			}
+		}
+		AND = {
+			is_ai = no
+			mother ?= {
+				dynasty ?= dynasty:dynn_Lydden
+			}
+		}
+		dynasty ?= dynasty:dynn_Lydden
 	}
 }
 
@@ -465,6 +609,7 @@ ntc_westerosi_valyrian_crown2_blackfyre_trigger = {
 }
 
 ntc_harrenhal_crown_trigger = {
+	is_ai = no
 	has_title = title:c_harrenhal
 	NOT = {
 		any_artifact = {
@@ -487,7 +632,10 @@ ntc_red_keep_crown_trigger = {
 
 ntc_iron_throne_crown_trigger = {
 	is_ai = no
-	has_title = title:c_kings_landing
+	OR = {
+		has_title = title:c_kings_landing
+		any_character_artifact = { has_variable = iron_throne }
+	}
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_the_iron_throne_artifact
@@ -497,6 +645,7 @@ ntc_iron_throne_crown_trigger = {
 }
 
 ntc_the_vale_crown_trigger = {
+	is_ai = no
 	OR = {
 		has_title = title:e_the_vale
 		has_title = title:k_the_vale
@@ -507,7 +656,6 @@ ntc_the_vale_crown_trigger = {
 			artifact_owner = root
 		}
 	}
-	is_ai = no
 }
 
 ntc_oldtown_crown_trigger = {
@@ -522,18 +670,17 @@ ntc_oldtown_crown_trigger = {
 }
 
 ntc_oldtown_tall_crown_trigger = {
+	is_ai = no
+	has_title = title:d_oldtown
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_oldtown_tall_artifact
 			artifact_owner = root
 		}
 	}
-	is_ai = no
-	has_title = title:d_oldtown
 }
 
 ntc_weirwood_crown_trigger = {
-	is_ai = no
 	has_religion = religion:old_gods_religion
 	NOT = {
 		any_artifact = {
@@ -544,7 +691,6 @@ ntc_weirwood_crown_trigger = {
 }
 
 ntc_seven_circlet_trigger = {
-	is_ai = no
 	has_religion = religion:faith_of_the_seven_religion
 	NOT = {
 		any_artifact = {
@@ -554,9 +700,38 @@ ntc_seven_circlet_trigger = {
 	}
 }
 
+ntc_sharra_arryn_crown_trigger = {
+	is_character_arryn_58 = yes  # Sharra Arryn
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = sharra_arryn_crown_artifact
+		}
+	}
+}
+
+ntc_argella_crown_trigger = {
+	is_character_durrandon_88 = yes  # Argella Durrandon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = argella_crown_artifact
+		}
+	}
+}
+
 ntc_orysbaratheon_crown_trigger = {
-	exists = character:Baratheon_14 #Orys Baratheon
-	this = character:Baratheon_14 #Orys Baratheon
+	is_character_baratheon_14 = yes #Orys Baratheon
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -570,9 +745,38 @@ ntc_orysbaratheon_crown_trigger = {
 	}
 }
 
+ntc_alyssavelaryon_crown_trigger = {
+	is_character_velaryon_24 = yes # Alyssa Velaryon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_alyssavelaryon_artifact
+		}
+	}
+}
+
+ntc_rhaenatargaryen_crown_trigger = {
+	is_character_targaryen_32 = yes # Rhaena
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_rhaenatargaryen_artifact
+		}
+	}
+}
+
 ntc_aegontheuncrowned_crown_trigger = {
-	exists = character:Targaryen_33 # Aegon the Uncrowned
-	this = character:Targaryen_33 # Aegon the Uncrowned
+	is_character_targaryen_33 = yes # Aegon the Uncrowned
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -587,8 +791,7 @@ ntc_aegontheuncrowned_crown_trigger = {
 }
 
 ntc_aereatargaryen_crown_01_trigger = {
-	exists = character:Targaryen_41 # Aerea Targaryen
-	this = character:Targaryen_41 # Aerea Targaryen
+	is_character_targaryen_41 = yes # Aerea Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -603,8 +806,7 @@ ntc_aereatargaryen_crown_01_trigger = {
 }
 
 ntc_aereatargaryen_crown_02_trigger = {
-	exists = character:Targaryen_42 # Rhaella Targaryen
-	this = character:Targaryen_42 # Rhaella Targaryen
+	is_character_targaryen_42 = yes # Rhaella Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -619,8 +821,7 @@ ntc_aereatargaryen_crown_02_trigger = {
 }
 
 ntc_vaellatargaryen_crown_trigger = {
-	exists = character:Targaryen_124 # Vaella Targaryen
-	this = character:Targaryen_124 # Vaella Targaryen
+	is_character_targaryen_124 = yes # Vaella Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -651,8 +852,7 @@ ntc_aegonsonofjaehaerys_crown_trigger = {
 }
 
 ntc_aemonsonofjaehaerys_crown_trigger = {
-	exists = character:Targaryen_45 # Aemon son of Jahaerys I
-	this = character:Targaryen_45 # Aemon son of Jahaerys I
+	is_character_targaryen_45 = yes # Aemon son of Jahaerys I
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -667,8 +867,7 @@ ntc_aemonsonofjaehaerys_crown_trigger = {
 }
 
 ntc_baelon_crown_trigger = {
-	exists = character:Targaryen_46 # Baelon Targaryen (son of Jaehaerys I)
-	this = character:Targaryen_46 # Baelon Targaryen (son of Jaehaerys I)
+	is_character_targaryen_46 = yes # Baelon Targaryen (son of Jaehaerys I)
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -683,8 +882,7 @@ ntc_baelon_crown_trigger = {
 }
 
 ntc_vaegon_crown_trigger = {
-	exists = character:Targaryen_43 # Vaegon Targaryen
-	this = character:Targaryen_43 # Vaegon Targaryen
+	is_character_targaryen_49 = yes # Vaegon Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -699,8 +897,7 @@ ntc_vaegon_crown_trigger = {
 }
 
 ntc_rhaenysvelaryon_crown_trigger = {
-	exists = character:Targaryen_59 # Rhaenys (The Queen Who Never Was)
-	this = character:Targaryen_59 # Rhaenys (The Queen Who Never Was)
+	is_character_targaryen_59 = yes # Rhaenys (The Queen Who Never Was)
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -714,9 +911,23 @@ ntc_rhaenysvelaryon_crown_trigger = {
 	}
 }
 
+ntc_alicenthightower_crown_trigger = {
+	is_character_hightower_97 = yes # Alicent Hightower
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_alicenthightower_artifact
+		}
+	}
+}
+
 ntc_laenorvelaryon_crown_trigger = {
-	exists = character:Velaryon_35 # Laenor Velaryon
-	this = character:Velaryon_35 # Laenor Velaryon
+	is_character_velaryon_35 = yes # Laenor Velaryon
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -731,8 +942,7 @@ ntc_laenorvelaryon_crown_trigger = {
 }
 
 ntc_jacaerysvelaryon_crown_trigger = {
-	exists = character:Targaryen_75 # Jacaerys Velaryon
-	this = character:Targaryen_75 # Jacaerys Velaryon
+	is_character_targaryen_75 = yes # Jacaerys Velaryon
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -747,8 +957,7 @@ ntc_jacaerysvelaryon_crown_trigger = {
 }
 
 ntc_aemond_crown_trigger = {
-	exists = character:Targaryen_67 # Aemond Targaryen
-	this = character:Targaryen_67 # Aemond Targaryen
+	is_character_targaryen_67 = yes # Aemond Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -762,9 +971,56 @@ ntc_aemond_crown_trigger = {
 	}
 }
 
+ntc_daena_crown_trigger = {
+	is_character_targaryen_83 = yes # Daena The Defiant
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_daena_artifact
+		}
+	}
+}
+
+ntc_aliandra_martell_crown_trigger = {
+	AND = {
+		exists = character:Martell_69
+		this = character:Martell_69 # Aliandra
+	}
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_aliandra_martell_artifact
+		}
+	}
+}
+
+ntc_mariah_martell_crown_trigger = {
+	is_character_martell_79 = yes  # Myriah
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_mariah_martell_artifact
+		}
+	}
+}
+
 ntc_baelorbreakspear_crown_trigger = {
-	exists = character:Targaryen_107 # Baelor Breakspear
-	this = character:Targaryen_107 # Baelor Breakspear
+	is_character_targaryen_107 = yes # Baelor Breakspear
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -779,8 +1035,7 @@ ntc_baelorbreakspear_crown_trigger = {
 }
 
 ntc_bittersteel_crown_trigger = {
-	exists = character:Targaryen_95 # Aegor 'Bittersteel' Rivers
-	this = character:Targaryen_95 # Aegor 'Bittersteel' Rivers
+	is_character_targaryen_95 = yes # Aegor 'Bittersteel' Rivers
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -795,8 +1050,7 @@ ntc_bittersteel_crown_trigger = {
 }
 
 ntc_bloodraven_crown_trigger = {
-	exists = character:Targaryen_96 # Bloodraven
-	this = character:Targaryen_96 # Bloodraven
+	is_character_targaryen_96 = yes # Bloodraven
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -811,8 +1065,7 @@ ntc_bloodraven_crown_trigger = {
 }
 
 ntc_circlet_of_seastar_crown_trigger = {
-	exists = character:Targaryen_97 # Shiera Seastar
-	this = character:Targaryen_97 # Shiera Seastar
+	is_character_targaryen_97 = yes # Shiera Seastar
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -827,8 +1080,7 @@ ntc_circlet_of_seastar_crown_trigger = {
 }
 
 ntc_crown_shieraseastar_crown_trigger = {
-	exists = character:Targaryen_97 # Shiera Seastar
-	this = character:Targaryen_97 # Shiera Seastar
+	is_character_targaryen_97 = yes # Shiera Seastar
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -843,8 +1095,7 @@ ntc_crown_shieraseastar_crown_trigger = {
 }
 
 ntc_valarr_crown_trigger = {
-	exists = character:Targaryen_111 # Valarr Targaryen
-	this = character:Targaryen_111 # Valarr Targaryen
+	is_character_targaryen_111 = yes # Valarr Targaryen
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -859,8 +1110,7 @@ ntc_valarr_crown_trigger = {
 }
 
 ntc_brightflame_crown_trigger = {
-	exists = character:Targaryen_119 # Aerion Brightflame
-	this = character:Targaryen_119 # Aerion Brightflame
+	is_character_targaryen_119 = yes # Aerion Brightflame
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -874,9 +1124,23 @@ ntc_brightflame_crown_trigger = {
 	}
 }
 
+ntc_bethablackwood_crown_trigger = {
+	is_character_blackwood_87 = yes # Betha Blackwood
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = circlet_bethablackwood_artifact
+		}
+	}
+}
+
 ntc_duncandragonfly_crown_trigger = {
-	exists = character:Targaryen_126 # Duncan the Small
-	this = character:Targaryen_126 # Duncan the Small
+	is_character_targaryen_126 = yes # Duncan the Small
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -890,9 +1154,23 @@ ntc_duncandragonfly_crown_trigger = {
 	}
 }
 
+ntc_calla_blackfyre_crown_trigger = {
+	is_character_blackfyre_3 = yes  # Calla Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = calla_blackfyre_circlet_artifact
+		}
+	}
+}
+
 ntc_daemon_ii_blackfyre_crown_trigger = {
-	exists = character:Blackfyre_5 # Daemon II Blackfyre
-	this = character:Blackfyre_5 # Daemon II Blackfyre
+	is_character_blackfyre_5 = yes # Daemon II Blackfyre
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -907,8 +1185,7 @@ ntc_daemon_ii_blackfyre_crown_trigger = {
 }
 
 ntc_haegonblackfyre_crown_trigger = {
-	exists = character:Blackfyre_6 # Haegon Blackfyre
-	this = character:Blackfyre_6 # Haegon Blackfyre
+	is_character_blackfyre_6 = yes # Haegon Blackfyre
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -923,8 +1200,7 @@ ntc_haegonblackfyre_crown_trigger = {
 }
 
 ntc_aenysblackfyre_crown_trigger = {
-	exists = character:Blackfyre_7 # Aenys Blackfyre
-	this = character:Blackfyre_7 # Aenys Blackfyre
+	is_character_blackfyre_7 = yes # Aenys Blackfyre
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -939,8 +1215,7 @@ ntc_aenysblackfyre_crown_trigger = {
 }
 
 ntc_maelysblackfyre_crown_trigger = {
-	exists = character:Blackfyre_14 # Maelys Blackfyre
-	this = character:Blackfyre_14 # Maelys Blackfyre
+	is_character_blackfyre_14 = yes # Maelys Blackfyre
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -955,8 +1230,7 @@ ntc_maelysblackfyre_crown_trigger = {
 }
 
 ntc_maesteraemon_crown_trigger = {
-	exists = character:Targaryen_120 # Aemon Targaryen (Maester)
-	this = character:Targaryen_120 # Aemon Targaryen (Maester)
+	is_character_targaryen_120 = yes # Aemon Targaryen (Maester)
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -971,8 +1245,7 @@ ntc_maesteraemon_crown_trigger = {
 }
 
 ntc_rhaegar_crown_trigger = {
-	exists = character:Targaryen_3 # Rhaegar
-	this = character:Targaryen_3 # Rhaegar
+	is_character_targaryen_3 = yes # Rhaegar
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -987,8 +1260,7 @@ ntc_rhaegar_crown_trigger = {
 }
 
 ntc_viserys_son_of_aenys_trigger = {
-	exists = character:Targaryen_3 # Rhaegar
-	this = character:Targaryen_3 # Rhaegar
+	is_character_targaryen_34 = yes # Viserys, Son of Aenys
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1002,9 +1274,23 @@ ntc_viserys_son_of_aenys_trigger = {
 	}
 }
 
+ntc_viserys_son_of_aenys_02_trigger = {
+	is_character_targaryen_34 = yes # Viserys, Son of Aenys
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_viserys_son_of_aenys_02_artifact
+		}
+	}
+}
+
 ntc_viserysiii_crown_trigger = {
-	exists = character:Targaryen_8 # Viserys III
-	this = character:Targaryen_8 # Viserys III
+	is_character_targaryen_8 = yes # Viserys III
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1019,13 +1305,12 @@ ntc_viserysiii_crown_trigger = {
 }
 
 ntc_aegonvi_crown_trigger = {
-	exists = character:Targaryen_9 # Aegon VI
 	AND = {
 		OR = {
 			dynasty ?= dynasty:dynn_Targaryen
 			dynasty ?= dynasty:dynn_Essos
 		}
-		this = character:Targaryen_9 # Aegon VI
+		is_character_targaryen_9 = yes # Aegon VI
 	}
 	NOT = {
 		any_artifact = {
@@ -1035,10 +1320,9 @@ ntc_aegonvi_crown_trigger = {
 }
 
 ntc_aegonblackfyre_crown_trigger = {
-	exists = character:Targaryen_9 # Aegon VI
 	AND = {
 		house = house:house_Blackfyre
-		this = character:Targaryen_9 # Aegon VI
+		is_character_targaryen_9 = yes # Aegon VI
 	}
 	NOT = {
 		any_artifact = {
@@ -1049,10 +1333,7 @@ ntc_aegonblackfyre_crown_trigger = {
 
 ntc_jon_north_crown_trigger = {
 	is_ai = no
-	OR = {
-		this = character:Stark_5 # Jon Snow
-		has_character_flag = is_jon_snow
-	}
+	is_character_stark_7 = yes # Jon Snow
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_jon_north_artifact
@@ -1062,10 +1343,7 @@ ntc_jon_north_crown_trigger = {
 
 ntc_jon_icefire_crown_trigger = {
 	is_ai = no
-	OR = {
-		this = character:Stark_5 # Jon Snow
-		has_character_flag = is_jon_snow
-	}
+	is_character_stark_7 = yes # Jon Snow
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_jon_icefire_artifact
@@ -1075,10 +1353,7 @@ ntc_jon_icefire_crown_trigger = {
 
 ntc_jonsnow_crown_trigger = {
 	is_ai = no
-	OR = {
-		this = character:Stark_5 # Jon Snow
-		has_character_flag = is_jon_snow
-	}
+	is_character_stark_7 = yes # Jon Snow
 	NOT = {
 		any_artifact = {
 			has_variable = crown_jonsnow_artifact
@@ -1088,10 +1363,7 @@ ntc_jonsnow_crown_trigger = {
 
 ntc_jonsnowtargaryen_crown_trigger = {
 	is_ai = no
-	OR = {
-		this = character:Stark_5 # Jon Snow
-		has_character_flag = is_jon_snow
-	}
+	is_character_stark_7 = yes # Jon Snow
 	NOT = {
 		any_artifact = {
 			has_variable = crown_jonsnowtargaryen_artifact
@@ -1100,9 +1372,8 @@ ntc_jonsnowtargaryen_crown_trigger = {
 }
 
 ntc_showaegon_crown_01_trigger = {
-	exists = character:Targaryen_27 # Aegon I
 	is_ai = no
-	this = character:Targaryen_27 # Aegon I
+	is_character_targaryen_27 = yes # Aegon I
 	NOT = {
 		any_artifact = {
 			has_variable = showaegon_crown_01_artifact
@@ -1111,9 +1382,8 @@ ntc_showaegon_crown_01_trigger = {
 }
 
 ntc_showaegon_crown_02_trigger = {
-	exists = character:Targaryen_27 # Aegon I
 	is_ai = no
-	this = character:Targaryen_27 # Aegon I
+	is_character_targaryen_27 = yes # Aegon I
 	NOT = {
 		any_artifact = {
 			has_variable = showaegon_crown_02_artifact
@@ -1122,14 +1392,10 @@ ntc_showaegon_crown_02_trigger = {
 }
 
 ntc_showrhaenyra_crown_01_trigger = {
-	OR = {
-		exists = character:Targaryen_60 # Viserys I
-		exists = character:Targaryen_63 # Rhaenyra
-	}
 	is_ai = no
 	OR = {
-		this = character:Targaryen_60 # Viserys I
-		this = character:Targaryen_63 # Rhaenyra
+		is_character_targaryen_60 = yes # Viserys I
+		is_character_targaryen_63 = yes # Rhaenyra
 	}
 	NOT = {
 		any_artifact = {
@@ -1139,9 +1405,8 @@ ntc_showrhaenyra_crown_01_trigger = {
 }
 
 ntc_showrhaenyra_crown_02_trigger = {
-	exists = character:Targaryen_63 # Rhaenyra
 	is_ai = no
-	this = character:Targaryen_63 # Rhaenyra
+	is_character_targaryen_63 = yes # Rhaenyra
 	NOT = {
 		any_artifact = {
 			has_variable = showrhaenyra_crown_02_artifact
@@ -1150,9 +1415,8 @@ ntc_showrhaenyra_crown_02_trigger = {
 }
 
 ntc_showaerys_crown_trigger = {
-	exists = character:Targaryen_1 # Aerys I
 	is_ai = no
-	this = character:Targaryen_1 # Aerys I
+	is_character_targaryen_1 = yes # Aerys II
 	NOT = {
 		any_artifact = {
 			has_variable = crown_showaerys_artifact
@@ -1160,9 +1424,23 @@ ntc_showaerys_crown_trigger = {
 	}
 }
 
+ntc_myrcella_circlet_trigger = {
+	is_character_baratheon_6 = yes  # Myrcella
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = myrcella_circlet_artifact
+		}
+	}
+}
+
 ntc_margaerytyrell_crown_trigger = {
-	exists = character:Tyrell_14 # Margaery Tyrell
-	this = character:Tyrell_14 # Margaery Tyrell
+	is_character_tyrell_14 = yes # Margaery Tyrell
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1177,8 +1455,7 @@ ntc_margaerytyrell_crown_trigger = {
 }
 
 ntc_cersei_ruler_crown_trigger = {
-	exists = character:Lannister_6 # Cersei Lannister
-	this = character:Lannister_6 # Cersei Lannister
+	is_character_lannister_6 = yes # Cersei Lannister
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1193,8 +1470,7 @@ ntc_cersei_ruler_crown_trigger = {
 }
 
 ntc_littlefinger_crown_trigger = {
-	exists = character:Baelish_2 # Petyr Baelish
-	this = character:Baelish_2 # Petyr Baelish
+	is_character_baelish_2 = yes # Petyr Baelish
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1209,8 +1485,7 @@ ntc_littlefinger_crown_trigger = {
 }
 
 ntc_crown_of_robert_baratheon_trigger = {
-	exists = character:Baratheon_2 # Robert Baratheon
-	this = character:Baratheon_2 # Robert Baratheon
+	is_character_baratheon_2 = yes # Robert Baratheon
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_robert_baratheon_artifact
@@ -1280,6 +1555,14 @@ agot_can_make_any_crown_trigger = {
 		agot_riverlands_crown_trigger = yes
 		agot_iron_islands_crown_trigger = yes
 		agot_the_wall_crown_trigger = yes
+		agot_drowned_god_crown_trigger = yes
+		agot_valyrian_crown_trigger = yes
+		agot_valyrian2_crown_trigger = yes
+		agot_rhllor_crown_trigger = yes
+		agot_rhllor2_crown_trigger = yes
+		agot_old_gods_crown_trigger = yes
+		agot_seven_crown_trigger = yes
+		# Crowns of Westeros
 		ntc_celtigar_crown_trigger = yes
 		ntc_reyne_crown_trigger = yes
 		ntc_mormont_crown_trigger = yes
@@ -1287,8 +1570,13 @@ agot_can_make_any_crown_trigger = {
 		ntc_estermont_crown_trigger = yes
 		ntc_connington_crown_trigger = yes
 		ntc_rowan_crown_trigger = yes
+		ntc_erdtree_crown_trigger = yes
 		ntc_dondarrion_crown_trigger = yes
 		ntc_bar_emmon_crown_trigger = yes
+		ntc_bracken_crown_trigger = yes
+		ntc_lydden_crown_trigger = yes
+		ntc_massey_crown_trigger = yes
+		ntc_red_fork_crown_trigger = yes
 		ntc_seawyrm_crown_trigger = yes
 		ntc_goldfyre_crown_trigger = yes
 		ntc_greenpyre_crown_trigger = yes
@@ -1316,6 +1604,7 @@ agot_can_make_any_crown_trigger = {
 		ntc_valarr_crown_trigger = yes
 		ntc_brightflame_crown_trigger = yes
 		ntc_duncandragonfly_crown_trigger = yes
+		ntc_calla_blackfyre_crown_trigger = yes
 		ntc_daemon_ii_blackfyre_crown_trigger = yes
 		ntc_haegonblackfyre_crown_trigger = yes
 		ntc_aenysblackfyre_crown_trigger = yes
@@ -1323,6 +1612,7 @@ agot_can_make_any_crown_trigger = {
 		ntc_maesteraemon_crown_trigger = yes
 		ntc_rhaegar_crown_trigger = yes
 		ntc_viserys_son_of_aenys_trigger = yes
+		ntc_viserys_son_of_aenys_02_trigger = yes
 		ntc_viserysiii_crown_trigger = yes
 		ntc_aegonvi_crown_trigger = yes
 		ntc_aegonblackfyre_crown_trigger = yes
@@ -1331,6 +1621,7 @@ agot_can_make_any_crown_trigger = {
 		ntc_jon_north_crown_trigger = yes
 		ntc_jon_icefire_crown_trigger = yes
 		ntc_showaerys_crown_trigger = yes
+		ntc_myrcella_circlet_trigger = yes
 		ntc_margaerytyrell_crown_trigger = yes
 		ntc_cersei_ruler_crown_trigger = yes
 		ntc_littlefinger_crown_trigger = yes
@@ -1338,24 +1629,13 @@ agot_can_make_any_crown_trigger = {
 		ntc_valyrian_crown2_targaryen_trigger = yes
 		ntc_valyrian_crown2_blackfyre_trigger = yes
 		ntc_westerosi_valyrian_crown2_blackfyre_trigger = yes
-		trigger_if = {
-			limit = { is_ai = no }
-			OR = {
-				agot_drowned_god_crown_trigger = yes
-				agot_valyrian_crown_trigger = yes
-				agot_valyrian2_crown_trigger = yes
-				agot_rhllor_crown_trigger = yes
-				agot_rhllor2_crown_trigger = yes
-				agot_old_gods_crown_trigger = yes
-				ntc_weirwood_crown_trigger = yes
-				ntc_seven_circlet_trigger = yes
-				ntc_harrenhal_crown_trigger = yes
-				ntc_red_keep_crown_trigger = yes
-				ntc_iron_throne_crown_trigger = yes
-				ntc_the_vale_crown_trigger = yes
-				ntc_oldtown_crown_trigger = yes
-				ntc_oldtown_tall_crown_trigger = yes
-			}
-		}
+		ntc_weirwood_crown_trigger = yes
+		ntc_seven_circlet_trigger = yes
+		ntc_harrenhal_crown_trigger = yes
+		ntc_red_keep_crown_trigger = yes
+		ntc_iron_throne_crown_trigger = yes
+		ntc_the_vale_crown_trigger = yes
+		ntc_oldtown_crown_trigger = yes
+		ntc_oldtown_tall_crown_trigger = yes
 	}
 }

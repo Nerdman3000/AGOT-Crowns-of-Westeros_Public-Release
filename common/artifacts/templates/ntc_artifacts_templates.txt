@@ -2,10 +2,7 @@
 
 aegonvi_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -34,10 +31,7 @@ aegonvi_crown_template = {
 }
 aegonblackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -66,10 +60,7 @@ aegonblackfyre_crown_template = {
 }
 brightflame_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -98,10 +89,7 @@ brightflame_crown_template = {
 }
 baelon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -130,10 +118,7 @@ baelon_crown_template = {
 }
 aegonsonofjaehaerys_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -162,10 +147,7 @@ aegonsonofjaehaerys_crown_template = {
 }
 vaegon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -194,10 +176,7 @@ vaegon_crown_template = {
 }
 aemond_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -226,10 +205,7 @@ aemond_crown_template = {
 }
 daenerys_daughterofjaehaerys_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -258,10 +234,7 @@ daenerys_daughterofjaehaerys_crown_template = {
 }
 valarr_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -290,10 +263,7 @@ valarr_crown_template = {
 }
 rhaegar_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -322,10 +292,7 @@ rhaegar_crown_template = {
 }
 viserys_son_of_aenys_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -354,10 +321,7 @@ viserys_son_of_aenys_template = {
 }
 viserys_son_of_aenys_02_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -386,10 +350,7 @@ viserys_son_of_aenys_02_template = {
 }
 jonsnowtargaryen_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -418,10 +379,7 @@ jonsnowtargaryen_crown_template = {
 }
 viserysiii_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -450,10 +408,7 @@ viserysiii_crown_template = {
 }
 maesteraemon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -482,10 +437,7 @@ maesteraemon_crown_template = {
 }
 daemonblackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -515,10 +467,7 @@ daemonblackfyre_crown_template = {
 
 argella_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -551,10 +500,7 @@ argella_crown_template = {
 
 daemon_ii_blackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -583,10 +529,7 @@ daemon_ii_blackfyre_crown_template = {
 }
 aegontheuncrowned_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -615,10 +558,7 @@ aegontheuncrowned_crown_template = {
 }
 bittersteel_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -647,10 +587,7 @@ bittersteel_crown_template = {
 }
 baelorbreakspear_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -682,10 +619,7 @@ baelorbreakspear_crown_template = {
 }
 seawyrm_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -714,10 +648,7 @@ seawyrm_crown_template = {
 }
 greenpyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -746,10 +677,7 @@ greenpyre_crown_template = {
 }
 goldfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -778,10 +706,7 @@ goldfyre_crown_template = {
 }
 celtigar_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -810,10 +735,7 @@ celtigar_crown_template = {
 }
 aemonsonofjaehaerys_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -842,10 +764,7 @@ aemonsonofjaehaerys_crown_template = {
 }
 jonsnow_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -861,10 +780,7 @@ jonsnow_crown_template = {
 }
 duncandragonfly_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -893,10 +809,7 @@ duncandragonfly_crown_template = {
 }
 laenorvelaryon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -925,10 +838,7 @@ laenorvelaryon_crown_template = {
 }
 jacaerysvelaryon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -957,10 +867,7 @@ jacaerysvelaryon_crown_template = {
 }
 aereatargaryen_crown_01_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -989,10 +896,7 @@ aereatargaryen_crown_01_template = {
 }
 aereatargaryen_crown_02_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1021,10 +925,7 @@ aereatargaryen_crown_02_template = {
 }
 vaellatargaryen_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1053,10 +954,7 @@ vaellatargaryen_crown_template = {
 }
 aliandra_martell_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1087,10 +985,7 @@ aliandra_martell_crown_template = {
 }
 mors_martell_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1121,10 +1016,7 @@ mors_martell_crown_template = {
 }
 mariah_martell_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1155,10 +1047,7 @@ mariah_martell_crown_template = {
 }
 shieraseastar_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1188,10 +1077,7 @@ shieraseastar_crown_template = {
 
 showaerys_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1220,10 +1106,7 @@ showaerys_crown_template = {
 }
 showrhaenyra_crown_01_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1252,10 +1135,7 @@ showrhaenyra_crown_01_template = {
 }
 showrhaenyra_crown_02_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1284,10 +1164,7 @@ showrhaenyra_crown_02_template = {
 }
 showaegon_crown_01_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1316,10 +1193,7 @@ showaegon_crown_01_template = {
 }
 showaegon_crown_02_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1348,10 +1222,7 @@ showaegon_crown_02_template = {
 }
 rhaenysvelaryon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1380,10 +1251,7 @@ rhaenysvelaryon_crown_template = {
 }
 stepstone_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1415,10 +1283,7 @@ stepstone_crown_template = {
 }
 calla_blackfyre_circlet_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1447,10 +1312,7 @@ calla_blackfyre_circlet_template = {
 }
 alysanne_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1479,10 +1341,7 @@ alysanne_crown_template = {
 }
 alyssavelaryon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1511,10 +1370,7 @@ alyssavelaryon_crown_template = {
 }
 alicenthightower_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1543,10 +1399,7 @@ alicenthightower_crown_template = {
 }
 rhaenatargaryen_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1575,10 +1428,7 @@ rhaenatargaryen_crown_template = {
 }
 daena_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1607,10 +1457,7 @@ daena_crown_template = {
 }
 bethablackwood_circlet_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1626,10 +1473,7 @@ bethablackwood_circlet_template = {
 }
 aenysblackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1658,10 +1502,7 @@ aenysblackfyre_crown_template = {
 }
 haegonblackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1690,10 +1531,7 @@ haegonblackfyre_crown_template = {
 }
 maelysblackfyre_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1722,10 +1560,7 @@ maelysblackfyre_crown_template = {
 }
 orysbaratheon_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1757,10 +1592,7 @@ orysbaratheon_crown_template = {
 }
 margaerytyrell_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1797,10 +1629,7 @@ margaerytyrell_crown_template = {
 }
 robbstark_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1829,10 +1658,7 @@ robbstark_crown_template = {
 }
 branstark_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1861,10 +1687,7 @@ branstark_crown_template = {
 }
 geroldlannister_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1891,10 +1714,7 @@ geroldlannister_crown_template = {
 }
 tyboltthunderbolt_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1923,10 +1743,7 @@ tyboltthunderbolt_crown_template = {
 }
 lancellannister_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1953,10 +1770,7 @@ lancellannister_crown_template = {
 }
 cersei_tiara_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -1983,10 +1797,7 @@ cersei_tiara_template = {
 }
 myrcella_circlet_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2004,7 +1815,7 @@ myrcella_circlet_template = {
 		if = {
 			limit = {
 				NOT = {
-					has_character_flag = is_myrcella_baratheon
+					is_character_baratheon_6 = yes  # Myrcella
 				}
 			}
 			add = -10000
@@ -2013,10 +1824,7 @@ myrcella_circlet_template = {
 }
 roland_arryn_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2049,10 +1857,7 @@ roland_arryn_crown_template = {
 }
 sharra_arryn_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2085,10 +1890,7 @@ sharra_arryn_crown_template = {
 }
 garlandgardener_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2124,10 +1926,7 @@ garlandgardener_crown_template = {
 }
 garthgoldhand_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2163,10 +1962,7 @@ garthgoldhand_crown_template = {
 }
 gardener_war_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2202,10 +1998,7 @@ gardener_war_crown_template = {
 }
 gardener_peace_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2282,10 +2075,7 @@ hugor_of_the_hill_crown_template = {
 
 crown_of_the_iron_throne_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2318,10 +2108,7 @@ crown_of_the_iron_throne_template = {
 
 crown_of_the_red_keep_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2354,10 +2141,7 @@ crown_of_the_red_keep_template = {
 
 crown_of_oldtown_tall_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2394,10 +2178,7 @@ crown_of_oldtown_tall_template = {
 
 crown_of_oldtown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2434,10 +2215,7 @@ crown_of_oldtown_template = {
 
 crown_of_harrenhall_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2471,10 +2249,7 @@ crown_of_harrenhall_template = {
 
 bracken_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
@@ -2500,10 +2275,7 @@ bracken_crown_template = {
 
 crown_of_the_mountain_and_vale_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2537,10 +2309,7 @@ crown_of_the_mountain_and_vale_template = {
 
 crown_of_goldengrove_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2577,10 +2346,7 @@ crown_of_goldengrove_template = {
 
 circlet_of_stark_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2610,10 +2376,7 @@ circlet_of_stark_template = {
 
 crown_of_bear_island_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2643,10 +2406,7 @@ crown_of_bear_island_template = {
 
 crown_of_yronwood_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2679,10 +2439,7 @@ crown_of_yronwood_template = {
 
 crown_of_dondarrion_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2715,10 +2472,7 @@ crown_of_dondarrion_template = {
 
 crown_of_estermont_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2751,10 +2505,7 @@ crown_of_estermont_template = {
 
 crown_of_connington_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2787,10 +2538,7 @@ crown_of_connington_template = {
 
 crown_of_castamere_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2818,10 +2566,7 @@ crown_of_castamere_template = {
 
 crown_of_sharp_point_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2847,12 +2592,65 @@ crown_of_sharp_point_template = {
 	}
 }
 
+crown_of_stone_hedge_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:riverlander
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+crown_of_deep_den_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = culture:westerlander
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
 massey_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2880,10 +2678,7 @@ massey_crown_template = {
 
 duskendale_crown_01_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2911,10 +2706,7 @@ duskendale_crown_01_template = {
 
 crown_of_gardener_war_bronze_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2951,10 +2743,7 @@ crown_of_gardener_war_bronze_template = {
 
 crown_of_the_grey_king_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -2988,10 +2777,7 @@ crown_of_the_grey_king_template = {
 
 crown_of_weirwood_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3021,10 +2807,7 @@ crown_of_weirwood_template = {
 
 circlet_of_the_seven_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3054,10 +2837,7 @@ circlet_of_the_seven_template = {
 
 wolfswood_crown_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3087,10 +2867,7 @@ wolfswood_crown_template = {
 
 crown_of_jon_north_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3120,10 +2897,7 @@ crown_of_jon_north_template = {
 
 crown_of_jon_icefire_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3153,10 +2927,7 @@ crown_of_jon_icefire_template = {
 
 crown_of_bloodraven_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3186,10 +2957,7 @@ crown_of_bloodraven_template = {
 
 circlet_of_seastar_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3219,10 +2987,7 @@ circlet_of_seastar_template = {
 
 mockingbird_circlet_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3250,10 +3015,7 @@ mockingbird_circlet_template = {
 
 crown_of_sansa_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3283,10 +3045,7 @@ crown_of_sansa_template = {
 
 crown_of_cersei_ruler_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3314,10 +3073,7 @@ crown_of_cersei_ruler_template = {
 
 crown_of_robert_baratheon_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 
 	# can this character benefit from the full modifiers of the artifact?
@@ -3350,10 +3106,7 @@ crown_of_robert_baratheon_template = {
 
 valyrian_crown2_targaryen_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
@@ -3382,10 +3135,7 @@ valyrian_crown2_targaryen_template = {
 
 valyrian_crown2_blackfyre_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
@@ -3414,10 +3164,7 @@ valyrian_crown2_blackfyre_template = {
 
 westerosi_valyrian_crown2_blackfyre_template = {
 	can_equip = {
-		custom_tooltip = {
-			text = agot_is_independent_crown_tooltip_desc
-			agot_can_wear_crown_trigger = yes
-		}
+		agot_can_wear_crown_trigger = yes
 	}
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {

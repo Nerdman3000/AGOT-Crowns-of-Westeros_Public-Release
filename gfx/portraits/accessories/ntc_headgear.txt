@@ -643,6 +643,26 @@ female_crown_of_sharp_point = {
 	entity = { required_tags = ""			shared_pose_entity = head		entity = female_crown_of_sharp_point_entity 	 }		
 }
 
+crown_of_stone_hedge = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = crown_of_stone_hedge_entity 	 }	
+}
+
+female_crown_of_stone_hedge = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_crown_of_stone_hedge_entity 	 }		
+}
+
+crown_of_deep_den = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = crown_of_deep_den_entity 	 }	
+}
+
+female_crown_of_deep_den = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_crown_of_deep_den_entity 	 }		
+}
+
 crown_of_gardener_war_bronze = {	
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		entity = crown_of_gardener_war_bronze_entity 	 }	

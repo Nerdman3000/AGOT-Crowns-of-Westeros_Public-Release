@@ -356,6 +356,14 @@ crown_of_sharp_point_visuals = {
 	icon = "crown_of_sharp_point.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
+crown_of_stone_hedge_visuals = {
+	icon = "crown_of_stone_hedge.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+crown_of_deep_den_visuals = {
+	icon = "crown_of_deep_den.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
 crown_of_gardener_war_bronze_visuals = {
 	icon = "crown_of_gardener_war_bronze.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
