@@ -138,6 +138,19 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 - Valyrian Conqueror’s Crown with Rubies (Show Aegon Crown + book mix)
 - King Viserys I Tournament Crown (Show Jaehaerys Crown)
 - Realm’s Delight Crown (Show Jaehaerys Crown + book mix)
+- Crown of the Golden Stag (Joffrey Show Crown)
+
+*Variant Crowns*
+
+- Cersei Tiara (Ruby Variant)
+- Valyrian Queen Crown (Aegon Color Scheme of Rhaenyra/Viserys Show Crown)
+- Conciliator's Silver Variant Crown
+- Conciliator Gold and Ruby Variant Crown
+- Conciliator's Valyrian Steel and Ruby Variant Crown
+- Conqueror's Gold and Emerald Variant Crown
+- Conqueror's Bronze and Ruby Variant Crown
+- Conqueror's Gold and Multi-Gem Variant Crown
+- Conqueror's Silver and Sapphire Variant Crown
 
 ### Crowns added by White Wolf of the Whills
 
@@ -156,6 +169,8 @@ A few older crowns have been integrated into the main AGOT mod, and have thus be
 
 - Reyne Crown
 - Rowan Crown
+- Bracken Crown
+- Lydden Crown
 - Dondarrion Crown
 - Connington Crown
 - Bar Emmon Crown
