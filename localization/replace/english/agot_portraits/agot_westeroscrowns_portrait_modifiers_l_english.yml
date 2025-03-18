@@ -304,23 +304,14 @@
  PORTRAIT_MODIFIER_custom_headgear_circlet_of_stark:0 "@Crowns_of_Westeros_icon! Stark Queen's Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_circlet_of_stark:0 "@Crowns_of_Westeros_icon! Stark Queen's Crown"
 
- PORTRAIT_MODIFIER_custom_headgear_crown_of_bear_island:0 "@Crowns_of_Westeros_icon! Mormont Crown"
- PORTRAIT_MODIFIER_custom_headgear_female_crown_of_bear_island:0 "@Crowns_of_Westeros_icon! Mormont Crown"
- 
  PORTRAIT_MODIFIER_custom_headgear_crown_of_yronwood:0 "@Crowns_of_Westeros_icon! Yronwood Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_yronwood:0 "@Crowns_of_Westeros_icon! Yronwood Crown"
 
- PORTRAIT_MODIFIER_custom_headgear_crown_of_dondarrion:0 "@Crowns_of_Westeros_icon! Dondarrion Crown"
- PORTRAIT_MODIFIER_custom_headgear_female_crown_of_dondarrion:0 "@Crowns_of_Westeros_icon! Dondarrion Crown"
- 
  PORTRAIT_MODIFIER_custom_headgear_crown_of_estermont:0 "@Crowns_of_Westeros_icon! Estermont Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_estermont:0 "@Crowns_of_Westeros_icon! Estermont Crown"
 
  PORTRAIT_MODIFIER_custom_headgear_crown_of_connington:0 "@Crowns_of_Westeros_icon! Connington Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_connington:0 "@Crowns_of_Westeros_icon! Connington Crown"
-
- PORTRAIT_MODIFIER_custom_headgear_crown_of_castamere:0 "@Crowns_of_Westeros_icon! Reyne Crown"
- PORTRAIT_MODIFIER_custom_headgear_female_crown_of_castamere:0 "@Crowns_of_Westeros_icon! Reyne Crown"
 
  PORTRAIT_MODIFIER_custom_headgear_crown_of_sharp_point:0 "@Crowns_of_Westeros_icon! Bar-Emmon Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_sharp_point:0 "@Crowns_of_Westeros_icon! Bar-Emmon Crown"
@@ -328,9 +319,6 @@
  PORTRAIT_MODIFIER_custom_headgear_crown_of_stone_hedge:0 "@Crowns_of_Westeros_icon! Bracken Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_stone_hedge:0 "@Crowns_of_Westeros_icon! Bracken Crown"
 
- PORTRAIT_MODIFIER_custom_headgear_crown_of_deep_den:0 "@Crowns_of_Westeros_icon! Lydden Crown"
- PORTRAIT_MODIFIER_custom_headgear_female_crown_of_deep_den:0 "@Crowns_of_Westeros_icon! Lydden Crown"
- 
  PORTRAIT_MODIFIER_custom_headgear_crown_of_gardener_war_bronze:0 "@Crowns_of_Westeros_icon! Gardener Bronze War Crown"
  PORTRAIT_MODIFIER_custom_headgear_female_crown_of_gardener_war_bronze:0 "@Crowns_of_Westeros_icon! Gardener Bronze War Crown"
  
@@ -406,3 +394,36 @@
  PORTRAIT_MODIFIER_custom_headgear_showaegon_crown_02:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Ruby Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_showaegon_crown_02:0 "@Crowns_of_Westeros_icon! Valyrian Conqueror's Ruby Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_male_joffrey_show_crown:0 "@Crowns_of_Westeros_icon! Crown of the Golden Stag"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_joffrey_show_crown:0 "@Crowns_of_Westeros_icon! Crown of the Golden Stag"
+ 
+ #Variant Crowns
+
+ PORTRAIT_MODIFIER_custom_headgear_showrhaenyra_crown_03:0 "@Crowns_of_Westeros_icon! Valyrian Queen Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_showrhaenyra_crown_03:0 "@Crowns_of_Westeros_icon! Valyrian Queen Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jaehaerys_valyrian_variant:0 "@Crowns_of_Westeros_icon! Conciliator's Valyrian Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_jaehaerys_valyrian_variant:0 "@Crowns_of_Westeros_icon! Conciliator's Valyrian Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jaehaerys_variant_1:0 "@Crowns_of_Westeros_icon! Conciliator's Silver Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_jaehaerys_variant_1:0 "@Crowns_of_Westeros_icon! Conciliator's Silver Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_jaehaerys_variant_2:0 "@Crowns_of_Westeros_icon! Conciliator's Gold and Ruby Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_jaehaerys_variant_2:0 "@Crowns_of_Westeros_icon! Conciliator's Gold and Ruby Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegon_variant_1:0 "@Crowns_of_Westeros_icon! Conqueror's Silver and Sapphire Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_aegon_variant_1:0 "@Crowns_of_Westeros_icon! Conqueror's Silver and Sapphire Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegon_variant_2:0 "@Crowns_of_Westeros_icon! Conqueror's Gold and Emerald Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_aegon_variant_2:0 "@Crowns_of_Westeros_icon! Conqueror's Gold and Emerald Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegon_variant_3:0 "@Crowns_of_Westeros_icon! Conqueror's Bronze and Ruby Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_aegon_variant_3:0 "@Crowns_of_Westeros_icon! Conqueror's Bronze and Ruby Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aegon_variant_4:0 "@Crowns_of_Westeros_icon! Conqueror's Gold and Multi-Gem Crown"
+ PORTRAIT_MODIFIER_custom_headgear_female_aegon_variant_4:0 "@Crowns_of_Westeros_icon! Conqueror's Gold and Multi-Gem Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_cersei_red_tiara:0 "@Crowns_of_Westeros_icon! Cersei Lannister's Tiara (Ruby Variant)"
+ PORTRAIT_MODIFIER_custom_headgear_female_cersei_red_tiara:0 "@Crowns_of_Westeros_icon! Cersei Lannister's Tiara (Ruby Variant)"

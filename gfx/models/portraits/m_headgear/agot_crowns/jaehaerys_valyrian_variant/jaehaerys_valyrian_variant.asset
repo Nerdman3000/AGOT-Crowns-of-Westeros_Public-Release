@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "jaehaerys_valyrian_variant_mesh"
+	file = "jaehaerys_valyrian_variant.mesh"
+
+	meshsettings = {
+		name = "jaehaerys_valyrian_variantShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "jaehaerys_valyrian_variant_diffuse.dds"
+		texture_normal = "jaehaerys_valyrian_variant_normal.dds"
+		texture_specular = "jaehaerys_valyrian_variant_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "jaehaerys_valyrian_variant_entity"
+	pdxmesh = "jaehaerys_valyrian_variant_mesh"
+}

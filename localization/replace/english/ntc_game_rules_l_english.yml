@@ -1,9 +1,14 @@
 ﻿l_english:
 
-rule_show_dynamic_crowns:0 "#P Crowns of Westeros:#! Dynamic Non-canon Crowns"
+rule_show_dynamic_crowns:0 "@Crowns_of_Westeros_icon! Crowns of Westeros - Dynamic Non-canon Crowns"
 setting_show_dynamic_crowns_enabled:0 "Show Non-canon Crowns"
 setting_show_dynamic_crowns_enabled_desc:0 "Characters who have unique, noncanon crowns will dynamically wear them upon becoming independent monarchs. (ex: If Maester Aemon somehow became king, he would wear his noncanon crown.)"
 setting_hide_dynamic_crowns_enabled:0 "Hide Non-canon Crowns"
 setting_hide_dynamic_crowns_enabled_desc:0 "Characters who have unique, noncanon crowns will NOT dynamically wear them upon becoming independent monarchs. Crowns will, however, remain as options in barbershop and for artifact crafting."
 
 
+rule_show_crowns_without_coronation:0 "@Crowns_of_Westeros_icon! Crowns of Westeros - Crowns & Coronations"
+setting_show_crowns_without_coronation_enabled:0 "Enabled"
+setting_show_crowns_without_coronation_enabled_desc:0 "By default, CK3AGOT hides crowns on the character until they have been coronated. This will revert that behavior."
+setting_hide_crowns_without_coronation_enabled:0 "Disabled"
+setting_hide_crowns_without_coronation_enabled_desc:0 "By default, CK3AGOT hides crowns on the character until they have been coronated. This will maintain that behavior."

@@ -1,5 +1,7 @@
 ﻿agot_commission_crown_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
 	ai_check_interval = 12
 	cooldown = { years = 10 }
 	desc = agot_commission_crown_decision_desc
@@ -7,7 +9,7 @@
 
 	is_shown = {
 		NOT = {
-			has_government = nights_watch_government
+			government_has_flag = government_is_nw
 		}
 		OR = {
 			primary_title.tier = tier_empire
@@ -67,7 +69,7 @@
 				desc = agot_commission_crown_main_choice_loc
 			}
 			icon = "gfx/interface/icons/duchy_crown.dds"
-			is_valid = {
+			is_shown = {
 				agot_can_make_any_crown_trigger = yes
 			}
 		}
@@ -80,8 +82,6 @@
 			icon = "gfx/interface/icons/character_interactions/icon_marriage.dds"
 			is_shown = {
 				is_married = yes
-			}
-			is_valid = {
 				is_ai = no
 				primary_spouse ?= {
 					agot_can_make_any_crown_trigger = yes
@@ -95,6 +95,17 @@
 				desc = agot_commission_crown_westeros_choice_loc
 			}
 			icon = "gfx/interface/icons/struggle_effects/culture.dds"
+			is_valid = {
+				is_ai = no
+			}
+		}
+
+		item = {
+			value = agot_commission_crown_westeros_variant_choice
+			localization = {
+				desc = agot_commission_crown_westeros_variant_choice_loc
+			}
+			icon = "gfx/interface/icons/ntc_variant_crown.dds"
 			is_valid = {
 				is_ai = no
 			}
@@ -121,13 +132,21 @@
 				trigger_event = agot_commission_crown.1313
 			}
 		}
+		else_if = {
+			limit = { scope:agot_commission_crown_westeros_variant_choice = yes }
+			root = {
+				trigger_event = agot_commission_crown.1414
+			}
+		}
 	}
 
 	cost = { gold = 250 }
 }
 
 ntc_crown_storage_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
 	ai_check_interval = 12
 	cooldown = { years = 10 }
 	desc = ntc_crown_storage_decision_desc
@@ -181,7 +200,9 @@ ntc_crown_storage_decision = {
 }
 
 ntc_crown_debug_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
 	ai_check_interval = 0
 	desc = ntc_crown_debug_decision_desc
 	selection_tooltip = ntc_crown_debug_decision_tooltip
@@ -281,13 +302,11 @@ ntc_crown_debug_decision = {
 		# create_artifact_crown_of_harrenhall_effect = { OWNER = this }
 		# create_artifact_crown_of_the_mountain_and_vale_effect = { OWNER = this }
 		# create_artifact_crown_of_goldengrove_effect = { OWNER = this }
+		# create_artifact_crown_of_stone_hedge_effect = { OWNER = this }
 		# create_artifact_circlet_of_stark_effect = { OWNER = this }
-		# create_artifact_crown_of_bear_island_effect = { OWNER = this }
 		# create_artifact_crown_of_yronwood_effect = { OWNER = this }
-		# create_artifact_crown_of_dondarrion_effect = { OWNER = this }
 		# create_artifact_crown_of_estermont_effect = { OWNER = this }
 		# create_artifact_crown_of_connington_effect = { OWNER = this }
-		# create_artifact_crown_of_castamere_effect = { OWNER = this }
 		# create_artifact_crown_of_sharp_point_effect = { OWNER = this }
 		# create_artifact_crown_of_gardener_war_bronze_effect = { OWNER = this }
 		# create_artifact_crown_of_the_grey_king_effect = { OWNER = this }
@@ -311,19 +330,9 @@ ntc_crown_debug_decision = {
 		# agot_create_artifact_crown_of_winter_historic_effect = { OWNER = this }
 		# agot_create_artifact_falcon_crown_historic_effect = { OWNER = this }
 		# agot_create_artifact_stormlands_crown_historic_effect = { OWNER = this }
-
-		create_artifact_daenerys_daughterofjaehaerys_crown_effect = { OWNER = this }
-		create_artifact_garlandgardener_crown_effect = { OWNER = this }
-		create_artifact_myrcella_circlet_effect = { OWNER = this }
-		create_artifact_garthgoldhand_crown_effect = { OWNER = this }
-		create_artifact_calla_blackfyre_circlet_effect = { OWNER = this }
-		create_artifact_robbstark_crown_effect = { OWNER = this }
-		create_artifact_viserys_son_of_aenys_02_effect = { OWNER = this }
-		create_artifact_branstark_crown_effect = { OWNER = this }
-		create_artifact_lancellannister_crown_effect = { OWNER = this }
+		
 		create_artifact_crown_of_the_grey_king_effect = { OWNER = this }
-		create_artifact_alysanne_crown_effect = { OWNER = this }
-		create_artifact_viserys_son_of_aenys_effect = { OWNER = this }
+		create_artifact_duskendale_crown_01_effect = { OWNER = this }
 	}
 
 	cost = { prestige = 50 }

@@ -481,7 +481,7 @@ argella_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -968,7 +968,7 @@ aliandra_martell_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -999,7 +999,7 @@ mors_martell_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -1729,7 +1729,7 @@ tyboltthunderbolt_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -1871,7 +1871,7 @@ sharra_arryn_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -1940,7 +1940,7 @@ garthgoldhand_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -1976,7 +1976,7 @@ gardener_war_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -2012,7 +2012,7 @@ gardener_peace_crown_template = {
 
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -2261,7 +2261,7 @@ bracken_crown_template = {
 	}
 	unique = yes
 	ai_score = {
-		value = 100
+		value = 90
 		if = {
 			limit = {
 				NOT = {
@@ -2374,36 +2374,6 @@ circlet_of_stark_template = {
 	}
 }
 
-crown_of_bear_island_template = {
-	can_equip = {
-		agot_can_wear_crown_trigger = yes
-	}
-
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-	}
-
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = { 
-
-	}
-
-	unique = yes
-	ai_score = {
-		value = 100
-		if = {
-			limit = {
-				NOT = {
-					culture = {
-						has_cultural_pillar = heritage_first_man
-					}
-				}
-			}
-			add = -10000
-		}
-	}
-}
-
 crown_of_yronwood_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
@@ -2428,39 +2398,6 @@ crown_of_yronwood_template = {
 						OR = {
 							this = culture:stone_dornish
 							has_cultural_pillar = heritage_rhoynish
-						}
-					}
-				}
-			}
-			add = -10000
-		}
-	}
-}
-
-crown_of_dondarrion_template = {
-	can_equip = {
-		agot_can_wear_crown_trigger = yes
-	}
-
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-	}
-
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = { 
-
-	}
-
-	unique = yes
-	ai_score = {
-		value = 100
-		if = {
-			limit = {
-				NOT = {
-					culture = {
-						OR = {
-							this = culture:marcher
-							this = culture:stormlander
 						}
 					}
 				}
@@ -2536,34 +2473,6 @@ crown_of_connington_template = {
 	}
 }
 
-crown_of_castamere_template = {
-	can_equip = {
-		agot_can_wear_crown_trigger = yes
-	}
-
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-	}
-
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = { 
-
-	}
-
-	unique = yes
-	ai_score = {
-		value = 100
-		if = {
-			limit = {
-				NOT = {
-					culture = culture:westerman
-				}
-			}
-			add = -10000
-		}
-	}
-}
-
 crown_of_sharp_point_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
@@ -2613,34 +2522,6 @@ crown_of_stone_hedge_template = {
 			limit = {
 				NOT = {
 					culture = culture:riverlander
-				}
-			}
-			add = -10000
-		}
-	}
-}
-
-crown_of_deep_den_template = {
-	can_equip = {
-		agot_can_wear_crown_trigger = yes
-	}
-
-	# can this character benefit from the full modifiers of the artifact?
-	can_benefit = {
-	}
-
-	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-	fallback = { 
-
-	}
-
-	unique = yes
-	ai_score = {
-		value = 100
-		if = {
-			limit = {
-				NOT = {
-					culture = culture:westerlander
 				}
 			}
 			add = -10000
@@ -3104,6 +2985,40 @@ crown_of_robert_baratheon_template = {
 	}
 }
 
+joffrey_show_crown_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:crownlander
+							this = culture:stormlander
+							this = culture:westerman
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
 valyrian_crown2_targaryen_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
@@ -3181,6 +3096,66 @@ westerosi_valyrian_crown2_blackfyre_template = {
 			limit = {
 				NOT = {
 					religion = religion:valyrian_religion
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+aegon_variant_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+jaehaerys_variant_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
 					culture = {
 						has_cultural_pillar = heritage_valyrian
 					}

@@ -201,7 +201,7 @@
  brightflame_crown_description:0 "A crown made for Aerion Targaryen, known as Aerion Brightflame, son of King Maekar I Targaryen, if he had become king. It features a band of gold and bronze encrusted with emerald jewels and above it gold and emerald flames."
  
  viserysiii_crown_name:0 "Crown of Viserys III Targaryen"
- viserysiii_crown_description:0 "A crown made for Viserys Targaryen, son of King Maekar I Targaryen, if he won the Great Council of 233 and became king. Made of primarily Essosi materials, it is made from copper and bronze, encrusted with Essosi emeralds, with featuring carved imprints of sleeping dragons as well as a obsidian, silver, and rusted green copper egg imprints."
+ viserysiii_crown_description:0 "A crown made for Viserys Targaryen, son of King Aerys II Targaryen, if he reclaimed his birthright and became king. Made primarily of Essosi materials, it is crafted from copper and bronze, encrusted with Essosi emeralds, and featuring carved imprints of sleeping dragons as well as a obsidian, silver, and rusted green copper egg imprints."
  
  rhaenysvelaryon_crown_name:0 "Crown of the Queen Who Never Was"
  rhaenysvelaryon_crown_description:0 "A crown made for Rhaenys Targaryen, daughter of Prince Aemon Targaryen, if she became Queen. A diadem made of silver, it features the shapes of dragon wings, mermen, and stags and is beset by countless jewels brought by Corlys Velaryon."
@@ -244,14 +244,8 @@
  circlet_of_stark_name:0 "Crown of Winterfell"
  circlet_of_stark_description:0 "Though the Starks of Winterfell traditionally wore crowns of hammered bronze and black iron spikes, this one was made to more directly represent the colors and symbol of the House itself. This grey iron crown showcases several finely crafted snarling wolf heads giving the semblance of a pack hunting its prey. The large pearls and the warm lining of white fur give the crown the white color that is so strongly associated with House Stark."
 
- crown_of_bear_island_name:0 "Crown of Bear Island"
- crown_of_bear_island_description:0 "A crown inspired by the trees of Bear Island with a black bear figure placed prominently in front."
-
  crown_of_yronwood_name:0 "Crown of Yronwood"
  crown_of_yronwood_description:0 "A crown forged in the shape of a black portcullis with amber gemstones and black chains wrapped around it. Made to resemble the fortress and symbol of House Yronwood."
-
- crown_of_dondarrion_name:0 "Crown of Blackhaven"
- crown_of_dondarrion_description:0 "A dark circlet with white four-pointed stars and lightning-shaped spikes atop it. Made to resemble the arms of House Dondarrion of the Stormlands."
 
  crown_of_estermont_name:0 "Crown of Estermont"
  crown_of_estermont_description:0 "A green crown with turtle figures and shell-like patterns made to represent the arms of House Estermont."
@@ -261,18 +255,12 @@
 
  crown_of_westerling_name:0 "Crown of the Crag"
  crown_of_westerling_description:0 "An open circlet with a sandy texture along its length and decorated with six white seashells representing those of House Westerling. "
- 
- crown_of_castamere_name:0 "Crown of Castamere"
- crown_of_castamere_description:0 "A silver crown set with rubies and adorned with prominent red lion figures."
 
  crown_of_sharp_point_name:0 "Crown of Sharp Point"
  crown_of_sharp_point_description:0 "A delicate crown made in the shape of upwards pointing swordfish with netting patterns detailing each one. This sharp crown aptly represents the imagery of House Bar Emmon of Sharp Point."
 
  crown_of_stone_hedge_name:0 "Crown of Stone Hedge"
  crown_of_stone_hedge_description:0 "A robust bronze crown encrusted with rubies and polished amber, and decorated with golden detailings. This crowns boasts in its center the rearing horse that is the symbol of House Bracken."
-
- crown_of_deep_den_name:0 "Crown of Deep Den"
- crown_of_deep_den_description:0 "A regal crown made of bronze and silver, encrusted with large emeralds and decorated with fine pearls and a silver badger ornament in its center. This headpiece pays homage to the colors and symbol of House Lydden of Deep Den."
 
  crown_of_gardener_war_iron_name:0 "Iron Thorns of War"
  crown_of_gardener_war_iron_description:0 "A crown of iron vines with prominent thorns. The Gardener Kings of old would wear crowns such as these in times of war."
@@ -321,6 +309,9 @@
 
  crown_of_robert_baratheon_name:0 "Robert I's Tourney Crown"
  crown_of_robert_baratheon_description:0 "A large and robust golden crown with prominent stag imagery and amber gemstones. This crown was fashioned for Robert I Baratheon shortly after he ascended the Iron Throne and was predominantly used during the tournaments and competitions that the King frequently attended."
+ 
+ joffrey_show_crown_name:0 "Crown of the Golden Stag"
+ joffrey_show_crown_description:0 "A large and robust golden crown with prominent stag horns and imagery, with two amber gemstones added on top. This crown was fashioned for Joffrey I Baratheon shortly after he ascended the Iron Throne and was predominantly used up until his marriage to Margaery Tyrell and subsequent death."
 
  valyrian_crown2_targaryen_name:0 "Valyrian Crown of Fire & Blood"
  valyrian_crown2_targaryen_description:0 "A black iron crown shaped to resemble the leathery wings of dragons and adorned with three large rubies to represent the colors and symbol of House Targaryen."
@@ -358,3 +349,33 @@
  stormlands_crown_historic_description:0 "The Storm Crown was the ancestral crown of House Durrandon, worn since Durran married Elenei and the Seventh Castle was raised. \n \nHISTORY - This crown in particular was last worn by Argilac 'The Arrogant' Durrandon, until he was slain by Orys Baratheon during Aegon's Conquest of the Seven Kingdoms."
  westerlands2_crown_historic_name:0 "Crown of Rock and Hill"
  westerlands2_crown_historic_description:0 "The Crown of the Rock was worn by the Kings of the Rock from House Lannister, who trace their descent back to Lann the Clever and Loreon the Lion.  \n \nHISTORY - This crown in particular was last worn by Loren 'the Last' Lannister, until it was surrended to Aegon The Conqueror during his Conquest of the Seven Kingdoms."
+ 
+ ### Crowns of Westeros - Variant Crowns
+ 
+ showrhaenyra_crown_03_name:0 "Valyrian Queen Crown"
+ showrhaenyra_crown_03_description:0 "A valyrian steel and silver crown encrusted with red rubies and featuring the traditional sigils of the Great Houses of Westeros, excluding the Greyjoys."
+ 
+ jaehaerys_valyrian_variant_name:0 "Conciliator's Valyrian Crown"
+ jaehaerys_valyrian_variant_description:0 "A Valyrian Steel Brand encircled by Red Rubies, mixing the style of the Conqueror's crown with that of his grandson the Conciliator."
+ 
+ jaehaerys_variant_1_name:0 "Conciliator's Silver Crown"
+ jaehaerys_variant_1_description:0 "A silver brand in the style of the Conciliator's crown encircled by multiple gems."
+ 
+ jaehaerys_variant_2_name:0 "Conciliator's Gold and Ruby Crown"
+ jaehaerys_variant_2_description:0 "A gold brand in the style of the Conciliator's crown encircled by red rubies."
+ 
+ aegon_variant_1_name:0 "Conqueror's Silver and Sapphire Crown"
+ aegon_variant_1_description:0 "A silver brand encircled by numerous sapphire stones, this icy crown mimics the style of the Conqueror." 
+ 
+ aegon_variant_2_name:0 "Conqueror's Gold and Emerald Crown"
+ aegon_variant_2_description:0 "A golden brand encircled by numerous emerald jewels, this beautiful crown mimics the style of the Conqueror." 
+ 
+ aegon_variant_3_name:0 "Conqueror's Bronze and Ruby Crown"
+ aegon_variant_3_description:0 "A bronze brand encircled by numerous rubies, this furious crown mimics the style of the Conqueror." 
+ 
+ aegon_variant_4_name:0 "Conqueror's Gold and Multi-Gem Crown"
+ aegon_variant_4_description:0 "A gold brand encircled by numerous multi-colored, this wise crown mimics the style of the Conqueror and his grandson the Conciliator." 
+ 
+ cersei_red_tiara_name:0 "Ruby Tiara of Queen Cersei Lannister"
+ cersei_red_tiara_description:0 "A variant of a tiara of gold made for Queen Cersei Lannister, it features four main jeweled rubies and twelve smaller jeweled rubies."
+ 

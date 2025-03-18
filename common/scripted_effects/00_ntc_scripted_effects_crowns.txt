@@ -733,6 +733,41 @@ create_artifact_shieraseastar_crown_effect = {
 	}
 }
 
+create_artifact_joffrey_show_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = joffrey_show_crown_name
+		description = joffrey_show_crown_description
+		type = helmet
+		visuals = joffrey_show_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = joffrey_show_crown_template
+		modifier = joffrey_show_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = joffrey_show_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Baratheon = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
 create_artifact_showaerys_crown_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -850,6 +885,45 @@ create_artifact_showrhaenyra_crown_02_effect = {
 	}
 }
 
+create_artifact_showrhaenyra_crown_03_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = showrhaenyra_crown_03_name
+		description = showrhaenyra_crown_03_description
+		type = helmet
+		visuals = showrhaenyra_crown_03_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = showrhaenyra_crown_02_template
+		modifier = showrhaenyra_crown_02_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = showrhaenyra_crown_03_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
 create_artifact_showaegon_crown_01_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -911,6 +985,279 @@ create_artifact_showaegon_crown_02_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = { name = showaegon_crown_02_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aegon_variant_1_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aegon_variant_1_name
+		description = aegon_variant_1_description
+		type = helmet
+		visuals = aegon_variant_1_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aegon_variant_template
+		modifier = aegon_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aegon_variant_1_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aegon_variant_2_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aegon_variant_2_name
+		description = aegon_variant_2_description
+		type = helmet
+		visuals = aegon_variant_2_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aegon_variant_template
+		modifier = aegon_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aegon_variant_2_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aegon_variant_3_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aegon_variant_3_name
+		description = aegon_variant_3_description
+		type = helmet
+		visuals = aegon_variant_3_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aegon_variant_template
+		modifier = aegon_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aegon_variant_3_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aegon_variant_4_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aegon_variant_4_name
+		description = aegon_variant_4_description
+		type = helmet
+		visuals = aegon_variant_4_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aegon_variant_template
+		modifier = aegon_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aegon_variant_4_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_jaehaerys_valyrian_variant_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = jaehaerys_valyrian_variant_name
+		description = jaehaerys_valyrian_variant_description
+		type = helmet
+		visuals = jaehaerys_valyrian_variant_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = jaehaerys_variant_template
+		modifier = jaehaerys_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = jaehaerys_valyrian_variant_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_jaehaerys_variant_1_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = jaehaerys_variant_1_name
+		description = jaehaerys_variant_1_description
+		type = helmet
+		visuals = jaehaerys_variant_1_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = jaehaerys_variant_template
+		modifier = jaehaerys_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = jaehaerys_variant_1_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_jaehaerys_variant_2_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = jaehaerys_variant_2_name
+		description = jaehaerys_variant_2_description
+		type = helmet
+		visuals = jaehaerys_variant_2_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = jaehaerys_variant_template
+		modifier = jaehaerys_variant_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = jaehaerys_variant_2_artifact value = yes }
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
@@ -1905,6 +2252,36 @@ create_artifact_cersei_tiara_effect = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }
 			}
+		}
+	}
+}
+
+create_artifact_cersei_red_tiara_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = cersei_red_tiara_name
+		description = cersei_red_tiara_description
+		type = helmet
+		visuals = cersei_red_tiara_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = cersei_tiara_template
+		modifier = cersei_tiara_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = cersei_red_tiara_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
 		}
 	}
 }
@@ -3396,41 +3773,6 @@ create_artifact_circlet_of_stark_effect = {
 	}
 }
 
-create_artifact_crown_of_bear_island_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {	
-		name = crown_of_bear_island_name
-		description = crown_of_bear_island_description
-		type = helmet
-		visuals = crown_of_bear_island_visuals
-		wealth = scope:wealth
-		quality = scope:quality
-		template = crown_of_bear_island_template
-		modifier = crown_of_bear_island_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = crown_of_bear_island_artifact value = yes }
-		set_variable = { name = historical_unique_artifact value = yes }
-	}
-
-	hidden_effect = {
-		dynasty:dynn_Mormont = {
-			ordered_dynasty_member = {
-				order_by = highest_held_title_tier
-				house = { add_house_artifact_claim = scope:newly_created_artifact }
-			}
-		}
-	}
-}
-
 create_artifact_crown_of_yronwood_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -3458,41 +3800,6 @@ create_artifact_crown_of_yronwood_effect = {
 
 	hidden_effect = {
 		dynasty:dynn_Yronwood = {
-			ordered_dynasty_member = {
-				order_by = highest_held_title_tier
-				house = { add_house_artifact_claim = scope:newly_created_artifact }
-			}
-		}
-	}
-}
-
-create_artifact_crown_of_dondarrion_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {	
-		name = crown_of_dondarrion_name
-		description = crown_of_dondarrion_description
-		type = helmet
-		visuals = crown_of_dondarrion_visuals
-		wealth = scope:wealth
-		quality = scope:quality
-		template = crown_of_dondarrion_template
-		modifier = crown_of_dondarrion_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = crown_of_dondarrion_artifact value = yes }
-		set_variable = { name = historical_unique_artifact value = yes }
-	}
-
-	hidden_effect = {
-		dynasty:dynn_Dondarrion = {
 			ordered_dynasty_member = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }
@@ -3571,41 +3878,6 @@ create_artifact_crown_of_connington_effect = {
 	}
 }
 
-create_artifact_crown_of_castamere_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {	
-		name = crown_of_castamere_name
-		description = crown_of_castamere_description
-		type = helmet
-		visuals = crown_of_castamere_visuals
-		wealth = scope:wealth
-		quality = scope:quality
-		template = crown_of_castamere_template
-		modifier = crown_of_castamere_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = crown_of_castamere_artifact value = yes }
-		set_variable = { name = historical_unique_artifact value = yes }
-	}
-
-	hidden_effect = {
-		dynasty:dynn_Reyne = {
-			ordered_dynasty_member = {
-				order_by = highest_held_title_tier
-				house = { add_house_artifact_claim = scope:newly_created_artifact }
-			}
-		}
-	}
-}
-
 create_artifact_crown_of_sharp_point_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -3668,41 +3940,6 @@ create_artifact_crown_of_stone_hedge_effect = {
 
 	hidden_effect = {
 		dynasty:dynn_Bracken = {
-			ordered_dynasty_member = {
-				order_by = highest_held_title_tier
-				house = { add_house_artifact_claim = scope:newly_created_artifact }
-			}
-		}
-	}
-}
-
-create_artifact_crown_of_deep_den_effect = {
-	# Get the character the artifact is being made for.
-	$OWNER$ = { save_scope_as = owner }
-
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {	
-		name = crown_of_deep_den_name
-		description = crown_of_deep_den_description
-		type = helmet
-		visuals = crown_of_deep_den_visuals
-		wealth = scope:wealth
-		quality = scope:quality
-		template = crown_of_deep_den_template
-		modifier = crown_of_deep_den_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-
-	scope:newly_created_artifact = {
-		set_variable = { name = crown_of_deep_den_artifact value = yes }
-		set_variable = { name = historical_unique_artifact value = yes }
-	}
-
-	hidden_effect = {
-		dynasty:dynn_Lydden = {
 			ordered_dynasty_member = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }

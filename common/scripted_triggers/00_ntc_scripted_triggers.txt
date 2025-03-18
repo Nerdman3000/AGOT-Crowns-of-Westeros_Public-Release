@@ -1,0 +1,216 @@
+﻿agot_can_wear_crown_trigger = {
+	custom_tooltip = {
+		text = agot_is_independent_crown_tooltip_desc
+		OR = {
+			agot_is_independent_ruler = yes
+			primary_spouse ?= {
+				agot_is_independent_ruler = yes
+			}
+			father ?= {
+				agot_is_independent_ruler = yes
+			}
+			mother ?= {
+				agot_is_independent_ruler = yes
+			}
+			AND = {
+				highest_held_title_tier = tier_kingdom
+				vassal_contract_has_flag = has_palatinate_contract
+			}
+			AND = {
+				primary_title ?= { tier >= tier_kingdom }
+				any_character_war = {
+					using_cb = agot_independence_war
+					is_war_leader = root
+					is_attacker = root
+				}
+			}
+		}
+		OR = {
+			is_ai = no
+			AND = {
+				NOT = { has_government = free_city_government }
+				NOT = { has_government = republic_government }
+			}
+		}
+	}
+	trigger_if = {
+		limit = {
+			NOR = {
+				has_government = free_city_government
+				has_government = republic_government
+			}
+			agot_is_independent_ruler = yes
+		}
+		custom_tooltip = {
+			text = must_be_crowned_tooltip_desc
+			NOT = {
+				has_inactive_trait = not_had_coronation
+				has_character_flag = not_had_coronation
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			NOR = {
+				has_government = free_city_government
+				has_government = republic_government
+			}
+			OR = {
+				primary_spouse ?= {
+					agot_is_independent_ruler = yes
+				}
+				father ?= {
+					agot_is_independent_ruler = yes
+				}
+				mother ?= {
+					agot_is_independent_ruler = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			text = must_be_crowned_tooltip_desc
+			NOR = {
+				primary_spouse ?= {
+					OR = {
+						has_inactive_trait = not_had_coronation
+						has_character_flag = not_had_coronation
+					}
+				}
+				father ?= {
+					OR = {
+						has_inactive_trait = not_had_coronation
+						has_character_flag = not_had_coronation
+					}
+				}
+				mother ?= {
+					OR = {
+						has_inactive_trait = not_had_coronation
+						has_character_flag = not_had_coronation
+					}
+				}
+			}
+		}
+	}
+	trigger_else = {
+		OR = {
+			AND = {
+				highest_held_title_tier = tier_kingdom
+				vassal_contract_has_flag = has_palatinate_contract
+			}
+			AND = {
+				primary_title ?= { tier >= tier_kingdom }
+				any_character_war = {
+					using_cb = agot_independence_war
+					is_war_leader = root
+					is_attacker = root
+				}
+			}
+		}
+	}
+	NOT = { has_trait = nightswatch }
+}
+
+agot_default_wear_crown_trigger = {
+	trigger_if = { #To ensure if crown is stolen, ruler will not wear crown unless manually equipped.
+		limit = {
+			involved_activity ?= {
+				OR = {
+					has_activity_type = activity_coronation
+					has_activity_type = activity_no_dlc_coronation
+				}
+				has_variable = misplaced_crown #Make sure the crown is stolen and not returned
+			}
+			has_character_flag = coronation_host #Make sure this is the host
+			is_alive = yes
+		}
+		any_character_artifact = {
+			artifact_slot_type = helmet
+			is_equipped = yes
+		}
+	}
+	trigger_else_if = {
+		limit = { is_alive = yes }
+		OR = {
+			AND = {
+				primary_title ?= { tier >= tier_kingdom }
+				any_character_war = {
+					using_cb = agot_independence_war
+					is_war_leader = root
+					is_attacker = root
+				}
+			}
+			AND = {
+				OR = {
+					primary_title ?= { tier >= tier_kingdom }
+					primary_spouse ?= {
+						primary_title ?= { tier >= tier_kingdom }
+					}
+				}
+				OR = {
+					AND = {
+						agot_is_independent_ruler = yes
+						NOR = {
+							has_inactive_trait = not_had_coronation
+							has_character_flag = not_had_coronation
+						}
+					}
+					primary_spouse ?= {
+						agot_is_independent_ruler = yes
+						NOR = {
+							has_inactive_trait = not_had_coronation
+							has_character_flag = not_had_coronation
+						}
+					}
+					#Crowns Of Westeros
+					AND = {
+						agot_is_independent_ruler = yes
+						has_game_rule = show_crowns_without_coronation_enabled
+					}
+					#Crowns Of Westeros
+					primary_spouse ?= {
+						agot_is_independent_ruler = yes
+						has_game_rule = show_crowns_without_coronation_enabled
+					}
+					AND = {
+						highest_held_title_tier = tier_kingdom
+						vassal_contract_has_flag = has_palatinate_contract
+						NOT = { primary_title ?= title:k_dragonstone }
+					}
+				}
+			}
+		}
+	}
+	trigger_else = {
+		OR = {
+			AND = {
+				primary_title.tier = tier_empire
+				NOR = {
+					has_inactive_trait = not_had_coronation
+					has_character_flag = not_had_coronation
+				}
+			}
+			has_primary_title = title:k_dorne
+			any_spouse = {
+				even_if_dead = yes
+				primary_title.tier = tier_empire
+				NOR = {
+					has_inactive_trait = not_had_coronation
+					has_character_flag = not_had_coronation
+				}
+			}
+			#Crowns Of Westeros
+			AND = {
+				primary_title.tier = tier_empire
+				has_game_rule = show_crowns_without_coronation_enabled
+			}
+			#Crowns Of Westeros
+			any_spouse = {
+				even_if_dead = yes
+				primary_title.tier = tier_empire
+				has_game_rule = show_crowns_without_coronation_enabled
+			}
+		}
+	}
+	NOT = { has_government = free_city_government }
+	NOT = { has_government = republic_government }
+}

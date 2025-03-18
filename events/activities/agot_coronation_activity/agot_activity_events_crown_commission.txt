@@ -667,6 +667,25 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				}
 				if = {
 					limit = {
+						root = { ntc_daenerys_daughterofjaehaerys_crown_trigger = yes }
+					}
+
+					create_artifact_daenerys_daughterofjaehaerys_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { ntc_aemonsonofjaehaerys_crown_trigger = yes }
 					}
 
@@ -975,6 +994,25 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 					}
 
 					create_artifact_valarr_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_matarys_crown_trigger = yes }
+					}
+
+					create_artifact_alysanne_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -1389,10 +1427,48 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				}
 				if = {
 					limit = {
+						root = { ntc_joffrey_show_crown_trigger = yes }
+					}
+
+					create_artifact_joffrey_show_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { ntc_crown_of_robert_baratheon_trigger = yes }
 					}
 
 					create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_robbstark_crown_trigger = yes }
+					}
+
+					create_artifact_robbstark_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -1482,6 +1558,63 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 						}
 					}
 				}
+				if = {
+					limit = {
+						root = { agot_fire_and_blood_crown_trigger = yes }
+					}
+
+					agot_create_artifact_westerosi_valyrian_crown2_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_balon_crown_trigger = yes }
+					}
+
+					agot_create_artifact_driftwood_crown_1_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_ironborn_crown_trigger = yes }
+					}
+
+					agot_create_artifact_iron_isles_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
 				#Family Crowns
 				if = {
 					limit = {
@@ -1542,10 +1675,26 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				}
 				if = {
 					limit = {
-						OR = {
-							root = { agot_stark_crown_trigger = yes }
-							root = { agot_north_crown_trigger = yes }
+						root = { agot_swann_crown_trigger = yes }
+					}
+
+					agot_create_artifact_swann_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
 						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_stark_crown_trigger = yes }
 					}
 
 					agot_create_artifact_crown_of_winter_effect = { OWNER = this }
@@ -2119,6 +2268,178 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 						}
 					}
 				}
+				if = {
+					limit = {
+						root = { agot_mormont_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_bear_island_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_corbray_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_hearts_home_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_darklyn_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_darklyn_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_dondarrion_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_dondarrion_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_uller_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_hellholt_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_reyne_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_castamere_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_lydden_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_deep_den_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_banefort_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_the_banefort_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_crakehall_crown_trigger = yes }
+					}
+
+					create_artifact_crown_of_crakehall_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+
 
 				########## Crowns of Westeros - Family Crowns ##########
 				if = {
@@ -2146,44 +2467,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 					}
 
 					create_artifact_massey_crown_effect = { OWNER = this }
-					root = {
-						add_to_variable_list = {
-							name = possible_artifacts
-							target = scope:newly_created_artifact
-						}
-						if = {
-							limit = {
-								NOT = { has_variable = selected_artifact }
-							}
-							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
-						}
-					}
-				}
-				if = {
-					limit = {
-						root = { ntc_reyne_crown_trigger = yes }
-					}
-
-					create_artifact_crown_of_castamere_effect = { OWNER = this }
-					root = {
-						add_to_variable_list = {
-							name = possible_artifacts
-							target = scope:newly_created_artifact
-						}
-						if = {
-							limit = {
-								NOT = { has_variable = selected_artifact }
-							}
-							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
-						}
-					}
-				}
-				if = {
-					limit = {
-						root = { ntc_mormont_crown_trigger = yes }
-					}
-
-					create_artifact_crown_of_bear_island_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -2294,25 +2577,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				}
 				if = {
 					limit = {
-						root = { ntc_dondarrion_crown_trigger = yes }
-					}
-
-					create_artifact_crown_of_dondarrion_effect = { OWNER = this }
-					root = {
-						add_to_variable_list = {
-							name = possible_artifacts
-							target = scope:newly_created_artifact
-						}
-						if = {
-							limit = {
-								NOT = { has_variable = selected_artifact }
-							}
-							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
-						}
-					}
-				}
-				if = {
-					limit = {
 						root = { ntc_bar_emmon_crown_trigger = yes }
 					}
 
@@ -2336,25 +2600,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 					}
 
 					create_artifact_crown_of_stone_hedge_effect = { OWNER = this }
-					root = {
-						add_to_variable_list = {
-							name = possible_artifacts
-							target = scope:newly_created_artifact
-						}
-						if = {
-							limit = {
-								NOT = { has_variable = selected_artifact }
-							}
-							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
-						}
-					}
-				}
-				if = {
-					limit = {
-						root = { ntc_lydden_crown_trigger = yes }
-					}
-
-					create_artifact_crown_of_deep_den_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -2585,6 +2830,120 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 					}
 
 					agot_create_artifact_iron_isles_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_valeman_crown_trigger = yes }
+					}
+
+					agot_create_artifact_valeman_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_reachman_crown_trigger = yes }
+					}
+
+					agot_create_artifact_reachman_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_dornish_crown_trigger = yes }
+					}
+
+					agot_create_artifact_dornish_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_stormlander_crown_trigger = yes }
+					}
+
+					agot_create_artifact_stormlander_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_westerlander_crown_trigger = yes }
+					}
+
+					agot_create_artifact_westerlander2_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_north_crown_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_winter_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -2886,6 +3245,120 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 						}
 					}
 				}
+				if = {
+					limit = {
+						root = { agot_first_man_crown_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_first_men_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_andal_crown_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_the_andals_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_andal_crown_silver_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_the_andals_silver_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_mudd_coa_crown_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_mudd_coa_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_westerosi_diadem_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_westerosi_diadem_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { agot_westerosi_diadem_silver_trigger = yes }
+					}
+
+					agot_create_artifact_crown_of_westerosi_diadem_silver_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
 
 				########## Crowns of Westeros - Religion Crowns ##########
 				if = {
@@ -3130,6 +3603,12 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = crown_aegonsonofjaehaerys_artifact }
+			}
+			create_artifact_aegonsonofjaehaerys_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_aemonsonofjaehaerys_artifact }
 			}
 			create_artifact_aemonsonofjaehaerys_crown_effect = { OWNER = this }
@@ -3229,6 +3708,12 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = crown_valarr_artifact }
 			}
 			create_artifact_valarr_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_alysanne_artifact }
+			}
+			create_artifact_alysanne_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3364,6 +3849,18 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable =  joffrey_show_crown_artifact }
+			}
+			create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable =  crown_robbstark_artifact }
+			}
+			create_artifact_robbstark_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = myrcella_circlet_artifact }
 			}
 			create_artifact_myrcella_circlet_effect = { OWNER = this }
@@ -3379,6 +3876,78 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = crown_of_cersei_ruler_artifact }
 			}
 			create_artifact_crown_of_cersei_ruler_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = westerosi_valyrian_crown2_artifact }
+			}
+			agot_create_artifact_westerosi_valyrian_crown2_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_bear_island_artifact }
+			}
+			create_artifact_crown_of_bear_island_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_hearts_home_artifact }
+			}
+			create_artifact_crown_of_hearts_home_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_darklyn_artifact }
+			}
+			create_artifact_crown_of_darklyn_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_dondarrion_artifact }
+			}
+			create_artifact_crown_of_dondarrion_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_hellholt_artifact }
+			}
+			create_artifact_crown_of_hellholt_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_castamere_artifact }
+			}
+			create_artifact_crown_of_castamere_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_deep_den_artifact }
+			}
+			create_artifact_crown_of_deep_den_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_the_banefort_artifact }
+			}
+			create_artifact_crown_of_the_banefort_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_crakehall_artifact }
+			}
+			create_artifact_crown_of_crakehall_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = driftwood_crown_1_artifact }
+			}
+			agot_create_artifact_driftwood_crown_1_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = iron_isles_crown_artifact }
+			}
+			agot_create_artifact_iron_isles_crown_effect = { OWNER = this }
 		}
 		#Family Crowns
 		else_if = {
@@ -3398,6 +3967,12 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = cargyll_crown_artifact }
 			}
 			agot_create_artifact_cargyll_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = swann_crown_artifact }
+			}
+			agot_create_artifact_swann_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3595,18 +4170,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_of_castamere_artifact }
-			}
-			create_artifact_crown_of_castamere_effect = { OWNER = this }
-		}
-		else_if = {
-			limit = {
-				var:selected_artifact = { has_variable = crown_of_bear_island_artifact }
-			}
-			create_artifact_crown_of_bear_island_effect = { OWNER = this }
-		}
-		else_if = {
-			limit = {
 				var:selected_artifact = { has_variable = crown_of_yronwood_artifact }
 			}
 			create_artifact_crown_of_yronwood_effect = { OWNER = this }
@@ -3637,12 +4200,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_of_dondarrion_artifact }
-			}
-			create_artifact_crown_of_dondarrion_effect = { OWNER = this }
-		}
-		else_if = {
-			limit = {
 				var:selected_artifact = { has_variable = crown_of_sharp_point_artifact }
 			}
 			create_artifact_crown_of_sharp_point_effect = { OWNER = this }
@@ -3652,12 +4209,6 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = crown_of_stone_hedge_artifact }
 			}
 			create_artifact_crown_of_stone_hedge_effect = { OWNER = this }
-		}
-		else_if = {
-			limit = {
-				var:selected_artifact = { has_variable = crown_of_deep_den_artifact }
-			}
-			create_artifact_crown_of_deep_den_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3731,6 +4282,42 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = iron_isles_crown_artifact }
 			}
 			agot_create_artifact_iron_isles_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = valeman_crown_artifact }
+			}
+			agot_create_artifact_valeman_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = reachman_crown_artifact }
+			}
+			agot_create_artifact_reachman_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = dornish_crown_artifact }
+			}
+			agot_create_artifact_dornish_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = stormlander_crown_artifact }
+			}
+			agot_create_artifact_stormlander_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = westerlander2_crown_artifact }
+			}
+			agot_create_artifact_westerlander2_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_winter_artifact }
+			}
+			agot_create_artifact_crown_of_winter_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3824,6 +4411,42 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				var:selected_artifact = { has_variable = crown_of_the_old_gods_artifact }
 			}
 			agot_create_artifact_crown_of_the_old_gods_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_first_men_artifact }
+			}
+			agot_create_artifact_crown_of_first_men_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_the_andals_artifact }
+			}
+			agot_create_artifact_crown_of_the_andals_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_the_andals_silver_artifact }
+			}
+			agot_create_artifact_crown_of_the_andals_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_mudd_coa_artifact }
+			}
+			agot_create_artifact_crown_of_mudd_coa_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_westerosi_diadem_artifact }
+			}
+			agot_create_artifact_crown_of_westerosi_diadem_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_westerosi_diadem_silver_artifact }
+			}
+			agot_create_artifact_crown_of_westerosi_diadem_silver_effect = { OWNER = this }
 		}
 
 		########## Crowns of Westeros - Religion Crowns ##########
