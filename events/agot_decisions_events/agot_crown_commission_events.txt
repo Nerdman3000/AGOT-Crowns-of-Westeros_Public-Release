@@ -47,7 +47,7 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_artifact_selection"
 		container = "custom_widgets_container"
 	}
 
@@ -781,6 +781,44 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				}
 				if = {
 					limit = {
+						root = { ntc_daeron_the_daring_crown_trigger = yes }
+					}
+
+					create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_jaehaera_crown_trigger = yes }
+					}
+
+					create_artifact_jaehaera_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { ntc_laenorvelaryon_crown_trigger = yes }
 					}
 
@@ -823,6 +861,44 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 					}
 
 					create_artifact_daena_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_seven_dragon_crown_trigger = yes }
+					}
+
+					create_artifact_seven_dragon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_elaena_crown_default_trigger = yes }
+					}
+
+					create_artifact_elaena_crown_default_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -1047,6 +1123,44 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				}
 				if = {
 					limit = {
+						root = { ntc_maegor_brightflame_crown_trigger = yes }
+					}
+
+					create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_elaena_crown_red_trigger = yes }
+					}
+
+					create_artifact_elaena_crown_red_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { ntc_vaellatargaryen_crown_trigger = yes }
 					}
 
@@ -1089,6 +1203,44 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 					}
 
 					create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_elaena_crown_black_trigger = yes }
+					}
+
+					create_artifact_elaena_crown_black_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_aemon_blackfyre_crown_trigger = yes }
+					}
+
+					create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -1427,10 +1579,10 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				}
 				if = {
 					limit = {
-						root = { ntc_joffrey_show_crown_trigger = yes }
+						root = { ntc_crown_of_robert_baratheon_trigger = yes }
 					}
 
-					create_artifact_joffrey_show_crown_effect = { OWNER = this }
+					create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -1446,10 +1598,29 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				}
 				if = {
 					limit = {
-						root = { ntc_crown_of_robert_baratheon_trigger = yes }
+						root = { ntc_crown_of_renly_baratheon_trigger = yes }
 					}
 
-					create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+					create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_joffrey_show_crown_trigger = yes }
+					}
+
+					create_artifact_joffrey_show_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -3700,9 +3871,27 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = daeron_the_daring_crown_artifact }
+			}
+			create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = jaehaera_crown_artifact }
+			}
+			create_artifact_jaehaera_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_laenorvelaryon_artifact }
 			}
 			create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_stepstone_artifact }
+			}
+			create_artifact_stepstone_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3715,6 +3904,18 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				var:selected_artifact = { has_variable = crown_daena_artifact }
 			}
 			create_artifact_daena_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = seven_dragon_crown_artifact }
+			}
+			create_artifact_seven_dragon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_default_artifact }
+			}
+			create_artifact_elaena_crown_default_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3778,9 +3979,21 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = maegor_brightflame_crown_artifact }
+			}
+			create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_brightflame_artifact }
 			}
 			create_artifact_brightflame_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_red_artifact }
+			}
+			create_artifact_elaena_crown_red_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3799,6 +4012,18 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				var:selected_artifact = { has_variable = crown_duncandragonfly_artifact }
 			}
 			create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_black_artifact }
+			}
+			create_artifact_elaena_crown_black_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = aemon_blackfyre_crown_artifact }
+			}
+			create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -3910,9 +4135,15 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable =  crown_of_renly_baratheon_artifact }
+			}
+			create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable =  joffrey_show_crown_artifact }
 			}
-			create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+			create_artifact_joffrey_show_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -4559,7 +4790,7 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_artifact_selection"
 		container = "custom_widgets_container"
 	}
 
@@ -5293,6 +5524,44 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				}
 				if = {
 					limit = {
+						root = { primary_spouse ?= { ntc_daeron_the_daring_crown_trigger = yes } }
+					}
+
+					create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_jaehaera_crown_trigger = yes } }
+					}
+
+					create_artifact_jaehaera_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { primary_spouse ?= { ntc_laenorvelaryon_crown_trigger = yes } }
 					}
 
@@ -5335,6 +5604,44 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 					}
 
 					create_artifact_daena_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_seven_dragon_crown_trigger = yes } }
+					}
+
+					create_artifact_seven_dragon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_elaena_crown_default_trigger = yes } }
+					}
+
+					create_artifact_elaena_crown_default_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -5559,6 +5866,44 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				}
 				if = {
 					limit = {
+						root = { primary_spouse ?= { ntc_maegor_brightflame_crown_trigger = yes } }
+					}
+
+					create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_elaena_crown_red_trigger = yes } }
+					}
+
+					create_artifact_elaena_crown_red_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { primary_spouse ?= { ntc_vaellatargaryen_crown_trigger = yes } }
 					}
 
@@ -5601,6 +5946,44 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 					}
 
 					create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_elaena_crown_black_trigger = yes } }
+					}
+
+					create_artifact_elaena_crown_black_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_aemon_blackfyre_crown_trigger = yes } }
+					}
+
+					create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -5943,6 +6326,44 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 					}
 
 					create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_crown_of_renly_baratheon_trigger = yes } }
+					}
+
+					create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { primary_spouse ?= { ntc_joffrey_show_crown_trigger = yes } }
+					}
+
+					create_artifact_joffrey_show_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -8193,6 +8614,18 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = daeron_the_daring_crown_artifact }
+			}
+			create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = jaehaera_crown_artifact }
+			}
+			create_artifact_jaehaera_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_laenorvelaryon_artifact }
 			}
 			create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
@@ -8208,6 +8641,18 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				var:selected_artifact = { has_variable = crown_daena_artifact }
 			}
 			create_artifact_daena_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = seven_dragon_crown_artifact }
+			}
+			create_artifact_seven_dragon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_default_artifact }
+			}
+			create_artifact_elaena_crown_default_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -8277,6 +8722,18 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = maegor_brightflame_crown_artifact }
+			}
+			create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_red_artifact }
+			}
+			create_artifact_elaena_crown_red_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = vaellatargaryen_crown_artifact }
 			}
 			create_artifact_vaellatargaryen_crown_effect = { OWNER = this }
@@ -8292,6 +8749,18 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				var:selected_artifact = { has_variable = crown_duncandragonfly_artifact }
 			}
 			create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_black_artifact }
+			}
+			create_artifact_elaena_crown_black_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = aemon_blackfyre_crown_artifact }
+			}
+			create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -8400,6 +8869,18 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				var:selected_artifact = { has_variable =  crown_of_robert_baratheon_artifact }
 			}
 			create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable =  crown_of_renly_baratheon_artifact }
+			}
+			create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable =  joffrey_show_crown_artifact }
+			}
+			create_artifact_joffrey_show_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -8959,7 +9440,6 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 
 		hidden_effect = {
 			scope:newly_created_artifact = {
-				equip_artifact_to_owner_replace = yes
 				set_variable = {
 					name = agot_new_historical_crown_by_decision
 					value = yes
@@ -9046,7 +9526,7 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_artifact_selection"
 		container = "custom_widgets_container"
 	}
 
@@ -9426,6 +9906,52 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					limit = {
 						NOT = {
 							any_artifact = {
+								has_variable = daeron_the_daring_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = jaehaera_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_jaehaera_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
 								has_variable = crown_laenorvelaryon_artifact
 							}
 						}
@@ -9501,6 +10027,52 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					}
 				
 					create_artifact_daena_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = seven_dragon_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_seven_dragon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = elaena_crown_default_artifact
+							}
+						}
+					}
+				
+					create_artifact_elaena_crown_default_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -9771,6 +10343,52 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					limit = {
 						NOT = {
 							any_artifact = {
+								has_variable = maegor_brightflame_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = elaena_crown_red_artifact
+							}
+						}
+					}
+				
+					create_artifact_elaena_crown_red_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
 								has_variable = vaellatargaryen_crown_artifact
 							}
 						}
@@ -9823,6 +10441,52 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					}
 				
 					create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = elaena_crown_black_artifact
+							}
+						}
+					}
+				
+					create_artifact_elaena_crown_black_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = aemon_blackfyre_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -10352,6 +11016,52 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					limit = {
 						NOT = {
 							any_artifact = {
+								has_variable = crown_of_renly_baratheon_artifact
+							}
+						}
+					}
+				
+					create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = joffrey_show_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_joffrey_show_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
 								has_variable = crown_robbstark_artifact
 							}
 						}
@@ -10661,6 +11371,18 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = daeron_the_daring_crown_artifact }
+			}
+			create_artifact_daeron_the_daring_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = jaehaera_crown_artifact }
+			}
+			create_artifact_jaehaera_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_laenorvelaryon_artifact }
 			}
 			create_artifact_laenorvelaryon_crown_effect = { OWNER = this }
@@ -10682,6 +11404,18 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 				var:selected_artifact = { has_variable = crown_daena_artifact }
 			}
 			create_artifact_daena_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = seven_dragon_crown_artifact }
+			}
+			create_artifact_seven_dragon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_default_artifact }
+			}
+			create_artifact_elaena_crown_default_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -10745,9 +11479,21 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = maegor_brightflame_crown_artifact }
+			}
+			create_artifact_maegor_brightflame_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_brightflame_artifact }
 			}
 			create_artifact_brightflame_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_red_artifact }
+			}
+			create_artifact_elaena_crown_red_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -10766,6 +11512,18 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 				var:selected_artifact = { has_variable = crown_duncandragonfly_artifact }
 			}
 			create_artifact_duncandragonfly_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_black_artifact }
+			}
+			create_artifact_elaena_crown_black_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = aemon_blackfyre_crown_artifact }
+			}
+			create_artifact_aemon_blackfyre_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -10898,6 +11656,18 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 				var:selected_artifact = { has_variable = crown_of_robert_baratheon_artifact }
 			}
 			create_artifact_crown_of_robert_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = crown_of_renly_baratheon_artifact }
+			}
+			create_artifact_crown_of_renly_baratheon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = joffrey_show_crown_artifact }
+			}
+			create_artifact_joffrey_show_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -11037,7 +11807,7 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 		is_shown = {
 			is_ai = no
 		}
-		gui = "event_window_artifact_selection"
+		gui = "agot_artifact_selection"
 		container = "custom_widgets_container"
 	}
 
@@ -11252,6 +12022,29 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 						}
 					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = elaena_crown_red_and_black_artifact
+							}
+						}
+					}
+				
+					create_artifact_elaena_crown_red_and_black_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
 			}
 		}
 	}
@@ -11313,6 +12106,12 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 				var:selected_artifact = { has_variable = cersei_red_tiara_artifact }
 			}
 			create_artifact_cersei_red_tiara_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = elaena_crown_red_and_black_artifact }
+			}
+			create_artifact_elaena_crown_red_and_black_effect = { OWNER = this }
 		}
 		hidden_effect = {
 			scope:newly_created_artifact = {

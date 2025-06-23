@@ -117,7 +117,7 @@ aemonsonofjaehaerys_crown_modifier = {
 aegonsonofjaehaerys_crown_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.01
-	faith_of_the_seven_religion_opinion = -5
+	the_seven_religion_opinion = -5
 	different_faith_liege_opinion = 5
 	short_reign_duration_mult = 0.02
 	monthly_dynasty_prestige_mult = 0.01
@@ -200,7 +200,7 @@ greenpyre_crown_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.01
 	courtier_and_guest_opinion = 3
-	faith_of_the_seven_religion_opinion = 5
+	the_seven_religion_opinion = 5
 	learning = 1
 	monthly_dynasty_prestige_mult = 0.01
 }
@@ -231,7 +231,7 @@ jonsnow_crown_modifier = {
 	monthly_prestige = 0.01
 	prowess = 3
 	advantage = 5
-	old_gods_religion_opinion = 5
+	the_pact_religion_opinion = 5
 }
 aereatargaryen_crown_01_modifier = {
 	icon = grandeur_positive
@@ -273,7 +273,7 @@ hugor_of_the_hill_crown_modifier = {
 	martial = 3
 	monthly_piety = 2
 	monthly_piety_gain_mult = 0.05
-	faith_of_the_seven_religion_opinion = 10
+	the_seven_religion_opinion = 10
 }
 alysanne_crown_modifier = {
 	icon = grandeur_positive
@@ -293,10 +293,10 @@ alicenthightower_crown_modifier = {
 	icon = grandeur_positive
 	monthly_dynasty_prestige_mult = 0.01
 	monthly_prestige = 0.1
-	faith_of_the_seven_religion_opinion = 5
+	the_seven_religion_opinion = 5
 	fertility = 0.3
 }
-daena_crown_modifier = {
+maegor_brightflame_crown_modifier = {
 	icon = grandeur_positive
 	monthly_dynasty_prestige_mult = 0.01
 	monthly_prestige = 0.1
@@ -438,8 +438,8 @@ tyboltthunderbolt_crown_modifier = {
 	stewardship = 1
 	monthly_income = 0.2
 	westerman_opinion = 5
-	old_gods_religion_opinion = 5
-	faith_of_the_seven_religion_opinion = -5
+	the_pact_religion_opinion = 5
+	the_seven_religion_opinion = -5
 	monthly_dynasty_prestige_mult = 0.05
 }
 geroldlannister_crown_modifier = {
@@ -597,7 +597,7 @@ crown_of_the_red_keep_modifier = {
 crown_of_oldtown_tall_modifier = {
 	icon = grandeur_positive
 	learning = 1
-	faith_of_the_seven_religion_opinion = 5
+	the_seven_religion_opinion = 5
 	court_grandeur_baseline_add = 3
 	stewardship_per_piety_level = 1
 	character_capital_county_monthly_development_growth_add = 0.01
@@ -606,7 +606,7 @@ crown_of_oldtown_tall_modifier = {
 crown_of_oldtown_modifier = {
 	icon = grandeur_positive
 	learning = 1
-	faith_of_the_seven_religion_opinion = 5
+	the_seven_religion_opinion = 5
 	court_grandeur_baseline_add = 3
 	stewardship_per_piety_level = 1
 	character_capital_county_monthly_development_growth_add = 0.01
@@ -701,21 +701,21 @@ crown_of_the_grey_king_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 1.0
 	martial = 2
-	drowned_god_religion_opinion = 5
+	the_ways_religion_opinion = 5
 	ironborn_opinion = 5
 	levy_reinforcement_rate_same_faith = 0.25
 }
 crown_of_weirwood_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.05
-	old_gods_religion_opinion = 5
+	the_pact_religion_opinion = 5
 	martial_per_piety_level = 1
 	levy_reinforcement_rate_same_faith = 0.25
 }
 circlet_of_the_seven_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.05
-	faith_of_the_seven_religion_opinion = 5
+	the_seven_religion_opinion = 5
 	stewardship_per_piety_level = 1
 	levy_reinforcement_rate_same_faith = 0.25
 }
@@ -788,7 +788,7 @@ wolfswood_crown_modifier = {
 bracken_crown_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.1
-	old_gods_religion_opinion = -5
+	the_pact_religion_opinion = -5
 	movement_speed = 0.05
 	riverlander_opinion = 5
 	dread_gain_mult = 0.05
@@ -826,6 +826,13 @@ crown_of_robert_baratheon_modifier = {
 	martial = 2
 	stewardship = -1
 	prowess = 3
+}
+crown_of_renly_baratheon_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_prestige_mult = 0.01
+	monthly_prestige = 0.1
+	diplomacy = 1
+	powerful_vassal_opinion = 5
 }
 joffrey_show_crown_modifier = {
 	icon = grandeur_positive
@@ -868,4 +875,74 @@ jaehaerys_variant_modifier = {
 	monthly_prestige = 0.1
 	stewardship = 2
 	high_valyrian_opinion = 5
+}
+daena_crown_modifier = {
+	icon = grandeur_positive
+	opinion_of_female_rulers = 3
+	martial = 2
+	is_bastard_opinion = 2
+	high_valyrian_opinion = 5
+}
+seven_dragon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_dynasty_piety_mult = 0.01
+	monthly_piety = 0.5
+	the_seven_religion_opinion = 5
+	different_faith_liege_opinion = -5
+	high_valyrian_opinion = 5
+}
+elaena_crown_default_modifier = {
+	icon = grandeur_positive
+	learning = 3
+	stewardship = 2
+	high_valyrian_opinion = 5
+}
+elaena_crown_red_modifier = {
+	icon = grandeur_positive
+	stewardship = 5
+	independent_ruler_opinion = -5
+	high_valyrian_opinion = 5
+}
+elaena_crown_red_and_black_modifier = {
+	icon = grandeur_positive
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	prowess = 1
+	learning = 1
+	intrigue = 1
+	high_valyrian_opinion = 10
+}
+elaena_crown_black_modifier = {
+	icon = grandeur_positive
+	martial = 5
+	tyranny_gain_mult = -0.3
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	high_valyrian_opinion = 5
+}
+aemon_blackfyre_crown_modifier = {
+	icon = grandeur_positive
+	prowess = 3
+	diplomacy = -2
+	tyranny_gain_mult = -0.3
+	sand_dornish_opinion = -5
+	salt_dornish_opinion = -5
+	stone_dornish_opinion = -5
+	high_valyrian_opinion = 5
+}
+daeron_the_daring_crown_modifier = {
+	icon = grandeur_positive
+	vassal_opinion = 5
+	general_opinion = 3
+	brave_xp_gain_mult = 0.5
+	high_valyrian_opinion = 3
+}
+jaehaera_crown_modifier = {
+	icon = grandeur_positive
+	vassal_opinion = 5
+	general_opinion = 5
+	the_seven_religion_opinion = 5
+	high_valyrian_opinion = 3
 }

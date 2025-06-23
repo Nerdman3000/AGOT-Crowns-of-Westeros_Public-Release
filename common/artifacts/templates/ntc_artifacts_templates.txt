@@ -1426,7 +1426,7 @@ rhaenatargaryen_crown_template = {
 		}
 	}
 }
-daena_crown_template = {
+maegor_brightflame_crown_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
 	}
@@ -1719,7 +1719,7 @@ tyboltthunderbolt_crown_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		has_religion = religion:old_gods_religion
+		has_religion = religion:the_pact_religion
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -1734,7 +1734,7 @@ tyboltthunderbolt_crown_template = {
 			limit = {
 				NOT = {
 					culture = culture:westerman
-					religion = religion:old_gods_religion
+					religion = religion:the_pact_religion
 				}
 			}
 			add = -10000
@@ -2034,7 +2034,7 @@ gardener_peace_crown_template = {
 }
 hugor_of_the_hill_crown_template = {
 	can_equip = {
-		has_religion = religion:faith_of_the_seven_religion
+		has_religion = religion:the_seven_religion
 		piety >= 1000
 		OR = {
 			agot_is_independent_ruler = yes
@@ -2629,7 +2629,7 @@ crown_of_the_grey_king_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		has_religion = religion:drowned_god_religion
+		has_religion = religion:the_ways_religion
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -2645,7 +2645,7 @@ crown_of_the_grey_king_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:drowned_god_religion
+					religion = religion:the_ways_religion
 					culture = {
 						has_cultural_pillar = heritage_ironborn
 					}
@@ -2663,7 +2663,7 @@ crown_of_weirwood_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		has_religion = religion:old_gods_religion
+		has_religion = religion:the_pact_religion
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -2678,7 +2678,7 @@ crown_of_weirwood_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:old_gods_religion
+					religion = religion:the_pact_religion
 				}
 			}
 			add = -10000
@@ -2693,7 +2693,7 @@ circlet_of_the_seven_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		has_religion = religion:faith_of_the_seven_religion
+		has_religion = religion:the_seven_religion
 	}
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
@@ -2708,7 +2708,7 @@ circlet_of_the_seven_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:faith_of_the_seven_religion
+					religion = religion:the_seven_religion
 				}
 			}
 			add = -10000
@@ -2985,6 +2985,39 @@ crown_of_robert_baratheon_template = {
 	}
 }
 
+crown_of_renly_baratheon_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						OR = {
+							this = culture:crownlander
+							this = culture:stormlander
+						}
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
 joffrey_show_crown_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
@@ -3037,7 +3070,7 @@ valyrian_crown2_targaryen_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:valyrian_religion
+					religion = religion:the_flames_religion
 					culture = {
 						has_cultural_pillar = heritage_valyrian
 					}
@@ -3066,7 +3099,7 @@ valyrian_crown2_blackfyre_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:valyrian_religion
+					religion = religion:the_flames_religion
 					culture = {
 						has_cultural_pillar = heritage_valyrian
 					}
@@ -3095,7 +3128,7 @@ westerosi_valyrian_crown2_blackfyre_template = {
 		if = {
 			limit = {
 				NOT = {
-					religion = religion:valyrian_religion
+					religion = religion:the_flames_religion
 					culture = {
 						has_cultural_pillar = heritage_valyrian
 					}
@@ -3137,6 +3170,277 @@ aegon_variant_template = {
 }
 
 jaehaerys_variant_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+daena_crown_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+seven_dragon_crown_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+		has_religion = religion:the_seven_religion
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+elaena_crown_default_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+elaena_crown_red_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+elaena_crown_black_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+elaena_crown_red_and_black_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+aemon_blackfyre_crown_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+daeron_the_daring_crown_template = {
+	can_equip = {
+		agot_can_wear_crown_trigger = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = { 
+
+	}
+
+	unique = yes
+	ai_score = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_pillar = heritage_valyrian
+					}
+				}
+			}
+			add = -10000
+		}
+	}
+}
+
+jaehaera_crown_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
 	}

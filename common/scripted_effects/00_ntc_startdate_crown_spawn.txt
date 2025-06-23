@@ -9,6 +9,7 @@
 			create_artifact_alicenthightower_crown_effect = { OWNER = this }
 			create_artifact_alyssavelaryon_crown_effect = { OWNER = this }
 			create_artifact_daena_crown_effect = { OWNER = this }
+			create_artifact_jaehaera_crown_effect = { OWNER = this }
 			create_artifact_mariah_martell_crown_effect = { OWNER = this }
 		}
 	}
@@ -25,6 +26,7 @@ ntc_targaryen_crown_spawn.1_npk = {
 			create_artifact_alicenthightower_crown_effect = { OWNER = this }
 			create_artifact_alyssavelaryon_crown_effect = { OWNER = this }
 			create_artifact_daena_crown_effect = { OWNER = this }
+			create_artifact_jaehaera_crown_effect = { OWNER = this }
 			create_artifact_mariah_martell_crown_effect = { OWNER = this }
 		}
 	}

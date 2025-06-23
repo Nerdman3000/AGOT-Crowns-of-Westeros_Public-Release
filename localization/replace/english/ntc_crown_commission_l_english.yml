@@ -1,10 +1,5 @@
 ﻿l_english:
 
- agot_commission_crown_westeros_choice_loc:0 "Based on a Figure from History"
- agot_commission_crown_westeros_choice_tooltip:0 "Create a crown based on a figure from history."
-
-
-
  agot_commission_crown_decision:0 "Commission A New Crown"
  agot_commission_crown_decision_effects_tooltip:0 "You will commission a new crown artifact."
  agot_commission_crown_decision_tooltip:0 "You will commission a new crown"

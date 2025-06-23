@@ -68,8 +68,35 @@
  mariah_martell_crown_name:0 "Queen Myriah's Circlet"
  mariah_martell_crown_description:0 "A circlet owned by Queen Myriah Martell, wife of King Daeron II otherwise known as Daeron the Good. A bronze and gold circlet with a series of suns encrusted with rubies, this crown strongly emphasized the integration of Dorne with the rest of the Seven Kingdoms under the rule of the Iron Throne. \n \nHISTORY - Forged for Queen Myriah Martell during the reign of her husband King Daeron II, this crown has not been worn since the last Dornish Queen, yet many expect it will eventually be worn by the next Dornish-born Queen of the Seven Kingdoms."
  
+ maegor_brightflame_name:0 "Maegor Brightflames's Crown"
+ maegor_brightflame_description:0 "A crown owned by Maegor Brightflame, the son of Aerion Targaryen who was passed over for the Iron Throne. It is a circular crown in the image of silver and gold dragon wings with golden flame punchuated by a red ruby at its center."
+ 
  daena_crown_name:0 "Queen Daena's Crown"
- daena_crown_description:0 "A crown owned by Queen Daena Targaryen, also known as Daena the Defiant, wife of King Baelor I. A circular crown in the image of silver and gold dragon wings with golden flame punchuated by a red ruby at its center. \n \nHISTORY - Commissioned and gifted to her by her uncle Viserys, the future King Viserys II, upon her ascension to queenhood, this crown was ultimately little worn by Queen Daena herself, due to her having been locked in the maidenvault from much of her time as queen. Before her death, it was gifted away by Queen Daena to her gooddaughter Rohanne of Tyrosh as a wedding present upon her marriage to Daena's son Daemon Blackfyre. \n \nFollowing the Blackfyre Rebellion, it would find itself owned by the descendants of Daemon Blackfyre. Following the death of Maelys, it was recovered and returned to House Targaryen."
+ daena_crown_description:0 "A golden circlet is crowned with alternating red and purple diamond-shaped gemstones, flanked by smaller black gems, and edged with subtle thorns along its rim, this crown was owned by Queen Daena Targaryen, also known as Daena the Defiant, wife of King Baelor I.  \n \nHISTORY - Commissioned and gifted to her by her uncle Viserys, the future King Viserys II, upon her ascension to queenhood, this crown was ultimately little worn by Queen Daena herself, due to her having been locked in the maidenvault from much of her time as queen. Before her death, it was gifted away by Queen Daena to her gooddaughter Rohanne of Tyrosh as a wedding present upon her marriage to Daena's son Daemon Blackfyre. \n \nFollowing the Blackfyre Rebellion, it would find itself owned by the descendants of Daemon Blackfyre. Following the death of Maelys, it was recovered and returned to House Targaryen."
+ 
+ seven_dragon_crown_name:0 "Rhaena (Daughter of Aegon III)'s Crown"
+ seven_dragon_crown_description:0 "A radiant golden crown with wing-like arches flanking a bold seven-pointed star and a band adorned in rose-hued gems, this crown was owned by Rhaena Targaryen, daughter of King Aegon III."
+ 
+ jaehaera_crown_name:0 "Crown of the Tragic Green Queen"
+ jaehaera_crown_description:0 "Owned by Queen Helaena and later her daughter Jaehaera, this slender golden crown set with polished green diamonds was forged in the image of the lost crown once worn by Queen Rhaenys. \n \nHISTORY - Commissioned by Otto Hightower for his granddaughter Helaena, this crown was crafted in the image of the lost diadem once worn by Queen Rhaenys, who perished tragically in Dorne. It was intended to evoke the legacy of Aegon the Conqueror and reinforce the Hightowers’ ambitions for King Aegon II’s rule. \n\nAfter Queen Helaena’s tragic death, the crown was recovered from her remains and passed to her daughter, young Queen Jaehaera. When Jaehaera, too, met a death hauntingly similar to her mother’s, the crown was locked away, its presence thereafter whispered of ill fortune and sorrow."
+  
+ elaena_crown_default_name:0 "Elaena (Daughter of Aegon III)'s Crown"
+ elaena_crown_default_description:0 "Forged in bronze and crowned by twin gold dragons over a bed of flames, this crown centers on a milky white gemstone, radiating the fierce majesty and fire-bound legacy of House Targaryen. It was owned by Elaena Targaryen, daughter of King Aegon III."
+ 
+ elaena_crown_red_and_black_name:0 "Crown of the Red and Black Dragon"
+ elaena_crown_red_and_black_description:0 "Made of Valyrian Steel and crowned by twin black and red dragons over a bed of flames, this crown centers on a red gemstone, radiating the fierce majesty and fire-bound legacy of both House Targaryen and House Blackfyre. It is meant to symbolize a potential peaceful union for both warring houses."
+ 
+ elaena_crown_red_name:0 "Aelor and Aelora's Crown"
+ elaena_crown_red_description:0 "Forged in iron and crowned by twin red dragons over a bed of flames, this crown centers on a red gemstone, radiating the fierce majesty and fire-bound legacy of House Targaryen. It was owned by Aelor Targaryen and later his twin sister Aelora."
+ 
+ elaena_crown_black_name:0 "Aegon Blackfyre (Son of Daemon I Blackfyre)'s Crown"
+ elaena_crown_black_description:0 "Forged in red copper and crowned by twin black dragons over a bed of flames, this crown centers on a black gemstone, radiating the fierce majesty and fire-bound legacy of House Targaryen. It was owned by Aegon Blackfyre, eldest son of the rebel Daemon I Blackfyre and twin to Aemon Blackfyre."
+ 
+ aemon_blackfyre_crown_name:0 "Aegon Blackfyre (Son of Daemon I Blackfyre)'s Crown"
+ aemon_blackfyre_crown_description:0 "This formidable crown is a band of dark red and black ringed with blazing Blackfyre dragon sigils, from which rises a circle of upright swords, each made in the image of Blackfyre. It was owned by Aemon Blackfyre, the second eldest son of the rebel Daemon I Blackfyre and twin to Aegon Blackfyre."
+ 
+ daeron_the_daring_crown_name:0 "Daeron the Darings's Crown"
+ daeron_the_daring_crown_description:0 "A burnished gold band accented with olive green enamel and pyramid studs, crowned at the front by a flame-like motif rising around a deep blue sapphire to represent the dragon Tessarion, this crown was owned by Prince Daeron the Daring and later Jaehaera Targaryen."
  
  alyssavelaryon_crown_name:0 "Queen Alyssa's Crown"
  alyssavelaryon_crown_description:0 "A crown owned by Queen Alyssa Velaryon, wife of King Aenys I, it is a beautiful gold and silver band encrusted with pearls and marked by blue and green jewels surrounded by smaller pearls and gold. \n \nHISTORY - Commissioned and worn by Queen Alyssa during the reign of King Aenys I, this crown would in time end up becoming nicknamed the 'Mistress Crown', for during the reign of Aegon IV it was gifted by the king to his mistress Barba Bracken, but later reclaimed and given to Melissa Blackwood by the king. \n \nAfter Melissa's time as Aegon's mistress had ended, it was gifted to Bethany Bracken, yet following Bethany's own execution after she was caught in bed with Ser Terrence Toyne, it was once again gifted to Melissa Blackwood and her house. The crown would eventually end up back with House Targaryen following the marriage of Betha Blackwood and King Aegon V."
@@ -312,6 +339,9 @@
  
  joffrey_show_crown_name:0 "Crown of the Golden Stag"
  joffrey_show_crown_description:0 "A large and robust golden crown with prominent stag horns and imagery, with two amber gemstones added on top. This crown was fashioned for Joffrey I Baratheon shortly after he ascended the Iron Throne and was predominantly used up until his marriage to Margaery Tyrell and subsequent death."
+
+ crown_of_renly_baratheon_name:0 "Renly's Tourney Crown"
+ crown_of_renly_baratheon_description:0 "Shaped into sinewy gold antlers reaching towards the sky, this crown embodies the essense of stag imagery. The branches meet at a thin gold band carved with the textured, ossified look of antler. While not as polished or gem-encrusted as other regalia, this crown gives a strong and noble silhouette nonetheless."
 
  valyrian_crown2_targaryen_name:0 "Valyrian Crown of Fire & Blood"
  valyrian_crown2_targaryen_description:0 "A black iron crown shaped to resemble the leathery wings of dragons and adorned with three large rubies to represent the colors and symbol of House Targaryen."

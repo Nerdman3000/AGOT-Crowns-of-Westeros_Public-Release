@@ -1,6 +1,6 @@
 ﻿ntc_mooon_clansman_character = {
 	culture = culture:mountain_clansman
 	dynasty = none
-	faith = faith:old_gods_vale
+	faith = faith:old_gods_btw_mns
 	gender_female_chance = 10
 }

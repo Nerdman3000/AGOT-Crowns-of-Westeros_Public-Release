@@ -148,7 +148,7 @@ rhaenatargaryen_crown_visuals = {
 	icon = "rhaenatargaryen_crown.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
-daena_crown_visuals = {
+maegor_brightflame_crown_visuals = {
 	icon = "daena_crown.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
@@ -400,6 +400,10 @@ crown_of_robert_baratheon_visuals = {
 	icon = "crown_of_robert_baratheon.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
+crown_of_renly_baratheon_visuals = {
+	icon = "crown_of_renly_baratheon.dds"
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
 valyrian_crown2_targaryen_visuals = {
 	icon = "valyrian_crown2_targaryen.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
@@ -446,5 +450,41 @@ showrhaenyra_crown_03_visuals = {
 }
 cersei_red_tiara_visuals = {
 	icon = "cersei_red_tiara.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+daena_crown_visuals = {
+	icon = "new_daena_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+seven_dragon_crown_visuals = {
+	icon = "seven_dragon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+elaena_crown_default_visuals = {
+	icon = "elaena_crown_default.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+elaena_crown_red_visuals = {
+	icon = "elaena_crown_red.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+elaena_crown_black_visuals = {
+	icon = "elaena_crown_black.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+elaena_crown_red_and_black_visuals = {
+	icon = "elaena_crown_red_and_black.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aemon_blackfyre_crown_visuals = {
+	icon = "aemon_blackfyre_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+daeron_the_daring_crown_visuals = {
+	icon = "daeron_the_daring_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+jaehaera_crown_visuals = {
+	icon = "jaehaera_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }

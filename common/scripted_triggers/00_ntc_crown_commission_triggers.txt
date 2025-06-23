@@ -585,7 +585,7 @@ ntc_oldtown_tall_crown_trigger = {
 }
 
 ntc_weirwood_crown_trigger = {
-	has_religion = religion:old_gods_religion
+	has_religion = religion:the_pact_religion
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_weirwood_artifact
@@ -595,7 +595,7 @@ ntc_weirwood_crown_trigger = {
 }
 
 ntc_seven_circlet_trigger = {
-	has_religion = religion:faith_of_the_seven_religion
+	has_religion = religion:the_seven_religion
 	NOT = {
 		any_artifact = {
 			has_variable = circlet_of_the_seven_artifact
@@ -740,8 +740,8 @@ ntc_vaellatargaryen_crown_trigger = {
 }
 
 ntc_aegonsonofjaehaerys_crown_trigger = {
-	exists = character:Targaryen_43 # Aegon Son of Jaehaerys
-	this = character:Targaryen_43 # Aegon Son of Jaehaerys
+	exists = character:targaryen_43 # Aegon Son of Jaehaerys
+	this = character:targaryen_43 # Aegon Son of Jaehaerys
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -886,21 +886,6 @@ ntc_aemond_crown_trigger = {
 	NOT = {
 		any_artifact = {
 			has_variable = crown_aemond_artifact
-		}
-	}
-}
-
-ntc_daena_crown_trigger = {
-	is_character_targaryen_83 = yes # Daena The Defiant
-	NOT = {
-		AND = {
-			is_ai = yes
-			has_game_rule = hide_dynamic_crowns_enabled
-		}
-	}
-	NOT = {
-		any_artifact = {
-			has_variable = crown_daena_artifact
 		}
 	}
 }
@@ -1084,6 +1069,161 @@ ntc_duncandragonfly_crown_trigger = {
 	NOT = {
 		any_artifact = {
 			has_variable = crown_duncandragonfly_artifact
+		}
+	}
+}
+
+ntc_daena_crown_trigger = {
+	is_character_targaryen_83 = yes # Daena The Defiant
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_daena_artifact
+		}
+	}
+}
+
+ntc_maegor_brightflame_crown_trigger = {
+	is_character_targaryen_125 = yes # Maegor Brightflame
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = maegor_brightflame_crown_artifact
+		}
+	}
+}
+
+ntc_daeron_the_daring_crown_trigger = {
+	is_character_targaryen_68 = yes  # Daeron the Daring
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = daeron_the_daring_crown_artifact
+		}
+	}
+}
+
+ntc_jaehaera_crown_trigger = {
+	OR = {
+		is_character_targaryen_66 = yes  # Helaena Targaryen
+		is_character_targaryen_71 = yes  # Jaehaera Targaryen
+	}
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = daeron_the_daring_crown_artifact
+		}
+	}
+}
+
+ntc_elaena_crown_default_trigger = {
+	is_character_targaryen_85 = yes # Elaena Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = elaena_crown_default_artifact
+		}
+	}
+}
+
+ntc_seven_dragon_crown_trigger = {
+	is_character_targaryen_84 = yes # Rhaena Targaryen
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = seven_dragon_crown_artifact
+		}
+	}
+}
+
+ntc_elaena_crown_red_trigger = {
+	OR = {
+		is_character_targaryen_115 = yes  # Aelor Targaryen
+		is_character_targaryen_116 = yes  # Aelora Targaryen
+	}
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = elaena_crown_red_artifact
+		}
+	}
+}
+
+ntc_elaena_crown_black_trigger = {
+	is_character_blackfyre_1 = yes  # Aegon Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = elaena_crown_black_artifact
+		}
+	}
+}
+
+ntc_elaena_crown_red_and_black_trigger = {
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = elaena_crown_red_and_black_artifact
+		}
+	}
+}
+
+ntc_aemon_blackfyre_crown_trigger = {
+	is_character_blackfyre_2 = yes  # Aemon Blackfyre
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = aemon_blackfyre_crown_artifact
 		}
 	}
 }
@@ -1479,7 +1619,7 @@ ntc_margaerytyrell_crown_trigger = {
 }
 
 ntc_joffrey_show_crown_trigger = {
-	is_character_Baratheon_5 = yes # Joffrey Baratheon
+	is_character_baratheon_5 = yes # Joffrey Baratheon
 	NOT = {
 		AND = {
 			is_ai = yes
@@ -1534,6 +1674,21 @@ ntc_crown_of_robert_baratheon_trigger = {
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_robert_baratheon_artifact
+		}
+	}
+}
+
+ntc_crown_of_renly_baratheon_trigger = {
+	is_character_baratheon_4 = yes # Renly Baratheon
+	NOT = {
+		AND = {
+			is_ai = yes
+			has_game_rule = hide_dynamic_crowns_enabled
+		}
+	}
+	NOT = {
+		any_artifact = {
+			has_variable = crown_of_renly_baratheon_artifact
 		}
 	}
 }

@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "female_elaena_crown_red_and_black_mesh"
+	file = "female_elaena_crown_red_and_black.mesh"
+
+	meshsettings = {
+		name = "female_elaena_crown_red_and_black" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "elaena_crown_red_and_black_diffuse.dds"
+		texture_normal = "elaena_crown_red_and_black_normal.dds"
+		texture_specular = "elaena_crown_red_and_black_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "female_elaena_crown_red_and_black" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 1
+		texture_diffuse = "elaena_crown_black_diffuse.dds"
+		texture_normal = "elaena_crown_red_and_black_normal.dds"
+		texture_specular = "elaena_crown_red_and_black_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_elaena_crown_red_and_black_entity"
+	pdxmesh = "female_elaena_crown_red_and_black_mesh"
+}
+

@@ -2813,6 +2813,153 @@ create_artifact_rhaenatargaryen_crown_effect = {
 	}
 }
 
+create_artifact_daeron_the_daring_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = daeron_the_daring_crown_name
+		description = daeron_the_daring_crown_description
+		type = helmet
+		visuals = daeron_the_daring_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = daeron_the_daring_crown_template
+		history = {
+			type = created
+			date = 8130.6.1
+			recipient = character:Targaryen_68 # Daeron the Daring
+			location = province:4151
+		}
+		modifier = daeron_the_daring_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = daeron_the_daring_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 8130.10.15
+			recipient = character:Targaryen_71 # Jaehaera Targaryen
+		}
+	}
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_jaehaera_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = jaehaera_crown_name
+		description = jaehaera_crown_description
+		type = helmet
+		visuals = jaehaera_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = jaehaera_crown_template
+		history = {
+			type = created
+			date = 8129.3.30
+			recipient = character:Targaryen_66 # Helaena Targaryen
+			location = province:4151
+		}
+		modifier = jaehaera_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = jaehaera_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 8130.10.8
+			recipient = character:Targaryen_71 # Jaehaera Targaryen
+		}
+	}
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_maegor_brightflame_crown_effect = { #Maegor Brightflame Crown, Formerly Daena Crown
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = maegor_brightflame_crown_name
+		description = maegor_brightflame_crown_description
+		type = helmet
+		visuals = maegor_brightflame_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = maegor_brightflame_crown_template
+		history = {
+			type = created
+			date = 8233.1.1
+			recipient = character:Targaryen_125 # Maegor Brightflame
+			location = province:4151
+		}
+		modifier = maegor_brightflame_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = maegor_brightflame_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:c_kings_landing
+		}
+		add_artifact_title_history = {
+			target = title:e_the_iron_throne
+			date = 8261.1.1
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
 create_artifact_daena_crown_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
@@ -2830,7 +2977,7 @@ create_artifact_daena_crown_effect = {
 		template = daena_crown_template
 		history = {
 			type = created
-			date = 8047.1.1
+			date = 8171.1.1
 			recipient = character:Targaryen_83 # Daena Targaryen
 			location = province:4151
 		}
@@ -2865,6 +3012,292 @@ create_artifact_daena_crown_effect = {
 	hidden_effect = {
 		dynasty:dynn_Targaryen = {
 			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_seven_dragon_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = seven_dragon_crown_name
+		description = seven_dragon_crown_description
+		type = helmet
+		visuals = seven_dragon_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = seven_dragon_crown_template
+		history = {
+			type = created
+			date = 8171.1.1
+			recipient = character:Targaryen_84 # Rhaena Targaryen
+			location = province:4151
+		}
+		modifier = seven_dragon_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = seven_dragon_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:c_kings_landing
+		}
+		add_artifact_title_history = {
+			target = title:e_the_iron_throne
+			date = 8261.1.1
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_elaena_crown_default_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = elaena_crown_default_name
+		description = elaena_crown_default_description
+		type = helmet
+		visuals = elaena_crown_default_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = elaena_crown_default_template
+		history = {
+			type = created
+			date = 8171.1.1
+			recipient = character:Targaryen_85 # Elaena Targaryen
+			location = province:4151
+		}
+		modifier = elaena_crown_default_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = elaena_crown_default_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:c_kings_landing
+		}
+		add_artifact_title_history = {
+			target = title:e_the_iron_throne
+			date = 8261.1.1
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_elaena_crown_red_effect = { #Aelora Crown
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = elaena_crown_red_name
+		description = elaena_crown_red_description
+		type = helmet
+		visuals = elaena_crown_red_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = elaena_crown_red_template
+		history = {
+			type = created
+			date = 8216.1.1
+			recipient = character:Targaryen_115 # Aelor Targaryen
+			location = province:4151
+		}
+		modifier = elaena_crown_red_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = elaena_crown_red_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:c_kings_landing
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 8217.6.1
+			recipient = character:Targaryen_116 # Aelora Targaryen
+		}
+		add_artifact_title_history = {
+			target = title:e_the_iron_throne
+			date = 8261.1.1
+		}
+	}
+	
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_elaena_crown_black_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = elaena_crown_black_name
+		description = elaena_crown_black_description
+		type = helmet
+		visuals = elaena_crown_black_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = elaena_crown_black_template
+		history = {
+			type = created
+			date = 8196.6.1
+			recipient = character:Blackfyre_1 # Aegon Blackfyre
+			location = province:4151
+		}
+		modifier = elaena_crown_black_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = elaena_crown_black_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	hidden_effect = {
+		house:house_Blackfyre = {
+			ordered_house_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_elaena_crown_red_and_black_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = elaena_crown_red_and_black_name
+		description = elaena_crown_red_and_black_description
+		type = helmet
+		visuals = elaena_crown_red_and_black_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = elaena_crown_red_and_black_template
+		modifier = elaena_crown_red_and_black_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = elaena_crown_red_and_black_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	hidden_effect = {
+		dynasty:dynn_Targaryen = {
+			ordered_dynasty_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+	hidden_effect = {
+		house:house_Blackfyre = {
+			ordered_house_member = {
+				order_by = highest_held_title_tier
+				house = { add_house_artifact_claim = scope:newly_created_artifact }
+			}
+		}
+	}
+}
+
+create_artifact_aemon_blackfyre_crown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = aemon_blackfyre_crown_name
+		description = aemon_blackfyre_crown_description
+		type = helmet
+		visuals = aemon_blackfyre_crown_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = aemon_blackfyre_crown_template
+		history = {
+			type = created
+			date = 8196.6.1
+			recipient = character:Blackfyre_2 # Aemon Blackfyre
+			location = province:4151
+		}
+		modifier = aemon_blackfyre_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = aemon_blackfyre_crown_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = artifact_succession_title
+			value = title:b_the_red_keep
+		}
+	}
+	hidden_effect = {
+		house:house_Blackfyre = {
+			ordered_house_member = {
 				order_by = highest_held_title_tier
 				house = { add_house_artifact_claim = scope:newly_created_artifact }
 			}
@@ -4386,6 +4819,32 @@ create_artifact_crown_of_robert_baratheon_effect = {
 
 	scope:newly_created_artifact = {
 		set_variable = { name = crown_of_robert_baratheon_artifact value = yes }
+		set_variable = { name = historical_unique_artifact value = yes }
+	}
+}
+
+create_artifact_crown_of_renly_baratheon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = crown_of_renly_baratheon_name
+		description = crown_of_renly_baratheon_description
+		type = helmet
+		visuals = crown_of_renly_baratheon_visuals
+		wealth = scope:wealth
+		quality = scope:quality
+		template = crown_of_renly_baratheon_template
+		modifier = crown_of_renly_baratheon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = crown_of_renly_baratheon_artifact value = yes }
 		set_variable = { name = historical_unique_artifact value = yes }
 	}
 }

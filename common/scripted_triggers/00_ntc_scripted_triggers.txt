@@ -24,19 +24,21 @@
 					is_attacker = root
 				}
 			}
+			has_character_flag = agot_claimant_king
 		}
 		OR = {
 			is_ai = no
 			AND = {
-				NOT = { has_government = free_city_government }
+				NOT = { government_has_flag = government_is_free_city }
 				NOT = { has_government = republic_government }
 			}
 		}
 	}
+	#Coronation Logic
 	trigger_if = {
 		limit = {
 			NOR = {
-				has_government = free_city_government
+				government_has_flag = government_is_free_city
 				has_government = republic_government
 			}
 			agot_is_independent_ruler = yes
@@ -52,7 +54,7 @@
 	trigger_else_if = {
 		limit = {
 			NOR = {
-				has_government = free_city_government
+				government_has_flag = government_is_free_city
 				has_government = republic_government
 			}
 			OR = {
@@ -92,20 +94,7 @@
 		}
 	}
 	trigger_else = {
-		OR = {
-			AND = {
-				highest_held_title_tier = tier_kingdom
-				vassal_contract_has_flag = has_palatinate_contract
-			}
-			AND = {
-				primary_title ?= { tier >= tier_kingdom }
-				any_character_war = {
-					using_cb = agot_independence_war
-					is_war_leader = root
-					is_attacker = root
-				}
-			}
-		}
+		always = yes
 	}
 	NOT = { has_trait = nightswatch }
 }
@@ -139,6 +128,7 @@ agot_default_wear_crown_trigger = {
 					is_attacker = root
 				}
 			}
+			has_character_flag = agot_claimant_king
 			AND = {
 				OR = {
 					primary_title ?= { tier >= tier_kingdom }
@@ -211,6 +201,6 @@ agot_default_wear_crown_trigger = {
 			}
 		}
 	}
-	NOT = { has_government = free_city_government }
+	NOT = { government_has_flag = government_is_free_city }
 	NOT = { has_government = republic_government }
 }
