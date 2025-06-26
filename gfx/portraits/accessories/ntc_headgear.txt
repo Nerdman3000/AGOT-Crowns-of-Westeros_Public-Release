@@ -808,14 +808,14 @@ female_hugor_of_the_hill_crown = {
 	entity = { required_tags = ""			shared_pose_entity = head		entity = female_hugor_of_the_hill_crown_entity 	 }
 }
 
-alysannetargaryen_crown = {	
+matarys_crown = {	
 	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		entity = alysannetargaryen_crown_entity 	 }
+	entity = { required_tags = ""			shared_pose_entity = head		entity = matarys_crown_entity 	 }
 }
 
-female_alysannetargaryen_crown = {	
+female_matarys_crown = {	
 	set_tags = "crown"
-	entity = { required_tags = ""			shared_pose_entity = head		entity = female_alysannetargaryen_crown_entity 	 }
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_matarys_crown_entity 	 }
 }
 
 argella_crown = {	

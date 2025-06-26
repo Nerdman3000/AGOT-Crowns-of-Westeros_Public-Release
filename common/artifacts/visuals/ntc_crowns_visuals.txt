@@ -128,12 +128,12 @@ stepstone_crown_visuals = {
 	icon = "stepstone_crown.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
-alysanne_crown_visuals = {
-	icon = "alysanne_crown.dds"
+matarys_crown_visuals = {
+	icon = "matarys_crown.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
 rhaella_daughterofrhaena_crown_visuals = {
-	icon = "alysanne_crown.dds"
+	icon = "rhaella-rhaena_crown.dds"
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
 alyssavelaryon_crown_visuals = {

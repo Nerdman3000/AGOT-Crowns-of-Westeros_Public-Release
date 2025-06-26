@@ -5,8 +5,8 @@
  stepstone_crown_name:0 "Driftwood Stepstones Crown"
  stepstone_crown_description:0 "A replica of a makeshift crown made of Driftwood and decorated with shark teeth, burnt iron, chains, and rope, this crown is a mocking imitation of the illustrious Conqueror's Crown, no doubt originally created by an Ironborn pirate annoyed by Aegon's Conquest."
  
- alysanne_crown_name:0 "Crown of Matarys Targaryen"
- alysanne_crown_description:0 "A golden crown features a series of different colored gemstones at each point made for Matarys Targaryen."
+ matarys_crown_name:0 "Crown of Matarys Targaryen"
+ matarys_crown_description:0 "A golden crown features a series of different colored gemstones at each point made for Matarys Targaryen."
  
  bittersteel_crown_name:0 "Crown of Aegor 'Bittersteel' Rivers"
  bittersteel_crown_description:0 "A crown made for Aegor Rivers, also known as Bittersteel, in case all the male Blackfyres were killed. A gold and copper circlet inspired by the ancient old Petty King Bracken crown, it features golden skulls and copper and gold wings to reflect Aegor's Bracken heritage."
@@ -68,8 +68,8 @@
  mariah_martell_crown_name:0 "Queen Myriah's Circlet"
  mariah_martell_crown_description:0 "A circlet owned by Queen Myriah Martell, wife of King Daeron II otherwise known as Daeron the Good. A bronze and gold circlet with a series of suns encrusted with rubies, this crown strongly emphasized the integration of Dorne with the rest of the Seven Kingdoms under the rule of the Iron Throne. \n \nHISTORY - Forged for Queen Myriah Martell during the reign of her husband King Daeron II, this crown has not been worn since the last Dornish Queen, yet many expect it will eventually be worn by the next Dornish-born Queen of the Seven Kingdoms."
  
- maegor_brightflame_name:0 "Maegor Brightflames's Crown"
- maegor_brightflame_description:0 "A crown owned by Maegor Brightflame, the son of Aerion Targaryen who was passed over for the Iron Throne. It is a circular crown in the image of silver and gold dragon wings with golden flame punchuated by a red ruby at its center."
+ maegor_brightflame_crown_name:0 "Maegor Brightflames's Crown"
+ maegor_brightflame_crown_description:0 "A crown owned by Maegor Brightflame, the son of Aerion Targaryen who was passed over for the Iron Throne. It is a circular crown in the image of silver and gold dragon wings with golden flame punchuated by a red ruby at its center."
  
  daena_crown_name:0 "Queen Daena's Crown"
  daena_crown_description:0 "A golden circlet is crowned with alternating red and purple diamond-shaped gemstones, flanked by smaller black gems, and edged with subtle thorns along its rim, this crown was owned by Queen Daena Targaryen, also known as Daena the Defiant, wife of King Baelor I.  \n \nHISTORY - Commissioned and gifted to her by her uncle Viserys, the future King Viserys II, upon her ascension to queenhood, this crown was ultimately little worn by Queen Daena herself, due to her having been locked in the maidenvault from much of her time as queen. Before her death, it was gifted away by Queen Daena to her gooddaughter Rohanne of Tyrosh as a wedding present upon her marriage to Daena's son Daemon Blackfyre. \n \nFollowing the Blackfyre Rebellion, it would find itself owned by the descendants of Daemon Blackfyre. Following the death of Maelys, it was recovered and returned to House Targaryen."
@@ -92,7 +92,7 @@
  elaena_crown_black_name:0 "Aegon Blackfyre (Son of Daemon I Blackfyre)'s Crown"
  elaena_crown_black_description:0 "Forged in red copper and crowned by twin black dragons over a bed of flames, this crown centers on a black gemstone, radiating the fierce majesty and fire-bound legacy of House Targaryen. It was owned by Aegon Blackfyre, eldest son of the rebel Daemon I Blackfyre and twin to Aemon Blackfyre."
  
- aemon_blackfyre_crown_name:0 "Aegon Blackfyre (Son of Daemon I Blackfyre)'s Crown"
+ aemon_blackfyre_crown_name:0 "Aemon Blackfyre (Son of Daemon I Blackfyre)'s Crown"
  aemon_blackfyre_crown_description:0 "This formidable crown is a band of dark red and black ringed with blazing Blackfyre dragon sigils, from which rises a circle of upright swords, each made in the image of Blackfyre. It was owned by Aemon Blackfyre, the second eldest son of the rebel Daemon I Blackfyre and twin to Aegon Blackfyre."
  
  daeron_the_daring_crown_name:0 "Daeron the Darings's Crown"

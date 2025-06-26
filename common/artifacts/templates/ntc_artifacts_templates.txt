@@ -1310,7 +1310,7 @@ calla_blackfyre_circlet_template = {
 		}
 	}
 }
-alysanne_crown_template = {
+matarys_crown_template = {
 	can_equip = {
 		agot_can_wear_crown_trigger = yes
 	}

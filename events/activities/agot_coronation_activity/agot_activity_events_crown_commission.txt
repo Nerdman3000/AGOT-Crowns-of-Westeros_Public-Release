@@ -1183,7 +1183,7 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 						root = { ntc_matarys_crown_trigger = yes }
 					}
 
-					create_artifact_alysanne_crown_effect = { OWNER = this }
+					create_artifact_matarys_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -3955,9 +3955,9 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_alysanne_artifact }
+				var:selected_artifact = { has_variable = crown_matarys_artifact }
 			}
-			create_artifact_alysanne_crown_effect = { OWNER = this }
+			create_artifact_matarys_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {

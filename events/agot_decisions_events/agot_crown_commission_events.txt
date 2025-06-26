@@ -1088,7 +1088,7 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 						root = { ntc_matarys_crown_trigger = yes }
 					}
 
-					create_artifact_alysanne_crown_effect = { OWNER = this }
+					create_artifact_matarys_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -3973,9 +3973,9 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_alysanne_artifact }
+				var:selected_artifact = { has_variable = crown_matarys_artifact }
 			}
-			create_artifact_alysanne_crown_effect = { OWNER = this }
+			create_artifact_matarys_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -5831,7 +5831,7 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 						root = { primary_spouse ?= { ntc_matarys_crown_trigger = yes } }
 					}
 
-					create_artifact_alysanne_crown_effect = { OWNER = this }
+					create_artifact_matarys_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -8710,9 +8710,9 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_alysanne_artifact }
+				var:selected_artifact = { has_variable = crown_matarys_artifact }
 			}
-			create_artifact_alysanne_crown_effect = { OWNER = this }
+			create_artifact_matarys_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
@@ -10297,12 +10297,12 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 					limit = {
 						NOT = {
 							any_artifact = {
-								has_variable = crown_alysanne_artifact
+								has_variable = crown_matarys_artifact
 							}
 						}
 					}
 				
-					create_artifact_alysanne_crown_effect = { OWNER = this }
+					create_artifact_matarys_crown_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -11473,9 +11473,9 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = crown_alysanne_artifact }
+				var:selected_artifact = { has_variable = crown_matarys_artifact }
 			}
-			create_artifact_alysanne_crown_effect = { OWNER = this }
+			create_artifact_matarys_crown_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {

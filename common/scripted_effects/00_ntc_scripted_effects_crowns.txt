@@ -2412,7 +2412,7 @@ create_artifact_hugor_of_the_hill_crown_effect = {
 	}
 }
 
-create_artifact_alysanne_crown_effect = {
+create_artifact_matarys_crown_effect = {
 	# Get the character the artifact is being made for.
 	$OWNER$ = { save_scope_as = owner }
 
@@ -2420,20 +2420,20 @@ create_artifact_alysanne_crown_effect = {
 
 	# Create the artifact
 	create_artifact = {	
-		name = alysanne_crown_name
-		description = alysanne_crown_description
+		name = matarys_crown_name
+		description = matarys_crown_description
 		type = helmet
-		visuals = alysanne_crown_visuals
+		visuals = matarys_crown_visuals
 		wealth = scope:wealth
 		quality = scope:quality
-		template = alysanne_crown_template
-		modifier = alysanne_crown_modifier
+		template = matarys_crown_template
+		modifier = matarys_crown_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
 
 	scope:newly_created_artifact = {
-		set_variable = { name = crown_alysanne_artifact value = yes }
+		set_variable = { name = crown_matarys_artifact value = yes }
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title

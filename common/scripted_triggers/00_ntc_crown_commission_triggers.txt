@@ -1023,7 +1023,7 @@ ntc_matarys_crown_trigger = {
 	}
 	NOT = {
 		any_artifact = {
-			has_variable = crown_alysanne_artifact
+			has_variable = crown_matarys_artifact
 		}
 	}
 }

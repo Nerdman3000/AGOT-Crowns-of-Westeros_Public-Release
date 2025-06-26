@@ -276,7 +276,7 @@ ntc_crown_debug_decision = {
 		# create_artifact_rhaenysvelaryon_crown_effect = { OWNER = this }
 		# create_artifact_stepstone_crown_effect = { OWNER = this }
 		# create_artifact_hugor_of_the_hill_crown_effect = { OWNER = this }
-		# create_artifact_alysanne_crown_effect = { OWNER = this }
+		# create_artifact_matarys_crown_effect = { OWNER = this }
 		# create_artifact_alicenthightower_crown_effect = { OWNER = this }
 		# create_artifact_alyssavelaryon_crown_effect = { OWNER = this }
 		# create_artifact_bethablackwood_circlet_effect = { OWNER = this }

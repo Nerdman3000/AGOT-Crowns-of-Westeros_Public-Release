@@ -275,7 +275,7 @@ hugor_of_the_hill_crown_modifier = {
 	monthly_piety_gain_mult = 0.05
 	the_seven_religion_opinion = 10
 }
-alysanne_crown_modifier = {
+matarys_crown_modifier = {
 	icon = grandeur_positive
 	monthly_dynasty_prestige_mult = 0.01
 	monthly_prestige = 0.1
