@@ -4,6 +4,24 @@ barbershop_background = {
 	##########################################
 
 	texture = {
+		reference = "main_menu/tgp_frontend_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_frontend_japan_main"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "main_menu/mpo_frontend_nomad.dds"
+	}
+	environment = {
+		reference = "environment_mpo_frontend_nomad_main"
+	}
+	
+	##########################################
+
+	texture = {
 		reference = "main_menu/ep3_frontend_byzantine.dds"
 	}
 	environment = {
@@ -461,7 +479,7 @@ barbershop_background = {
 		reference = "event_scenes/desert_settlement.dds"
 	}
 	environment = {
-		reference = "environment_travel_desert_settlement"
+		reference = "environment_travel_desert"
 	}
 
 	##########################################
@@ -470,7 +488,7 @@ barbershop_background = {
 		reference = "event_scenes/desert_nomad.dds"
 	}
 	environment = {
-		reference = "environment_travel_desert_nomad"
+		reference = "environment_travel_desert"
 	}
 
 	##########################################
@@ -1446,324 +1464,849 @@ barbershop_background = {
 	
 	##########################################
 
-	##AGOT Added
-		texture = {
+	texture = {
+		reference = "event_scenes/bp3_coast.dds"
+	}
+	environment = {
+		reference = "environment_bp3_coast"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_hills_winter.dds"
+	}
+	environment = {
+		reference = "environment_bp3_hills_winter"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_mountain_winter.dds"
+	}
+	environment = {
+		reference = "environment_bp3_mountain_winter"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_plains_winter.dds"
+	}
+	environment = {
+		reference = "environment_bp3_plains_winter"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_riverside.dds"
+	}
+	environment = {
+		reference = "environment_bp3_riverside"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_steppe_winter.dds"
+	}
+	environment = {
+		reference = "environment_bp3_steppe_winter"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bp3_wetlands_winter.dds"
+	}
+	environment = {
+		reference = "environment_bp3_wetlands_winter"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_camp_steppe.dds"
+	}
+	environment = {
+		reference = "environment_mpo_camp_steppe"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_campfire_steppe.dds"
+	}
+	environment = {
+		reference = "environment_mpo_campfire_steppe"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_city_steppe.dds"
+	}
+	environment = {
+		reference = "environment_mpo_city_steppe"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_hunt_steppe.dds"
+	}
+	environment = {
+		reference = "environment_mpo_hunt_steppe"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_raid_burning_asian.dds"
+	}
+	environment = {
+		reference = "environment_mpo_raid_burning_asian"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_rural_village_asian.dds"
+	}
+	environment = {
+		reference = "environment_mpo_rural_village_asian"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_steppe_evening.dds"
+	}
+	environment = {
+		reference = "environment_mpo_steppe_evening"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_temple_steppe.dds"
+	}
+	environment = {
+		reference = "environment_mpo_temple_steppe"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/mpo_tent_interior_mongol.dds"
+	}
+	environment = {
+		reference = "environment_mpo_tent_interior_mongol"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_alley_day_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_alley_day_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_alley_night_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_alley_night_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_asia_estate.dds"
+	}
+	environment = {
+		reference = "environment_tgp_asia_estate"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_camp_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_camp_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_chinese_city.dds"
+	}
+	environment = {
+		reference = "environment_tgp_chinese_city"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_chinese_corridor_day.dds"
+	}
+	environment = {
+		reference = "environment_tgp_chinese_corridor_day"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_chinese_corridor_night.dds"
+	}
+	environment = {
+		reference = "environment_tgp_chinese_corridor_night"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_courtyard_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_courtyard_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_crossroad_inn_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_crossroad_inn_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_docks_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_docks_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_examination_room.dds"
+	}
+	environment = {
+		reference = "environment_tgp_examination_room"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_farm_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_farm_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_feast_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_feast_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_festival_ritual_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_festival_ritual_japan"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_garden_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_garden_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_holysite_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_holysite_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_hunt_generic_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_hunt_generic_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_japanese_city.dds"
+	}
+	environment = {
+		reference = "environment_tgp_japanese_city"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_japan_throne_room.dds"
+	}
+	environment = {
+		reference = "environment_tgp_frontend_japan_main" 
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_asia_throne_room.dds"
+	}
+	environment = {
+		reference = "environment_tgp_frontend_celestial_main" 
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_kitchen_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_kitchen_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_market_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_market_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_moon_festival_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_moon_festival_japan"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_overflowing_river.dds"
+	}
+	environment = {
+		reference = "environment_tgp_overflowing_river"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_physician_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_physician_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_relaxing_room_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_relaxing_room_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_rice_fields.dds"
+	}
+	environment = {
+		reference = "environment_tgp_rice_fields"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_ruined_holding.dds"
+	}
+	environment = {
+		reference = "environment_tgp_ruined_holding"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_study_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_study_asia"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_study_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_study_japan"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_tavern_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_tavern_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_tanabata_festival_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_tanabata_festival_japan"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_tanabata_festival_night_japan.dds"
+	}
+	environment = {
+		reference = "environment_tgp_tanabata_festival_night_japan"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_temple_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_temple_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_village_sea.dds"
+	}
+	environment = {
+		reference = "environment_tgp_village_sea"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_wedding_bedroom_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_wedding_bedroom_asia"
+	}
+
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tgp_wedding_ceremony_asia.dds"
+	}
+	environment = {
+		reference = "environment_tgp_wedding_ceremony_asia"
+	}
+
+	#AGOT Added
+	##########################################
+
+	texture = {
+		reference = "event_scenes/agot_ep3_relaxing_tent_day.dds"
+	}
+	environment = {
+		reference = "environment_agot_ep3_relaxing_tent_day"
+	}
+	
+	##########################################
+
+	texture = {
 		reference = "event_scenes/frozen_forest.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_hunt_snowy_forest"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_dragon_forest_clearing.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_dragon_outside_sun"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_dragonpit.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_dragonpit"
 	}
 	
 	##########################################
 	
-	# ##AGOT TODO DELETE
-	# texture = {
-	# 	reference = "event_scenes/the_wall.dds"
-	# }
-	# ##AGOT TODO DELETE
-	# environment = {
-	# 	reference = "environment_hunt_snowy_forest"
-	# }
-	
-	##########################################
-
-	# ##AGOT TODO DELETE
-	# texture = {
-	# 	reference = "event_scenes/beyond_the_wall.dds"
-	# }
-	# ##AGOT TODO DELETE
-	# environment = {
-	# 	reference = "environment_hunt_snowy_forest"
-	# }
-	
-	##########################################
-
-	##AGOT Added
 	texture = {
-		reference = "event_scenes/tower_of_joy.dds"
+		reference = "event_scenes/agot_dragonstone_cave.dds"
 	}
-	##AGOT Added
 	environment = {
-		reference = "environment_event_desert"
+		reference = "environment_hunt_forest_cave"
 	}
 	
 	##########################################
-
-	##AGOT Added
+	
 	texture = {
-		reference = "event_scenes/bg_stone_hedge.dds"
+		reference = "event_scenes/agot_councilchamber_night.dds"
 	}
-	##AGOT Added
+	environment = {
+		reference = "environment_event_fp2_corridor_night"
+	}
+	
+	##########################################
+	
+	texture = {
+		reference = "event_scenes/agot_bp1_crossroads_inn_night.dds"
+	}
+	environment = {
+		reference = "environment_event_bp1_corridor_indian_night"
+	}
+	
+	##########################################
+	
+	texture = {
+		reference = "event_scenes/agot_forest_night.dds"
+	}
+	environment = {
+		reference = "environment_event_fp3_courtyard_night"
+	}
+	
+	##########################################
+	
+	texture = {
+		reference = "event_scenes/agot_bedchamber_night.dds"
+	}
+	environment = {
+		reference = "environment_event_fp2_corridor_night"
+	}
+	
+	##########################################
+	
+	texture = {
+		reference = "event_scenes/the_wall.dds"
+	}
+	
 	environment = {
 		reference = "environment_hunt_snowy_forest"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
-		reference = "event_scenes/bg_casterly_rock.dds"
+		reference = "event_scenes/beyond_the_wall.dds"
 	}
-	##AGOT Added
+
 	environment = {
-		reference = "environment_cw_east_main"
+		reference = "environment_hunt_snowy_forest"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/alley_day_kingslanding.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_event_alley"
 	}
 	
 	##########################################
 
-	##AGOT Added
+	texture = {
+		reference = "event_scenes/agot_npk_tree_of_crowns.dds"
+	}
+	environment = {
+		reference = "environment_ce1_funeral_pyre"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/tower_of_joy.dds"
+	}
+	environment = {
+		reference = "environment_event_desert"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bg_stone_hedge.dds"
+	}
+	environment = {
+		reference = "environment_hunt_snowy_forest"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/bg_casterly_rock.dds"
+	}
+	environment = {
+		reference = "environment_cw_east_main"
+	}
+	
+	##########################################
+
 	texture = {
 		reference = "event_scenes/bg_highgarden.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_event_farms"
 	}
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_the_eyrie.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_event_mountains"
 	}
 
 	##########################################
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_the_trident.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_event_battlefield"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/bg_storms_end.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_hunt_forest_cave"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/ironthrone/throneroom_ironthrone.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_iron_throne"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/north/throneroom_winterfell.dds"
+	}
+	environment = {
+		reference = "environment_throneroom_winterfell"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/vale/agot_eyrie_throneroom.dds"
+	}
+	environment = {
+		reference = "environment_throneroom_eyrie"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/west/casterly_rock.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_casterly_rock"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/ironborn/pyke.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_pyke"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/reach/highgarden.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_highgarden"
 	}
 	
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/agot_dragonstone_throneroom.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_dragonstone"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/the_wall.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_the_wall"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/beyondwall/throneroom_beyond_wall_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_beyond_wall_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/north/throneroom_north_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_north_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/ironborn/throneroom_ironborn_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_ironborn_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/riverlands/throneroom_riverlands_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_riverlands_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/vale/throneroom_vale_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_vale_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/stormlands/throneroom_stormlands_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_stormlands_high"
 	}
 
 	##########################################
 
-	##AGOT Added
+	texture = {
+		reference = "event_scenes/crownlands/throneroom_crownlands_low.dds"
+	}
+	environment = {
+		reference = "environment_throneroom_crownlands_low"
+	}
+	
+	##########################################
+
+	texture = {
+		reference = "event_scenes/crownlands/throneroom_crownlands_mid.dds"
+	}
+	environment = {
+		reference = "environment_throneroom_crownlands_mid"
+	}
+	
+	##########################################
+
 	texture = {
 		reference = "event_scenes/crownlands/throneroom_crownlands_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_crownlands_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/dorne/throneroom_dorne_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_dorne_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/reach/throneroom_reach_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_reach_high"
 	}
 
 	##########################################
 
-	##AGOT Added
 	texture = {
 		reference = "event_scenes/west/throneroom_west_high.dds"
 	}
-	##AGOT Added
 	environment = {
 		reference = "environment_throneroom_west_high"
 	}
 	
 	##########################################
+	#										 #
+	#			 COW Added Below			 #
+	#										 #
+	##########################################
 
-	##AGOT Added
+	##AGOT More Backgrounds ADDED
 	texture = {
 		reference = "event_scenes/throneroom_old_ironthrone.dds"
 	}
@@ -1926,4 +2469,25 @@ barbershop_background = {
 		reference = "environment_throneroom_reach_high"
 	}
 	
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/the_wall.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_the_wall"
+	}
+
+	##########################################
+
+	##AGOT Added
+	texture = {
+		reference = "event_scenes/beyondwall/throneroom_beyond_wall_high.dds"
+	}
+	##AGOT Added
+	environment = {
+		reference = "environment_throneroom_beyond_wall_high"
+	}
 }

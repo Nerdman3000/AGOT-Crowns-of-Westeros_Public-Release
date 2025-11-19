@@ -12,3 +12,10 @@ setting_show_crowns_without_coronation_enabled:0 "Enabled"
 setting_show_crowns_without_coronation_enabled_desc:0 "By default, CK3AGOT hides crowns on the character until they have been coronated. This will revert that behavior."
 setting_hide_crowns_without_coronation_enabled:0 "Disabled"
 setting_hide_crowns_without_coronation_enabled_desc:0 "By default, CK3AGOT hides crowns on the character until they have been coronated. This will maintain that behavior."
+
+
+rule_unlimited_hybrd_crowns:0 "@Crowns_of_Westeros_icon! Crowns of Westeros - Hybrid Crowns"
+setting_unlimited_hybrd_crowns_enabled:0 "No Limits"
+setting_unlimited_hybrd_crowns_enabled_desc:0 "All characters can create hybrid house crowns, regardless of parentage, spouse, or culture."
+setting_limited_hybrd_crowns_enabled:0 "Default"
+setting_limited_hybrd_crowns_enabled_desc:0 "Hybrid crowns can only be created by characters whose parents come from two houses that share a hybrid crown, who follow the other dynasty's culture, or who, together with their spouse, represent both sides of a hybrid crown."

@@ -74,9 +74,6 @@
  
  PORTRAIT_MODIFIER_custom_headgear_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_brightflame_crown:0 "@Crowns_of_Westeros_icon! Aerion Brightflame's Crown"
  
@@ -130,8 +127,6 @@
  
  PORTRAIT_MODIFIER_custom_headgear_duncandragonfly_crown:0 "@Crowns_of_Westeros_icon! Duncan Targaryen's Crown"
  
- PORTRAIT_MODIFIER_custom_headgear_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown"
- 
  PORTRAIT_MODIFIER_custom_headgear_baelon_crown:0 "@Crowns_of_Westeros_icon! Baelon, Son of Jaehaerys I's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_laenorvelaryon_crown:0 "@Crowns_of_Westeros_icon! Laenor Velaryon's Crown"
@@ -143,11 +138,7 @@
  PORTRAIT_MODIFIER_custom_headgear_female_jacaerysvelaryon_crown:0 "@Crowns_of_Westeros_icon! Jacaerys Velaryon's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_baelorbreakspear_crown:0 "@Crowns_of_Westeros_icon! Baelor Breakspear's Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_female_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_female_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown"
- 
+  
  PORTRAIT_MODIFIER_custom_headgear_female_brightflame_crown:0 "@Crowns_of_Westeros_icon! Aerion Brightflame's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_aenysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Aenys Blackfyre's Crown"
@@ -155,8 +146,6 @@
  PORTRAIT_MODIFIER_custom_headgear_female_maelysblackfyre_crown:0 "@Crowns_of_Westeros_icon! Maelys Blackfyre's Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_duncandragonfly_crown:0 "@Crowns_of_Westeros_icon! Duncan Targaryen's Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_female_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_baelon_crown:0 "@Crowns_of_Westeros_icon! Baelon, Son of Jaehaerys I's Crown"
 
@@ -179,10 +168,6 @@
  PORTRAIT_MODIFIER_custom_headgear_celtigar_crown:0 "@Crowns_of_Westeros_icon! Celtigar Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_celtigar_crown:0 "@Crowns_of_Westeros_icon! Celtigar Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown"
- 
- PORTRAIT_MODIFIER_custom_headgear_female_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_robbstark_crown:0 "@Crowns_of_Westeros_icon! Robb Stark's Crown"
  
@@ -305,6 +290,52 @@
  PORTRAIT_MODIFIER_custom_headgear_tyboltthunderbolt_crown:0 "@Crowns_of_Westeros_icon! First Men Lannister Crown"
  
  PORTRAIT_MODIFIER_custom_headgear_female_tyboltthunderbolt_crown:0 "@Crowns_of_Westeros_icon! First Men Lannister Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_winterrose_crown:0 "@Crowns_of_Westeros_icon! Lyanna Stark's Crown"
+  
+ PORTRAIT_MODIFIER_custom_headgear_female_winterrose_crown:0 "@Crowns_of_Westeros_icon! Lyanna Stark's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_baldric_durrandon_crown:0 "@Crowns_of_Westeros_icon! Baldric 'The Cunning' Durrandon's Crown"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_baldric_durrandon_crown:0 "@Crowns_of_Westeros_icon! Baldric 'The Cunning' Durrandon's Crown"
+ 
+ ### Hybrid Crowns
+ 
+ PORTRAIT_MODIFIER_custom_headgear_aemma_tiara:0 "@Crowns_of_Westeros_icon! Queen Aemma Arryn's Tiara (Targaryen/Arryn)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_aemma_tiara:0 "@Crowns_of_Westeros_icon! Queen Aemma Arryn's Tiara (Targaryen/Arryn)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown (Baratheon/Targaryen)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_orysbaratheon_crown:0 "@Crowns_of_Westeros_icon! Orys Baratheon Crown (Baratheon/Targaryen)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_snowflower_crown:0 "@Crowns_of_Westeros_icon! Snowflower Crown (Stark/Tyrell)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_snowflower_crown:0 "@Crowns_of_Westeros_icon! Snowflower Crown (Stark/Tyrell)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_winterwing_crown:0 "@Crowns_of_Westeros_icon! Winterwing Crown (Targaryen/Stark)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_winterwing_crown:0 "@Crowns_of_Westeros_icon! Winterwing Crown (Targaryen/Stark)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_reindeer_crown:0 "@Crowns_of_Westeros_icon! Reindeer Crown (Stark/Baratheon)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_reindeer_crown:0 "@Crowns_of_Westeros_icon! Reindeer Crown (Stark/Baratheon)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_emberrose_crown:0 "@Crowns_of_Westeros_icon! Ember Rose Crown (Targaryen/Tyrell)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_emberrose_crown:0 "@Crowns_of_Westeros_icon! Ember Rose Crown (Targaryen/Tyrell)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown (Targaryen/Lannister)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_goldfyre_crown:0 "@Crowns_of_Westeros_icon! Goldfyre Crown (Targaryen/Lannister)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown (Targaryen/Hightower)" 
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_greenpyre_crown:0 "@Crowns_of_Westeros_icon! Greenpyre Crown (Targaryen/Hightower)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown (Targaryen/Velaryon)"
+ 
+ PORTRAIT_MODIFIER_custom_headgear_female_seawyrm_crown:0 "@Crowns_of_Westeros_icon! Seawyrm Crown (Targaryen/Velaryon)"
  
 
 #Custom Westeros Crowns by White Wolf of the Whills

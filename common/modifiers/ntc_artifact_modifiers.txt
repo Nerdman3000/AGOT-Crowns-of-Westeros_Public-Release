@@ -187,30 +187,6 @@ jacaerysvelaryon_crown_modifier = {
 	movement_speed = 0.05
 	monthly_dynasty_prestige_mult = 0.01
 }
-seawyrm_crown_modifier = {
-	icon = grandeur_positive
-	monthly_prestige = 0.01
-	martial = 1
-	prowess = 2
-	no_water_crossing_penalty = yes
-	movement_speed = 0.05
-	monthly_dynasty_prestige_mult = 0.01
-}
-greenpyre_crown_modifier = {
-	icon = grandeur_positive
-	monthly_prestige = 0.01
-	courtier_and_guest_opinion = 3
-	the_seven_religion_opinion = 5
-	learning = 1
-	monthly_dynasty_prestige_mult = 0.01
-}
-goldfyre_crown_modifier = {
-	icon = grandeur_positive
-	monthly_prestige = 0.01
-	tax_mult = 0.25
-	monthly_income_mult = 0.02
-	monthly_dynasty_prestige_mult = 0.01
-}
 celtigar_crown_modifier = {
 	icon = grandeur_positive
 	monthly_prestige = 0.01
@@ -885,7 +861,7 @@ daena_crown_modifier = {
 }
 seven_dragon_crown_modifier = {
 	icon = grandeur_positive
-	monthly_peity_gain_mult = 0.01
+	monthly_piety_gain_mult = 0.01
 	monthly_piety = 0.5
 	the_seven_religion_opinion = 5
 	different_faith_liege_opinion = -5
@@ -945,4 +921,75 @@ jaehaera_crown_modifier = {
 	general_opinion = 5
 	the_seven_religion_opinion = 5
 	high_valyrian_opinion = 3
+}
+winterrose_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	northman_opinion = 5
+	diplomacy = 2
+}
+aemma_tiara_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	courtier_and_guest_opinion = 2
+	the_seven_religion_opinion = 2
+	diplomacy = 3
+}
+baldric_durrandon_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	intrigue = 5
+	martial = -3
+}
+seawyrm_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	martial = 1
+	prowess = 2
+	no_water_crossing_penalty = yes
+	movement_speed = 0.05
+	monthly_dynasty_prestige_mult = 0.01
+}
+greenpyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	courtier_and_guest_opinion = 3
+	the_seven_religion_opinion = 5
+	learning = 1
+	monthly_dynasty_prestige_mult = 0.01
+}
+goldfyre_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	tax_mult = 0.25
+	monthly_income_mult = 0.02
+	monthly_dynasty_prestige_mult = 0.01
+}
+emberrose_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	high_valyrian_opinion = 5
+	reachman_opinion = 5
+	diplomacy = 2
+}
+reindeer_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	high_valyrian_opinion = 5
+	stormlander_opinion = 5
+	martial = 2
+}
+winterwing_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	high_valyrian_opinion = 5
+	northman_opinion = 5
+	prowess = 2
+}
+snowflower_crown_modifier = {
+	icon = grandeur_positive
+	monthly_prestige = 0.01
+	reachman_opinion = 5
+	northman_opinion = 5
+	intrigue = 2
 }

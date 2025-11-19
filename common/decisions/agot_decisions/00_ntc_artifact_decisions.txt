@@ -107,6 +107,17 @@
 				is_ai = no
 			}
 		}
+		
+		item = {
+			value = agot_commission_crown_westeros_hybrid_choice
+			localization = {
+				desc = agot_commission_crown_westeros_hybrid_choice_loc
+			}
+			icon = "gfx/interface/icons/ntc_hybrid_crown.dds"
+			is_valid = {
+				is_ai = no
+			}
+		}
 	}
 
 	effect = {
@@ -133,6 +144,12 @@
 			limit = { scope:agot_commission_crown_westeros_variant_choice = yes }
 			root = {
 				trigger_event = agot_commission_crown.1414
+			}
+		}
+		else_if = {
+			limit = { scope:agot_commission_crown_westeros_hybrid_choice = yes }
+			root = {
+				trigger_event = agot_commission_crown.0006
 			}
 		}
 	}

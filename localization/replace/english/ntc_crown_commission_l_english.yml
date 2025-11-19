@@ -14,6 +14,8 @@
  agot_commission_crown_westeros_choice_tooltip:0 "A crown inspired by figures in history, whether they ruled or not."
  agot_commission_crown_westeros_variant_choice_loc:0 "A Crown Variant"
  agot_commission_crown_westeros_variant_choice_tooltip:0 "Create a crown variant based on a preexisting crown."
+ agot_commission_crown_westeros_hybrid_choice_loc:0 "A Hybrid House Crown"
+ agot_commission_crown_westeros_hybrid_choice_tooltip:0 "Create a crown which is a blend of two different houses."
 
  agot_commission_crown.1313.t:0 "Crown Commission"
  agot_commission_crown.1313.desc:0 "It's decided. This crown shall be made in honor of an important figure from history. Whether they ruled in their lifetimes or were robbed of such a chance by fate, their legacy will live on."

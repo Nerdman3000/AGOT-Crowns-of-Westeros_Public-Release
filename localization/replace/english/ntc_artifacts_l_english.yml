@@ -173,17 +173,8 @@
  aegonsonofjaehaerys_crown_name:0 "Crown of Aegon, Son of Jaehaerys I"
  aegonsonofjaehaerys_crown_description:0 "A simplistic golden crown made in the shape of dragon wings made for Aegon Targaryen, the unborn son of King Jaehaerys I Targaryen, if he had not been stillborn, lived, and become king."
  
- baelorbreakspear_crown_name:0 "Crown of Baelor Targaryen"
+ baelorbreakspear_crown_name:0 "Crown of Baelor 'Breakspear' Targaryen"
  baelorbreakspear_crown_description:0 "A crown made for Baelor Targaryen, son of King Daeron II Targaryen, if he had become king. It is a redgold circular snakelike crown centered by three dragon heads and cobraheads."
- 
- seawyrm_crown_name:0 "Crown of Seawyrm"
- seawyrm_crown_description:0 "A crown made for a possible cadet house of House Targaryen and House Velaryon known as House Seawyrm. A silver and blue crystal crown with gold lining and encrusted by pearls, seashells, and sharkteeth."
- 
- greenpyre_crown_name:0 "Crown of Greenpyre"
- greenpyre_crown_description:0 "A crown made for a possible cadet house of House Targaryen and House Hightower known as House Greenpyre. A white and green marble crown lined with gold, it is marked by seven miniture marble recreations of the Hightower, as well as encrusted with golden names of the Seven gods of Andalos and seven multicolored Targaryen sigils in the colors of the Faith of the Seven."
- 
- goldfyre_crown_name:0 "Crown of Goldfyre"
- goldfyre_crown_description:0 "A crown made for a possible cadet house of House Targaryen and House Lannister known as House Goldfyre. A crown made of gold and red marble, it features gold extruded carvings of lion and dragon heads."
  
  celtigar_crown_name:0 "Crown of Claw Isle"
  celtigar_crown_description:0 "A silver crown made for House Celtigar, featuring several depictions of red crabs and numerous small rubies adorning its sides. "
@@ -193,9 +184,6 @@
  
  jonsnow_crown_name:0 "Circlet of Jon Snow"
  jonsnow_crown_description:0 "A circlet made for Jon Snow, the bastard son of Eddard Stark. A simple weirdwood band, it features carvers of roses, wolves, and weirwoods."
- 
- orysbaratheon_crown_name:0 "Crown of Orys Baratheon"
- orysbaratheon_crown_description:0 "A crown made for Orys Baratheon, the bastard brother of Aegon the Conqueror and founder of House Baratheon. A gold and iron crown, it features golden stag horns and golden dragon heads as well as three red rubies bordered by gold."
  
  robbstark_crown_name:0 "Crown of Robb Stark"
  robbstark_crown_description:0 "A crown made for Robb Stark, the Young Wolf, during the War of the Five Kings. Inspired by the old Crown of Winter worn by the Old Kings of the North before the Conquest, this crown is made of bronze, leather, and iron, featuring nine iron spikes in the shape of swords and bronze runes. Where it ultimately differs from the old Crown of Winter is the leather binding over the bronze base of the crown and the three dark bronze impressions of wolves in the center of the crown."
@@ -239,8 +227,47 @@
  shieraseastar_crown_name:0 "Crown of Shiera Seastar"
  shieraseastar_crown_description:0 "A crown made for Shiera Seastar, daughter of King Aegon IV 'The Unworthy' Targaryen. Made in the same image of her necklace, it features a abundant amount of sea white pearls as well as larger green and blue pearls."
  
- shieraseastar_necklace_name:0 "Shiera Seastar's Necklace"
- shieraseastar_necklace_description:0 "A necklace made and worn by Shiera Seastar, daughter of King Aegon IV 'The Unworthy' Targaryen. Believed by the commonfolk to have been enchanted by Shiera with dark magic, it features a abundant amount of sea white pearls as well as larger green and blue pearls."
+ winterrose_crown_name:0 "Crown of the Winter Rose"
+ winterrose_crown_description:0 "Sculpted with steel roses made from a rare blue steel imported from Essos, and set with winter blue gems, this crown was crafted by Rhaegar Targaryen for Lyanna, his beloved wild wolf maid of Winterfell."
+ 
+ aemma_tiara_name:0 "Tiara of Queen Aemma Arryn"
+ aemma_tiara_description:0 "Forged in silver with gold filigree, the tiara bears a proud falcon flanked by curling drakes, a reminder of Aemma Arryn’s place between sky and dragon's flame."
+ 
+ aemma_tiara_generic_name:0 "Tiara of the Moondrake"
+ aemma_tiara_generic_description:0 "A crown made to represent the union of House Targaryen and House Arryn, this tiara, forged in silver with gold filigree, bears a proud falcon flanked by curling drakes."
+ 
+ orysbaratheon_crown_name:0 "Crown of Orys Baratheon"
+ orysbaratheon_crown_description:0 "A crown made for Orys Baratheon, the bastard brother of Aegon the Conqueror and founder of House Baratheon. A gold and iron crown, it features golden stag horns and golden dragon heads as well as three red rubies bordered by gold."
+ 
+ orysbaratheon_crown_generic_name:0 "Crown of the Fire Stag"
+ orysbaratheon_crown_generic_description:0 "A crown made to represent the union of House Baratheon and House Targaryen, this gold and iron crown features golden stag horns and golden dragon heads as well as three red rubies bordered by gold."
+ 
+ baelorbreakspear_crown_generic_name:0 "Crown of the Sanddrake"
+ baelorbreakspear_crown_generic_description:0 "A crown made to represent the union of House Targaryen and House Martell, it is a redgold circular snakelike crown centered by three dragon heads and cobraheads."
+ 
+ baldric_durrandon_crown_name:0 "Crown of Baldric 'The Cunning' Durrandon"
+ baldric_durrandon_crown_description:0 "Forged in gold and featuring blood red and yellow stone gems, this golden circlet of branching antlers adorned the brow of Baldric the Cunning, whose clever plots were said to be as many as the crown's points. Certain chroniclers claim it was inspired by the dubious advice of a particularly dimwitted servant whose ideas were bold, enthusiastic, and almost always terrible."
+ 
+ winterwing_crown_name:0 "Crown of the Winter Wing"
+ winterwing_crown_description:0 "A crown made to represent the union of House Stark and Targaryen, it is ringed with blue gems and towering blades, while being centered by a carved metal direwolf with draconic wings."
+ 
+ snowflower_crown_name:0 "Crown of the Snowflower"
+ snowflowr_crown_description:0 "A crown made to represent the union of House Stark and Tyrell, this crown is ringed with tall steel points and adorned with blooming roses in gold and frost blue. Red leaves and carved direwolves run along the band, with delicate chains dangle down."
+ 
+ reindeer_crown_name:0 "Crown of the Reindeer King"
+ reindeer_crown_description:0 "A crown made to represent the union of House Stark and Baratheon, it is forged from dark metal and leather, with steel spikes and is crowned with radiant antlers."
+ 
+ emberrose_crown_name:0 "Crown of the Ember Rose"
+ emberrose_crown_description:0 "A crown made to represent the union of House Targaryen and House Tyrell, it features coiled vines cradling radiant roses of gold, while pale winged blades flare upward like a dragon taking flight."
+ 
+ seawyrm_crown_name:0 "Crown of the Seawyrm"
+ seawyrm_crown_description:0 "A crown made to represent the union of House Targaryen and Velaryon. A silver and blue crystal crown with gold lining and encrusted by pearls, seashells, and sharkteeth."
+ 
+ greenpyre_crown_name:0 "Crown of the Greenpyre"
+ greenpyre_crown_description:0 "A crown made to represent the union of House Targaryen and Hightower. A white and green marble crown lined with gold, it is marked by seven miniture marble recreations of the Hightower, as well as encrusted with golden names of the Seven gods of Andalos and seven multicolored Targaryen sigils in the colors of the Faith of the Seven."
+ 
+ goldfyre_crown_name:0 "Crown of the Goldfyre"
+ goldfyre_crown_description:0 "A crown made to represent the union of House Targaryen and Lannister. A crown made of gold and red marble, it features gold extruded carvings of lion and dragon heads."
  
  # Crowns of Westeros Crowns - White Wolf
  

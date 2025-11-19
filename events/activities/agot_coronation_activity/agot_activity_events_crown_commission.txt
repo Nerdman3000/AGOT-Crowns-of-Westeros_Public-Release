@@ -17,10 +17,8 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 			}
 			triggered_desc = { #Coronation
 				trigger = {
-					OR = {
-						involved_activity ?= {
-							has_activity_type = activity_agot_coronation
-						}
+					involved_activity ?= {
+						has_activity_type = activity_agot_coronation
 					}
 				}
 				desc = agot_commission_crown.0001.desc_coronation
@@ -532,6 +530,75 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 					}
 
 					create_artifact_orysbaratheon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = baldric_durrandon_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_baldric_durrandon_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = winterrose_crown_artifact
+							}
+						}
+					}
+				
+					create_artifact_winterrose_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_artifact = {
+								has_variable = aemma_tiara_artifact
+							}
+						}
+					}
+				
+					create_artifact_aemma_tiara_effect = { OWNER = this }
 					root = {
 						add_to_variable_list = {
 							name = possible_artifacts
@@ -2856,6 +2923,82 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				}
 				if = {
 					limit = {
+						root = { ntc_snowflower_crown_trigger = yes }
+					}
+
+					create_artifact_snowflower_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_winterwing_crown_trigger = yes }
+					}
+
+					create_artifact_winterwing_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_reindeer_crown_trigger = yes }
+					}
+
+					create_artifact_reindeer_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
+						root = { ntc_emberrose_crown_trigger = yes }
+					}
+
+					create_artifact_emberrose_crown_effect = { OWNER = this }
+					root = {
+						add_to_variable_list = {
+							name = possible_artifacts
+							target = scope:newly_created_artifact
+						}
+						if = {
+							limit = {
+								NOT = { has_variable = selected_artifact }
+							}
+							set_variable = { name = selected_artifact value = scope:newly_created_artifact }
+						}
+					}
+				}
+				if = {
+					limit = {
 						root = { ntc_stark_circlet_trigger = yes }
 					}
 
@@ -3751,6 +3894,24 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = baldric_durrandon_crown_artifact }
+			}
+			create_artifact_baldric_durrandon_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = winterrose_crown_artifact }
+			}
+			create_artifact_winterrose_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = aemma_tiara_artifact }
+			}
+			create_artifact_aemma_tiara_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = crown_alyssavelaryon_artifact }
 			}
 			create_artifact_alyssavelaryon_crown_effect = { OWNER = this }
@@ -4474,6 +4635,30 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_variable = snowflower_crown_artifact }
+			}
+			create_artifact_snowflower_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = winterwing_crown_artifact }
+			}
+			create_artifact_winterwing_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = reindeer_crown_artifact }
+			}
+			create_artifact_reindeer_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = emberrose_crown_artifact }
+			}
+			create_artifact_emberrose_crown_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_variable = circlet_of_stark_artifact }
 			}
 			create_artifact_circlet_of_stark_effect = { OWNER = this }
@@ -4729,7 +4914,7 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 	option = {
 		name = agot_commission_crown.0001.b
 		trigger = {
-			NOR = {
+			NOT = {
 				involved_activity ?= {
 					has_activity_type = activity_agot_coronation
 				}

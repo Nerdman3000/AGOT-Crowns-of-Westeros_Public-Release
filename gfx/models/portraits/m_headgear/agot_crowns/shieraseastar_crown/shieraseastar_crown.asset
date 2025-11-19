@@ -8,7 +8,7 @@ pdxmesh = {
 		texture_diffuse = "shieraseastar_necklace_diffuse.dds"
 		texture_normal = "shieraseastar_necklace_normal.dds"
 		texture_specular = "shieraseastar_necklace_properties.dds"
-		shader = "portrait_attachment_alpha_to_coverage"
+		shader = "portrait_attachment_pattern_alpha_to_coverage"
 		shader_file = "gfx/FX/jomini/portrait.shader"
 	}
 }
@@ -16,4 +16,13 @@ pdxmesh = {
 entity = {
 	name = "shieraseastar_crown_entity"
 	pdxmesh = "shieraseastar_crown_mesh"
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/agot_jewelry/shieraseastar_necklace/shieraseastar_necklace_masks.dds"    #Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "necklace_seastar"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
 }

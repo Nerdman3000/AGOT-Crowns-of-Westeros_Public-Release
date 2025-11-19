@@ -9,3 +9,9 @@ show_crowns_without_coronation = {
 	show_crowns_without_coronation_enabled = {}
 	hide_crowns_without_coronation_enabled = {}
 }
+
+unlimited_hybrd_crowns = {
+	default  = limited_hybrd_crowns_enabled
+	unlimited_hybrd_crowns_enabled = {}
+	limited_hybrd_crowns_enabled = {}
+}

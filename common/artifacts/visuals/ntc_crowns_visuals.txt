@@ -488,3 +488,31 @@ jaehaera_crown_visuals = {
 	icon = "jaehaera_crown.dds"	
 	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
 }
+winterwing_crown_visuals = {
+	icon = "winterwing_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+reindeer_crown_visuals = {
+	icon = "reindeer_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+snowflower_crown_visuals = {
+	icon = "snowflower_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+emberrose_crown_visuals = {
+	icon = "emberrose_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+winterrose_crown_visuals = {
+	icon = "winterrose_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+aemma_tiara_visuals = {
+	icon = "aemma_tiara.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}
+baldric_durrandon_crown_visuals = {
+	icon = "baldric_durrandon_crown.dds"	
+	asset = male_headgear_secular_dde_hre_imperial_01_artifact_entity
+}

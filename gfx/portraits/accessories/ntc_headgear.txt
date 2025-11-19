@@ -1218,3 +1218,73 @@ female_jaehaera_crown = {
 	set_tags = "crown"
 	entity = { required_tags = ""			shared_pose_entity = head		entity = female_jaehaera_crown_entity 	 }
 }
+
+baldric_durrandon_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = baldric_durrandon_crown_entity 	 }
+}
+
+female_baldric_durrandon_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_baldric_durrandon_crown_entity 	 }
+}
+
+snowflower_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = snowflower_crown_entity 	 }
+}
+
+female_snowflower_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_snowflower_crown_entity 	 }
+}
+
+winterwing_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = winterwing_crown_entity 	 }
+}
+
+female_winterwing_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_winterwing_crown_entity 	 }
+}
+
+winterrose_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = winterrose_crown_entity 	 }
+}
+
+female_winterrose_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_winterrose_crown_entity 	 }
+}
+
+reindeer_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = reindeer_crown_entity 	 }
+}
+
+female_reindeer_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_reindeer_crown_entity 	 }
+}
+
+emberrose_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = emberrose_crown_entity 	 }
+}
+
+female_emberrose_crown = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_emberrose_crown_entity 	 }
+}
+
+aemma_tiara = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = aemma_tiara_entity 	 }
+}
+
+female_aemma_tiara = {	
+	set_tags = "crown"
+	entity = { required_tags = ""			shared_pose_entity = head		entity = female_aemma_tiara_entity 	 }
+}
