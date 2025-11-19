@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "snowflower_crown_mesh"
+	file = "snowflower_crown.mesh"
+
+	meshsettings = {
+		name = "male_snowflower_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "snowflower_crown_diffuse.dds"
+		texture_normal = "snowflower_crown_normal.dds"
+		texture_specular = "snowflower_crown_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "snowflower_crown_entity"
+	pdxmesh = "snowflower_crown_mesh"
+}

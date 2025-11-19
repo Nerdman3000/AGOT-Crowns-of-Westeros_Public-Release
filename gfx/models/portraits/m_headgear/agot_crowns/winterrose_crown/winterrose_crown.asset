@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "winterrose_crown_mesh"
+	file = "winterrose_crown.mesh"
+
+	meshsettings = {
+		name = "male_winterrose_crownShape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "winterrose_crown_diffuse.dds"
+		texture_normal = "winterrose_crown_normal.dds"
+		texture_specular = "winterrose_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "winterrose_crown_entity"
+	pdxmesh = "winterrose_crown_mesh"
+}
