@@ -7,12 +7,9 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		first_valid = {
 			triggered_desc = { #Default
 				trigger = {
-					NOR = {
+					NOT = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -22,10 +19,7 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 				trigger = {
 					OR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -4718,10 +4712,7 @@ agot_commission_crown.0001 = { # Chose to create a crown for yourself
 		trigger = {
 			NOR = {
 				involved_activity ?= {
-					has_activity_type = activity_no_dlc_coronation
-				}
-				involved_activity ?= {
-					has_activity_type = activity_coronation
+					has_activity_type = activity_agot_coronation
 				}
 			}
 		}
@@ -4752,10 +4743,7 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				trigger = {
 					NOR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -4765,10 +4753,7 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 				trigger = {
 					OR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -9454,10 +9439,7 @@ agot_commission_crown.1212 = { # Chose to create a crown for your spouse
 		trigger = {
 			NOR = {
 				involved_activity ?= {
-					has_activity_type = activity_no_dlc_coronation
-				}
-				involved_activity ?= {
-					has_activity_type = activity_coronation
+					has_activity_type = activity_agot_coronation
 				}
 			}
 		}
@@ -9488,10 +9470,7 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 				trigger = {
 					NOR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -9501,10 +9480,7 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 				trigger = {
 					OR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -11735,10 +11711,7 @@ agot_commission_crown.1313 = { # Chose to create a crown based on a character
 		trigger = {
 			NOR = {
 				involved_activity ?= {
-					has_activity_type = activity_no_dlc_coronation
-				}
-				involved_activity ?= {
-					has_activity_type = activity_coronation
+					has_activity_type = activity_agot_coronation
 				}
 			}
 		}
@@ -11769,10 +11742,7 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 				trigger = {
 					NOR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -11782,10 +11752,7 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 				trigger = {
 					OR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -12125,10 +12092,7 @@ agot_commission_crown.1414 = { # Chose to create a crown based on a character
 		trigger = {
 			NOR = {
 				involved_activity ?= {
-					has_activity_type = activity_no_dlc_coronation
-				}
-				involved_activity ?= {
-					has_activity_type = activity_coronation
+					has_activity_type = activity_agot_coronation
 				}
 			}
 		}
@@ -12296,7 +12260,7 @@ agot_commission_crown.0005 = { # Unique Crown creation upon becoming ruling mona
 				agot_night_king_crown_trigger = yes
 			}
 			add_dread = 100
-			give_nickname = nick_the_nights_king
+			give_nickname = nick_agot_the_nights_king
 			agot_create_artifact_crown_of_the_nights_king_replica_effect = { OWNER = this }
 		}
 

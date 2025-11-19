@@ -880,12 +880,12 @@ daena_crown_modifier = {
 	icon = grandeur_positive
 	opinion_of_female_rulers = 3
 	martial = 2
-	is_bastard_opinion = 2
+	# is_bastard_opinion = 2
 	high_valyrian_opinion = 5
 }
 seven_dragon_crown_modifier = {
 	icon = grandeur_positive
-	monthly_dynasty_piety_mult = 0.01
+	monthly_peity_gain_mult = 0.01
 	monthly_piety = 0.5
 	the_seven_religion_opinion = 5
 	different_faith_liege_opinion = -5
@@ -936,7 +936,7 @@ daeron_the_daring_crown_modifier = {
 	icon = grandeur_positive
 	vassal_opinion = 5
 	general_opinion = 3
-	brave_xp_gain_mult = 0.5
+	monthly_martial_lifestyle_xp_gain_mult = 0.5
 	high_valyrian_opinion = 3
 }
 jaehaera_crown_modifier = {

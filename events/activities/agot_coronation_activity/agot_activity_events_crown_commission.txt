@@ -9,10 +9,7 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				trigger = {
 					NOR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -22,10 +19,7 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 				trigger = {
 					OR = {
 						involved_activity ?= {
-							has_activity_type = activity_no_dlc_coronation
-						}
-						involved_activity ?= {
-							has_activity_type = activity_coronation
+							has_activity_type = activity_agot_coronation
 						}
 					}
 				}
@@ -4737,10 +4731,7 @@ agot_activity_commission_crown.0001 = { # Chose to create a crown based on Dynas
 		trigger = {
 			NOR = {
 				involved_activity ?= {
-					has_activity_type = activity_no_dlc_coronation
-				}
-				involved_activity ?= {
-					has_activity_type = activity_coronation
+					has_activity_type = activity_agot_coronation
 				}
 			}
 		}
