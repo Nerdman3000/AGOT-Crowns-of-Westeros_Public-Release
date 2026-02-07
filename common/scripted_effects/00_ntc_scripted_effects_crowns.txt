@@ -27,7 +27,7 @@ create_artifact_aegonvi_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 7998.1.2
 		}
 	}
@@ -70,7 +70,7 @@ create_artifact_rhaegar_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8037.9.9
 		}
 	}
@@ -113,7 +113,7 @@ create_artifact_viserys_son_of_aenys_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8048.3.7
 		}
 	}
@@ -156,7 +156,7 @@ create_artifact_viserys_son_of_aenys_02_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8048.3.7
 		}
 	}
@@ -202,7 +202,7 @@ create_artifact_aegonblackfyre_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8161.1.1
 		}
 	}
@@ -247,7 +247,7 @@ create_artifact_viserysiii_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8172.1.1
 		}
 	}
@@ -290,7 +290,7 @@ create_artifact_jonsnowtargaryen_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8221.1.1
 		}
 	}
@@ -2348,7 +2348,7 @@ create_artifact_robbstark_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
-			value = title:c_winterfell
+			value = title:k_winterfell
 		}
 	}
 	
@@ -2387,7 +2387,7 @@ create_artifact_branstark_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
-			value = title:c_winterfell
+			value = title:k_winterfell
 		}
 	}
 	
@@ -2432,7 +2432,7 @@ create_artifact_tyboltthunderbolt_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
-			value = title:c_casterly_rock
+			value = title:e_the_westerlands
 		}
 		add_artifact_history = {
 			type = inherited
@@ -2497,7 +2497,7 @@ create_artifact_geroldlannister_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
-			value = title:c_casterly_rock
+			value = title:e_the_westerlands
 		}
 		add_artifact_title_history = {
 			target = title:e_the_westerlands
@@ -2547,7 +2547,7 @@ create_artifact_lancellannister_crown_effect = {
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = artifact_succession_title
-			value = title:c_casterly_rock
+			value = title:e_the_westerlands
 		}
 		add_artifact_title_history = {
 			target = title:e_the_westerlands
@@ -2794,7 +2794,7 @@ create_artifact_stepstone_crown_effect = {
 			value = title:b_the_red_keep
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8111.1.8
 		}
 	}
@@ -3053,7 +3053,7 @@ create_artifact_bethablackwood_circlet_effect = {
 			recipient = character:Targaryen_128 # Shaera Targaryen
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8262.1.1
 		}
 	}
@@ -3381,7 +3381,7 @@ create_artifact_maegor_brightflame_crown_effect = { #Maegor Brightflame Crown, F
 			value = title:c_kings_landing
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8261.1.1
 		}
 	}
@@ -3440,7 +3440,7 @@ create_artifact_daena_crown_effect = {
 			recipient = character:Blackfyre_14 # Maelys Blackfyre
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8261.1.1
 		}
 	}
@@ -3489,7 +3489,7 @@ create_artifact_seven_dragon_crown_effect = {
 			value = title:c_kings_landing
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8261.1.1
 		}
 	}
@@ -3538,7 +3538,7 @@ create_artifact_elaena_crown_default_effect = {
 			value = title:c_kings_landing
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8261.1.1
 		}
 	}
@@ -3592,7 +3592,7 @@ create_artifact_elaena_crown_red_effect = { #Aelora Crown
 			recipient = character:Targaryen_116 # Aelora Targaryen
 		}
 		add_artifact_title_history = {
-			target = title:e_the_iron_throne
+			target = title:h_the_iron_throne
 			date = 8261.1.1
 		}
 	}

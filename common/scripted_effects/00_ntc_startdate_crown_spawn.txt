@@ -192,7 +192,7 @@ ntc_lannister_crown_shattered_spawn.1 = {
 }
 
 ntc_arryn_crown_shattered_spawn.1 = {
-	title:k_the_vale.holder = {
+	title:e_the_vale.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -210,7 +210,7 @@ ntc_arryn_crown_shattered_spawn.1 = {
 }
 
 ntc_baratheon_crown_shattered_spawn.1 = {
-	title:k_the_stormlands.holder = {
+	title:e_the_stormlands.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -228,7 +228,7 @@ ntc_baratheon_crown_shattered_spawn.1 = {
 }
 
 ntc_stark_crown_shattered_spawn.1 = {
-	title:k_the_north.holder = {
+	title:e_the_north.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -239,7 +239,7 @@ ntc_stark_crown_shattered_spawn.1 = {
 }
 
 ntc_greyjoy_crown_shattered_spawn.1 = {
-	title:k_the_iron_islands.holder = {
+	title:e_the_iron_islands.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -250,7 +250,7 @@ ntc_greyjoy_crown_shattered_spawn.1 = {
 }
 
 ntc_tyrell_crown_shattered_spawn.1 = {
-	title:k_the_reach.holder = {
+	title:e_the_reach.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
@@ -269,7 +269,7 @@ ntc_tyrell_crown_shattered_spawn.1 = {
 }
 
 ntc_tully_crown_shattered_spawn.1 = {
-	title:k_the_riverlands.holder = {
+	title:e_the_riverlands.holder = {
 		if = {
 			limit = {
 				has_dlc_feature = royal_court

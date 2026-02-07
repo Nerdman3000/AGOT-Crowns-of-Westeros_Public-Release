@@ -1191,10 +1191,7 @@ ntc_iron_throne_crown_trigger = {
 
 ntc_the_vale_crown_trigger = {
 	is_ai = no
-	OR = {
-		has_title = title:e_the_vale
-		has_title = title:k_the_vale
-	}
+	has_title = title:e_the_vale
 	NOT = {
 		any_artifact = {
 			has_variable = crown_of_the_mountain_and_vale_artifact
